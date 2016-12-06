@@ -1,5 +1,5 @@
 {
-  "name": "lookup-server",
+  "name": "api-server",
   "version": "0.0.1",
   "private": true,
   "babel": {
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "babel-node server.js",
+    "server": "babel-node server/server.js",
     "client": "babel-node start-client.js",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1"
   },
