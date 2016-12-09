@@ -1,0 +1,1798 @@
+{
+  "businesses": [
+    {
+      "id": "kitchen-story-san-francisco",
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7643545,
+        "longitude": -122.4308676
+      },
+      "is_closed": false,
+      "review_count": 1792,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
+      "phone": "+14155254905",
+      "price": "$$",
+      "distance": 412.9377825352,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/kitchen-story-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Kitchen Story",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94114",
+        "state": "CA",
+        "address1": "3499 16th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "pizzeria-delfina-san-francisco",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.76136,
+        "longitude": -122.42418
+      },
+      "is_closed": false,
+      "review_count": 2146,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Bfo-c4t6xv51RKuwCMgWHA/o.jpg",
+      "phone": "+14154376800",
+      "price": "$$",
+      "distance": 755.643709976,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/pizzeria-delfina-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Pizzeria Delfina",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "3611 18th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "stuffed-san-francisco",
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "polish",
+          "title": "Polish"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.75257,
+        "longitude": -122.41882
+      },
+      "is_closed": false,
+      "review_count": 182,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/GQGwWdUR89MixZtcOG62yA/o.jpg",
+      "phone": "+14156421069",
+      "price": "$$",
+      "distance": 1868.0034245759998,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/stuffed-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Stuffed",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "2788 Mission St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "batter-up-san-francisco",
+      "categories": [
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "desserts",
+          "title": "Desserts"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7166906,
+        "longitude": -122.4413763
+      },
+      "is_closed": false,
+      "review_count": 261,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/g5gc2FXCyDG6oYhSFKz42A/o.jpg",
+      "phone": "+14152056032",
+      "price": "$",
+      "distance": 5758.03183656,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/batter-up-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Batter Up",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94112",
+        "state": "CA",
+        "address1": "888 Geneva Ave",
+        "country": "US"
+      }
+    },
+    {
+      "id": "poc-chuc-san-francisco",
+      "categories": [
+        {
+          "alias": "latin",
+          "title": "Latin American"
+        },
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.765643,
+        "longitude": -122.417139
+      },
+      "is_closed": false,
+      "review_count": 477,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2jN53sfuBd7IQ2up32ow8g/o.jpg",
+      "phone": "+14155581583",
+      "price": "$$",
+      "distance": 992.8172312904,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/poc-chuc-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Poc-Chuc",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "2886 16th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "tacolicious-san-francisco-7",
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7605905,
+        "longitude": -122.4213802
+      },
+      "is_closed": false,
+      "review_count": 1117,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ZqgxKvxnXguwGFMxYY64Dg/o.jpg",
+      "phone": "+14156496077",
+      "price": "$$",
+      "distance": 967.565946394,
+      "rating": 3.5,
+      "url": "https://www.yelp.com/biz/tacolicious-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Tacolicious",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "741 Valencia St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "el-gallo-giro-taco-truck-san-francisco-2",
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "foodtrucks",
+          "title": "Food Trucks"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.75417,
+        "longitude": -122.41312
+      },
+      "is_closed": false,
+      "review_count": 136,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/fHVzzqSiiVoJUUekI9ahfQ/o.jpg",
+      "phone": "+14152401224",
+      "price": "$",
+      "distance": 1979.941712012,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/el-gallo-giro-taco-truck-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "El Gallo Giro Taco Truck",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "23rd St & Treat Ave",
+        "country": "US"
+      }
+    },
+    {
+      "id": "chicks-and-love-pizza-patio-san-francisco-5",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7693226761551,
+        "longitude": -122.415308338623
+      },
+      "is_closed": false,
+      "review_count": 40,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4HG6U5cpmcbaF7auXcAE4w/o.jpg",
+      "phone": "+14159126648",
+      "price": "$$",
+      "distance": 1153.702452195,
+      "rating": 5,
+      "url": "https://www.yelp.com/biz/chicks-and-love-pizza-patio-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Chicks and Love Pizza Patio",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "1701 Folsom St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "the-monks-kettle-san-francisco",
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "gastropubs",
+          "title": "Gastropubs"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7647290879634,
+        "longitude": -122.42297490884
+      },
+      "is_closed": false,
+      "review_count": 1984,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/47kA45l9yNMMPg1P_qbCGw/o.jpg",
+      "phone": "+14158659523",
+      "price": "$$",
+      "distance": 548.48962611,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/the-monks-kettle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "The Monk's Kettle",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "3141 16th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "novy-san-francisco-6",
+      "categories": [
+        {
+          "alias": "mediterranean",
+          "title": "Mediterranean"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.75153,
+        "longitude": -122.43212
+      },
+      "is_closed": false,
+      "review_count": 201,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/JcA_zVTFiqM_NBF1jDXhHw/o.jpg",
+      "phone": "+14158298383",
+      "price": "$$",
+      "distance": 1797.5024234599998,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/novy-san-francisco-6?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "NoVY Restaurant",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94114",
+        "state": "CA",
+        "address1": "4000 24th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "cafe-me-san-francisco-2",
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7958367325659,
+        "longitude": -122.40185511318
+      },
+      "is_closed": false,
+      "review_count": 243,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eWKVQdJUpwFkt8GvBRRi3g/o.jpg",
+      "phone": "+14152888628",
+      "price": "$",
+      "distance": 3918.300814302,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/cafe-me-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Cafe Me",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94111",
+        "state": "CA",
+        "address1": "500 Washington St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "marcellas-lasagneria-san-francisco-3",
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7580376,
+        "longitude": -122.3890915
+      },
+      "is_closed": false,
+      "review_count": 247,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/J8XAYvv7NYgcPo5xdl3f3Q/o.jpg",
+      "phone": "+14159202225",
+      "price": "$$",
+      "distance": 3587.3221796279995,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/marcellas-lasagneria-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Marcella's Lasagneria",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94107",
+        "state": "CA",
+        "address1": "1099 Tennessee St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "skool-san-francisco",
+      "categories": [
+        {
+          "alias": "seafood",
+          "title": "Seafood"
+        },
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        },
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7685096967036,
+        "longitude": -122.402136325836
+      },
+      "is_closed": false,
+      "review_count": 1282,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/47i057bRXAm_sIvA2obD5A/o.jpg",
+      "phone": "+14152558800",
+      "price": "$$",
+      "distance": 2294.795403622,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/skool-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Skool",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "1725 Alameda St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "bayshore-taqueria-san-francisco",
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7430959,
+        "longitude": -122.4053719
+      },
+      "is_closed": false,
+      "review_count": 131,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/B0Jeuy5uSCyikyMw-jAbgQ/o.jpg",
+      "phone": "+14152851100",
+      "price": "$",
+      "distance": 3355.7941586599995,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/bayshore-taqueria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Bayshore Taqueria",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94124",
+        "state": "CA",
+        "address1": "300 Bayshore Blvd",
+        "country": "US"
+      }
+    },
+    {
+      "id": "sushi-taka-san-francisco-2",
+      "categories": [
+        {
+          "alias": "sushi",
+          "title": "Sushi Bars"
+        },
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7937107,
+        "longitude": -122.4045221
+      },
+      "is_closed": false,
+      "review_count": 266,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/sBTwhkTuRc6rkwJQdrxZeQ/o.jpg",
+      "price": "$",
+      "distance": 3589.0230910739997,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/sushi-taka-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Sushi Taka",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94108",
+        "state": "CA",
+        "address1": "600 Kearny St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "myriad-gastropub-san-francisco",
+      "categories": [
+        {
+          "alias": "gastropubs",
+          "title": "Gastropubs"
+        },
+        {
+          "alias": "venues",
+          "title": "Venues & Event Spaces"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7572277060474,
+        "longitude": -122.418840453029
+      },
+      "is_closed": false,
+      "review_count": 265,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/bHXXEbxW7K1-_SMb9QKRmg/o.jpg",
+      "phone": "+14155254335",
+      "price": "$$",
+      "distance": 1400.376454705,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/myriad-gastropub-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Myriad Gastropub",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "2491 Mission St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "fob-kitchen-san-francisco-4",
+      "categories": [
+        {
+          "alias": "filipino",
+          "title": "Filipino"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.75921,
+        "longitude": -122.41892
+      },
+      "is_closed": false,
+      "review_count": 67,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/tAqzrc9VAcPcyGlr63-Ybw/o.jpg",
+      "phone": "+14157569844",
+      "price": "$$",
+      "distance": 1200.880173828,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/fob-kitchen-san-francisco-4?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "FOB Kitchen",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "2351 Mission St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "craftsman-and-wolves-san-francisco",
+      "categories": [
+        {
+          "alias": "bakeries",
+          "title": "Bakeries"
+        },
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7609695,
+        "longitude": -122.4218206
+      },
+      "is_closed": false,
+      "review_count": 1138,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/QXNHbCQT1EWKrsZaa-p1XQ/o.jpg",
+      "phone": "+14159137713",
+      "price": "$$",
+      "distance": 910.173663314,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/craftsman-and-wolves-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Craftsman and Wolves",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "746 Valencia St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "gotts-roadside-san-francisco-2",
+      "categories": [
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "diners",
+          "title": "Diners"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7960849485032,
+        "longitude": -122.394304275513
+      },
+      "is_closed": false,
+      "review_count": 2278,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bsksNkOwGtIcZvOiohXeWA/o.jpg",
+      "phone": "+14153183423",
+      "price": "$$",
+      "distance": 4363.877653564,
+      "rating": 3.5,
+      "url": "https://www.yelp.com/biz/gotts-roadside-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Gott's Roadside",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94111",
+        "state": "CA",
+        "address1": "1 Ferry Bldg",
+        "country": "US"
+      }
+    },
+    {
+      "id": "elixiria-san-francisco",
+      "categories": [
+        {
+          "alias": "juicebars",
+          "title": "Juice Bars & Smoothies"
+        },
+        {
+          "alias": "gluten_free",
+          "title": "Gluten-Free"
+        },
+        {
+          "alias": "vegan",
+          "title": "Vegan"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7920625403238,
+        "longitude": -122.396727216602
+      },
+      "is_closed": false,
+      "review_count": 122,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ayh2mAr2mudzKRgumnKHyw/o.jpg",
+      "phone": "+16284443149",
+      "price": "$$",
+      "distance": 3894.2717587619995,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/elixiria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Elixiria",
+      "location": {
+        "address3": "",
+        "address2": "Unit 2",
+        "city": "San Francisco",
+        "zip_code": "94105",
+        "state": "CA",
+        "address1": "25 Beale St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "el-buen-comer-san-francisco-6",
+      "categories": [
+        {
+          "alias": "foodstands",
+          "title": "Food Stands"
+        },
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.75157,
+        "longitude": -122.42963
+      },
+      "is_closed": false,
+      "review_count": 20,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/yRWKHwIJukwohb0sL-SqVA/o.jpg",
+      "phone": "+14152481332",
+      "price": "$",
+      "distance": 1138.0344812239998,
+      "rating": 5,
+      "url": "https://www.yelp.com/biz/el-buen-comer-san-francisco-6?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "El Buen Comer",
+      "location": {
+        "address3": "",
+        "address2": "3861 24th St & Sanchez",
+        "city": "San Francisco",
+        "zip_code": "94114",
+        "state": "CA",
+        "address1": "Noe Valley Farmers Market",
+        "country": "US"
+      }
+    },
+    {
+      "id": "poke-delish-san-francisco",
+      "categories": [
+        {
+          "alias": "hawaiian",
+          "title": "Hawaiian"
+        },
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        },
+        {
+          "alias": "poke",
+          "title": "Poke"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.76628,
+        "longitude": -122.42991
+      },
+      "is_closed": false,
+      "review_count": 124,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8qjSxfrpu9JnCrfzybffXQ/o.jpg",
+      "phone": "+16287776772",
+      "price": "$$",
+      "distance": 199.8224297214,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/poke-delish-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Poke Delish",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94114",
+        "state": "CA",
+        "address1": "2175 Market Street",
+        "country": "US"
+      }
+    },
+    {
+      "id": "lunas-coffee-house-san-francisco-3",
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7542538394443,
+        "longitude": -122.406396576686
+      },
+      "is_closed": false,
+      "review_count": 27,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nTbx2U65PFgogTAqWgzroA/o.jpg",
+      "phone": "+14157103066",
+      "price": "$",
+      "distance": 2412.1771226739997,
+      "rating": 5,
+      "url": "https://www.yelp.com/biz/lunas-coffee-house-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Luna's Coffee House",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "1101 Potrero Ave",
+        "country": "US"
+      }
+    },
+    {
+      "id": "juice-shop-san-francisco-7",
+      "categories": [
+        {
+          "alias": "juicebars",
+          "title": "Juice Bars & Smoothies"
+        },
+        {
+          "alias": "foodstands",
+          "title": "Food Stands"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7763714,
+        "longitude": -122.4242157
+      },
+      "is_closed": false,
+      "review_count": 69,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/3q_un-XarjP9y0fyO25iLw/o.jpg",
+      "phone": "+14157570696",
+      "price": "$$",
+      "distance": 1055.9362542,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/juice-shop-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Juice Shop",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94102",
+        "state": "CA",
+        "address1": "432 Octavia St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "universal-cafe-san-francisco-5",
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "diners",
+          "title": "Diners"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.76062,
+        "longitude": -122.41064
+      },
+      "is_closed": false,
+      "review_count": 1194,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TV5qFbWgPdDSnFWNjYw77w/o.jpg",
+      "phone": "+14158214608",
+      "price": "$$",
+      "distance": 1726.6521955639998,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/universal-cafe-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Universal Cafe",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "2814 19th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "hops-and-hominy-san-francisco",
+      "categories": [
+        {
+          "alias": "southern",
+          "title": "Southern"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7892737258644,
+        "longitude": -122.405591253967
+      },
+      "is_closed": false,
+      "review_count": 1455,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xJ6mi9tza2IcPTpBHSRvPg/o.jpg",
+      "phone": "+14153736341",
+      "price": "$$",
+      "distance": 3139.72175625,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/hops-and-hominy-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Hops & Hominy",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94108",
+        "state": "CA",
+        "address1": "1 Tillman Pl",
+        "country": "US"
+      }
+    },
+    {
+      "id": "nopalito-san-francisco",
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "gluten_free",
+          "title": "Gluten-Free"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.77343530099,
+        "longitude": -122.438993048014
+      },
+      "is_closed": false,
+      "review_count": 1552,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/f13-4rbvvHDkhyYIttMnMQ/o.jpg",
+      "phone": "+14154370303",
+      "price": "$$",
+      "distance": 1160.700103916,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/nopalito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Nopalito",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94117",
+        "state": "CA",
+        "address1": "306 Broderick St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "turners-kitchen-san-francisco",
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "soup",
+          "title": "Soup"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.763082,
+        "longitude": -122.424349
+      },
+      "is_closed": false,
+      "review_count": 195,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kmn1Z_EEOB4II1TOo0yAfQ/o.jpg",
+      "phone": "+14156213505",
+      "price": "$",
+      "distance": 589.3770492322,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/turners-kitchen-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Turner's Kitchen",
+      "location": {
+        "address3": "Former Clare's Deli",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "3505 B 17th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "roli-roti-gourmet-rotisserie-san-francisco",
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "foodtrucks",
+          "title": "Food Trucks"
+        },
+        {
+          "alias": "gourmet",
+          "title": "Specialty Food"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.795398235987,
+        "longitude": -122.392534017563
+      },
+      "is_closed": false,
+      "review_count": 1253,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YF3HmR4hChuXo-YggILkzQ/o.jpg",
+      "phone": "+15107800300",
+      "price": "$",
+      "distance": 4417.43632783,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/roli-roti-gourmet-rotisserie-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Roli Roti Gourmet Rotisserie",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94105",
+        "state": "CA",
+        "address1": "1 Ferry Bldg",
+        "country": "US"
+      }
+    },
+    {
+      "id": "revelry-bistro-san-francisco",
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        },
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.77351,
+        "longitude": -122.42549
+      },
+      "is_closed": false,
+      "review_count": 49,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/65dgW_zi23gxR9zFq5iyaA/o.jpg",
+      "phone": "+14152416833",
+      "price": "$$$",
+      "distance": 719.6741080257999,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/revelry-bistro-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Revelry Bistro",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94102",
+        "state": "CA",
+        "address1": "297 Page Street",
+        "country": "US"
+      }
+    },
+    {
+      "id": "tanguito-san-francisco",
+      "categories": [
+        {
+          "alias": "argentine",
+          "title": "Argentine"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.807614,
+        "longitude": -122.417203
+      },
+      "is_closed": false,
+      "review_count": 488,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/dWICf8NhesjFCrW3cSWqiw/o.jpg",
+      "phone": "+14155774223",
+      "price": "$",
+      "distance": 4573.429654029999,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/tanguito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Tanguito",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94133",
+        "state": "CA",
+        "address1": "2850 Jones St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "benders-bar-and-grill-san-francisco",
+      "categories": [
+        {
+          "alias": "divebars",
+          "title": "Dive Bars"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American (Traditional)"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7601948,
+        "longitude": -122.4171804
+      },
+      "is_closed": false,
+      "review_count": 418,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/F3s43Tfcll16o1T5c-kpuA/o.jpg",
+      "phone": "+14158241800",
+      "price": "$",
+      "distance": 1258.2939094102,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/benders-bar-and-grill-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Bender's Bar and Grill",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "806 S Van Ness Ave",
+        "country": "US"
+      }
+    },
+    {
+      "id": "scullery-san-francisco",
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7864,
+        "longitude": -122.41451
+      },
+      "is_closed": false,
+      "review_count": 32,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/cUBkYz6_N7mXGQX1UNp9bw/o.jpg",
+      "phone": "+14154404497",
+      "price": "$",
+      "distance": 2429.4202351699996,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/scullery-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Scullery",
+      "location": {
+        "address3": null,
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94102",
+        "state": "CA",
+        "address1": "687 Geary St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "thoughts-style-cuisine-showroom-san-francisco",
+      "categories": [
+        {
+          "alias": "thai",
+          "title": "Thai"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "comfortfood",
+          "title": "Comfort Food"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.77722,
+        "longitude": -122.41251
+      },
+      "is_closed": false,
+      "review_count": 171,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/cqbiFujpixkelEs060Un4g/o.jpg",
+      "phone": "+14152527919",
+      "price": "$$",
+      "distance": 1739.0154673119998,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/thoughts-style-cuisine-showroom-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Thoughts Style Cuisine Showroom",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "139 8th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "the-sandwich-spot-san-francisco-2",
+      "categories": [
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "delis",
+          "title": "Delis"
+        },
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7997036480886,
+        "longitude": -122.439576733921
+      },
+      "is_closed": false,
+      "review_count": 536,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/mpSmk3l64WU9Og_KJgsTRQ/o.jpg",
+      "phone": "+14158292587",
+      "price": "$",
+      "distance": 3727.1244188899996,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/the-sandwich-spot-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "The Sandwich Spot",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94123",
+        "state": "CA",
+        "address1": "3213 Pierce St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "golden-gate-market-deli-and-liquor-san-francisco-2",
+      "categories": [
+        {
+          "alias": "delis",
+          "title": "Delis"
+        },
+        {
+          "alias": "beer_and_wine",
+          "title": "Beer, Wine & Spirits"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7983492,
+        "longitude": -122.4471147
+      },
+      "is_closed": false,
+      "review_count": 76,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EKMZpkEb_fBYqsJ6QjSNGw/o.jpg",
+      "phone": "+14153466052",
+      "price": "$",
+      "distance": 3832.66091274,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/golden-gate-market-deli-and-liquor-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Golden Gate Market Deli & Liquor",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94123",
+        "state": "CA",
+        "address1": "2767 Lombard St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "pacific-catch-san-francisco",
+      "categories": [
+        {
+          "alias": "seafood",
+          "title": "Seafood"
+        },
+        {
+          "alias": "gluten_free",
+          "title": "Gluten-Free"
+        },
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.80057,
+        "longitude": -122.43652
+      },
+      "is_closed": false,
+      "review_count": 1393,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/-_cAnXv5WzJaxdl1--vEYA/o.jpg",
+      "phone": "+14154401950",
+      "price": "$$",
+      "distance": 3768.804876484,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/pacific-catch-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Pacific Catch",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94123",
+        "state": "CA",
+        "address1": "2027 Chestnut St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "caseys-pizza-san-francisco",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "foodtrucks",
+          "title": "Food Trucks"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7920876,
+        "longitude": -122.3938666
+      },
+      "is_closed": false,
+      "review_count": 182,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/P46006pGQhL5hEOqzTUlIQ/o.jpg",
+      "phone": "+14157637443",
+      "price": "$$",
+      "distance": 4078.7470233479994,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/caseys-pizza-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Casey's Pizza",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94105",
+        "state": "CA",
+        "address1": "",
+        "country": "US"
+      }
+    },
+    {
+      "id": "jackson-place-cafe-san-francisco",
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.797125033325,
+        "longitude": -122.401331702377
+      },
+      "is_closed": false,
+      "review_count": 183,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Xb-bjxLK1v3mTmt050kYmg/o.jpg",
+      "phone": "+14152254891",
+      "price": "$",
+      "distance": 4061.561525224,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/jackson-place-cafe-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Jackson Place Cafe",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94111",
+        "state": "CA",
+        "address1": "633 Battery St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "all-good-pizza-san-francisco",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "salad",
+          "title": "Salad"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7390445,
+        "longitude": -122.3897508
+      },
+      "is_closed": false,
+      "review_count": 163,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/DDhR9iL2dFHe98CY_d28jQ/o.jpg",
+      "phone": "+14159339384",
+      "price": "$$",
+      "distance": 4624.444444558,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/all-good-pizza-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "All Good Pizza",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94124",
+        "state": "CA",
+        "address1": "1605 Jerrold Ave",
+        "country": "US"
+      }
+    },
+    {
+      "id": "terzo-san-francisco",
+      "categories": [
+        {
+          "alias": "mediterranean",
+          "title": "Mediterranean"
+        },
+        {
+          "alias": "tapasmallplates",
+          "title": "Tapas/Small Plates"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7971,
+        "longitude": -122.43744
+      },
+      "is_closed": false,
+      "review_count": 533,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/e0G8iBFcuO8i__dcnA8ARQ/o.jpg",
+      "phone": "+14154413200",
+      "price": "$$$",
+      "distance": 3400.0790111759998,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/terzo-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Terzo",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94123",
+        "state": "CA",
+        "address1": "3011 Steiner St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "vinyl-coffee-and-wine-bar-san-francisco",
+      "categories": [
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7726857,
+        "longitude": -122.4375011
+      },
+      "is_closed": false,
+      "review_count": 238,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/TnIYv3Rv6fhc4lVEPMIg9w/o.jpg",
+      "phone": "+14156214132",
+      "price": "$$",
+      "distance": 1031.9326262319998,
+      "rating": 3.5,
+      "url": "https://www.yelp.com/biz/vinyl-coffee-and-wine-bar-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Vinyl Coffee & Wine Bar",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94117",
+        "state": "CA",
+        "address1": "359 Divisadero St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "mission-bowling-club-san-francisco",
+      "categories": [
+        {
+          "alias": "bowling",
+          "title": "Bowling"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7637146469497,
+        "longitude": -122.416815797941
+      },
+      "is_closed": false,
+      "review_count": 476,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/yuPSZ_nDPoFOylFYYcEvCQ/o.jpg",
+      "phone": "+14158632695",
+      "price": "$$",
+      "distance": 1082.536874126,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/mission-bowling-club-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Mission Bowling Club",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "3176 17th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "stanza-coffee-san-francisco",
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7648968,
+        "longitude": -122.4225344
+      },
+      "is_closed": false,
+      "review_count": 243,
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Jlpa_sphmKl39FYMJ9bVyw/o.jpg",
+      "phone": "+14155538966",
+      "price": "$",
+      "distance": 572.1414040738,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/stanza-coffee-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Stanza Coffee",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "3126 16th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "olea-san-francisco",
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.79093,
+        "longitude": -122.4189313
+      },
+      "is_closed": false,
+      "review_count": 816,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/odCh7F44KBR1oM7-ufGA-Q/o.jpg",
+      "phone": "+14152028521",
+      "price": "$$",
+      "distance": 2739.272580862,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/olea-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Olea",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94109",
+        "state": "CA",
+        "address1": "1494 California St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "st-francis-fountain-san-francisco",
+      "categories": [
+        {
+          "alias": "icecream",
+          "title": "Ice Cream & Frozen Yogurt"
+        },
+        {
+          "alias": "diners",
+          "title": "Diners"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7527199,
+        "longitude": -122.40834
+      },
+      "is_closed": false,
+      "review_count": 1054,
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/v_XbkoPOHZTgdL-_frg_yw/o.jpg",
+      "phone": "+14158264210",
+      "price": "$$",
+      "distance": 2394.3921454,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/st-francis-fountain-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "St. Francis Fountain",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "state": "CA",
+        "address1": "2801 24th St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "castagna-san-francisco",
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.80055,
+        "longitude": -122.4365
+      },
+      "is_closed": false,
+      "review_count": 225,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-Q5QFzsCV0fI9DVg-7VZRg/o.jpg",
+      "phone": "+14154404290",
+      "price": "$$",
+      "distance": 3762.587513262,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/castagna-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Castagna",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94123",
+        "state": "CA",
+        "address1": "2015 Chestnut St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "mason-pacific-san-francisco",
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "American (New)"
+        },
+        {
+          "alias": "desserts",
+          "title": "Desserts"
+        },
+        {
+          "alias": "seafood",
+          "title": "Seafood"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7961947180551,
+        "longitude": -122.411513944775
+      },
+      "is_closed": false,
+      "review_count": 308,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/jMaFqtjM43zAZtAEpOlJfQ/o.jpg",
+      "phone": "+14153747185",
+      "price": "$$$",
+      "distance": 3520.7120798299998,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/mason-pacific-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Mason Pacific",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94133",
+        "state": "CA",
+        "address1": "1358 Mason St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "firehouse-pizzeria-san-francisco",
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7837699,
+        "longitude": -122.48196
+      },
+      "is_closed": false,
+      "review_count": 234,
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/XDNdb_lIKoosJKoVftUOZg/o.jpg",
+      "phone": "+14152217603",
+      "price": "$$",
+      "distance": 5064.697104297999,
+      "rating": 4,
+      "url": "https://www.yelp.com/biz/firehouse-pizzeria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "Firehouse Pizzeria",
+      "location": {
+        "address3": "",
+        "address2": "",
+        "city": "San Francisco",
+        "zip_code": "94121",
+        "state": "CA",
+        "address1": "6001 California St",
+        "country": "US"
+      }
+    },
+    {
+      "id": "the-steamin-burger-san-francisco",
+      "categories": [
+        {
+          "alias": "foodtrucks",
+          "title": "Food Trucks"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7699602873082,
+        "longitude": -122.411664200278
+      },
+      "is_closed": false,
+      "review_count": 35,
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/F5m9eLF4BjUdjpYFd6K-dw/o.jpg",
+      "phone": "+16509184777",
+      "price": "$",
+      "distance": 1481.198394642,
+      "rating": 4.5,
+      "url": "https://www.yelp.com/biz/the-steamin-burger-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "name": "The Steamin' Burger",
+      "location": {
+        "address3": "",
+        "address2": null,
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "state": "CA",
+        "address1": "",
+        "country": "US"
+      }
+    }
+  ],
+  "total": 9498
+}

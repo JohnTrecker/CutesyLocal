@@ -28,6 +28,21 @@ body {
   background-color:rgba(255,255,255,.05);
 }
 
+.marker {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+.restaurant {
+  visibility: hidden;
+}
 
 /*button {
   display: inline-block;
@@ -40,3 +55,8 @@ body {
   border-radius: 3px;
 }
 */
+
+-webkit-background-size: contain;
+-moz-background-size: contain;
+-o-background-size: contain;
+background-size: contain;
