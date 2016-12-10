@@ -18,43 +18,67 @@ body {
   overflow:hidden;
 }
 
-.buttons {
+/* Nav Bar */
+
+.nav {
   z-index: 2;
-  top: 10px;
-  margin: 20px;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  width:1024px;
-  background-color:rgba(255,255,255,.05);
+  width: 100%;
+  border-radius: 5px;
 }
+
+.nav button {
+  flex: 1;
+  border-radius: 5px;
+  margin: 5px 15px;
+  background-color: rgba(221, 221, 221,.8);
+}
+
+.btn-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 40px;
+  font: 25px arial, sans-serif;
+}
+
+.nav img {
+  max-height: 45px;
+  min-height: 5px;
+}
+
+
+.restaurant:hover {
+  background-color: rgba(42, 183, 202,1);
+  color: white;
+}
+
+.park:hover {
+  background-color:rgba(126, 211, 33,1);
+  color: white;
+}
+
+.event:hover {
+  background-color:rgba(208, 2, 27,1);
+  color: white;
+}
+
+/* End Nav Bar */
+
 
 .marker {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    will-change: transform;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
 }
-
-.restaurant {
-  visibility: hidden;
-}
-
-/*button {
-  display: inline-block;
-  position: relative;
-  top: 10px;
-  width: 320px;
-  margin: 30px;
-  padding: 20px;
-  background-color:rgba(255,255,255,.2);
-  border-radius: 3px;
-}
-*/
 
 -webkit-background-size: contain;
 -moz-background-size: contain;
