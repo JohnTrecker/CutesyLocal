@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
 import React from 'react';
+// import ReactDOM from 'react-dom';
 import './assets/index.css';
 import data from './yelp.json';
 let keys = require('./config/api_keys.json');
@@ -20,18 +21,33 @@ class App extends React.Component {
     }
   }
   update(e){
-    console.log(e.taget);
-    let type = e.target.className;
+    let classes = ['restaurant', 'park', 'event'];
+    let venue;
     let toggledButtons = this.state.visibleVenues;
 
-    if (toggledButtons.includes(type)) {
-      let i = toggledButtons.indexOf(type);
-      toggledButtons.slice(i, 1);
+    findVenue(node, nodeClass) {
+      node = node || e.target;
+      nodeClass = node.className;
+      if ( classes.includes(nodeClass) ) {
+        venue = nodeClass;
+        return;
+      } else {
+        let parentNode = node.parentNode;
+        let parentNodeClass = parentNode.className
+        findVenue(parentNode, parentNodeClass);
+      }
+    };
+    findVenue();
+
+    if (toggledButtons.includes(venue)) {
+      let i = toggledButtons.indexOf(venue);
+      toggledButtons.splice(i, i + 1);
     } else {
-      toggledButtons.push(type);
+      toggledButtons.push(venue);
     }
-    this.setState({visibleVenues: toggledButtons})
+    this.setState({visibleVenues: toggledButtons});
   }
+
   componentWillMount(){
     mapboxgl.accessToken = keys.mapboxgl_access_token;
     let map = new mapboxgl.Map({
