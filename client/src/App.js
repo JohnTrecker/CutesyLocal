@@ -12,17 +12,6 @@ let mkr_coffee = require('./assets/icon_mkr_coffee.png');
 let mkr_park = require('./assets/icon_mkr_park.png');
 let mkr_event = require('./assets/icon_mkr_event.png');
 
-
-// TODO:
-// [X] Toggle markers
-// [ ] Get live data - `liveData` branch
-  // [ ] Refactor local API
-  // [ ] Tranform data into geojson
-  // [ ] Fetch and handle data on client side
-  // [ ] Hide API keys
-// [ ] Cluster markers - `cluster` branch
-  // [ ] Refactor
-// [ ] Implement google analytics - `analytics` branch
 class App extends React.Component {
   constructor() {
     super();
