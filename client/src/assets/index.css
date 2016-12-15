@@ -68,7 +68,7 @@ body {
 /* End Nav Bar */
 
 
-.marker {
+.mapboxgl-marker {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,6 +78,18 @@ body {
   top: 0;
   left: 0;
   will-change: transform;
+}
+
+.mkr-restaurant {
+  visibility: hidden;
+}
+
+.mkr-park {
+  visibility: hidden;
+}
+
+.mkr-event {
+  visibility: hidden;
 }
 
 -webkit-background-size: contain;

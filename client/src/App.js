@@ -1,9 +1,9 @@
 // eslint-disable-next-line
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import './assets/index.css';
 import data from './yelp.json';
+import $ from 'jquery';
 let keys = require('./config/api_keys.json');
 let btn_coffee = require('./assets/icon_btn_coffee.png');
 let btn_park = require('./assets/icon_btn_park.png');
@@ -25,7 +25,7 @@ class App extends React.Component {
     let venue;
     let toggledButtons = this.state.visibleVenues;
 
-    findVenue(node, nodeClass) {
+    function findVenue(node, nodeClass) {
       node = node || e.target;
       nodeClass = node.className;
       if ( classes.includes(nodeClass) ) {
@@ -39,6 +39,11 @@ class App extends React.Component {
     };
     findVenue();
 
+    // toggle marker visibility
+    let visibility = $(".mkr-" + venue).css("visibility") === "hidden" ? "visible" : "hidden";
+    $(".mkr-" + venue).css("visibility", visibility);
+
+    // update state.visibleVenues
     if (toggledButtons.includes(venue)) {
       let i = toggledButtons.indexOf(venue);
       toggledButtons.splice(i, i + 1);
@@ -46,6 +51,16 @@ class App extends React.Component {
       toggledButtons.push(venue);
     }
     this.setState({visibleVenues: toggledButtons});
+
+    // this.state.visibleVenues.forEach(function(venueName) {
+    //   let markerClass = '.mkr-' + venueName;
+    //   let visibility = $(markerClass).css("visibility");
+    //   if (visibility === "visible") {
+    //     $(markerClass).css("visibility", "hidden");
+    //   } else {
+    //     $(markerClass).css("visibility", "visible");
+    //   }
+    // })
   }
 
   componentWillMount(){
@@ -66,7 +81,7 @@ class App extends React.Component {
           let img_url = venue === 'dog_parks' ? mkr_park : (venue === 'event' ? mkr_event : mkr_coffee);
           let coordinates = [].concat(marker.coordinates.longitude, marker.coordinates.latitude);
 
-          el.className = 'marker ' + venue;
+          el.className = venue;
           el.style.backgroundImage = "url(" + img_url + ")";
 
           markers[marker.name] = new mapboxgl.Marker(el)
