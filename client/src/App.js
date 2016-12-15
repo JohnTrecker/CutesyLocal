@@ -25,6 +25,7 @@ class App extends React.Component {
     let venue;
     let toggledButtons = this.state.visibleVenues;
 
+    // Find the relevant classname
     function findVenue(node, nodeClass) {
       node = node || e.target;
       nodeClass = node.className;
@@ -51,16 +52,6 @@ class App extends React.Component {
       toggledButtons.push(venue);
     }
     this.setState({visibleVenues: toggledButtons});
-
-    // this.state.visibleVenues.forEach(function(venueName) {
-    //   let markerClass = '.mkr-' + venueName;
-    //   let visibility = $(markerClass).css("visibility");
-    //   if (visibility === "visible") {
-    //     $(markerClass).css("visibility", "hidden");
-    //   } else {
-    //     $(markerClass).css("visibility", "visible");
-    //   }
-    // })
   }
 
   componentWillMount(){
