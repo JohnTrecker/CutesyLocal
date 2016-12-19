@@ -25,8 +25,8 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 [X] Toggle markers
 [ ] Get live data - `liveData` branch
-  [ ] Refactor local API
-  [ ] Tranform data into geojson
+  [ ] Refactor local API to fetch json
+  [ ] Refactor controller to tranform data into geojson
   [ ] Fetch and handle data on client side
   [ ] Hide API keys
 [ ] Cluster markers - `cluster` branch
