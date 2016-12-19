@@ -16,27 +16,31 @@ This repo contains the Cutesy Local front-end /client and back-end API. Built wi
 
 Pull requests are welcome and greatly appreciated! The priority for this project is to build out app functionality in the following order, checking off the remaining boxes [ ] as we go:
 
-- Back-end
 - Front-end
 - Middleware
+- Back-end
 - Testing
 
-## TODOs
+## Front End
 
 [X] Toggle markers
 [ ] Include Popup
   [ ] Dynamically render smiley assets for rating
   [ ] Make buttons and modals responsive
+[ ] Cluster markers - `cluster` branch
+  [ ] Add Mapbox Sources and Layers
+  [ ] Refactor marker divs
 [ ] Get live data - `liveData` branch
   [X] Refactor local API to fetch json
-  [X] Refactor controller to tranform data into geojson
+  [X] Refactor controller to transform data into geojson
   [ ] Fetch and handle data on client side
   [ ] Hide API keys
-[ ] Cluster markers - `cluster` branch
-  [ ] Refactor
-[ ] Implement google analytics - `analytics` branch
-[ ] Replace MongoDB with PostgreSQL
 [ ] Replace `How to start this app` with script and update README.md
+
+## Middleware
+
+[ ] Implement google analytics - `analytics` branch
+
 
 ### Back-end
 
@@ -61,20 +65,19 @@ Using the existing code provided in `server/`, follow the steps below to build o
 | /api/users/:number   |   DELETE  |    empty     |       Delete user with matching `number` and return JSON of deleted user |
 
 
-- [ ] Save mongoose to `package.json`
-- [ ] Connect Mongoose to your local Mongo database in `db/index.js`
-- [ ] Create two models in `resources/api/api.js` and register it with Mongoose as the `Venues` & `Users` collections
-- [ ] Populate your Mongo database with the venues and users found in `data/`
-- [ ] Create a controller in `resources/api/kapiController.js` that interacts with your Venues and Users models
-- [ ] Create a router in `resources/api/apiRouter.js` that utilizes each of your controller's methods. Be sure to handle errors appropriately.
-- [ ] Import `apiRouter` into `server.js` and assign it to the correct route
+[ ] Replace MongoDB with PostgreSQL
+- [ ] Save PostgreSQL to `package.json`
+- [ ] Connect PostgreSQL ODM to local db in `db/index.js`
+- [ ] Create two models in `resources/api/api.js` and register it with db as the `Venues` & `Users` collections
+- [ ] Populate db with the venues and users found in `data/`
+- [X] Create a controller in `resources/api/apiController.js` that interacts with your Venues and Users models
+- [X] Create a router in `resources/api/apiRouter.js` that utilizes each of your controller's methods. Be sure to handle errors appropriately.
+- [X] Import `apiRouter` into `server.js` and assign it to the correct route
 - [ ] Write at least two tests in `test/api-spec.js` that will help assure future developers that the API is working as intended
 
-### Front-end
+### More Features
 
 > **Escape hatch:** Mock out any server bugs with [json-server](https://github.com/typicode/json-server).
-
-Inside of `client/`, implement a single page front end to interact with this API using either Angular, Backbone, or React. If you want to use Webpack as your build system, feel free to use the annotated config file `webpack.config.js`.
 
 Your front end should be served from Express and should allow the user to:
 - [ ] Display all venues (with their images)
@@ -82,7 +85,7 @@ Your front end should be served from Express and should allow the user to:
 - [ ] Add new venues
 - [ ] Filter venues based on their type
 
-### Middleware
+### More Middleware
 
 > **Suggestion:** Complete all of the steps in [back-end](#back-end) before implementing middleware.
 
