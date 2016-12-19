@@ -24,9 +24,12 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## TODOs
 
 [X] Toggle markers
+[ ] Include Popup
+  [ ] Dynamically render smiley assets for rating
+  [ ] Make buttons and modals responsive
 [ ] Get live data - `liveData` branch
-  [ ] Refactor local API to fetch json
-  [ ] Refactor controller to tranform data into geojson
+  [X] Refactor local API to fetch json
+  [X] Refactor controller to tranform data into geojson
   [ ] Fetch and handle data on client side
   [ ] Hide API keys
 [ ] Cluster markers - `cluster` branch
