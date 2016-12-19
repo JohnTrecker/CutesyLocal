@@ -1,0 +1,612 @@
+{
+  "total": 21,
+  "businesses": [
+    {
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "32 Museum Way",
+        "zip_code": "94114",
+        "state": "CA",
+        "address2": null,
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 162,
+      "name": "Corona Heights Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "corona-heights-park-san-francisco",
+      "url": "https://www.yelp.com/biz/corona-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 37.7652326194395,
+        "longitude": -122.439369238287
+      },
+      "distance": 1010.7182097915999
+    },
+    {
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/obx_BgFsKnj_jEL0pIQE7Q/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "10 Bernal Heights Blvd",
+        "zip_code": "94110",
+        "state": "CA",
+        "address2": null,
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 239,
+      "name": "Bernal Heights Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        },
+        {
+          "alias": "hiking",
+          "title": "Hiking"
+        }
+      ],
+      "id": "bernal-heights-park-san-francisco",
+      "url": "https://www.yelp.com/biz/bernal-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 37.7432657658517,
+        "longitude": -122.414903640747
+      },
+      "distance": 2928.8492923139997
+    },
+    {
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/aMlS8pPqFMDSrI0sYWKXgA/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "Gough and Sacramento Street",
+        "zip_code": "94109",
+        "state": "CA",
+        "address2": null,
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 141,
+      "name": "Lafayette Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "lafayette-park-san-francisco",
+      "url": "https://www.yelp.com/biz/lafayette-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 37.7916042473676,
+        "longitude": -122.427656421507
+      },
+      "distance": 2690.1972059679997
+    },
+    {
+      "phone": "+14159708063",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "review_count": 75,
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.7464918024673,
+        "longitude": -122.438453989347
+      },
+      "distance": 2494.95255997,
+      "id": "upper-douglass-dog-park-san-francisco",
+      "location": {
+        "address1": "27th and Douglass Blvd",
+        "zip_code": "94131",
+        "state": "CA",
+        "address2": null,
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "Upper Douglass Dog Park",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/k6LLSnLN3gJYRUYOuBLEqg/o.jpg",
+      "url": "https://www.yelp.com/biz/upper-douglass-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dXT84JaTH4626b6v8asgOg/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "95 Justin Dr",
+        "zip_code": "94112",
+        "state": "CA",
+        "address2": null,
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 70,
+      "name": "St. Mary's Park and Dog Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        },
+        {
+          "alias": "basketballcourts",
+          "title": "Basketball Courts"
+        }
+      ],
+      "id": "st-marys-park-and-dog-park-san-francisco",
+      "url": "https://www.yelp.com/biz/st-marys-park-and-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 37.734052,
+        "longitude": -122.4223233
+      },
+      "distance": 3729.616160012
+    },
+    {
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/hE85L9-yCmhAfVXrbljN9Q/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "486 Beale St",
+        "zip_code": "94105",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 36,
+      "name": "Rincon Hill Dog Park",
+      "categories": [
+        {
+          "alias": "pets",
+          "title": "Pets"
+        },
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "rincon-hill-dog-park-san-francisco",
+      "url": "https://www.yelp.com/biz/rincon-hill-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.7863424,
+        "longitude": -122.3919647
+      },
+      "distance": 3817.7658273039997
+    },
+    {
+      "phone": "",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "review_count": 56,
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.7352599,
+        "longitude": -122.48412
+      },
+      "distance": 6074.477004496,
+      "id": "pine-lake-park-san-francisco",
+      "location": {
+        "address1": "Vale Ave & Crestlake Dr",
+        "zip_code": "94132",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "Pine Lake Park",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/p4FCz-jrBHoMS8R81w4mvA/o.jpg",
+      "url": "https://www.yelp.com/biz/pine-lake-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "phone": "",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "review_count": 68,
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 37.7702005,
+        "longitude": -122.3987043
+      },
+      "distance": 2598.789268912,
+      "id": "mission-creek-dog-park-san-francisco",
+      "location": {
+        "address1": "485 Berry St",
+        "zip_code": "94158",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "Mission Creek Dog Park",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/9X9HCNMR9kH-JNZlQnQTDg/o.jpg",
+      "url": "https://www.yelp.com/biz/mission-creek-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/eYzXqFa8hQCLlkGBsfzgAw/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "Duboce Ave and Noe St",
+        "zip_code": "94117",
+        "state": "CA",
+        "address2": null,
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 119,
+      "name": "Duboce Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        },
+        {
+          "alias": "playgrounds",
+          "title": "Playgrounds"
+        }
+      ],
+      "id": "duboce-park-san-francisco",
+      "url": "https://www.yelp.com/biz/duboce-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.769425,
+        "longitude": -122.433431
+      },
+      "distance": 510.8870268618
+    },
+    {
+      "phone": "",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "review_count": 44,
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.7404829776916,
+        "longitude": -122.434515953064
+      },
+      "distance": 3045.6963886179997,
+      "id": "walter-haas-park-and-playground-san-francisco",
+      "location": {
+        "address1": "Diamond Heights Blvd",
+        "zip_code": "94131",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "Walter Haas Park and Playground",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KYXdvl4asJdyqbtvVAlxwA/o.jpg",
+      "url": "https://www.yelp.com/biz/walter-haas-park-and-playground-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mwZfBefM3fXRqhnMaJBG1w/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "38th and Fulton St",
+        "zip_code": "94121",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 36,
+      "name": "Golden Gate Park: Dog Training Area",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "golden-gate-park-dog-training-area-san-francisco",
+      "url": "https://www.yelp.com/biz/golden-gate-park-dog-training-area-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 37.7711452940714,
+        "longitude": -122.499004493393
+      },
+      "distance": 6237.20477486
+    },
+    {
+      "phone": "",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "review_count": 7,
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.76601,
+        "longitude": -122.44969
+      },
+      "distance": 1893.3698416559998,
+      "id": "cole-valley-dog-park-san-francisco",
+      "location": {
+        "address1": "86 Carl St",
+        "zip_code": "94117",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "Cole Valley Dog Park",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/zbC3iEfVyJA1xcZm9_Bg2Q/o.jpg",
+      "url": "https://www.yelp.com/biz/cole-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "phone": "",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "review_count": 27,
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 37.759856,
+        "longitude": -122.43629
+      },
+      "distance": 1100.260857414,
+      "id": "eureka-valley-dog-park-san-francisco",
+      "location": {
+        "address1": "100 Collingwood St",
+        "zip_code": "94114",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "Eureka Valley Dog Park",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IINInQP1O3LbooaFziCrfA/o.jpg",
+      "url": "https://www.yelp.com/biz/eureka-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "phone": "+14152426390",
+      "is_closed": false,
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        },
+        {
+          "alias": "skate_parks",
+          "title": "Skate Parks"
+        }
+      ],
+      "review_count": 15,
+      "rating": 3,
+      "coordinates": {
+        "latitude": 37.770472,
+        "longitude": -122.4225187
+      },
+      "distance": 604.997737794,
+      "id": "soma-west-skate-and-dog-park-san-francisco-2",
+      "location": {
+        "address1": "Central Fwy",
+        "zip_code": "94103",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "name": "SoMa West Skate and Dog Park",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/WaWnXsDUcWysxdwY_IuDAA/o.jpg",
+      "url": "https://www.yelp.com/biz/soma-west-skate-and-dog-park-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
+    },
+    {
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/5ptnOZG-6aWwf_gzRGU2jg/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "3550-3598 Alemany Blvd",
+        "zip_code": "94132",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 8,
+      "name": "Alemany Blvd Dog Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "alemany-blvd-dog-park-san-francisco",
+      "url": "https://www.yelp.com/biz/alemany-blvd-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.7117996,
+        "longitude": -122.4645233
+      },
+      "distance": 6986.852566797999
+    },
+    {
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3PKDe4cZQp8Qf8mi37BOng/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "Indiana & 25th",
+        "zip_code": "94107",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 4,
+      "name": "25th St Dog Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "25th-st-dog-park-san-francisco",
+      "url": "https://www.yelp.com/biz/25th-st-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4,
+      "coordinates": {
+        "latitude": 37.7526703,
+        "longitude": -122.3913574
+      },
+      "distance": 3684.080528448
+    },
+    {
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/n43nlrCS4ixH1aBjzHxjNQ/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "Italy Ave & Moscow St",
+        "zip_code": "94112",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 22,
+      "name": "Crocker Amazon Dog Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "crocker-amazon-dog-park-san-francisco",
+      "url": "https://www.yelp.com/biz/crocker-amazon-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 3,
+      "coordinates": {
+        "latitude": 37.7150739798201,
+        "longitude": -122.427538450402
+      },
+      "distance": 5820.55710957
+    },
+    {
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/URV0uv8QXHWs_M286UsEfg/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "299 Day Street",
+        "zip_code": "94131",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 7,
+      "name": "Upper Noe Recreation Center: Dog Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "upper-noe-recreation-center-dog-park-san-francisco",
+      "url": "https://www.yelp.com/biz/upper-noe-recreation-center-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 3,
+      "coordinates": {
+        "latitude": 37.7426253,
+        "longitude": -122.4286111
+      },
+      "distance": 2749.8591412499995
+    },
+    {
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rWdbk-OQCPkwpmvEz6OyDQ/o.jpg",
+      "is_closed": false,
+      "location": {
+        "address1": "788 Kezar Dr",
+        "zip_code": "94122",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 2,
+      "name": "Golden Gate Park Kezar Triangle",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "golden-gate-park-kezar-triangle-san-francisco",
+      "url": "https://www.yelp.com/biz/golden-gate-park-kezar-triangle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 37.7664146,
+        "longitude": -122.4596024
+      },
+      "distance": 2683.372799698
+    },
+    {
+      "image_url": "",
+      "is_closed": false,
+      "location": {
+        "address1": "1233-1275 Martin Luther King Jr Dr",
+        "zip_code": "94122",
+        "state": "CA",
+        "address2": "",
+        "country": "US",
+        "address3": "",
+        "city": "San Francisco"
+      },
+      "review_count": 1,
+      "name": "Dog Runs at Golden Gate Park",
+      "categories": [
+        {
+          "alias": "dog_parks",
+          "title": "Dog Parks"
+        }
+      ],
+      "id": "dog-runs-at-golden-gate-park-san-francisco",
+      "url": "https://www.yelp.com/biz/dog-runs-at-golden-gate-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+      "rating": 3,
+      "coordinates": {
+        "latitude": 37.7659108503427,
+        "longitude": -122.495435073541
+      },
+      "distance": 5912.1127840379995
+    }
+  ]
+}

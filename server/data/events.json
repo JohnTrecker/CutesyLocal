@@ -1,0 +1,74 @@
+{
+    "total": 6,
+    "businesses": [
+        {
+            "dates": "November 22, 2016 to June 20, 20176:30 p.m. to 8:00 p.m.",
+            "description": null,
+            "location": {
+                "address1": "132 Hazelwood Dr.",
+                "zip_code": "94080",
+                "state": "CA",
+                "country": "US",
+                "city": "San Francisco"
+            },
+            "name": "Small Dog Meet and Greet at Friditas",
+            "url": "http://dogtrekker.com/event/small-dog-meet-and-greet-at-friditas",
+            "categories": [
+              {
+                "alias": "events",
+                "title": "Dog Events"
+              }
+            ],
+            "coordinates": {
+                "latitude": 37.64223,
+                "longitude": -122.42635660
+            }
+        },
+        {
+            "dates": "November 26, 2016 to November 27, 201610:00 a.m. to 4:00 p.m.",
+            "description": null,
+            "location": {
+                "address1": "1 Ave. of the Palms",
+                "zip_code": "& Map",
+                "state": "CA",
+                "country": "US",
+                "city": "San Francisco"
+            },
+            "name": "Treasure Island Flea",
+            "url": "http://dogtrekker.com/event/treasure-island-flea-11",
+            "categories": [
+              {
+                "alias": "events",
+                "title": "Dog Events"
+              }
+            ],
+            "coordinates": {
+                "latitude": 37.8172777,
+                "longitude": -122.3709364
+            }
+        },
+        {
+            "dates": "December 1, 2016 7:00 p.m. to 10:00 p.m.",
+            "description": null,
+            "location": {
+                "address1": "335 Powell St.",
+                "zip_code": "94102",
+                "state": "CA",
+                "country": "US",
+                "city": "San Francisco"
+            },
+            "name": "Festive Holiday Luncheon",
+            "url": "http://dogtrekker.com/event/festive-holiday-luncheon-2016",
+            "categories": [
+              {
+                "alias": "events",
+                "title": "Dog Events"
+              }
+            ],
+            "coordinates": {
+                "latitude": 37.7878279,
+                "longitude": 122.40873149
+            }
+        }
+    ]
+}
