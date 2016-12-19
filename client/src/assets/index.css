@@ -80,16 +80,33 @@ body {
   will-change: transform;
 }
 
+/* TODO: refactor to ANY CHILDREN of component class Button */
+
+img.restaurant{
+  content: url("icon_btn_coffee.png");
+}
+
+img.park{
+  content: url("icon_btn_park.png");
+}
+
+img.event{
+  content: url("icon_btn_event.png");
+}
+
 .mkr-restaurant {
   visibility: hidden;
+  background-image: url("icon_mkr_coffee.png");
 }
 
 .mkr-park {
   visibility: hidden;
+  background-image: url("icon_mkr_park.png");
 }
 
 .mkr-event {
   visibility: hidden;
+  background-image: url("icon_mkr_event.png");
 }
 
 -webkit-background-size: contain;
