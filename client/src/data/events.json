@@ -27,7 +27,8 @@
               "title": "Dog Events"
             }
           ],
-          "venue": "event"
+          "venue": "event",
+          "rating": 4
         }
       },
       {
@@ -58,7 +59,8 @@
               "title": "Dog Events"
             }
           ],
-          "venue": "event"
+          "venue": "event",
+          "rating": 4
         }
       },
       {
@@ -89,7 +91,8 @@
               "title": "Dog Events"
             }
           ],
-          "venue": "event"
+          "venue": "event",
+          "rating": 4
         }
       }
 ]

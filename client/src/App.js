@@ -1,11 +1,13 @@
-import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js'; // eslint-disable-line no-console
+let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
+// import ReactDOM from 'react-dom';
 import './assets/index.css';
+let $ = require('jquery');
+let keys = require('./config/api_keys.json');
 let restaurantData = require('./data/yelp.json');
 let parkData = require('./data/parks.json');
 let eventData = require('./data/events.json');
-let $ = require('jquery');
-let keys = require('./config/api_keys.json');
+
 
 class App extends React.Component {
   constructor() {
@@ -42,6 +44,8 @@ class App extends React.Component {
     let visibility = $(".mkr-" + venue).css("visibility") === "hidden" ? "visible" : "hidden";
     $(".mkr-" + venue).css("visibility", visibility);
 
+    // remove from
+
     // update state.visibleVenues
     if (toggledButtons.includes(venue)) {
       let i = toggledButtons.indexOf(venue);
@@ -73,18 +77,19 @@ class App extends React.Component {
 
   }
   render(){
-    // TODO: refactor uneccessary icon names
     return (
-      <div className="nav">
-        <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="restaurant">
-          <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
-        </Button>
-        <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="park">
-          <div className="btn-contents"><Image class="park"/> Parks</div>
-        </Button>
-        <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="event">
-          <div className="btn-contents"><Image class="event"/> Events</div>
-        </Button>
+      <div id="map">
+        <div className="nav">
+          <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="restaurant">
+            <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
+          </Button>
+          <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="park">
+            <div className="btn-contents"><Image class="park"/> Parks</div>
+          </Button>
+          <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="event">
+            <div className="btn-contents"><Image class="event"/> Events</div>
+          </Button>
+        </div>
       </div>
     )
   }
@@ -101,31 +106,60 @@ class App extends React.Component {
     map.on('load', function(){
 
       //TODO: clean up previous markers
-      //      delete zombie code
+      //      fix Forbidden 403 response status
       let markers = {};
 
-      state.forEach(function(data){
+      // Add markers and popups to map
+      state.forEach(function(data, index){
         data.forEach(function(marker) {
+
+          // marker
           let el = document.createElement('div');
-          // let venue = marker.properties.venue;
-          // let img_url = venue === 'park' ? mkr_park : (venue === 'event' ? mkr_event : mkr_coffee);
           let coordinates = marker.geometry.coordinates;
-
           el.className = 'mkr-' + marker.properties.venue;
-          // el.style.backgroundImage = "url(" + img_url + ")";
+          let spot = marker.properties
 
+          // popup options for .setHTML()
+          let popupContent = ['<div id="popups"><h2>',spot.name,'</h2><p>',spot.location.address1,'</p><p>Rating: ', spot.rating,'</p>',/*'<img src=',spot.image_url,'/>',*/'</div>'].join('');
+
+          // create mapbox popup
+          let popup = new mapboxgl.Popup({
+            offset: [0, -85],
+            closeButton: false
+          })
+            .setHTML(popupContent);
+
+          // add to map
           markers[marker.properties.name] = new mapboxgl.Marker(el)
               .setLngLat(coordinates)
+              .setPopup(popup)
               .addTo(map);
+
         });
       });
     });
   }
 }
 
-let Button = (props) => <button className={ props.class } onClick={ props.updatevisibleVenues } >{ props.children }</button>
+let Button = (props) =>
+  <button className={ props.class } onClick={ props.updatevisibleVenues } >
+    { props.children }
+  </button>
 
-const Image = (props) => <img className={ props.class } role="presentation" />
+const Image = (props) =>
+  <img className={ props.class } role="presentation" />
 
+// let Marker = (props) => {
+//   return(
+//     <div id="popups">
+//       <h1>{ props.spot.name }</h1>
+//       <p>{ props.spot.location.address1 }</p>
+//       <p>Rating: { props.spot.rating }/5</p>
+//     </div>
+//   )
+
+// }
+
+    // <img src="./assets/icon_mkr_restaurant.png" role="presentation" />
 
 export default App

@@ -45,8 +45,7 @@ body {
 }
 
 .nav img {
-  max-height: 45px;
-  min-height: 5px;
+  max-height: 50px;
 }
 
 
@@ -65,8 +64,21 @@ body {
   color: white;
 }
 
+img.restaurant{
+  content: url("icon_btn_coffee.png");
+}
+
+img.park{
+  content: url("icon_btn_park.png");
+}
+
+img.event{
+  content: url("icon_btn_event.png");
+}
+
 /* End Nav Bar */
 
+/* Markers */
 
 .mapboxgl-marker {
   background-position: center;
@@ -78,20 +90,6 @@ body {
   top: 0;
   left: 0;
   will-change: transform;
-}
-
-/* TODO: refactor to ANY CHILDREN of component class Button */
-
-img.restaurant{
-  content: url("icon_btn_coffee.png");
-}
-
-img.park{
-  content: url("icon_btn_park.png");
-}
-
-img.event{
-  content: url("icon_btn_event.png");
 }
 
 .mkr-restaurant {
@@ -108,6 +106,21 @@ img.event{
   visibility: hidden;
   background-image: url("icon_mkr_event.png");
 }
+
+/* End Markers */
+
+/* Popups */
+#popups {
+  flex: 1;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 5px 15px;
+  padding: 10px;
+  background-color: rgba(221, 221, 221,.9);
+  max-width: 200px;
+  max-height: 200px;
+}
+/* End Popups */
 
 -webkit-background-size: contain;
 -moz-background-size: contain;
