@@ -10,7 +10,7 @@ let options = {
 
 let geocoder = NodeGeocoder(options);
 
-exports geojsonify = function(data) {
+exports.geojsonify = function(data) {
   return data.businesses.map(function(spot){
 
     let longitude, latitude;
@@ -25,6 +25,7 @@ exports geojsonify = function(data) {
         "properties": spot
       };
 
+      result.properties.image_url = result.properties.image_url || "http://dogsamongus.com/dogs/wp-content/uploads/2014/12/dog-with-sign.jpg";
       result.properties.venue = spot.categories[0].alias === "dog_parks" ? "park" :
                                 (spot.categories[0].alias === "events" ? "event" : "restaurant");
       delete result.properties.coordinates;
