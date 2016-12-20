@@ -24,7 +24,10 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 [X] Toggle markers
-[ ] Include Popup
+[ ] Include Modal - `modal` branch
+  [!] Refactor markers as components Marker // tabled for v0.03
+  [ ] Add onClick behavior to markers
+  [ ] Render Modal component
   [ ] Dynamically render smiley assets for rating
   [ ] Make buttons and modals responsive
 [ ] Cluster markers - `cluster` branch
