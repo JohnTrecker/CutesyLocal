@@ -133,7 +133,7 @@ class App extends React.Component {
             offset: [0, -85],
             closeButton: false
           })
-            .setHTML(popupContent);
+            .setHTML(popupContent); // renders a node, not a component?
 
           // add to map
           markers[marker.properties.name] = new mapboxgl.Marker(el)

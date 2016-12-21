@@ -24,12 +24,14 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 [X] Toggle markers
-[X] Include Modal - `modal` branch
+[ ] Restyle button bar - `buttons` branch
+[X] Include Popups - `modal` branch
   [X] Add onClick behavior to markers
-  [X] Render Modal component
+  [X] Render popup component
+  [!] Refactor markers as instances of React component  <-- the bottle-neck
+  [ ] Restyle popups
   [ ] Dynamically render smiley assets for rating
-  [ ] Make buttons and modals responsive
-  [!] Refactor markers as instances of React component
+  [ ] Make buttons and popups responsive
 [ ] Cluster markers - `cluster` branch
   [ ] Choose Leaflet clustering plugin
   [ ] Refactor marker divs
@@ -37,6 +39,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 [ ] Get live data - `liveData` branch
   [ ] Refactor local API to fetch json
   [ ] Fetch and handle data on client side
+  [ ] Unmount markers on data update
   [ ] Refactor `geojsonify`
   [ ] Hide API keys
 [ ] Replace `How to start this app` with script and update README.md
