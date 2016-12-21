@@ -1,6 +1,5 @@
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
@@ -120,7 +119,14 @@ class App extends React.Component {
           let spot = marker.properties
 
           // popup options for .setHTML()
-          let popupContent = ['<div id="popups"><h2>',spot.name,'</h2><p>',spot.location.address1,'</p><p>Rating: ', spot.rating,'</p>',/*'<img src=',spot.image_url,'/>',*/'</div>'].join('');
+          let popupContent = `
+            <div id="popups">
+              <h2>${spot.name}</h2>
+              <p>${spot.location.address1}</p>
+              <p>Rating: ${spot.rating}</p>
+              /*<img src=${spot.image_url}/>*/
+            </div>
+            `;
 
           // create mapbox popup
           let popup = new mapboxgl.Popup({
