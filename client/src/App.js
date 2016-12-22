@@ -44,9 +44,16 @@ class App extends React.Component {
     $(".mkr-" + venue).css("visibility", visibility);
 
     // toggle button color
-    let palette = {restaurant: "rgb(42, 183, 202)", park: "rgb(126, 211, 33)", event: "rgb(208, 2, 27)"};
-    let updatedButtonColor = $("button." + venue).css("background-color") === "rgb(221, 221, 221)" ? palette[venue] : "rgb(221, 221, 221)";
-    $("button." + venue).css("background-color", updatedButtonColor);
+    let palette = {
+      restaurant: "rgb(42, 183, 202)",
+      park: "rgb(126, 211, 33)",
+      event: "rgb(208, 2, 27)"
+    };
+    let updatedButtonBackgroundColor = $("button." + venue).css("background-color") === "rgb(221, 221, 221)" ? palette[venue] : "rgb(221, 221, 221)";
+    let updatedButtonTextColor = $("button." + venue).css("background-color") === "rgb(221, 221, 221)" ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)";
+
+    $("button." + venue).css("background-color", updatedButtonBackgroundColor);
+    $("button." + venue).css("color", updatedButtonTextColor);
 
     // remove from
 
@@ -82,21 +89,23 @@ class App extends React.Component {
   }
   render(){
     return (
-      <div id="map">
-        <div className="nav">
-          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
+      <div id="map" className="container">
+        <div className="rows nav">
+          <Button className="sm-col-4" updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
             <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
           </Button>
-          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="park">
+          <Button className="sm-col-4" updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="park">
             <div className="btn-contents"><Image class="park"/> Parks</div>
           </Button>
-          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="event">
+          <Button className="sm-col-4" updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="event">
             <div className="btn-contents"><Image class="event"/> Events</div>
           </Button>
         </div>
       </div>
     )
+
   }
+
   componentDidMount(){
     mapboxgl.accessToken = keys.mapboxgl_access_token;
     let map = new mapboxgl.Map({
@@ -129,9 +138,12 @@ class App extends React.Component {
               <h2>${spot.name}</h2>
               <p>${spot.location.address1}</p>
               <p>Rating: ${spot.rating}</p>
-              <img src=${spot.image_url}/>
+              <span>
+                <img src="https://blog-photos.dogvacay.com/blog/wp-content/uploads/2015/09/DogFriendlyLBC_269.jpg"/>
+              </span>
             </div>
             `;
+              // <img src=${spot.image_url}/>
 
           // create mapbox popup
           let popup = new mapboxgl.Popup({
@@ -150,6 +162,7 @@ class App extends React.Component {
       });
     });
   }
+
 }
 
 let Button = (props) =>
