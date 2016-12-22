@@ -1,5 +1,6 @@
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
@@ -40,8 +41,9 @@ class App extends React.Component {
     findVenue();
 
     // toggle marker visibility
-    let visibility = $(".mkr-" + venue).css("visibility") === "hidden" ? "visible" : "hidden";
-    $(".mkr-" + venue).css("visibility", visibility);
+    let marker = $(`.mkr-${venue}`);
+    let visibility = marker.css("visibility") === "hidden" ? "visible" : "hidden";
+    marker.css("visibility", visibility);
 
     // toggle button color
     let palette = {
@@ -67,8 +69,8 @@ class App extends React.Component {
     this.setState({visibleVenues: toggledButtons});
   }
   updateData(data){
-    let venueData = [data[0].properties.venue, 'Data'].join();
-    this.setState( '{' + venueData + ': ' + data + '}' );
+    let venueData = `${data[0].properties.venue}Data`;
+    this.setState( `${venueData}: ${data}` );
   }
   componentWillMount(){
     // let that = this;
@@ -89,18 +91,20 @@ class App extends React.Component {
   }
   render(){
     return (
-      <div id="map" className="container">
-        <div className="rows nav">
-          <Button className="sm-col-4" updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
+      <div id="container">
+        <div id="nav">
+          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
             <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
           </Button>
-          <Button className="sm-col-4" updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="park">
+          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="park">
             <div className="btn-contents"><Image class="park"/> Parks</div>
           </Button>
-          <Button className="sm-col-4" updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="event">
+          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="event">
             <div className="btn-contents"><Image class="event"/> Events</div>
           </Button>
         </div>
+        <div id="map"></div>
+        <div id="popup"></div>
       </div>
     )
 
@@ -130,32 +134,15 @@ class App extends React.Component {
           let el = document.createElement('div');
           let coordinates = marker.geometry.coordinates;
           el.className = 'mkr-' + marker.properties.venue;
-          let spot = marker.properties
 
-          // popup options for .setHTML()
-          let popupContent = `
-            <div id="popups">
-              <h2>${spot.name}</h2>
-              <p>${spot.location.address1}</p>
-              <p>Rating: ${spot.rating}</p>
-              <span>
-                <img src="https://blog-photos.dogvacay.com/blog/wp-content/uploads/2015/09/DogFriendlyLBC_269.jpg"/>
-              </span>
-            </div>
-            `;
-              // <img src=${spot.image_url}/>
-
-          // create mapbox popup
-          let popup = new mapboxgl.Popup({
-            offset: [0, -85],
-            closeButton: false
-          })
-            .setHTML(popupContent); // renders a node, not a component?
+          // onClick behavior
+          el.onclick = function(){
+            ReactDOM.render(<Popup marker={marker.properties}/>, document.getElementById('popup'));
+          };
 
           // add to map
           markers[marker.properties.name] = new mapboxgl.Marker(el)
               .setLngLat(coordinates)
-              .setPopup(popup)
               .addTo(map);
 
         });
@@ -172,6 +159,32 @@ let Button = (props) =>
 
 const Image = (props) =>
   <img className={ props.class } role="presentation" />
+
+let Popup = function(props){
+  const rating = props.marker.rating * 20;
+  const ratingClass = rating >= 80 ? 'great' : (rating < 60 ? 'notsogood' : 'good');
+  return (
+    <div className="popup-contents">
+      <div className="image">
+        <img src="http://now-here-this.timeout.com/wp-content/uploads/2014/09/dog-eating-dinner.jpg" role="presentation"/>
+      </div>
+      <div className="description">
+        <p className="title">{ props.marker.name }</p>
+        <p className="address">{ props.marker.location.address1 }</p>
+        <div className="rating">
+          <img className={ ratingClass } alt="http://emojipedia-us.s3.amazonaws.com/cache/6b/16/6b164a624288271a884ab2a22f9bb693.png" />
+          <p className="percentage">{ rating } </p>
+          <p className="dog-friendly">% dog friendly</p>
+        </div>
+      </div>
+      <div className="icon">
+        <div className={`pop-${props.marker.venue}`}></div>
+      </div>
+    </div>
+  )
+};
+
+// {`mkr-${props.marker.venue}`}
 
 // let Marker = (props) => {
 //   return(
