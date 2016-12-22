@@ -24,13 +24,13 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 [X] Toggle markers
-[ ] Restyle button bar - `buttons` branch
+[X] Restyle button bar - `buttons` branch
 [X] Include Popups - `modal` branch
   [X] Add onClick behavior to markers
   [X] Render popup component
   [!] Refactor markers as instances of React component  <-- the bottle-neck
-  [ ] Restyle popups
-  [ ] Dynamically render smiley assets for rating
+  [X] Restyle popups
+  [X] Dynamically render smiley assets for rating
   [ ] Make buttons and popups responsive
 [ ] Cluster markers - `cluster` branch
   [ ] Choose Leaflet clustering plugin

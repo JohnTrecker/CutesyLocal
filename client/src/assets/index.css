@@ -6,7 +6,11 @@ body {
 }
 
 .App {
-  position:absolute; top:0; bottom:0; width:100%; overflow:hidden;
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  overflow:hidden;
 }
 
 #map {
@@ -20,42 +24,41 @@ body {
 
 /* Nav Bar */
 
-.nav {
-  z-index: 1;
+#nav {
+  z-index: 2;
   display: flex;
-  /*justify-content: center;*/
+  justify-content: center;
   position: absolute;
   width: 100%;
-  background-color: rgba(250,250,250,0.90);
+  background-color: rgba(250,250,250,0.10);
   box-shadow: 0px 0px 0px 0px #B2B2B2;
   border-radius: 5px;
 }
 
-.nav button {
+button {
   flex: 1;
   border-radius: 5px;
-  margin: 5px 15px;
-  background-color: #DDDDDD;
+  margin: 5px;
+  max-width: 165px;
+  background-color: rgb(221, 221, 221);
+  color: white;
+  outline: none;
 }
 
 .btn-contents {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px 40px;
-  font: 25px arial, sans-serif;
+  margin: 0px auto;
+  font: 15px arial, sans-serif;
 }
 
-.nav img {
-  height: 50px;
+button img {
+  max-height: 30px;
+  margin: 5px;
 }
 
-
-button {
-  background-color: rgb(221, 221, 221);
-  color: white;
-  outline: none;
-}
+/* Assets */
 
 img.restaurant{
   content: url("icon_btn_coffee.png");
@@ -68,6 +71,23 @@ img.park{
 img.event{
   content: url("icon_btn_event.png");
 }
+
+img.great{
+  content: url("emoticon_1.png");
+  height: 20px;
+}
+
+img.good{
+  content: url("emoticon_2.png");
+  height: 20px;
+}
+
+img.notsogood{
+  content: url("emoticon_3.png");
+  height: 20px;
+}
+
+/* End Assets*/
 
 /* End Nav Bar */
 
@@ -102,22 +122,82 @@ img.event{
 
 /* End Markers */
 
+
 /* Popups */
-#popups {
-  flex: 1;
+
+#popup .popup-contents {
+  z-index: 2;
+  position: absolute;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  border-radius: 5px;
-  margin: 5px 15px;
+  bottom: 0px;
   padding: 10px;
-  background-color: rgba(221, 221, 221,.9);
-  max-width: 200px;
-  max-height: 200px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.90);
+  border-top: thin solid lightgrey;
 }
 
-#popups img{
-  width: 100px;
-  /*height: 100px;*/
+.popup-contents div {
+  flex: 1;
+  flex-wrap: nowrap;
 }
+
+div.description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 5px;
+  white-space: nowrap;
+}
+
+div.description p.title {
+  font-size: 18px;
+  margin: 0px;
+}
+
+div.description p.address {
+  margin-bottom: 5px;
+  color: grey;
+}
+
+div.rating {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: row;
+  padding-right: 5px;
+}
+
+div.rating p.percentage {
+  font-weight: bold;
+}
+
+div.image img {
+  height: 75px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.icon {
+  /*background-repeat: no-repeat;*/
+  max-width: 30px
+}
+
+.pop-restaurant {
+  background-image: url("icon_mkr_coffee.png");
+}
+
+.pop-park {
+  background-image: url("icon_mkr_park.png");
+}
+
+.mkr-event {
+  background-image: url("icon_mkr_event.png");
+}
+
 /* End Popups */
 
 -webkit-background-size: contain;
