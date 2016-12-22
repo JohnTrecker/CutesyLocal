@@ -19,12 +19,12 @@ class App extends React.Component {
       visibleVenues: [],
     }
   }
-  updatevisibleVenues(e){
+  updateVisibleVenues(e){
     let classes = ['restaurant', 'park', 'event'];
     let venue;
     let toggledButtons = this.state.visibleVenues;
 
-    // Find the relevant classname
+    // Find the relevant class name
     function findVenue(node, nodeClass) {
       node = node || e.target;
       nodeClass = node.className;
@@ -42,6 +42,11 @@ class App extends React.Component {
     // toggle marker visibility
     let visibility = $(".mkr-" + venue).css("visibility") === "hidden" ? "visible" : "hidden";
     $(".mkr-" + venue).css("visibility", visibility);
+
+    // toggle button color
+    let palette = {restaurant: "rgb(42, 183, 202)", park: "rgb(126, 211, 33)", event: "rgb(208, 2, 27)"};
+    let updatedButtonColor = $("button." + venue).css("background-color") === "rgb(221, 221, 221)" ? palette[venue] : "rgb(221, 221, 221)";
+    $("button." + venue).css("background-color", updatedButtonColor);
 
     // remove from
 
@@ -79,13 +84,13 @@ class App extends React.Component {
     return (
       <div id="map">
         <div className="nav">
-          <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="restaurant">
+          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
             <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
           </Button>
-          <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="park">
+          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="park">
             <div className="btn-contents"><Image class="park"/> Parks</div>
           </Button>
-          <Button updatevisibleVenues={this.updatevisibleVenues.bind(this)} class="event">
+          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="event">
             <div className="btn-contents"><Image class="event"/> Events</div>
           </Button>
         </div>
@@ -124,7 +129,7 @@ class App extends React.Component {
               <h2>${spot.name}</h2>
               <p>${spot.location.address1}</p>
               <p>Rating: ${spot.rating}</p>
-              /*<img src=${spot.image_url}/>*/
+              <img src=${spot.image_url}/>
             </div>
             `;
 
@@ -148,7 +153,7 @@ class App extends React.Component {
 }
 
 let Button = (props) =>
-  <button className={ props.class } onClick={ props.updatevisibleVenues } >
+  <button className={ props.class } onClick={ props.updateVisibleVenues } >
     { props.children }
   </button>
 
