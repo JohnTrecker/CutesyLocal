@@ -152,7 +152,7 @@ class App extends React.Component {
 
 }
 
-let Button = (props) =>
+const Button = (props) =>
   <button className={ props.class } onClick={ props.updateVisibleVenues } >
     { props.children }
   </button>
@@ -160,7 +160,7 @@ let Button = (props) =>
 const Image = (props) =>
   <img className={ props.class } role="presentation" />
 
-let Popup = function(props){
+const Popup = function(props){
   const rating = props.marker.rating * 20;
   const ratingClass = rating >= 80 ? 'great' : (rating < 60 ? 'notsogood' : 'good');
   return (
@@ -177,14 +177,10 @@ let Popup = function(props){
           <p className="dog-friendly">% dog friendly</p>
         </div>
       </div>
-      <div className="icon">
-        <div className={`pop-${props.marker.venue}`}></div>
-      </div>
     </div>
   )
 };
 
-// {`mkr-${props.marker.venue}`}
 
 // let Marker = (props) => {
 //   return(
