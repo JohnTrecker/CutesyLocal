@@ -28,15 +28,16 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 [X] Include Popups - `modal` branch
   [X] Add onClick behavior to markers
   [X] Render popup component
-  [!] Refactor markers as instances of React component  <-- the bottle-neck
+  [X] Refactor markers as instances of React component
   [X] Restyle popups
   [X] Dynamically render smiley assets for rating
-  [ ] Make buttons and popups responsive
+  [ ] Mobile first styling
+[ ] Pipe data to Mapbox layer dynamically
 [ ] Cluster markers - `cluster` branch
-  [ ] Choose Leaflet clustering plugin
   [ ] Refactor marker divs
-  [!] Add Mapbox Sources and Layers
+  [ ] Add Mapbox Sources and Layers
 [ ] Get live data - `liveData` branch
+  [ ] figure out how to retain context for this.updateLocation()
   [ ] Refactor local API to fetch json
   [ ] Fetch and handle data on client side
   [ ] Unmount markers on data update

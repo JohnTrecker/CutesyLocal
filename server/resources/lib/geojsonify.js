@@ -15,7 +15,7 @@ exports.geojsonify = function(data) {
 
     let longitude, latitude;
     let address = [spot.location.address1, spot.location.city].join(" ");
-    let transferData () => {
+    let transferData = () => {
       let result = {
         "type": "Feature",
         "geometry": {
