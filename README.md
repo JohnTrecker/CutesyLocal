@@ -23,6 +23,11 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 ## Front End
 
+[ ] Conflict - sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
+  [ ] Explore a compromise between the two with a combination of
+    [ ] MapBox Studio (`getting-started-mapbox-studio`) + the Dataset API
+    [ ] geojson.io reproject
+
 [X] Toggle markers
 [X] Restyle button bar - `buttons` branch
 [X] Include Popups - `modal` branch
@@ -32,6 +37,10 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Restyle popups
   [X] Dynamically render smiley assets for rating
   [X] Mobile first styling
+[ ] Implement react-redux-mapbox-gl - 'react' branch
+[ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
+  [ ] include MozSwipeGesture listener into the library
+
 [ ] Cluster markers - `cluster` branch
   [ ] Refactor marker divs
   [ ] Add Mapbox Sources and Layers
@@ -43,6 +52,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [ ] Unmount markers on data update
   [ ] Refactor `geojsonify`
   [ ] Hide API keys
+
 [ ] Play map locations as a slideshow
 [ ] Replace `How to start this app` with script and update README.md
 

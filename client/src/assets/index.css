@@ -140,7 +140,7 @@ img.notsogood{
   position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 10px 10px 5px 10px;
   width: 100%;
   background-color: rgba(255,255,255,0.90);
@@ -149,24 +149,36 @@ img.notsogood{
 }
 
 div.image img {
-  flex: 1 5 auto;
+  flex-basis: 75px 5 auto;
   height: 75px;
   border-radius: 5px;
   align-items: center;
-  flex-shrink: 2;
+}
+
+img.pop_restaurant {
+  content: url("img_pop_restaurant.jpg");
+}
+
+img.pop_park {
+  content: url("img_pop_park.jpg");
+}
+
+img.pop_event {
+  content: url("img_pop_event.jpg");
 }
 
 div.description {
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-content: flex-start;
   margin: 0px;
   padding: 5px;
   white-space: nowrap;
 }
 
 div.description p.title {
-  flex: 1;
+  flex-shrink: 50;
   margin: 0px;
   font-size: 18px;
 }
@@ -212,6 +224,16 @@ div.rating p.percentage {
 /* ---------- */
 /* End Popups */
 /* ---------- */
+
+
+/* ------------------ */
+/* Responsive Styling */
+/* ------------------ */
+
+@media all and (max-width: 420px) {
+
+}
+
 
 -webkit-background-size: contain;
 -moz-background-size: contain;

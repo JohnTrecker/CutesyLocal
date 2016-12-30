@@ -7,6 +7,7 @@ let keys = require('./config/api_keys.json');
 let restaurantData = require('./data/yelp.json');
 let parkData = require('./data/parks.json');
 let eventData = require('./data/events.json');
+mapboxgl.accessToken = keys.mapboxgl_access_token;
 
 
 class App extends React.Component {
@@ -18,7 +19,9 @@ class App extends React.Component {
       parkData: parkData,
       eventData: eventData,
       visibleVenues: [],
+      bounds: ""
     }
+
   }
   updateVisibleVenues(e){
     let classes = ['restaurant', 'park', 'event'];
@@ -72,14 +75,18 @@ class App extends React.Component {
     let venueData = `${data[0].properties.venue}Data`;
     this.setState( `${venueData}: ${data}` );
   }
+  updateLocation(loc){
+    this.setState({location: loc});
+  }
   componentWillMount(){
+
     // let that = this;
 
     // // TODO: reset state with current yelp data
     // fetch( 'http://localhost:3000/api/yelp' )
     //   .then( (res) => res.json() )
     //   .then( function(results){
-    //     that.setState( {restaurantData: results} )
+    //     this.updateData( results );
     //     // Bug: Resets `that` but never affects `this`
     //     //      How does egghead.io make it work?
     //   })
@@ -111,17 +118,18 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    mapboxgl.accessToken = keys.mapboxgl_access_token;
     let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
         center: this.state.location,
         zoom: 12
     });
+    // map.addControl(new mapboxgl.AttributionControl(), 'top-left');
 
     let state = [this.state.eventData, this.state.parkData, this.state.restaurantData];
-    map.on('load', function(){
 
+    map.on('load', function(){
+      console.log('Map center location :\n', this.getCenter());
       //TODO: clean up previous markers
       //      fix Forbidden 403 response status
       let markers = {};
@@ -148,6 +156,12 @@ class App extends React.Component {
         });
       });
     });
+
+    map.on('moveend', function(){
+      console.log('new location:\n', map.getCenter())
+      // figure out how to access context of this.updateLocation(location)
+    });
+
   }
 
 }
@@ -162,11 +176,11 @@ const Image = (props) =>
 
 const Popup = function(props){
   const rating = props.marker.rating * 20;
-  const ratingClass = rating >= 80 ? 'great' : (rating < 60 ? 'notsogood' : 'good');
+  const ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
   return (
     <div className="popup-contents">
       <div className="image">
-        <img src="http://now-here-this.timeout.com/wp-content/uploads/2014/09/dog-eating-dinner.jpg" role="presentation"/>
+        <img className={`pop_${props.marker.venue}`} role="presentation"/>
       </div>
       <div className="description">
         <p className="title">{ props.marker.name }</p>
