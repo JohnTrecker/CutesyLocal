@@ -31,11 +31,11 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Refactor markers as instances of React component
   [X] Restyle popups
   [X] Dynamically render smiley assets for rating
-  [ ] Mobile first styling
-[ ] Pipe data to Mapbox layer dynamically
+  [X] Mobile first styling
 [ ] Cluster markers - `cluster` branch
   [ ] Refactor marker divs
   [ ] Add Mapbox Sources and Layers
+[ ] Pipe data to Mapbox set layer dynamically
 [ ] Get live data - `liveData` branch
   [ ] figure out how to retain context for this.updateLocation()
   [ ] Refactor local API to fetch json
@@ -43,6 +43,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [ ] Unmount markers on data update
   [ ] Refactor `geojsonify`
   [ ] Hide API keys
+[ ] Play map locations as a slideshow
 [ ] Replace `How to start this app` with script and update README.md
 
 ## Middleware
