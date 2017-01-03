@@ -120,7 +120,7 @@ class App extends React.Component {
   componentDidMount(){
     let map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
+        style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
         center: this.state.location,
         zoom: 12
     });
