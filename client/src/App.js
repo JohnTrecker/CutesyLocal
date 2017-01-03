@@ -191,6 +191,9 @@ const Popup = function(props){
           <p className="dog-friendly">% dog friendly</p>
         </div>
       </div>
+      <div className="icon">
+        <img className={`pop-${props.marker.venue}`} role="presentation"/>
+      </div>
     </div>
   )
 };

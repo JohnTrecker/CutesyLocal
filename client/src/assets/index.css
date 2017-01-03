@@ -201,12 +201,6 @@ div.rating p.percentage {
   font-weight: bold;
 }
 
-
-.icon {
-  background-repeat: no-repeat;
-  max-width: 90px;
-}
-
 .pop-restaurant {
   background-image: url("icon_mkr_coffee.png");
 }
@@ -230,7 +224,25 @@ div.rating p.percentage {
 /* Responsive Styling */
 /* ------------------ */
 
-@media all and (max-width: 420px) {
+@media all and (min-width: 420px) {
+
+  div.description {
+    margin-left: 10px;
+    max-width: 350px;
+  }
+
+/*  div.icon {
+    flex: 1;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+  }
+
+  div.icon img {
+    width: 60px;
+    margin: 5px;
+  }*/
 
 }
 
