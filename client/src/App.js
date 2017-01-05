@@ -5,8 +5,8 @@ import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
 let restaurantData = require('./data/yelp.json');
-let parkData = require('./data/parks.json');
-let eventData = require('./data/events.json');
+let parkData = require('./data/park.json');
+let eventData = require('./data/event.json');
 mapboxgl.accessToken = keys.mapboxgl_access_token;
 
 
@@ -15,9 +15,9 @@ class App extends React.Component {
     super();
     this.state = {
       location: [-122.413692, 37.775712],
-      restaurantData: restaurantData,
-      parkData: parkData,
-      eventData: eventData,
+      restaurantData: restaurantData.features,
+      parkData: parkData.features,
+      eventData: eventData.features,
       visibleVenues: [],
       bounds: ""
     }
@@ -126,42 +126,102 @@ class App extends React.Component {
     });
     // map.addControl(new mapboxgl.AttributionControl(), 'top-left');
 
-    let state = [this.state.eventData, this.state.parkData, this.state.restaurantData];
+    // let state = [this.state.eventData, this.state.parkData, this.state.restaurantData];
 
     map.on('load', function(){
       console.log('Map center location :\n', this.getCenter());
-      //TODO: clean up previous markers
-      //      fix Forbidden 403 response status
-      let markers = {};
+      const venues = ["restaurant"];
 
-      // Add markers and popups to map
-      state.forEach(function(data, index){
-        data.forEach(function(marker) {
+      venues.forEach((venue, id) => {
 
-          // marker
-          let el = document.createElement('div');
-          let coordinates = marker.geometry.coordinates;
-          el.className = 'mkr-' + marker.properties.venue;
-
-          // onClick behavior
-          el.onclick = function(){
-            ReactDOM.render(<Popup marker={marker.properties}/>, document.getElementById('popup'));
-          };
-
-          // add to map
-          markers[marker.properties.name] = new mapboxgl.Marker(el)
-              .setLngLat(coordinates)
-              .addTo(map);
-
+        map.addSource(venue, {
+          type: "geojson",
+          data: require("./data/" + venue + ".json"),
+          cluster: true,
+          clusterMaxZoom: 14,
+          clusterRadius: 50
         });
+
+        map.addLayer({
+            "id": "unclustered-points",
+            "type": "symbol",
+            "source": venue,
+            "filter": ["!has", "point_count"],
+            "layout": {
+                "icon-image": "icon_mkr_" + venue,
+            }
+        });
+
+        // Display venue data in three layers, each filtered to a range of
+        // count values. Each range gets a different fill color.
+        let layers = [
+            [150, '#f28cb1'],
+            [20, '#f1f075'],
+            [0, '#51bbd6']
+        ];
+
+        layers.forEach(function (layer, i) {
+            // console.log('venue:\n', venue);
+            // debugger;
+
+            map.addLayer({
+                "id": "cluster-" + i,
+                "type": "circle",
+                "source": venue,
+                "paint": {
+                    "circle-color": layer[1],
+                    "circle-radius": 18
+                },
+                "filter": i === 0 ?
+                    [">=", "point_count", layer[0]] :
+                    ["all",
+                        [">=", "point_count", layer[0]],
+                        ["<", "point_count", layers[i - 1][0]]]
+            });
+        });
+
+        map.addLayer({
+            "id": "cluster-count-" + venue,
+            "type": "symbol",
+            "source": venue,
+            "layout": {
+                "text-field": "{point_count}",
+                "text-font": [
+                    "DIN Offc Pro Medium",
+                    "Arial Unicode MS Bold"
+                ],
+                "text-size": 12
+            }
+        });
+
       });
-    });
 
-    map.on('moveend', function(){
-      console.log('new location:\n', map.getCenter())
-      // figure out how to access context of this.updateLocation(location)
-    });
+      // Add a layer for the clusters' count labels
 
+// {      let markers = {};
+//       // Add markers and popups to map
+//       state.forEach(function(data, index){
+//         data.forEach(function(marker) {
+
+//           // marker
+//           let el = document.createElement('div');
+//           let coordinates = marker.geometry.coordinates;
+//           el.className = 'mkr-' + marker.properties.venue;
+
+//           // onClick behavior
+//           el.onclick = function(){
+//             ReactDOM.render(<Popup marker={marker.properties}/>, document.getElementById('popup'));
+//           };
+
+//           // add to map
+//           markers[marker.properties.name] = new mapboxgl.Marker(el)
+//               .setLngLat(coordinates)
+//               .addTo(map);
+
+//         });
+//       });
+// }
+    });
   }
 
 }

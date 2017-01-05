@@ -1,4 +1,6 @@
-[
+{
+  "type": "FeatureCollection",
+  "features": [
       {
         "type": "Feature",
         "geometry": {
@@ -95,4 +97,5 @@
           "rating": 4
         }
       }
-]
+  ]
+}
