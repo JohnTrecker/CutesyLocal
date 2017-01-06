@@ -148,7 +148,7 @@ class App extends React.Component {
             "filter": ["!has", "point_count"],
             "layout": {
                 "icon-image": "icon_mkr_" + venue,
-                // "visibility": "none",
+                "visibility": "none",
             }
         });
 
@@ -161,15 +161,13 @@ class App extends React.Component {
         ];
 
         layers.forEach(function (layer, i) {
-            // console.log('venue:\n', venue);
-            // debugger;
 
             map.addLayer({
                 "id": "cluster-" + venue + "-" + i,
                 "type": "circle",
                 "source": venue,
                 "layout": {
-                  // "visibility": "none"
+                  "visibility": "none"
                 },
                 "paint": {
                     "circle-color": layer[1],
@@ -188,7 +186,7 @@ class App extends React.Component {
             "type": "symbol",
             "source": venue,
             "layout": {
-                // "visibility": "none",
+                "visibility": "none",
                 "text-field": "{point_count}",
                 "text-font": [
                     "DIN Offc Pro Medium",
