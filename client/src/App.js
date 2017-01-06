@@ -1,6 +1,5 @@
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
@@ -24,16 +23,16 @@ class App extends React.Component {
 
   }
   updateVisibleVenues(e){
-    let classes = ['restaurant', 'park', 'event'];
+    let classNames = ['restaurant', 'park', 'event'];
     let venue;
     let toggledButtons = this.state.visibleVenues;
 
     // Find the relevant class name
-    function findVenue(node, nodeClass) {
+    function findVenue(node, NodeClass) {
       node = node || e.target;
-      nodeClass = node.className;
-      if ( classes.includes(nodeClass) ) {
-        venue = nodeClass;
+      NodeClass = node.className;
+      if ( classNames.includes(NodeClass) ) {
+        venue = NodeClass;
         return;
       } else {
         let parentNode = node.parentNode;
@@ -44,9 +43,9 @@ class App extends React.Component {
     findVenue();
 
     // toggle marker visibility
-    let marker = $(`.mkr-${venue}`);
-    let visibility = marker.css("visibility") === "hidden" ? "visible" : "hidden";
-    marker.css("visibility", visibility);
+    // let marker = $(`.mkr-${venue}`);
+    // let visibility = marker.css("visibility") === "hidden" ? "visible" : "hidden";
+    // marker.css("visibility", visibility);
 
     // toggle button color
     let palette = {
@@ -59,8 +58,6 @@ class App extends React.Component {
 
     $("button." + venue).css("background-color", updatedButtonBackgroundColor);
     $("button." + venue).css("color", updatedButtonTextColor);
-
-    // remove from
 
     // update state.visibleVenues
     if (toggledButtons.includes(venue)) {
@@ -99,6 +96,7 @@ class App extends React.Component {
   render(){
     return (
       <div id="container">
+        <nav id="menu"></nav>
         <div id="nav">
           <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
             <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
@@ -125,14 +123,10 @@ class App extends React.Component {
         zoom: 12
     });
 
-    // let state = [this.state.eventData, this.state.parkData, this.state.restaurantData];
-
+    const venues = ["restaurant", "park", "event"];
     map.on('load', function(){
-      console.log('Map center location :\n', this.getCenter());
-      const venues = ["restaurant", "park", "event"];
 
       venues.forEach(function(venue, id){
-
         map.addSource(venue, {
           type: "geojson",
           data: require("./data/" + venue + ".json"),
@@ -196,34 +190,25 @@ class App extends React.Component {
             }
         });
 
+        // for each coorespnding button in nav bar
+          // add onclick behavior to toggle layer visibility
+        let button = document.getElementsByClassName(venue)[0];
+        let markerLayers = [`unclustered-points-${venue}`, `cluster-${venue}-0`, `cluster-${venue}-1`, `cluster-${venue}-2`, `cluster-count-${venue}`];
+
+        button.onclick = function(e) {
+          markerLayers.forEach(function(markerLayer){
+            let visibility = map.getLayoutProperty(markerLayer, 'visibility');
+            if (visibility === 'visible') {
+              map.setLayoutProperty(markerLayer, 'visibility', 'none');
+            } else {
+              map.setLayoutProperty(markerLayer, 'visibility', 'visible');
+            }
+          });
+        };
+
       });
-
-      // Add a layer for the clusters' count labels
-
-// {      let markers = {};
-//       // Add markers and popups to map
-//       state.forEach(function(data, index){
-//         data.forEach(function(marker) {
-
-//           // marker
-//           let el = document.createElement('div');
-//           let coordinates = marker.geometry.coordinates;
-//           el.className = 'mkr-' + marker.properties.venue;
-
-//           // onClick behavior
-//           el.onclick = function(){
-//             ReactDOM.render(<Popup marker={marker.properties}/>, document.getElementById('popup'));
-//           };
-
-//           // add to map
-//           markers[marker.properties.name] = new mapboxgl.Marker(el)
-//               .setLngLat(coordinates)
-//               .addTo(map);
-
-//         });
-//       });
-// }
     });
+
   }
 
 }
@@ -259,19 +244,5 @@ const Popup = function(props){
     </div>
   )
 };
-
-
-// let Marker = (props) => {
-//   return(
-//     <div id="popups">
-//       <h1>{ props.spot.name }</h1>
-//       <p>{ props.spot.location.address1 }</p>
-//       <p>Rating: { props.spot.rating }/5</p>
-//     </div>
-//   )
-
-// }
-
-    // <img src="./assets/icon_mkr_restaurant.png" role="presentation" />
 
 export default App
