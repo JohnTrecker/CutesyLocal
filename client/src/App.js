@@ -43,11 +43,6 @@ class App extends React.Component {
     };
     findVenue();
 
-    // toggle marker visibility
-    // let marker = $(`.mkr-${venue}`);
-    // let visibility = marker.css("visibility") === "hidden" ? "visible" : "hidden";
-    // marker.css("visibility", visibility);
-
     // toggle button color
     let palette = {
       restaurant: "rgb(42, 183, 202)",
@@ -137,58 +132,58 @@ class App extends React.Component {
         });
 
         map.addLayer({
-            "id": "unclustered-points-" + venue,
-            "type": "symbol",
-            "source": venue,
-            "filter": ["!has", "point_count"],
-            "layout": {
-                "icon-image": "icon_mkr_" + venue,
-                "visibility": "none",
-            }
+          "id": "unclustered-points-" + venue,
+          "type": "symbol",
+          "source": venue,
+          "filter": ["!has", "point_count"],
+          "layout": {
+              "icon-image": "icon_mkr_" + venue,
+              "visibility": "none",
+          }
         });
 
         // Display venue data in three layers, each filtered to a range of
         // count values. Each range gets a different fill color.
         let layers = [
-            [150, '#f28cb1'],
-            [20, '#f1f075'],
-            [0, '#51bbd6']
+          [150, '#f28cb1'],
+          [20, '#f1f075'],
+          [0, '#51bbd6']
         ];
 
         layers.forEach(function (layer, i) {
 
-            map.addLayer({
-                "id": "cluster-" + venue + "-" + i,
-                "type": "circle",
-                "source": venue,
-                "layout": {
-                  "visibility": "none"
-                },
-                "paint": {
-                    "circle-color": layer[1],
-                    "circle-radius": 18
-                },
-                "filter": i === 0 ?
-                    [">=", "point_count", layer[0]] :
-                    ["all",
-                        [">=", "point_count", layer[0]],
-                        ["<", "point_count", layers[i - 1][0]]]
-            });
+          map.addLayer({
+            "id": "cluster-" + venue + "-" + i,
+            "type": "circle",
+            "source": venue,
+            "layout": {
+              "visibility": "none"
+            },
+            "paint": {
+              "circle-color": layer[1],
+              "circle-radius": 18
+            },
+            "filter": i === 0 ?
+              [">=", "point_count", layer[0]] :
+              ["all",
+                [">=", "point_count", layer[0]],
+                ["<", "point_count", layers[i - 1][0]]]
+          });
         });
 
         map.addLayer({
-            "id": "cluster-count-" + venue,
-            "type": "symbol",
-            "source": venue,
-            "layout": {
-                "visibility": "none",
-                "text-field": "{point_count}",
-                "text-font": [
-                    "DIN Offc Pro Medium",
-                    "Arial Unicode MS Bold"
-                ],
-                "text-size": 12
-            }
+          "id": "cluster-count-" + venue,
+          "type": "symbol",
+          "source": venue,
+          "layout": {
+            "visibility": "none",
+            "text-field": "{point_count}",
+            "text-font": [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Bold"
+            ],
+            "text-size": 12
+          }
         });
 
         // for each coorespnding button in nav bar
