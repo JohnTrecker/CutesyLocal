@@ -23,28 +23,23 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 ## Front End
 
-[ ] Conflict - sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
-  [ ] Explore a compromise between the two with a combination of
-    [ ] MapBox Studio (`getting-started-mapbox-studio`) + the Dataset API
-    [ ] geojson.io reproject
+[X] Conflicts overcome
+  [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
 
+[X] Cluster markers - `cluster` branch
+  [X] Refactor marker divs into MapboxGL layers
+  [X] Add Mapbox Sources and Layers
 [X] Toggle markers
-[X] Restyle button bar - `buttons` branch
-[X] Include Popups - `modal` branch
+[X] Include Popups - `cluster` branch
   [X] Add onClick behavior to markers
   [X] Render popup component
-  [X] Refactor markers as instances of React component
-  [X] Restyle popups
+  [X] Refactor markers as MapboxGL layers
+  [ ] Restyle popups
   [X] Dynamically render smiley assets for rating
-  [X] Mobile first styling
-[ ] Implement react-redux-mapbox-gl - 'react' branch
-[ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
-  [ ] include MozSwipeGesture listener into the library
-
-[ ] Cluster markers - `cluster` branch
-  [ ] Refactor marker divs
-  [ ] Add Mapbox Sources and Layers
-[ ] Pipe data to Mapbox set layer dynamically
+  [ ] Mobile first styling
+[ ] Restyle button bar - `buttons` branch
+[ ] Play map locations as a slideshow
+[ ] Replace `How to start this app` with script and update README.md
 [ ] Get live data - `liveData` branch
   [ ] figure out how to retain context for this.updateLocation()
   [ ] Refactor local API to fetch json
@@ -52,9 +47,11 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [ ] Unmount markers on data update
   [ ] Refactor `geojsonify`
   [ ] Hide API keys
+[ ] Implement react-redux-mapbox-gl - 'react' branch
+[ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
+  [ ] include MozSwipeGesture listener into the library
 
-[ ] Play map locations as a slideshow
-[ ] Replace `How to start this app` with script and update README.md
+
 
 ## Middleware
 

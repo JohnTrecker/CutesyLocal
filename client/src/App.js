@@ -1,5 +1,6 @@
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
@@ -209,6 +210,14 @@ class App extends React.Component {
       });
     });
 
+    map.on('click', function (e) {
+      let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
+      if (features.length) {
+        let marker = features[0].properties;
+        ReactDOM.render(<Popup marker={marker} />, document.getElementById('popup'));
+      };
+
+    });
   }
 
 }
@@ -224,6 +233,7 @@ const Image = (props) =>
 const Popup = function(props){
   const rating = props.marker.rating * 20;
   const ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
+  const location = JSON.parse(props.marker.location);
   return (
     <div className="popup-contents">
       <div className="image">
@@ -231,10 +241,10 @@ const Popup = function(props){
       </div>
       <div className="description">
         <p className="title">{ props.marker.name }</p>
-        <p className="address">{ props.marker.location.address1 }</p>
+        <p className="address">{ location.address1 }</p>
         <div className="rating">
           <img className={ ratingClass } alt="http://emojipedia-us.s3.amazonaws.com/cache/6b/16/6b164a624288271a884ab2a22f9bb693.png" />
-          <p className="percentage">{ rating } </p>
+          <p className="percentage">&ensp; { rating } </p>
           <p className="dog-friendly">% dog friendly</p>
         </div>
       </div>
