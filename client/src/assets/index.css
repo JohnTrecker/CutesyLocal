@@ -59,7 +59,9 @@ button img {
   margin: 5px;
 }
 
+/* ------ */
 /* Assets */
+/* ------ */
 
 img.restaurant{
   content: url("icon_btn_coffee.png");
@@ -146,6 +148,7 @@ img.notsogood{
   background-color: rgba(255,255,255,0.90);
   border-top: thin solid lightgrey;
   flex-wrap: nowrap;
+  /*transition: max-height 2s 60px;*/
 }
 
 div.image img {
