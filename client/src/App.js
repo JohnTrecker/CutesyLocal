@@ -124,15 +124,14 @@ class App extends React.Component {
         center: this.state.location,
         zoom: 12
     });
-    // map.addControl(new mapboxgl.AttributionControl(), 'top-left');
 
     // let state = [this.state.eventData, this.state.parkData, this.state.restaurantData];
 
     map.on('load', function(){
       console.log('Map center location :\n', this.getCenter());
-      const venues = ["restaurant"];
+      const venues = ["restaurant", "park", "event"];
 
-      venues.forEach((venue, id) => {
+      venues.forEach(function(venue, id){
 
         map.addSource(venue, {
           type: "geojson",
@@ -143,12 +142,13 @@ class App extends React.Component {
         });
 
         map.addLayer({
-            "id": "unclustered-points",
+            "id": "unclustered-points-" + venue,
             "type": "symbol",
             "source": venue,
             "filter": ["!has", "point_count"],
             "layout": {
                 "icon-image": "icon_mkr_" + venue,
+                // "visibility": "none",
             }
         });
 
@@ -165,9 +165,12 @@ class App extends React.Component {
             // debugger;
 
             map.addLayer({
-                "id": "cluster-" + i,
+                "id": "cluster-" + venue + "-" + i,
                 "type": "circle",
                 "source": venue,
+                "layout": {
+                  // "visibility": "none"
+                },
                 "paint": {
                     "circle-color": layer[1],
                     "circle-radius": 18
@@ -185,6 +188,7 @@ class App extends React.Component {
             "type": "symbol",
             "source": venue,
             "layout": {
+                // "visibility": "none",
                 "text-field": "{point_count}",
                 "text-font": [
                     "DIN Offc Pro Medium",
