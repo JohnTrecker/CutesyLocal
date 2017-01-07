@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom';
 import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
-let restaurantData = require('./data/yelp.json');
-let parkData = require('./data/park.json');
-let eventData = require('./data/event.json');
+// let restaurantData = require('./data/yelp.json');
+// let parkData = require('./data/park.json');
+// let eventData = require('./data/event.json');
 mapboxgl.accessToken = keys.mapboxgl_access_token;
 
 
@@ -15,9 +15,9 @@ class App extends React.Component {
     super();
     this.state = {
       location: [-122.413692, 37.775712],
-      restaurantData: restaurantData.features,
-      parkData: parkData.features,
-      eventData: eventData.features,
+      restaurantData: '',
+      parkData: '',
+      eventData: '',
       visibleVenues: [],
       bounds: ""
     }
@@ -120,35 +120,8 @@ class App extends React.Component {
     });
     // map.addControl(new mapboxgl.AttributionControl(), 'top-left');
 
-    let state = [this.state.eventData, this.state.parkData, this.state.restaurantData];
-
     const venues = ["restaurant", "park", "event"];
     map.on('load', function(){
-
-      // Add a layer for the clusters' count labels
-      let markers = {};
-      // Add markers and popups to map
-
-      state.forEach(function(data, index){
-        data.forEach(function(marker) {
-
-          // marker
-          let el = document.createElement('div');
-          let coordinates = marker.geometry.coordinates;
-          el.className = 'mkr-' + marker.properties.venue;
-
-          // onClick behavior
-          el.onclick = function(){
-            ReactDOM.render(<Popup marker={marker.properties}/>, document.getElementById('popup'));
-          };
-
-          // add to map
-          markers[marker.properties.name] = new mapboxgl.Marker(el)
-              .setLngLat(coordinates)
-              .addTo(map);
-
-        });
-      });
 
       venues.forEach(function(venue, id){
         map.addSource(venue, {
