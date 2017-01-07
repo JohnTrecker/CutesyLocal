@@ -1,4 +1,4 @@
-let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
+let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/index.css';
@@ -123,7 +123,7 @@ class App extends React.Component {
     const venues = ["restaurant", "park", "event"];
     map.on('load', function(){
 
-      venues.forEach(function(venue, id){
+      venues.forEach(function(venue){
         map.addSource(venue, {
           type: "geojson",
           data: require("./data/" + venue + ".json"),
@@ -143,33 +143,25 @@ class App extends React.Component {
           }
         });
 
-        // Display venue data in three layers, each filtered to a range of
-        // count values. Each range gets a different fill color.
-        let layers = [
-          [150, '#f28cb1'],
-          [20, '#f1f075'],
-          [0, '#51bbd6']
-        ];
+        let palette = {
+          restaurant: '#2ab7ca',
+          park: '#7ed321',
+          event: '#d0021b'
+        };
 
-        layers.forEach(function (layer, i) {
 
-          map.addLayer({
-            "id": "cluster-" + venue + "-" + i,
-            "type": "circle",
-            "source": venue,
-            "layout": {
-              "visibility": "none"
-            },
-            "paint": {
-              "circle-color": layer[1],
-              "circle-radius": 18
-            },
-            "filter": i === 0 ?
-              [">=", "point_count", layer[0]] :
-              ["all",
-                [">=", "point_count", layer[0]],
-                ["<", "point_count", layers[i - 1][0]]]
-          });
+        map.addLayer({
+          "id": "cluster-" + venue,
+          "type": "circle",
+          "source": venue,
+          "layout": {
+            "visibility": "none"
+          },
+          "paint": {
+            "circle-color": palette[venue],
+            "circle-radius": 18
+          },
+          "filter": [">", "point_count", 0]
         });
 
         map.addLayer({
@@ -190,7 +182,7 @@ class App extends React.Component {
         // for each coorespnding button in nav bar
           // add onclick behavior to toggle layer visibility
         let button = document.getElementsByClassName(venue)[0];
-        let markerLayers = [`unclustered-points-${venue}`, `cluster-${venue}-0`, `cluster-${venue}-1`, `cluster-${venue}-2`, `cluster-count-${venue}`];
+        let markerLayers = [`unclustered-points-${venue}`, `cluster-${venue}`, `cluster-count-${venue}`];
 
         button.onclick = function(e) {
           markerLayers.forEach(function(markerLayer){
