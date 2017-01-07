@@ -177,16 +177,23 @@ div.description {
   align-content: flex-start;
   margin: 0px;
   padding: 5px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 div.description p.title {
   flex-shrink: 50;
   margin: 0px;
   font-size: 18px;
+
 }
 
 div.description p.address {
+  flex: 1;
+  margin: 0px;
+  color: grey;
+}
+
+div.description p.dates {
   flex: 1;
   margin: 0px;
   color: grey;
