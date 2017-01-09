@@ -11,7 +11,7 @@
           ]
         },
         "properties": {
-          "dates": "November 22, 2016 to June 20, 20176:30 p.m. to 8:00 p.m.",
+          "dates": "November 22, 2016 to June 20, 2017 6:30 p.m. to 8:00 p.m.",
           "description": null,
           "location": {
             "address1": "132 Hazelwood Dr.",
@@ -43,7 +43,7 @@
           ]
         },
         "properties": {
-          "dates": "November 26, 2016 to November 27, 201610:00 a.m. to 4:00 p.m.",
+          "dates": "November 26, 2016 to November 27, 2016 10:00 a.m. to 4:00 p.m.",
           "description": null,
           "location": {
             "address1": "1 Ave. of the Palms",
@@ -95,6 +95,102 @@
           ],
           "venue": "event",
           "rating": 4
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3916,
+            37.7708
+          ]
+        },
+        "properties": {
+          "dates": "February 11, 2017 12:00 p.m. to 4:00 p.m.",
+          "description": null,
+          "location": {
+            "address1": "601 Mission Bay Blvd. N.",
+            "zip_code": "94158",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "SF Beer Week Opening Day - Picnic in the Park",
+          "url": "https://dogtrekker.com/event/sf-beer-week-opening-day-picnic-in-the-park-february-11-2017",
+          "image_url": null,
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4.5
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.46406,
+            37.8039
+          ]
+        },
+        "properties": {
+          "dates": "February 25, 2017 7:00 a.m. to 1:00 p.m.",
+          "description": "SF Race for the Paws is an annual 5K run and adoption event benefiting our furry friends at Family Dog Rescue.",
+          "location": {
+            "address1": "Crissy Field",
+            "zip_code": "",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "SF Race for the Paws",
+          "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
+          "image_url": null,
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4.8
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4376241,
+            37.7911417
+          ]
+        },
+        "properties": {
+          "dates": "February 5, 2017 2:30 p.m. to 4:00 p.m.",
+          "description": "",
+          "location": {
+            "address1": "Alta Plaza Park",
+            "zip_code": "",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "Pug Sunday",
+          "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
+          "image_url": "http://media1.fdncms.com/sfweekly/imager/pug-sunday/u/story/2752400/6024402.0.jpg",
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4.8
         }
       }
   ]

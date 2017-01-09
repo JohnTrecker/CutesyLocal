@@ -1,14 +1,13 @@
-let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Nav from './Nav';
+import Popup from './Popup';
 import './assets/index.css';
 let $ = require('jquery');
 let keys = require('./config/api_keys.json');
-// let restaurantData = require('./data/yelp.json');
-// let parkData = require('./data/park.json');
-// let eventData = require('./data/event.json');
-mapboxgl.accessToken = keys.mapboxgl_access_token;
 
+mapboxgl.accessToken = keys.mapboxgl_access_token;
 
 class App extends React.Component {
   constructor() {
@@ -71,39 +70,26 @@ class App extends React.Component {
   updateLocation(loc){
     this.setState({location: loc});
   }
-  componentWillMount(){
+  // componentWillMount(){
 
-    // let that = this;
+  //   // TODO: reset state with current yelp data
+  //   fetch( 'http://localhost:3000/api/yelp' )
+  //     .then( (res) => res.json() )
+  //     .then( function(results){
+  //       this.updateData( results );
+  //       // Bug: Resets `that` but never affects `this`
+  //       //      How does egghead.io make it work?
+  //     })
+  //     .catch( function(e){
+  //       debugger;
+  //       console.log(e);
+  //     })
 
-    // // TODO: reset state with current yelp data
-    // fetch( 'http://localhost:3000/api/yelp' )
-    //   .then( (res) => res.json() )
-    //   .then( function(results){
-    //     this.updateData( results );
-    //     // Bug: Resets `that` but never affects `this`
-    //     //      How does egghead.io make it work?
-    //   })
-    //   .catch( function(e){
-    //     debugger;
-    //     console.log(e);
-    //   })
-
-  }
+  // }
   render(){
     return (
       <div id="container">
-        <nav id="menu"></nav>
-        <div id="nav">
-          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="restaurant">
-            <div className="btn-contents"><Image class="restaurant"/> Food/Drink</div>
-          </Button>
-          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="park">
-            <div className="btn-contents"><Image class="park"/> Parks</div>
-          </Button>
-          <Button updateVisibleVenues={this.updateVisibleVenues.bind(this)} class="event">
-            <div className="btn-contents"><Image class="event"/> Events</div>
-          </Button>
-        </div>
+        <Nav updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
         <div id="map"></div>
         <div id="popup"></div>
       </div>
@@ -210,43 +196,5 @@ class App extends React.Component {
 
 }
 
-const Button = (props) =>
-  <button className={ props.class } onClick={ props.updateVisibleVenues } >
-    { props.children }
-  </button>
-
-const Image = (props) =>
-  <img className={ props.class } role="presentation" />
-
-const Popup = function(props){
-  const rating = props.marker.rating * 20;
-  const ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
-  const location = JSON.parse(props.marker.location);
-  const showDates = Boolean(props.marker.dates);
-  return (
-    <div className="popup-contents">
-      <div className="image">
-        <img className={`pop_${props.marker.venue}`} role="presentation"/>
-      </div>
-      <div className="description">
-        <p className="title">{ props.marker.name }</p>
-        <p className="address">{ location.address1 } </p>
-        { showDates && <Dates timeAndDate={props.marker.dates} /> }
-        <div className="rating">
-          <img className={ ratingClass } alt="http://emojipedia-us.s3.amazonaws.com/cache/6b/16/6b164a624288271a884ab2a22f9bb693.png" />
-          <p className="percentage">&ensp; { rating } </p>
-          <p className="dog-friendly">% dog friendly</p>
-        </div>
-      </div>
-      <div className="icon">
-        <img className={`pop-${props.marker.venue}`} role="presentation"/>
-      </div>
-    </div>
-  )
-};
-
-const Dates = function(props){
-  return <p className="dates"> {props.timeAndDate} </p>
-}
 
 export default App

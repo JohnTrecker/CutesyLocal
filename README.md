@@ -23,31 +23,39 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 ## Front End
 
+[ ] Get live data - `liveData` branch
+  [X] separate components
+  [ ] refactor buttons to set data
+  [ ] get better data - include reviews
+  [ ] figure out how to retain context for this.updateLocation()
+  [ ] Refactor local API to fetch json
+  [ ] Fetch and handle data on client side
+  [ ] Hide API keys
+[ ] Include reviews in Popup component
+[ ] Replace `How to start this app` with script and update README.md
+
 [X] Conflicts overcome
   [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
 
 [X] Cluster markers - `cluster` branch
   [X] Refactor marker divs into MapboxGL layers
   [X] Add Mapbox Sources and Layers
+  [X] Coordinate venue cluster colors
 [X] Toggle markers
+  [ ] Give markers rendering preference over other MapBox elements
 [X] Include Popups - `cluster` branch
   [X] Add onClick behavior to markers
   [X] Render popup component
   [X] Refactor markers as MapboxGL layers
-  [ ] Restyle popups
   [X] Dynamically render smiley assets for rating
+  [ ] Transition popups
   [ ] Mobile first styling
-[ ] Restyle button bar - `buttons` branch
+
+Optional
 [ ] Play map locations as a slideshow
-[ ] Replace `How to start this app` with script and update README.md
-[ ] Get live data - `liveData` branch
-  [ ] figure out how to retain context for this.updateLocation()
-  [ ] Refactor local API to fetch json
-  [ ] Fetch and handle data on client side
-  [ ] Unmount markers on data update
-  [ ] Refactor `geojsonify`
-  [ ] Hide API keys
-[ ] Implement react-redux-mapbox-gl - 'react' branch
+[ ] Restyle button bar - `buttons` branch
+  [ ] Font
+[ ] Implement react-redux-mapbox-gl - 'react' branch ?
 [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
   [ ] include MozSwipeGesture listener into the library
 
