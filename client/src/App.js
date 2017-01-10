@@ -94,7 +94,6 @@ class App extends React.Component {
         <div id="popup"></div>
       </div>
     )
-
   }
 
   componentDidMount(){
@@ -104,7 +103,6 @@ class App extends React.Component {
         center: this.state.location,
         zoom: 12
     });
-    // map.addControl(new mapboxgl.AttributionControl(), 'top-left');
 
     const venues = ["restaurant", "park", "event"];
     map.on('load', function(){
