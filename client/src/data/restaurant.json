@@ -560,7 +560,12 @@
               "address1": "1725 Alameda St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {"reviewer": "",
+               "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend."
+              }
+            ]
           }
         },
         {
