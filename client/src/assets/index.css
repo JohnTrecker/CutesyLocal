@@ -246,12 +246,65 @@ div.review-image {
   margin: 0 5px;
 }
 
-img.reviewer {
-  zoom: 40%;
+img#reviewer {
+  zoom: 13.75%;
   width: 100%;
   height: 100%;
-  background-image: url("warren.jpg");
 }
+
+img.stevie {
+  background-image: url("./avatars/stevie.jpg");
+}
+
+img.matt {
+  background-image: url("./avatars/matt.jpg");
+}
+
+img.joe {
+  background-image: url("./avatars/joe.jpg");
+}
+
+img.veronika {
+  background-image: url("./avatars/veronika.jpg");
+}
+
+img.lorenzo {
+  background-image: url("./avatars/lorenzo.jpg");
+}
+
+img.jenny {
+  background-image: url("./avatars/jenny.jpg");
+}
+
+img.helen {
+  background-image: url("./avatars/helen.jpg");
+}
+
+img.elliot {
+  background-image: url("./avatars/elliot.jpg");
+}
+
+img.christian {
+  background-image: url("./avatars/christian.jpg");
+}
+
+img.chloe {
+  background-image: url("./avatars/chloe.jpg");
+}
+
+/* command line commands to use: grep ,find, auk, sed */
+/* git squash? */
+/* load time (how much time it takes for your web app to load) vs latency () */
+/* richness vs. indexibility */
+/* Redis is MemCache that saves everything to memory every 200ms. Not for heavily realtime apps */
+/* CouchDB has a great replication store. queries are ingle threaded mapreduce store */
+/* LevelDB can be installed on npm. Can scale well */
+/* MySQL, or MariaDB (use sequel) */
+/* Postgres (consistency, availability) - better than MySQL in every way excetp its' hard to install and administer */
+/* Oracle, 6-figure amazing (with db) but expensive */
+/* Riak, and cousin Casandra, are a set of flexible machines with great uptime, tough queries. v2 or v3 database.  */
+/* ElasticSearch - don't use as your primary store. A very fast searchible cache */
+/* File Sysytem */
 
 div.review-info {
   flex-direction: column;

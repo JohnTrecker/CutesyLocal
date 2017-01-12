@@ -6,8 +6,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7604,
-              -122.4147
+              -122.4147,
+              37.7604
             ]
           },
           "properties": {
@@ -32,7 +32,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Matt",
                 "review": "If you were to play a word-association game with the Homestead, you’d get two responses: \"peanuts\" and \"dogs\"."
               }
             ]
@@ -43,8 +43,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7971,
-              -122.4371
+              -122.4371,
+              37.7971
             ]
           },
           "properties": {
@@ -69,7 +69,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Stevie",
                 "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
               }
             ]
@@ -80,8 +80,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7652,
-              -122.4662
+              -122.4662,
+              37.7652
             ]
           },
           "properties": {
@@ -106,7 +106,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Joe",
                 "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
               }
             ]
@@ -117,8 +117,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7679,
-              -122.4292
+              -122.4292,
+              37.7679
             ]
           },
           "properties": {
@@ -143,7 +143,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Veronika",
                 "review": "Grab a seat on one of the couches by the windows; it's the perfect spot to tuck in for a few hours with your best friend laying at your feet."
               }
             ]
@@ -154,8 +154,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7468,
-              -122.4194
+              -122.4194,
+              37.7468
             ]
           },
           "properties": {
@@ -180,7 +180,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Lorenzo",
                 "review": "There's no where better than El Rio's back yard on a sunny day, but dogs are allowed inside at this Mission dive bar as well, so it's also a great option when the fog blankets the city or it's, uh, raining cats and dogs. "
               }
             ]
@@ -191,8 +191,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7394,
-              -122.4183
+              -122.4183,
+              37.7394
             ]
           },
           "properties": {
@@ -217,7 +217,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Jenny",
                 "review": "Professor Wagglesworth is totally welcome with all of his doggie colleagues"
               }
             ]
@@ -228,8 +228,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7799,
-              -122.3903
+              -122.3903,
+              37.7799
             ]
           },
           "properties": {
@@ -254,7 +254,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Helen",
                 "review": "While MoMo's is not a place you want to take your dog when the Giants are playing at home (too crowded), the patio makes the perfect spot to lunch and day drink with Squeakers pretty much every other time."
               }
             ]
@@ -265,8 +265,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7692,
-              -122.4522
+              -122.4522,
+              37.7692
             ]
           },
           "properties": {
@@ -291,7 +291,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Elliot",
                 "review": "This Upper Haight watering hole has a long bar, comfy chairs, Moroccan-inspired light fixtures, a pool table, and the same jukebox it had before it got a 2012 remodel, and is the perfect place to grab a drink with your dog (he'll have a water, please) after work or on a weekend afternoon."
               }
             ]
@@ -302,8 +302,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              37.7976,
-              -122.4307
+              -122.4307,
+              37.7976
             ]
           },
           "properties": {
@@ -328,7 +328,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Christian",
                 "review": "The saddest part about going out to watch the game is leaving your pup at home for three hours. Thank goodness for the Bus Stop in Cow Hollow, wich doesn't make you choose one or the other. "
               }
             ]
@@ -365,7 +365,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Chloe",
                 "review": "The drinks are great, there's a pool table, Big Buck Hunter, a legit jukebox, and you can bring your canine companion with you to keep you company."
               }
             ]
@@ -409,7 +409,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Stevie",
                 "review": "This itty bitty pub is one of the most dog-friendly in town. Everyone inside (employees and patrons alike) are incredibly sociable."
               }
             ]
@@ -457,7 +457,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Matt",
                 "review": "on Monday nights \"Zazie Goes to the Dogs\" and you can dine with your pooch on the heated and covered garden patio. What's even crazier is that Zazie actually rewards you for bringing in your dog by providing endless dog treats and $10 off any bottle on the wine list. C'est bon!"
               }
             ]
@@ -509,7 +509,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Joe",
                 "review": "This is brunch, done right. Bring your dog and enjoy your ‘frisco benedict’ on the patio."
               }
             ]
@@ -557,7 +557,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Veronika",
                 "review": "The patio provides the kind of dog-watching that your dog dreams about."
               }
             ]
@@ -605,7 +605,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Lorenzo",
                 "review": "Dogs allowed in front patio area."
               }
             ]
@@ -653,7 +653,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Jenny",
                 "review": "Si, se puede traer Fiddo."
               }
             ]
@@ -705,7 +705,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Helen",
                 "review": "Outdoor picnic style tables perfect for that mid-walk snack."
               }
             ]
@@ -800,7 +800,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Elliot",
                 "review": "We sat outside so I can't speak to the ambiance inside but bonus points for being dog-friendly in their outdoor seating area."
               }
             ]
@@ -891,7 +891,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Christian",
                 "review": "Outdoor bistro chair seating for the pupster."
               }
             ]
@@ -943,7 +943,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Stevie",
                 "review": "The patio is dog friendly."
               }
             ]
@@ -1030,7 +1030,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Helen",
+                "reviewer": "Matt",
                 "review": "My small dog was also welcomed, and she had a deviled egg from the starter menu."
               }
             ]
@@ -1074,7 +1074,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Stevie",
+                "reviewer": "Joe",
                 "review": "Dog-freindly seating!"
               }
             ]
@@ -1122,7 +1122,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Stevie",
+                "reviewer": "Veronika",
                 "review": "Bring your fur baby here before or after a visit to the Mission Pet Hospital."
               }
             ]
@@ -1170,7 +1170,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Stevie",
+                "reviewer": "Lorenzo",
                 "review": "Home of the Puppy Bowl duting Super Bowl week! Bring your lil champion here for great outdoor patio dogwatching."
               }
             ]
@@ -1222,7 +1222,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Stevie",
+                "reviewer": "Jenny",
                 "review": "Hip Duboce Triangle food court space that welcomes dogs."
               }
             ]
@@ -1360,7 +1360,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "chloe",
+                "reviewer": "Helen",
                 "review": "Outdoor patio seating is very dog friendly; come early, there's almost always a line on weekends."
               }
             ]
@@ -1408,7 +1408,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Elliot",
                 "review": "Bring the hounds—This Deep-South-meets-California restaurant has a quaint patio where you can enjoy the microbrews and Southern staples."
               }
             ]
@@ -1635,7 +1635,7 @@
             },
             "venue": "restaurant",
             "reviews": [
-              {"reviewer": "Erik",
+              {"reviewer": "Christian",
                "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend."
               }
             ]
@@ -1683,7 +1683,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "erik",
+                "reviewer": "Stevie",
                 "review": "You can totally bring your dog there (inside and out) and house made dog treats are available to purchase so that Fifi doesn't get too jealous of your beer-battered fried Oreos."
               }
             ]
@@ -1911,7 +1911,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Erik",
+                "reviewer": "Matt",
                 "review": "My dog was just one if three on the patio at Pacific Catch. I even saw one gentleman pick his smaller dog up and take him inside while he grabbed his to-go order (he asked if it was ok first) and the food/drinks were great! Me and my dog will be back."
               }
             ]
@@ -2272,7 +2272,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Stevie",
+                "reviewer": "Joe",
                 "review": "We came with our dog, and had a wonderful table outside. We were even offered water for our dog, SUPER PLUS."
               }
             ]
@@ -2363,7 +2363,7 @@
             "venue": "restaurant",
             "reviews": [
               {
-                "reviewer": "Elyse",
+                "reviewer": "Veronika",
                 "review": "They are dog friendly!! I sat on the patio with my pup and they brought me a nice blanket and my pup a fresh bowl of water."
               }
             ]

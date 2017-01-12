@@ -6,8 +6,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            37.7163,
-            -122.5029
+            -122.5025,
+            37.7163
           ]
         },
         "properties": {
@@ -32,7 +32,7 @@
           "venue": "park",
           "reviews": [
             {
-              "reviewer": "Erik",
+              "reviewer": "Stevie",
               "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep)."
             }
           ]
@@ -43,8 +43,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            37.8039,
-            -122.4641
+            -122.4641,
+            37.8039
           ]
         },
         "properties": {
@@ -67,12 +67,7 @@
             "country": "US"
           },
           "venue": "park",
-          "reviews": [
-            {
-              "reviewer": "",
-              "review": ""
-            }
-          ]
+          "reviews": []
         }
       },
       {
@@ -80,8 +75,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            37.752629,
-            -122.5448984
+            -122.5107,
+            37.7594
           ]
         },
         "properties": {
@@ -106,7 +101,7 @@
           "venue": "park",
           "reviews": [
             {
-              "reviewer": "erik",
+              "reviewer": "Matt",
               "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. "
             }
           ]
@@ -117,8 +112,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            37.7936,
-            -122.4836
+            -122.4836,
+            37.7936
           ]
         },
         "properties": {
@@ -143,7 +138,7 @@
           "venue": "park",
           "reviews": [
             {
-              "reviewer": "erik",
+              "reviewer": "Chloe",
               "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with."
             }
           ]
@@ -185,7 +180,7 @@
           "venue": "park",
           "reviews": [
             {
-              "reviewer": "Christian",
+              "reviewer": "Veronika",
               "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page."
             }
           ]
@@ -505,7 +500,7 @@
           "venue": "park",
           "reviews": [
             {
-              "reviewer": "Molly",
+              "reviewer": "Lorenzo",
               "review": "East part of the park is off-lease with plenty of space to run and play."
             }
           ]
@@ -661,7 +656,7 @@
           "venue": "park",
           "reviews": [
             {
-              "reviewer": "Nat",
+              "reviewer": "Chloe",
               "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike."
             }
           ]
