@@ -6,6 +6,468 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
+              37.7604,
+              -122.4147
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/3FzJGyYqQDZ9TgtTXjKZSw/ls.jpg",
+            "phone": "+4152824663",
+            "rating": 4.5,
+            "url": "http://homesteadsf.com",
+            "name": "The Homestead (Mission)",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2301 Folsom St,",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "If you were to play a word-association game with the Homestead, you’d get two responses: \"peanuts\" and \"dogs\"."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7971,
+              -122.4371
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "restaurant",
+                "title": "Restaurant"
+              }
+            ],
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/zoDQy7BGKdZ3M3_ejEUYaw/258s.jpg",
+            "phone": "+4157752200",
+            "rating": 4,
+            "url": "http://rosescafesf.com",
+            "name": "Rose's Cafe",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "2298 Union St.",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7652,
+              -122.4662
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "restaurant",
+                "title": "Restaurant"
+              }
+            ],
+            "image_url": "https://s-media-cache-ak0.pinimg.com/564x/84/34/11/843411220360af1b354c2b597336168c.jpg",
+            "phone": "+4156659912",
+            "rating": 4,
+            "url": "http://chowfoodbar.com/",
+            "name": "Park Chow",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94122",
+              "state": "CA",
+              "address1": "1240 9th Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7679,
+              -122.4292
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/LdmTS-YmX-2vYitIVBl0U_WUExI=/104x0:1944x1380/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743129/Chuchill.0.0.jpg",
+            "phone": "+4157540194",
+            "rating": 4,
+            "url": "http://churchillsf.com/",
+            "name": "Churchill",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94114",
+              "state": "CA",
+              "address1": "198 Church St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "Grab a seat on one of the couches by the windows; it's the perfect spot to tuck in for a few hours with your best friend laying at your feet."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7468,
+              -122.4194
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/UcAIZX4qW2Pvd8hLXpWmmFsTXRU=/125x0:874x562/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743131/El_Rio.0.0.jpg",
+            "phone": "+4152823325",
+            "rating": 4,
+            "url": "http://elriosf.com",
+            "name": "El Rio",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "3158 Mission St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "There's no where better than El Rio's back yard on a sunny day, but dogs are allowed inside at this Mission dive bar as well, so it's also a great option when the fog blankets the city or it's, uh, raining cats and dogs. "
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7394,
+              -122.4183
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15492409_1178808875541693_5474739865037708423_n.jpg?oh=6b27171c40792b1c5fe4a33e357211e7&oe=58DFE2FE",
+            "phone": "+",
+            "rating": 4,
+            "url": "http://holywatersf.com/",
+            "name": "Holy Water",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "309 Cortland Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "Professor Wagglesworth is totally welcome with all of his doggie colleagues"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7799,
+              -122.3903
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/0WtaHNSjRwGzChlo2_vAoTBjAUY=/0x120:960x840/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743135/Momos.0.0.jpg",
+            "phone": "+4152278660",
+            "rating": 3.5,
+            "url": "http://www.sfmomos.com/",
+            "name": "Momo's Restaurant",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94107",
+              "state": "CA",
+              "address1": "760 2nd St.",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "While MoMo's is not a place you want to take your dog when the Giants are playing at home (too crowded), the patio makes the perfect spot to lunch and day drink with Squeakers pretty much every other time."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7692,
+              -122.4522
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "",
+            "phone": "+4157522971",
+            "rating": 4,
+            "url": "",
+            "name": "Murio's Trophy Room",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94117",
+              "state": "CA",
+              "address1": "1811 Haight St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "This Upper Haight watering hole has a long bar, comfy chairs, Moroccan-inspired light fixtures, a pool table, and the same jukebox it had before it got a 2012 remodel, and is the perfect place to grab a drink with your dog (he'll have a water, please) after work or on a weekend afternoon."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              37.7976,
+              -122.4307
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/0gLTW4D9MsUC6MTMrfbs5ktH3qo=/0x0:700x525/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743127/Bus_Stop.0.0.jpg",
+            "phone": "+4155676905",
+            "rating": 4,
+            "url": "busstop-sf.com",
+            "name": "Bus Stop",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "1901 Union St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "The saddest part about going out to watch the game is leaving your pup at home for three hours. Thank goodness for the Bus Stop in Cow Hollow, wich doesn't make you choose one or the other. "
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4088,
+              37.7758
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/9uTduJAUP1gcw3omfvdz4hKsIcI=/120x0:688x426/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743125/Bloodhound.0.0.jpg",
+            "phone": "+4158632840",
+            "rating": 4,
+            "url": "bloodhoundsf.com",
+            "name": "Bloodhound",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "1145 Folsom St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "The drinks are great, there's a pool table, Big Buck Hunter, a legit jukebox, and you can bring your canine companion with you to keep you company."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4267343,
+              37.7986484
+            ]
+          },
+          "properties": {
+            "id": "black-horse-london-pub",
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1792,
+            "image_url": "https://images.bringfido.com/site_media/photos/2016/05/16/blackhorse.jpg",
+            "phone": "+4156785697",
+            "price": "$$",
+            "distance": null,
+            "rating": 4,
+            "url": "http://www.blackhorselondon.com/",
+            "name": "The Black Horse London Pub",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "1514 Union St.",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "This itty bitty pub is one of the most dog-friendly in town. Everyone inside (employees and patrons alike) are incredibly sociable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4500069,
+              37.7652548
+            ]
+          },
+          "properties": {
+            "id": "zazie",
+            "categories": [
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              },
+              {
+                "alias": "french",
+                "title": "French"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1792,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
+            "phone": "+4155645332",
+            "price": "$$",
+            "distance": null,
+            "rating": 4,
+            "url": "zaziesf.com",
+            "name": "Zazie",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94117",
+              "state": "CA",
+              "address1": "941 Cole St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "on Monday nights \"Zazie Goes to the Dogs\" and you can dine with your pooch on the heated and covered garden patio. What's even crazier is that Zazie actually rewards you for bringing in your dog by providing endless dog treats and $10 off any bottle on the wine list. C'est bon!"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
               -122.4308676,
               37.7643545
             ]
@@ -44,7 +506,13 @@
               "address1": "3499 16th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "This is brunch, done right. Bring your dog and enjoy your ‘frisco benedict’ on the patio."
+              }
+            ]
           }
         },
         {
@@ -86,7 +554,13 @@
               "address1": "3611 18th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "The patio provides the kind of dog-watching that your dog dreams about."
+              }
+            ]
           }
         },
         {
@@ -128,91 +602,13 @@
               "address1": "2788 Mission St",
               "country": "US"
             },
-            "venue": "restaurant"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.4413763,
-              37.7166906
-            ]
-          },
-          "properties": {
-            "id": "batter-up-san-francisco",
-            "categories": [
+            "venue": "restaurant",
+            "reviews": [
               {
-                "alias": "tradamerican",
-                "title": "American (Traditional)"
-              },
-              {
-                "alias": "desserts",
-                "title": "Desserts"
+                "reviewer": "Erik",
+                "review": "Dogs allowed in front patio area."
               }
-            ],
-            "is_closed": false,
-            "review_count": 261,
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/g5gc2FXCyDG6oYhSFKz42A/o.jpg",
-            "phone": "+14152056032",
-            "price": "$",
-            "distance": 5758.03183656,
-            "rating": 4.5,
-            "url": "https://www.yelp.com/biz/batter-up-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-            "name": "Batter Up",
-            "location": {
-              "address3": "",
-              "address2": "",
-              "city": "San Francisco",
-              "zip_code": "94112",
-              "state": "CA",
-              "address1": "888 Geneva Ave",
-              "country": "US"
-            },
-            "venue": "restaurant"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.417139,
-              37.765643
             ]
-          },
-          "properties": {
-            "id": "poc-chuc-san-francisco",
-            "categories": [
-              {
-                "alias": "latin",
-                "title": "Latin American"
-              },
-              {
-                "alias": "mexican",
-                "title": "Mexican"
-              }
-            ],
-            "is_closed": false,
-            "review_count": 477,
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2jN53sfuBd7IQ2up32ow8g/o.jpg",
-            "phone": "+14155581583",
-            "price": "$$",
-            "distance": 992.8172312904,
-            "rating": 4.5,
-            "url": "https://www.yelp.com/biz/poc-chuc-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-            "name": "Poc-Chuc",
-            "location": {
-              "address3": "",
-              "address2": "",
-              "city": "San Francisco",
-              "zip_code": "94103",
-              "state": "CA",
-              "address1": "2886 16th St",
-              "country": "US"
-            },
-            "venue": "restaurant"
           }
         },
         {
@@ -254,49 +650,13 @@
               "address1": "741 Valencia St",
               "country": "US"
             },
-            "venue": "restaurant"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.41312,
-              37.75417
-            ]
-          },
-          "properties": {
-            "id": "el-gallo-giro-taco-truck-san-francisco-2",
-            "categories": [
+            "venue": "restaurant",
+            "reviews": [
               {
-                "alias": "mexican",
-                "title": "Mexican"
-              },
-              {
-                "alias": "foodtrucks",
-                "title": "Food Trucks"
+                "reviewer": "Erik",
+                "review": "Si, se puede traer Fiddo."
               }
-            ],
-            "is_closed": false,
-            "review_count": 136,
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/fHVzzqSiiVoJUUekI9ahfQ/o.jpg",
-            "phone": "+14152401224",
-            "price": "$",
-            "distance": 1979.941712012,
-            "rating": 4.5,
-            "url": "https://www.yelp.com/biz/el-gallo-giro-taco-truck-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-            "name": "El Gallo Giro Taco Truck",
-            "location": {
-              "address3": "",
-              "address2": "",
-              "city": "San Francisco",
-              "zip_code": "94110",
-              "state": "CA",
-              "address1": "23rd St & Treat Ave",
-              "country": "US"
-            },
-            "venue": "restaurant"
+            ]
           }
         },
         {
@@ -342,7 +702,13 @@
               "address1": "1701 Folsom St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "Outdoor picnic style tables perfect for that mid-walk snack."
+              }
+            ]
           }
         },
         {
@@ -384,7 +750,8 @@
               "address1": "3141 16th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -430,7 +797,13 @@
               "address1": "4000 24th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "We sat outside so I can't speak to the ambiance inside but bonus points for being dog-friendly in their outdoor seating area."
+              }
+            ]
           }
         },
         {
@@ -476,7 +849,8 @@
               "address1": "500 Washington St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -514,7 +888,13 @@
               "address1": "1099 Tennessee St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "Outdoor bistro chair seating for the pupster."
+              }
+            ]
           }
         },
         {
@@ -562,8 +942,9 @@
             },
             "venue": "restaurant",
             "reviews": [
-              {"reviewer": "",
-               "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend."
+              {
+                "reviewer": "erik",
+                "review": "The patio is dog friendly."
               }
             ]
           }
@@ -603,48 +984,8 @@
               "address1": "300 Bayshore Blvd",
               "country": "US"
             },
-            "venue": "restaurant"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.4045221,
-              37.7937107
-            ]
-          },
-          "properties": {
-            "id": "sushi-taka-san-francisco-2",
-            "categories": [
-              {
-                "alias": "sushi",
-                "title": "Sushi Bars"
-              },
-              {
-                "alias": "japanese",
-                "title": "Japanese"
-              }
-            ],
-            "is_closed": false,
-            "review_count": 266,
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/sBTwhkTuRc6rkwJQdrxZeQ/o.jpg",
-            "price": "$",
-            "distance": 3589.0230910739997,
-            "rating": 4,
-            "url": "https://www.yelp.com/biz/sushi-taka-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-            "name": "Sushi Taka",
-            "location": {
-              "address3": "",
-              "address2": "",
-              "city": "San Francisco",
-              "zip_code": "94108",
-              "state": "CA",
-              "address1": "600 Kearny St",
-              "country": "US"
-            },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -686,7 +1027,13 @@
               "address1": "2491 Mission St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Helen",
+                "review": "My small dog was also welcomed, and she had a deviled egg from the starter menu."
+              }
+            ]
           }
         },
         {
@@ -724,7 +1071,13 @@
               "address1": "2351 Mission St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "Dog-freindly seating!"
+              }
+            ]
           }
         },
         {
@@ -766,7 +1119,13 @@
               "address1": "746 Valencia St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "Bring your fur baby here before or after a visit to the Mission Pet Hospital."
+              }
+            ]
           }
         },
         {
@@ -792,7 +1151,7 @@
             ],
             "is_closed": false,
             "review_count": 2278,
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bsksNkOwGtIcZvOiohXeWA/o.jpg",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/hJAPNfUXxaIB5SbNydbDQw/o.jpg",
             "phone": "+14153183423",
             "price": "$$",
             "distance": 4363.877653564,
@@ -808,95 +1167,13 @@
               "address1": "1 Ferry Bldg",
               "country": "US"
             },
-            "venue": "restaurant"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.396727216602,
-              37.7920625403238
-            ]
-          },
-          "properties": {
-            "id": "elixiria-san-francisco",
-            "categories": [
+            "venue": "restaurant",
+            "reviews": [
               {
-                "alias": "juicebars",
-                "title": "Juice Bars & Smoothies"
-              },
-              {
-                "alias": "gluten_free",
-                "title": "Gluten-Free"
-              },
-              {
-                "alias": "vegan",
-                "title": "Vegan"
+                "reviewer": "Stevie",
+                "review": "Home of the Puppy Bowl duting Super Bowl week! Bring your lil champion here for great outdoor patio dogwatching."
               }
-            ],
-            "is_closed": false,
-            "review_count": 122,
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ayh2mAr2mudzKRgumnKHyw/o.jpg",
-            "phone": "+16284443149",
-            "price": "$$",
-            "distance": 3894.2717587619995,
-            "rating": 4.5,
-            "url": "https://www.yelp.com/biz/elixiria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-            "name": "Elixiria",
-            "location": {
-              "address3": "",
-              "address2": "Unit 2",
-              "city": "San Francisco",
-              "zip_code": "94105",
-              "state": "CA",
-              "address1": "25 Beale St",
-              "country": "US"
-            },
-            "venue": "restaurant"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.42963,
-              37.75157
             ]
-          },
-          "properties": {
-            "id": "el-buen-comer-san-francisco-6",
-            "categories": [
-              {
-                "alias": "foodstands",
-                "title": "Food Stands"
-              },
-              {
-                "alias": "mexican",
-                "title": "Mexican"
-              }
-            ],
-            "is_closed": false,
-            "review_count": 20,
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/yRWKHwIJukwohb0sL-SqVA/o.jpg",
-            "phone": "+14152481332",
-            "price": "$",
-            "distance": 1138.0344812239998,
-            "rating": 5,
-            "url": "https://www.yelp.com/biz/el-buen-comer-san-francisco-6?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-            "name": "El Buen Comer",
-            "location": {
-              "address3": "",
-              "address2": "3861 24th St & Sanchez",
-              "city": "San Francisco",
-              "zip_code": "94114",
-              "state": "CA",
-              "address1": "Noe Valley Farmers Market",
-              "country": "US"
-            },
-            "venue": "restaurant"
           }
         },
         {
@@ -942,7 +1219,13 @@
               "address1": "2175 Market Street",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "Hip Duboce Triangle food court space that welcomes dogs."
+              }
+            ]
           }
         },
         {
@@ -984,7 +1267,8 @@
               "address1": "1101 Potrero Ave",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1026,7 +1310,8 @@
               "address1": "432 Octavia St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1056,7 +1341,7 @@
             ],
             "is_closed": false,
             "review_count": 1194,
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TV5qFbWgPdDSnFWNjYw77w/o.jpg",
+            "image_url": "https://images.bringfido.com/site_media/photos/restaurants/0/7/8/1870/1870_48265.jpg",
             "phone": "+14158214608",
             "price": "$$",
             "distance": 1726.6521955639998,
@@ -1072,7 +1357,13 @@
               "address1": "2814 19th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "chloe",
+                "review": "Outdoor patio seating is very dog friendly; come early, there's almost always a line on weekends."
+              }
+            ]
           }
         },
         {
@@ -1114,7 +1405,13 @@
               "address1": "1 Tillman Pl",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "Bring the hounds—This Deep-South-meets-California restaurant has a quaint patio where you can enjoy the microbrews and Southern staples."
+              }
+            ]
           }
         },
         {
@@ -1156,7 +1453,8 @@
               "address1": "306 Broderick St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1202,7 +1500,8 @@
               "address1": "3505 B 17th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1248,7 +1547,8 @@
               "address1": "1 Ferry Bldg",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1290,7 +1590,8 @@
               "address1": "297 Page Street",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1332,7 +1633,12 @@
               "address1": "2850 Jones St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {"reviewer": "Erik",
+               "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend."
+              }
+            ]
           }
         },
         {
@@ -1374,7 +1680,13 @@
               "address1": "806 S Van Ness Ave",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "erik",
+                "review": "You can totally bring your dog there (inside and out) and house made dog treats are available to purchase so that Fifi doesn't get too jealous of your beer-battered fried Oreos."
+              }
+            ]
           }
         },
         {
@@ -1412,7 +1724,8 @@
               "address1": "687 Geary St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1458,7 +1771,8 @@
               "address1": "139 8th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1504,7 +1818,8 @@
               "address1": "3213 Pierce St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1546,7 +1861,8 @@
               "address1": "2767 Lombard St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1592,7 +1908,13 @@
               "address1": "2027 Chestnut St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Erik",
+                "review": "My dog was just one if three on the patio at Pacific Catch. I even saw one gentleman pick his smaller dog up and take him inside while he grabbed his to-go order (he asked if it was ok first) and the food/drinks were great! Me and my dog will be back."
+              }
+            ]
           }
         },
         {
@@ -1634,7 +1956,8 @@
               "address1": "633 Battery St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1680,7 +2003,8 @@
               "address1": "1605 Jerrold Ave",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1722,7 +2046,8 @@
               "address1": "3011 Steiner St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1768,7 +2093,8 @@
               "address1": "359 Divisadero St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1814,7 +2140,8 @@
               "address1": "3176 17th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1856,7 +2183,8 @@
               "address1": "3126 16th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1894,7 +2222,8 @@
               "address1": "1494 California St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -1940,7 +2269,13 @@
               "address1": "2801 24th St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "We came with our dog, and had a wonderful table outside. We were even offered water for our dog, SUPER PLUS."
+              }
+            ]
           }
         },
         {
@@ -1978,7 +2313,8 @@
               "address1": "2015 Chestnut St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -2024,7 +2360,13 @@
               "address1": "1358 Mason St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Elyse",
+                "review": "They are dog friendly!! I sat on the patio with my pup and they brought me a nice blanket and my pup a fresh bowl of water."
+              }
+            ]
           }
         },
         {
@@ -2062,7 +2404,8 @@
               "address1": "6001 California St",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         },
         {
@@ -2104,7 +2447,8 @@
               "address1": "",
               "country": "US"
             },
-            "venue": "restaurant"
+            "venue": "restaurant",
+            "reviews": []
           }
         }
   ]

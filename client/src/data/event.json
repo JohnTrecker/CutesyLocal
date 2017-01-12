@@ -30,7 +30,8 @@
             }
           ],
           "venue": "event",
-          "rating": 4
+          "rating": 4,
+          "reviews": []
         }
       },
       {
@@ -62,7 +63,8 @@
             }
           ],
           "venue": "event",
-          "rating": 4
+          "rating": 4,
+          "reviews": []
         }
       },
       {
@@ -94,7 +96,8 @@
             }
           ],
           "venue": "event",
-          "rating": 4
+          "rating": 4,
+          "reviews": []
         }
       },
       {
@@ -126,7 +129,8 @@
             }
           ],
           "venue": "event",
-          "rating": 4.5
+          "rating": 4.5,
+          "reviews": []
         }
       },
       {
@@ -158,7 +162,8 @@
             }
           ],
           "venue": "event",
-          "rating": 4.8
+          "rating": 4.8,
+          "reviews": []
         }
       },
       {
@@ -190,7 +195,8 @@
             }
           ],
           "venue": "event",
-          "rating": 4.8
+          "rating": 4.8,
+          "reviews": []
         }
       }
   ]

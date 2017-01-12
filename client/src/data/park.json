@@ -6,6 +6,154 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
+            37.7163,
+            -122.5029
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "http://media.mnn.com/assets/images/2013/03/san_francisco_fort_funston_dogs.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Fort Funston",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94118",
+            "state": "CA",
+            "address1": "Fort Funston Rd",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Erik",
+              "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep)."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            37.8039,
+            -122.4641
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "https://assets.rbl.ms/5434855/980x.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Crissy Field",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94129",
+            "state": "CA",
+            "address1": "1199 E Beach",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "",
+              "review": ""
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            37.752629,
+            -122.5448984
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "https://assets.rbl.ms/5434854/980x.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Ocean Beach",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94121",
+            "state": "CA",
+            "address1": "Great Highway",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "erik",
+              "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. "
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            37.7936,
+            -122.4836
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "http://data.whicdn.com/images/9172993/original.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Baker Beach",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94129",
+            "state": "CA",
+            "address1": "1504 Pershing Dr",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "erik",
+              "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
             -122.439369238287,
             37.7652326194395
           ]
@@ -34,7 +182,13 @@
           "url": "https://www.yelp.com/biz/corona-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4.5,
           "distance": 1010.7182097915999,
-          "venue": "park"
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Christian",
+              "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page."
+            }
+          ]
         }
       },
       {
@@ -74,7 +228,8 @@
           "url": "https://www.yelp.com/biz/bernal-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4.5,
           "distance": 2928.8492923139997,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -110,7 +265,8 @@
           "url": "https://www.yelp.com/biz/lafayette-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4.5,
           "distance": 2690.1972059679997,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -147,7 +303,8 @@
           "name": "Upper Douglass Dog Park",
           "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/k6LLSnLN3gJYRUYOuBLEqg/o.jpg",
           "url": "https://www.yelp.com/biz/upper-douglass-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -172,7 +329,7 @@
             "city": "San Francisco"
           },
           "review_count": 70,
-          "name": "St. Mary's Park and Dog Park",
+          "name": "St. Marys Park and Dog Park",
           "categories": [
             {
               "alias": "dog_parks",
@@ -187,7 +344,8 @@
           "url": "https://www.yelp.com/biz/st-marys-park-and-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4.5,
           "distance": 3729.616160012,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -227,7 +385,8 @@
           "url": "https://www.yelp.com/biz/rincon-hill-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4,
           "distance": 3817.7658273039997,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -264,7 +423,8 @@
           "name": "Pine Lake Park",
           "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/p4FCz-jrBHoMS8R81w4mvA/o.jpg",
           "url": "https://www.yelp.com/biz/pine-lake-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -301,7 +461,8 @@
           "name": "Mission Creek Dog Park",
           "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/9X9HCNMR9kH-JNZlQnQTDg/o.jpg",
           "url": "https://www.yelp.com/biz/mission-creek-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -341,7 +502,13 @@
           "url": "https://www.yelp.com/biz/duboce-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4,
           "distance": 510.8870268618,
-          "venue": "park"
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Molly",
+              "review": "East part of the park is off-lease with plenty of space to run and play."
+            }
+          ]
         }
       },
       {
@@ -378,7 +545,8 @@
           "name": "Walter Haas Park and Playground",
           "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KYXdvl4asJdyqbtvVAlxwA/o.jpg",
           "url": "https://www.yelp.com/biz/walter-haas-park-and-playground-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -414,7 +582,8 @@
           "url": "https://www.yelp.com/biz/golden-gate-park-dog-training-area-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 3.5,
           "distance": 6237.20477486,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -451,7 +620,8 @@
           "name": "Cole Valley Dog Park",
           "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/zbC3iEfVyJA1xcZm9_Bg2Q/o.jpg",
           "url": "https://www.yelp.com/biz/cole-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -488,7 +658,13 @@
           "name": "Eureka Valley Dog Park",
           "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IINInQP1O3LbooaFziCrfA/o.jpg",
           "url": "https://www.yelp.com/biz/eureka-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Nat",
+              "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike."
+            }
+          ]
         }
       },
       {
@@ -529,7 +705,8 @@
           "name": "SoMa West Skate and Dog Park",
           "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/WaWnXsDUcWysxdwY_IuDAA/o.jpg",
           "url": "https://www.yelp.com/biz/soma-west-skate-and-dog-park-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -565,7 +742,8 @@
           "url": "https://www.yelp.com/biz/alemany-blvd-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4,
           "distance": 6986.852566797999,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -601,7 +779,8 @@
           "url": "https://www.yelp.com/biz/25th-st-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4,
           "distance": 3684.080528448,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -609,8 +788,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            -122.427538450402,
-            37.7150739798201
+            -122.42753,
+            37.7150739
           ]
         },
         "properties": {
@@ -637,7 +816,8 @@
           "url": "https://www.yelp.com/biz/crocker-amazon-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 3,
           "distance": 5820.55710957,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -673,7 +853,8 @@
           "url": "https://www.yelp.com/biz/upper-noe-recreation-center-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 3,
           "distance": 2749.8591412499995,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -709,7 +890,8 @@
           "url": "https://www.yelp.com/biz/golden-gate-park-kezar-triangle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 4.5,
           "distance": 2683.372799698,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       },
       {
@@ -745,7 +927,8 @@
           "url": "https://www.yelp.com/biz/dog-runs-at-golden-gate-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
           "rating": 3,
           "distance": 5912.1127840379995,
-          "venue": "park"
+          "venue": "park",
+          "reviews": []
         }
       }
   ]
