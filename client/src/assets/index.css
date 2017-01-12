@@ -42,7 +42,7 @@ button {
   margin: 5px;
   max-width: 165px;
   background-color: rgb(221, 221, 221);
-  color: white;
+  color: black;
   outline: none;
 }
 
@@ -77,17 +77,17 @@ img.event{
 
 img.great{
   content: url("emoticon_1.png");
-  height: 20px;
+  max-height: 20px;
 }
 
 img.good{
   content: url("emoticon_2.png");
-  height: 20px;
+  max-height: 20px;
 }
 
 img.notsogood{
   content: url("emoticon_3.png");
-  height: 20px;
+  max-height: 20px;
 }
 
 /* End Assets*/
@@ -148,7 +148,6 @@ img.notsogood{
   background-color: rgba(255,255,255,0.90);
   border-top: thin solid lightgrey;
   flex-wrap: nowrap;
-  /*transition: max-height 2s 60px;*/
 }
 
 div.image img {
@@ -177,20 +176,21 @@ div.description {
   align-content: flex-start;
   margin: 0px;
   padding: 5px;
-  white-space: normal;
+  white-space: pre-line;
 }
 
-div.description p.title {
+p.title {
   flex-shrink: 50;
   margin: 0px;
   font-size: 18px;
 
 }
 
-div.description p.address {
+p.address {
   flex: 1;
   margin: 0px;
   color: grey;
+  word-wrap: normal;
 }
 
 div.description p.dates {
@@ -211,19 +211,54 @@ div.rating p.percentage {
   font-weight: bold;
 }
 
-.pop-restaurant {
-  background-image: url("icon_mkr_coffee.png");
+/*i:hover [className="visible-content"] {
+  transform: translate(-100vw);
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-property: transform, -webkit-transform;
+  transition-timing-function: ease;
+}*/
+
+div.hidden-content {
+  width: 500px;
+  height: 200px;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*align-content: flex-start;*/
 }
 
-.pop-park {
-  background-image: url("icon_mkr_park.png");
-  /*visibility: visible;*/
-  /*width: 50px;*/
+.ui.slide.reveal {
+  position:absolute!important;
+  white-space: normal;
 }
 
-.mkr-event {
-  background-image: url("icon_mkr_event.png");
+.ui.reveal>.content {
+  display: flex;
 }
+
+.ui.slide.reveal>.content {
+  display: flex;
+}
+
+div.review-image {
+  width: 90px;
+  height: 90px;
+  margin: 0 5px;
+}
+
+img.reviewer {
+  zoom: 40%;
+  width: 100%;
+  height: 100%;
+  background-image: url("warren.jpg");
+}
+
+div.review-info {
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 5px;
+}
+
 
 /* ---------- */
 /* End Popups */
@@ -236,9 +271,8 @@ div.rating p.percentage {
 
 @media all and (min-width: 420px) {
 
-  div.description {
-    margin-left: 10px;
-    max-width: 350px;
+  div#popup {
+    max-width: 50%;
   }
 
 /*  div.icon {
