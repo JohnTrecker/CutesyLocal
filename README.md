@@ -33,6 +33,9 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [ ] Hide API keys
 [ ] Include reviews in Popup component
 [ ] Replace `How to start this app` with script and update README.md
+[ ] Known Bugs
+  [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
+  [ ] truncated viewport height
 
 [X] Conflicts overcome
   [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet

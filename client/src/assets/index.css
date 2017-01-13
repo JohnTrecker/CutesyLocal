@@ -211,20 +211,9 @@ div.rating p.percentage {
   font-weight: bold;
 }
 
-/*i:hover [className="visible-content"] {
-  transform: translate(-100vw);
-  transition-delay: 0s;
-  transition-duration: 0.5s;
-  transition-property: transform, -webkit-transform;
-  transition-timing-function: ease;
-}*/
-
 div.hidden-content {
   width: 500px;
   height: 200px;
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*align-content: flex-start;*/
 }
 
 .ui.slide.reveal {
@@ -292,20 +281,6 @@ img.chloe {
   background-image: url("./avatars/chloe.jpg");
 }
 
-/* command line commands to use: grep ,find, auk, sed */
-/* git squash? */
-/* load time (how much time it takes for your web app to load) vs latency () */
-/* richness vs. indexibility */
-/* Redis is MemCache that saves everything to memory every 200ms. Not for heavily realtime apps */
-/* CouchDB has a great replication store. queries are ingle threaded mapreduce store */
-/* LevelDB can be installed on npm. Can scale well */
-/* MySQL, or MariaDB (use sequel) */
-/* Postgres (consistency, availability) - better than MySQL in every way excetp its' hard to install and administer */
-/* Oracle, 6-figure amazing (with db) but expensive */
-/* Riak, and cousin Casandra, are a set of flexible machines with great uptime, tough queries. v2 or v3 database.  */
-/* ElasticSearch - don't use as your primary store. A very fast searchible cache */
-/* File Sysytem */
-
 div.review-info {
   flex-direction: column;
   width: 80vw;
@@ -323,23 +298,6 @@ div.review-info {
 /* ------------------ */
 
 @media all and (min-width: 420px) {
-
-  div#popup {
-    max-width: 50%;
-  }
-
-/*  div.icon {
-    flex: 1;
-    display: inline-flex;
-    flex-direction: row;
-    width: 100px;
-    height: 100px;
-  }
-
-  div.icon img {
-    width: 60px;
-    margin: 5px;
-  }*/
 
 }
 

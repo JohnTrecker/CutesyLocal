@@ -3,19 +3,31 @@ var mongoose = require('mongoose');
 // ================================
 // TODO: Join Venues / Users tables
 // ================================
-var venueSchema = mongoose.Schema({
+let venueSchema = mongoose.Schema({
   number: {
     type: Number,
     unique: true
   },
   name: {
     type: String,
-    unique: true
+    unique: true,
+    required: true
   },
-  types: [String],
-  reviews: [String],
-  imageUrl: String
+  coordinates: [CoordinatesSchema],
+  reviews: [ReviewSchema],
+  imageUrl: String,
+  venueType: String
 });
+
+let CoordinatesSchema = mongoose.Schema({
+  latitude: Number,
+  longitude: Number
+})
+
+let ReviewSchema = mongoose.Schema({
+  reviewer: String,
+  review: String
+})
 
 // TODO: create new schema for users
   // number, user name, imageUrl, review history
@@ -34,8 +46,8 @@ var venueSchema = mongoose.Schema({
 
 
 // Registers the venuesSchema with Mongoose as the 'Venues' collection.
-var Venues = mongoose.model('Venues', venueSchema);
-// var Users = mongoose.model('USers', userSchema);
+let Venues = mongoose.model('Venues', venueSchema);
+// var Users = mongoose.model('Users', userSchema);
 
 module.exports = Venues;
 // module.exports = Users;
