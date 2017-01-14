@@ -1,4 +1,13 @@
-var mongoose = require('mongoose');
+let uri = 'mongodb://localhost:27017/cutesy'
+
+let mongoose = require('mongoose');
+mongoose.connect(uri);
+
+let db = mongoose.connection
+db.on('error', console.error.bind(console, 'connection error:'))
+db.once('open', function(callback){
+  console.log('Huzzah. DB connected.')
+})
 
 // ================================
 // TODO: Join Venues / Users tables
@@ -13,21 +22,18 @@ let venueSchema = mongoose.Schema({
     unique: true,
     required: true
   },
-  coordinates: [CoordinatesSchema],
-  reviews: [ReviewSchema],
-  imageUrl: String,
-  venueType: String
-});
-
-let CoordinatesSchema = mongoose.Schema({
+  address: String,
+  longitude: Number,
   latitude: Number,
-  longitude: Number
-})
-
-let ReviewSchema = mongoose.Schema({
-  reviewer: String,
-  review: String
-})
+  imageUrl: String,
+  venueType: String,
+  reviews: [{
+    reviewer: String,
+    review: String
+  }],
+  rating: Number,
+  dates: String
+});
 
 // TODO: create new schema for users
   // number, user name, imageUrl, review history
@@ -46,9 +52,5 @@ let ReviewSchema = mongoose.Schema({
 
 
 // Registers the venuesSchema with Mongoose as the 'Venues' collection.
-let Venues = mongoose.model('Venues', venueSchema);
+exports.Venues = mongoose.model('Venues', venueSchema);
 // var Users = mongoose.model('Users', userSchema);
-
-module.exports = Venues;
-// module.exports = Users;
-

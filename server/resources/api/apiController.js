@@ -4,9 +4,9 @@ mongoose.Promise = require('bluebird');
 // ================================
 // TODO: verify case sensativity update apiRouter methods
 // ================================
-let Venues = require('./api');
-let keys = require('../../config/config.json');
-let geojsonify = require('../lib/geojsonify');
+let Venues = require('./db').Venues;
+let helpers = require('../lib/helpers');
+// let keys = require('../../config/config.json');
 // let Users = require('./api');
 
 // TODO: [ ] verify case sensativity for `require('/api')`
@@ -22,7 +22,7 @@ exports.retrieve = function (req, res) {
       console.log('error retrieving venues: ', error);
       res.send(404);
     } else {
-      res.sendStatus(200).json(venues);
+      res.sendStatus(200).json(helpers.geojsonify(venues));
     }
   });
 };
@@ -119,8 +119,7 @@ exports.retrieveYelp = function (req, res) {
       res.send(404);
     } else {
       // console.log('Back end retrieved yelp data:\n', result.data);
-      let geojson = geojsonify(result.data);
-      res.json(geojson);
+      res.json(result.data);
     }
   })
   .catch(function(error){
