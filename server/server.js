@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const apiRouter = require('./resources/api/apiRouter');
-let Venues = require('./resources/api/db');
+// let Venues = require('./resources/api/db').Venues;
 
 app.set('port', (process.env.PORT || 3001));
 

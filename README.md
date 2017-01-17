@@ -23,19 +23,23 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 ## Front End
 
-[ ] Get live data - `liveData` branch
+[ ] Serve all data from back end - `db` branch
   [X] separate components
   [ ] refactor buttons to set data
-  [ ] get better data - include reviews
-  [ ] figure out how to retain context for this.updateLocation()
-  [ ] Refactor local API to fetch json
   [ ] Fetch and handle data on client side
   [ ] Hide API keys
-[ ] Include reviews in Popup component
-[ ] Replace `How to start this app` with script and update README.md
 [ ] Known Bugs
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height
+[ ] Final Features
+  [ ] include link to venue website
+  [ ] Leave review
+  [ ] Authentication
+  [ ] Official reviews
+    [ ] crawl urls for contact info
+  [ ] Toggle all reviews in Popup component
+
+[ ] Replace `How to start this app` with script and update README.md
 
 [X] Conflicts overcome
   [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
@@ -59,6 +63,7 @@ Optional
 [ ] Restyle button bar - `buttons` branch
   [ ] Font
 [ ] Implement react-redux-mapbox-gl - 'react' branch ?
+[ ] Implement server side React
 [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
   [ ] include MozSwipeGesture listener into the library
 
