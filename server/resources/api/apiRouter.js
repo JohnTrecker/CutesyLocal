@@ -6,8 +6,7 @@ const apiController = require('./apiController');
 // =====================================================================
 apiRouter.route('/venues')
   .get(function(req, res) {
-    if (req.params.number) apiController.retrieveOne(req, res);
-    else apiController.retrieve(req, res);
+    apiController.retrieve(req, res);
   })
   .post(function(req, res) {
     apiController.createOne(req, res);
@@ -19,6 +18,12 @@ apiRouter.route('/venues')
     if (req.params.number) apiController.deleteOne(req, res);
     else apiController.delete(req, res);
   });
+
+apiRouter.route('/venues/:venueType')
+  .get(function(req, res) {
+    console.log('correct routing...');
+    apiController.retrieveByVenue(req, res);
+  })
 
 apiRouter.route('/keys')
   .get(function(req, res) {

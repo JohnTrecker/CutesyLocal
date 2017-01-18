@@ -7,7 +7,7 @@
 // let keys = require('../../config/config.json');
 let fs = require('fs');
 
-function simplify(geojson) {
+exports.simplify = function(geojson) {
   return geojson.features.map(function(entry) {
     return {
       name: entry.properties.name,
@@ -24,7 +24,7 @@ function simplify(geojson) {
   });
 };
 
-function geojsonify(json) {
+exports.geojsonify = function(json) {
   let features = json.map(function(feature){
     return {
       "type": "Feature",
@@ -42,7 +42,7 @@ function geojsonify(json) {
   };
 };
 
-function generate(...files) {
+exports.generate = function(...files) {
   // To make an array of geojson venue objects...
   let result = files.map( venue_data => {
     return simplify(venue_data);
@@ -205,8 +205,3 @@ function generate(...files) {
 
 //   })
 // };
-
-exports.simplify = simplify
-exports.geojsonify = geojsonify
-exports.generate = generate
-// exports.scraper = scraper

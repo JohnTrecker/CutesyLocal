@@ -17,6 +17,7 @@ let helpers = require('../lib/helpers');
 //       [ ] Should updateOne append to or replace table data?
 
 exports.retrieve = function (req, res) {
+  console.log('Retreive method called. Returning all venues...')
   Venues.find({}, function(error, venues) {
     if (error) {
       console.log('error retrieving venues: ', error);
@@ -24,7 +25,21 @@ exports.retrieve = function (req, res) {
     } else {
       let result = helpers.geojsonify(venues);
       res.status(202)
-      .json( result );
+      .json(result);
+    }
+  });
+};
+
+exports.retrieveByVenue = function (req, res) {
+  var venueType = req.params.venueType;
+  Venues.find({ venueType: venueType }, function(error, venues) {
+    if (error) {
+      console.log('error retrieving ', venueType, ' data:', error);
+      res.send(404);
+    } else {
+      let result = helpers.geojsonify(venues);
+      res.status(202)
+      .json(result);
     }
   });
 };
