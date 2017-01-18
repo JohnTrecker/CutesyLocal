@@ -32,7 +32,8 @@ let venueSchema = mongoose.Schema({
     review: String
   }],
   rating: Number,
-  dates: String
+  dates: String,
+  url: String
 });
 
 // TODO: create new schema for users

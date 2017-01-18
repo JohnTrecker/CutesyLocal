@@ -24,6 +24,9 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 [ ] Serve all data from back end - `db` branch
+  [ ] Debug filter on layer `cluster-${venue}`
+  [ ] refactor data fetched from db
+  [ ] fetched db data should be an array of separated venues
   [X] separate components
   [ ] refactor buttons to set data
   [ ] Fetch and handle data on client side
@@ -31,6 +34,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 [ ] Known Bugs
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height
+  [ ] marker A dissapears if too close to marker B
 [ ] Final Features
   [ ] include link to venue website
   [ ] Leave review
@@ -38,6 +42,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [ ] Official reviews
     [ ] crawl urls for contact info
   [ ] Toggle all reviews in Popup component
+  [ ] Visible venues sidebar (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
 
 [ ] Replace `How to start this app` with script and update README.md
 

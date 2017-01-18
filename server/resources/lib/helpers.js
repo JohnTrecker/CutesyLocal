@@ -18,7 +18,8 @@ function simplify(geojson) {
       venueType: entry.properties.venue || (entry.properties.name.includes('Park') ? 'park' : 'restaurant'),
       reviews: entry.properties.reviews,
       rating: entry.properties.rating,
-      dates: entry.properties.dates || null
+      dates: entry.properties.dates || null,
+      url: entry.properties.url
     };
   });
 };
@@ -31,7 +32,7 @@ function geojsonify(json) {
         "type": "Point",
         "coordinates": [feature.longitude, feature.latitude]
       },
-      properties: feature
+      "properties": feature
     };
   });
 
@@ -41,14 +42,13 @@ function geojsonify(json) {
   };
 };
 
-function generate(json) {
-  // TODO: define args
-  let args;
-  let result = args.map(function(venue_data){
+function generate(...files) {
+  // To make an array of geojson venue objects...
+  let result = files.map( venue_data => {
     return simplify(venue_data);
   })
-  // TODO: flatten result
-  fs.writeFile('../../data/all.json', JSON.stringify(result, null, 2), function(err){
+
+  fs.writeFile('./data/venuesArray.json', JSON.stringify(result, null, 2), function(err){
     if (err) throw err;
     console.log("new file generated");
   });
@@ -208,4 +208,5 @@ function generate(json) {
 
 exports.simplify = simplify
 exports.geojsonify = geojsonify
+exports.generate = generate
 // exports.scraper = scraper
