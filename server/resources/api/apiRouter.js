@@ -21,7 +21,6 @@ apiRouter.route('/venues')
 
 apiRouter.route('/venues/:venueType')
   .get(function(req, res) {
-    console.log('correct routing...');
     apiController.retrieveByVenue(req, res);
   })
 

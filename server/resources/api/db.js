@@ -54,7 +54,4 @@ let venueSchema = mongoose.Schema({
 
 // Registers the venuesSchema with Mongoose as the 'Venues' collection.
 exports.Venues = mongoose.model('Venues', venueSchema);
-exports.Venues.find({venueType: 'event'}, function(err, events){
-  console.log(events);
-})
 // var Users = mongoose.model('Users', userSchema);

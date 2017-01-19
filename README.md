@@ -23,13 +23,11 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 ## Front End
 
-[ ] Serve all data from back end - `db` branch
-  [ ] Debug filter on layer `cluster-${venue}`
-  [ ] refactor data fetched from db
-  [ ] fetched db data should be an array of separated venues
+[X] Serve all data from back end - `db` branch
+  [X] Debug filter on layer `cluster-${venue}`
+  [X] refactor data fetched from db
   [X] separate components
-  [ ] refactor buttons to set data
-  [ ] Fetch and handle data on client side
+  [X] Fetch and handle data on client side
   [ ] Hide API keys
 [ ] Known Bugs
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
