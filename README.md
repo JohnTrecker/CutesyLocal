@@ -1,6 +1,6 @@
 # Cutesy Local
 
-This repo contains the Cutesy Local front-end /client and back-end API. Built with Node, Express, and PostgreSQL the API allows users to perform CRUD operations on dog-friendly venues and patrons within San Francisco and power the front-end app.
+This repo contains the Cutesy Local front-end client and back-end API. Built with Express and MongoDB the API allows users to perform CRUD operations on dog-friendly venues and patrons within San Francisco to power the front-end React app.
 
 ## How to start this app
 
@@ -28,7 +28,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] refactor data fetched from db
   [X] separate components
   [X] Fetch and handle data on client side
-  [ ] Hide API keys
+  [X] Hide API keys
 [ ] Known Bugs
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height

@@ -1,18 +1,16 @@
-let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './Nav';
 import Popup from './Popup';
+import Nav from './Nav';
 import './assets/index.css';
 let $ = require('jquery');
-let keys = require('./config/api_keys.json');
-let renderMarkers = require('./lib/helpers').renderMarkers;
+let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
+let helpers = require('./lib/helpers');
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      location: [-122.413692, 37.775712],
       data: [],
       restaurantData: '',
       parkData: '',
@@ -72,27 +70,35 @@ class App extends React.Component {
     )
   }
   componentDidMount(){
-    mapboxgl.accessToken = keys.mapboxgl_access_token;
-    let map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
-        center: this.state.location,
-        zoom: 12
-    });
-    const venues = ['restaurant', 'park', 'event'];
-    map.on('load', function() {
-      venues.forEach(function(venue){
-        renderMarkers(map, venue);
-      });
-    });
+    fetch( 'http://localhost:3000/api/keys' )
+      .then( response => response.json() )
+      .then( (token) => {
+        mapboxgl.accessToken = token;
+        let map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
+            center: [-122.413692, 37.775712],
+            zoom: 12
+        });
 
-    map.on('click', function (e) {
-      let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
-      if (features.length) {
-        let marker = features[0];
-        ReactDOM.render(<Popup marker={marker.properties} />, document.getElementById('popup'));
-      };
-    });
+        const venues = ['restaurant', 'park', 'event'];
+        map.on('load', function() {
+          venues.forEach(function(venue){
+            helpers.renderMarkers(map, venue);
+          });
+        });
+
+        map.on('click', function (e) {
+          let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
+          if (features.length) {
+            let marker = features[0];
+            ReactDOM.render(<Popup marker={marker.properties} />, document.getElementById('popup'));
+          };
+        });
+      })
+      .catch( function(e){
+        console.log('error fetching mapbox token:\n', e);
+      })
   }
 }
 

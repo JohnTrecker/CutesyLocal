@@ -6,7 +6,7 @@ mongoose.Promise = require('bluebird');
 // ================================
 let Venues = require('./db').Venues;
 let helpers = require('../lib/helpers');
-// let keys = require('../../config/config.json');
+let mapboxToken = require('../../config/config.json');
 // let Users = require('./api');
 
 // TODO: [ ] verify case sensativity for `require('/api')`
@@ -115,12 +115,13 @@ exports.deleteOne = function (req, res) {
 };
 
 exports.retrieveKey = function (req, res) {
-  var key = keys.mapboxgl_access_token;
-  if (key === undefined) {
+  let token = mapboxToken.mapboxgl_access_token;
+  if (token === undefined) {
     console.log('error retrieving key');
     res.send(404);
   } else {
-    res.json(key);
+    res.status(202)
+    res.json(token);
   }
 };
 
