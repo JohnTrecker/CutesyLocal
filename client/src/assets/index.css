@@ -179,6 +179,22 @@ div.description {
   white-space: pre-line;
 }
 
+div.review-icons {
+  /*flex: 1;*/
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+i.comments {
+  font-size: x-large;
+  color: grey;
+}
+
+i.comments:active {
+  font-size: xx-large;
+  color: black;
+}
+
 p.title {
   flex-shrink: 50;
   margin: 0px;
@@ -287,6 +303,11 @@ div.review-info {
   margin: 0 5px;
 }
 
+.yelp:hover {
+  color: red;
+  font-size: larger;
+}
+
 
 /* ---------- */
 /* End Popups */
@@ -298,7 +319,9 @@ div.review-info {
 /* ------------------ */
 
 @media all and (min-width: 420px) {
-
+  div.review-icons {
+    visibility: hidden;
+  }
 }
 
 

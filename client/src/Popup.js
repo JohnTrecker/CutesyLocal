@@ -27,6 +27,9 @@ class Popup extends React.Component {
               <p className="dog-friendly">% dog friendly</p>
             </div>
           </div>
+          <div className="review-icons">
+            <i className="comments outline icon"></i>
+          </div>
         </div>
         <div className="hidden content">
           <div className="review-image">
@@ -35,6 +38,9 @@ class Popup extends React.Component {
           <div className="review-info">
             <p className="title">{ reviewer }</p>
             <p className="address">{ review }</p>
+            <a className="address" href={ this.props.marker.url }>
+              <i className="yelp icon"></i>
+            </a>
           </div>
         </div>
       </div>
