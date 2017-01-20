@@ -211,11 +211,6 @@ div.rating p.percentage {
   font-weight: bold;
 }
 
-div.hidden-content {
-  width: 500px;
-  height: 200px;
-}
-
 .ui.slide.reveal {
   position:absolute!important;
   white-space: normal;
@@ -227,6 +222,7 @@ div.hidden-content {
 
 .ui.slide.reveal>.content {
   display: flex;
+  margin-left: 20px;
 }
 
 div.review-image {
@@ -286,7 +282,6 @@ div.review-info {
   width: 80vw;
   margin: 0 5px;
 }
-
 
 /* ---------- */
 /* End Popups */
