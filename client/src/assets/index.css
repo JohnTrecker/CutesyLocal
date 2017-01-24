@@ -21,6 +21,12 @@ body {
   width:100%;
   overflow:hidden;
 }
+
+div.ui.modal {
+  z-index: 2;
+  top: 25%;
+}
+
 /* ------- */
 /* Nav Bar */
 /* ------- */
@@ -222,7 +228,6 @@ div.rating p.percentage {
 
 .ui.slide.reveal>.content {
   display: flex;
-  margin-left: 20px;
 }
 
 div.review-image {
@@ -277,6 +282,13 @@ img.chloe {
   background-image: url("./avatars/chloe.jpg");
 }
 
+img.molly {
+  zoom: 40%;
+  width: 750px;
+  height: 800px;
+  background-image: url("./avatars/molly.png");
+}
+
 div.review-info {
   flex-direction: column;
   width: 80vw;
@@ -287,6 +299,19 @@ div.review-info {
 /* End Popups */
 /* ---------- */
 
+/* ---------- */
+/* Modal      */
+/* ---------- */
+
+/*div.ui.modal {
+  z-index: 4;
+  top: 100px;
+  left: 100px;
+}*/
+
+/* ---------- */
+/* End Modal  */
+/* ---------- */
 
 /* ------------------ */
 /* Responsive Styling */

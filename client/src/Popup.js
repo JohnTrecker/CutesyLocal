@@ -28,7 +28,7 @@ class Popup extends React.Component {
           </div>
         </div>
           { showReview && <Reviews review={ review } reviewer={ reviewer }/> }
-          { !showReview && <NoReviews name={ this.props.marker.name }/> }
+          { !showReview && <NoReviews name={ this.props.marker.name } toggleModal={this.props.toggleModal}/> }
       </div>
     )
   }
@@ -49,7 +49,10 @@ const Reviews = (props) =>
   </div>
 
 const NoReviews = (props) =>
-  <p className="hidden content address">Been to { props.name } before?&ensp;<a href="/login/facebook">Leave a review</a>.</p>
+  <p className="hidden content address">
+    Been to { props.name } before?&ensp;
+    <a onClick={ props.toggleModal }>Leave a review</a>.
+  </p>
 
 
 export default Popup;
