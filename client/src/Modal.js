@@ -1,6 +1,7 @@
 import React from 'react';
 import './semantic-ui/semantic.min.css';
 import './assets/index.css';
+import { checkLoginState } from './lib/facebook';
 
 class Modal extends React.Component {
   render(props){
@@ -18,7 +19,7 @@ class Modal extends React.Component {
           </div>
         </div>
         <div className="actions">
-          <button className="ui facebook button" onClick={this.props.facebookLogin}>
+          <button className="ui facebook button" onClick={this.props.saveToLocal}>
             <i className="facebook icon"></i>
             Login with Facebook
           </button>
@@ -27,5 +28,8 @@ class Modal extends React.Component {
     )
   }
 }
+          // <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+          // </fb:login-button>
+
 
 export default Modal;
