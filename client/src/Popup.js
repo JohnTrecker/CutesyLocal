@@ -49,7 +49,7 @@ const Reviews = (props) =>
   </div>
 
 const NoReviews = (props) =>
-  <p className="hidden content address">
+  <p className="hidden content address" style="curser:pointer">
     Been to { props.name } before?&ensp;
     <a onClick={ props.toggleModal }>Leave a review</a>.
   </p>

@@ -5,9 +5,12 @@ import Nav from './Nav';
 import Modal from './Modal';
 import './assets/index.css';
 import './semantic-ui/semantic.min.css';
+// import axios from 'axios';
+
 let $ = require('jquery');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 let helpers = require('./lib/helpers');
+let facebook = require ('./lib/facebook');
 
 class App extends React.Component {
   constructor() {
@@ -58,10 +61,12 @@ class App extends React.Component {
     }
     this.setState({visibleVenues: toggledButtons});
   }
+
   toggleModal(){
     let display = $('.ui.modal').css('display');
     $('.ui.modal').css('display', (display === 'none' ? 'inline' : 'none') );
   }
+
   facebookLogin(){
     fetch('/login/facebook')
       .then( response => response.json() )
@@ -75,22 +80,37 @@ class App extends React.Component {
         console.log('error fetching mapbox token:\n', e);
       })
   }
+
+  setUser(profile){
+    this.setState({user: profile})
+  }
+
+  saveToLocal(){
+    window.location.assign('auth/facebook');
+  }
+
   render(){
     return (
       <div id="container">
         <Nav updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
         <div id="map"></div>
-        <Modal toggle={this.toggleModal} facebookLogin={this.facebookLogin}/>
+        <Modal
+          toggle={this.toggleModal}
+          setUser={this.setUser.bind(this)}
+          facebookLogin={this.facebookLogin}
+          saveToLocal={this.saveToLocal.bind(this)}
+        />
         <div id="popup"></div>
       </div>
     )
   }
+
   componentDidMount(){
     if (!this.state.user) setTimeout(this.toggleModal, 1000);
     let toggleModal = this.toggleModal;
-    // fetch( 'http://localhost:3000/api/keys' )
+    // fetch( '/api/keys' )
     //   .then( response => response.json() )
-    //   .then( (token) => {
+    //   .then( function(token){
     //     mapboxgl.accessToken = token;
     //     let map = new mapboxgl.Map({
     //         container: 'map',
@@ -116,9 +136,9 @@ class App extends React.Component {
     //     });
 
     //   })
-      // .catch( function(e){
-      //   console.log('error fetching mapbox token:\n', e);
-      // })
+    //   .catch( function(e){
+    //     console.log('error fetching mapbox token:\n', e);
+    //   })
 
   }
 }
