@@ -10,35 +10,37 @@ let configDB = require('./config/database.js');
 
 // configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
+let db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'))
+db.once('open', function(callback){
+  console.log('Huzzah. DB connected.')
+})
 
-require('./config/passport')(passport); // pass passport for configuration
+// require('./config/passport.js')(passport); // pass passport for configuration
 
-app.configure(function() {
+// // set up our express application
+// app.use(express.logger('dev')); // log every request to the console
+// app.use(express.cookieParser()); // read cookies (needed for auth)
+// app.use(express.bodyParser()); // get information from html forms
 
-  // set up our express application
-  app.use(express.logger('dev')); // log every request to the console
-  app.use(express.cookieParser()); // read cookies (needed for auth)
-  app.use(express.bodyParser()); // get information from html forms
+// // required for passport
+// app.use(express.session({ secret: 'alldogsgotoheaven' })); // session secret
+// app.use(passport.initialize());
+// app.use(passport.session()); // persistent login sessions
+// app.use(flash()); // use connect-flash for flash messages stored in session
 
-  // required for passport
-  app.use(express.session({ secret: 'alldogsgotoheaven' })); // session secret
-  app.use(passport.initialize());
-  app.use(passport.session()); // persistent login sessions
-  app.use(flash()); // use connect-flash for flash messages stored in session
-
-});
 
 // routes ======================================================================
-require('./routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+// require('./routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 app.use('/api', require('./resources/api/apiRouter'));
-app.get('/auth/facebook', passport.authenticate('facebook'));
-app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/' }),
-  helpers.newUser,
-  helpers.setCookie,
-  helpers.setUserId,
-  helpers.setHeader,
-  helpers.loginRedirect
-);
+// app.get('/auth/facebook', passport.authenticate('facebook'));
+// app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/' }),
+  // helpers.newUser,
+  // helpers.setCookie,
+  // helpers.setUserId,
+  // helpers.setHeader,
+//   helpers.loginRedirect
+// );
 
 // launch ======================================================================
 if (process.env.NODE_ENV === 'production') {
