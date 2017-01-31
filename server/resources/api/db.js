@@ -1,12 +1,12 @@
-const uri = 'mongodb://localhost:27017/cutesy',
-      mongoose = require('mongoose'),
-      db = mongoose.connection;
+// const uri = 'mongodb://localhost:27017/cutesy',
+const mongoose = require('mongoose');
+//       db = mongoose.connection;
 
-mongoose.connect(uri);
-db.on('error', console.error.bind(console, 'connection error:'))
-db.once('open', function(callback){
-  console.log('Huzzah. DB connected.')
-})
+// mongoose.connect(uri);
+// db.on('error', console.error.bind(console, 'connection error:'))
+// db.once('open', function(callback){
+//   console.log('Huzzah. DB connected.')
+// })
 
 let venueSchema = mongoose.Schema({
   number: {
