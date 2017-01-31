@@ -5,6 +5,10 @@ body {
   touch-action: none;
 }
 
+button.kep-login-facebook {
+  display: none;
+}
+
 .App {
   position: absolute;
   top: 0;
@@ -21,6 +25,12 @@ body {
   width:100%;
   overflow:hidden;
 }
+
+div.ui.modal {
+  z-index: 2;
+  top: 25%;
+}
+
 /* ------- */
 /* Nav Bar */
 /* ------- */
@@ -90,6 +100,9 @@ img.notsogood{
   max-height: 20px;
 }
 
+img.FBlogin {
+  content: url("login.png");
+}
 /* End Assets*/
 
 /* ----------- */
@@ -227,11 +240,6 @@ div.rating p.percentage {
   font-weight: bold;
 }
 
-div.hidden-content {
-  width: 500px;
-  height: 200px;
-}
-
 .ui.slide.reveal {
   position:absolute!important;
   white-space: normal;
@@ -297,22 +305,43 @@ img.chloe {
   background-image: url("./avatars/chloe.jpg");
 }
 
+img.molly {
+  zoom: 40%;
+  width: 750px;
+  height: 800px;
+  background-image: url("./avatars/molly.png");
+}
+
 div.review-info {
   flex-direction: column;
   width: 80vw;
   margin: 0 5px;
 }
 
-.yelp:hover {
-  color: red;
-  font-size: larger;
+div.hiden.conent.no-review {
+  margin: 20px;
 }
 
+i.facebook.icon {
+  color: #f7f7f7;
+}
+
+button.my-facebook-button-class {
+  background-color: #3b5998;
+  color: #f7f7f7;
+}
 
 /* ---------- */
 /* End Popups */
 /* ---------- */
 
+/* ---------- */
+/* Modal      */
+/* ---------- */
+
+/* ---------- */
+/* End Modal  */
+/* ---------- */
 
 /* ------------------ */
 /* Responsive Styling */

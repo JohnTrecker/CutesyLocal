@@ -1,8 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Popup from './Popup';
 import Nav from './Nav';
+import Modal from './Modal';
 import './assets/index.css';
+import './semantic-ui/semantic.min.css';
+
 let $ = require('jquery');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 let helpers = require('./lib/helpers');
@@ -11,14 +13,12 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: [],
-      restaurantData: '',
-      parkData: '',
-      eventData: '',
+      user: undefined,
+      currentVenue: undefined,
       visibleVenues: [],
-      bounds: ''
     }
   }
+
   updateVisibleVenues(e){
     let classNames = ['restaurant', 'park', 'event'];
     let venue;
@@ -60,19 +60,46 @@ class App extends React.Component {
     }
     this.setState({visibleVenues: toggledButtons});
   }
+
+  toggleModal(){
+    let display = $('.ui.modal').css('display');
+    $('.ui.modal').css('display', (display === 'none' ? 'inline' : 'none') );
+  }
+
+  setUser(profile){
+    this.setState({user: profile})
+  }
+
+  setCurrentVenue(marker){
+    this.setState({currentVenue: marker});
+  }
+
   render(){
     return (
       <div id="container">
-        <Nav updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
+        <Nav
+          updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
         <div id="map"></div>
-        <div id="popup"></div>
+        <Modal
+          toggle={this.toggleModal.bind(this)}
+          setUser={this.setUser.bind(this)} />
+        <div id="popup">
+          <Popup
+            marker={this.state.currentVenue}
+            setUser={this.setUser.bind(this)}
+            toggleModal={this.toggleModal.bind(this)}
+            loggedIn={this.state.user} />,
+        </div>
       </div>
     )
   }
+
   componentDidMount(){
+    // if (!this.user) this.toggleModal();
+    let setCurrentVenue = this.setCurrentVenue.bind(this);
     fetch( 'http://localhost:3000/api/keys' )
       .then( response => response.json() )
-      .then( (token) => {
+      .then( function(token) {
         mapboxgl.accessToken = token;
         let map = new mapboxgl.Map({
             container: 'map',
@@ -91,9 +118,10 @@ class App extends React.Component {
         map.on('click', function (e) {
           let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
           if (features.length) {
+            // console.log('feature clicked\nsetUser = ', setUser, '\ntoggleModal = ', toggleModal);
             let marker = features[0];
-            ReactDOM.render(<Popup marker={marker.properties} />, document.getElementById('popup'));
-          };
+            setCurrentVenue(marker.properties);
+          }
         });
       })
       .catch( function(e){
@@ -101,6 +129,9 @@ class App extends React.Component {
       })
   }
 }
+
+// ReactDOM.render(
+//   document.getElementById('popup'));
 
 
 export default App

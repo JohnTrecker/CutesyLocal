@@ -7,53 +7,55 @@
 // let keys = require('../../config/config.json');
 let fs = require('fs');
 
-exports.simplify = function(geojson) {
-  return geojson.features.map(function(entry) {
+module.exports = {
+
+  simplify: function(geojson) {
+    return geojson.features.map(function(entry) {
+      return {
+        name: entry.properties.name,
+        address: entry.properties.location.address1,
+        longitude: entry.geometry.coordinates[0],
+        latitude: entry.geometry.coordinates[1],
+        imageUrl: entry.properties.imageUrl,
+        venueType: entry.properties.venue || (entry.properties.name.includes('Park') ? 'park' : 'restaurant'),
+        reviews: entry.properties.reviews,
+        rating: entry.properties.rating,
+        dates: entry.properties.dates || null,
+        url: entry.properties.url
+      };
+    });
+  },
+
+  geojsonify: function(json) {
+    let features = json.map(function(feature){
+      return {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [feature.longitude, feature.latitude]
+        },
+        "properties": feature
+      };
+    });
+
     return {
-      name: entry.properties.name,
-      address: entry.properties.location.address1,
-      longitude: entry.geometry.coordinates[0],
-      latitude: entry.geometry.coordinates[1],
-      imageUrl: entry.properties.imageUrl,
-      venueType: entry.properties.venue || (entry.properties.name.includes('Park') ? 'park' : 'restaurant'),
-      reviews: entry.properties.reviews,
-      rating: entry.properties.rating,
-      dates: entry.properties.dates || null,
-      url: entry.properties.url
+    "type": "FeatureCollection",
+    "features": features
     };
-  });
-};
+  },
 
-exports.geojsonify = function(json) {
-  let features = json.map(function(feature){
-    return {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [feature.longitude, feature.latitude]
-      },
-      "properties": feature
-    };
-  });
+  generate: function(...files) {
+    // To make an array of geojson venue objects...
+    let result = files.map( venue_data => {
+      return simplify(venue_data);
+    })
 
-  return {
-  "type": "FeatureCollection",
-  "features": features
-  };
-};
-
-exports.generate = function(...files) {
-  // To make an array of geojson venue objects...
-  let result = files.map( venue_data => {
-    return simplify(venue_data);
-  })
-
-  fs.writeFile('./data/venuesArray.json', JSON.stringify(result, null, 2), function(err){
-    if (err) throw err;
-    console.log("new file generated");
-  });
+    fs.writeFile('./data/venuesArray.json', JSON.stringify(result, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+  }
 }
-
 
 // function oldGeojsonify (json) {
 //   let options = {

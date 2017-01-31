@@ -1,21 +1,34 @@
-var mongoose = require('mongoose');
-var axios = require('axios');
+let mongoose = require('mongoose'),
+    axios = require('axios'),
+    Venues = require('./db').Venues,
+    Users = require('./db').Users,
+    helpers = require('../lib/helpers'),
+    mapboxToken = require('../../config/config').mapboxgl_access_token;
 mongoose.Promise = require('bluebird');
-// ================================
-// TODO: verify case sensativity update apiRouter methods
-// ================================
-let Venues = require('./db').Venues;
-let helpers = require('../lib/helpers');
-let mapboxToken = require('../../config/config.json');
-// let Users = require('./api');
 
-// TODO: [ ] verify case sensativity for `require('/api')`
-//       [ ] verify status / res order
-//       [ ] find and assign appropriate endpoint to variable
-//           for each controller method, then call `.find()`, etc.
-//       [ ] update all status codes
-//       [ ] Should updateOne append to or replace table data?
+// ===============
+// User methods
+// ===============
 
+exports.createUser = function (req, res) {
+  let user = req;
+  console.log('_________________________creating new user in controller user:_________________\n', user);
+  Users.create(newUser, function(error, user) {
+    if (error) {
+      console.log('error creating one: ', error);
+      res.sendStatus(404);
+    } else {
+      console.log('create user data:\n', user);
+      res.send(201)
+      .json(user);
+    }
+  });
+
+};
+
+// ===============
+// Venues methods
+// ===============
 exports.retrieve = function (req, res) {
   console.log('Retreive method called. Returning all venues...')
   Venues.find({}, function(error, venues) {
@@ -115,13 +128,12 @@ exports.deleteOne = function (req, res) {
 };
 
 exports.retrieveKey = function (req, res) {
-  let token = mapboxToken.mapboxgl_access_token;
-  if (token === undefined) {
+  if (mapboxToken === undefined) {
     console.log('error retrieving key');
     res.send(404);
   } else {
     res.status(202)
-    res.json(token);
+    .json(mapboxToken);
   }
 };
 
@@ -148,5 +160,4 @@ exports.retrieveYelp = function (req, res) {
   .catch(function(error){
     console.log('error retrieving yelp data on back end:\n', error)
   })
-
 };

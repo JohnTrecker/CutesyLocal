@@ -1,17 +1,13 @@
-let uri = 'mongodb://localhost:27017/cutesy'
+// const uri = 'mongodb://localhost:27017/cutesy',
+const mongoose = require('mongoose');
+//       db = mongoose.connection;
 
-let mongoose = require('mongoose');
-mongoose.connect(uri);
+// mongoose.connect(uri);
+// db.on('error', console.error.bind(console, 'connection error:'))
+// db.once('open', function(callback){
+//   console.log('Huzzah. DB connected.')
+// })
 
-let db = mongoose.connection
-db.on('error', console.error.bind(console, 'connection error:'))
-db.once('open', function(callback){
-  console.log('Huzzah. DB connected.')
-})
-
-// ================================
-// TODO: Join Venues / Users tables
-// ================================
 let venueSchema = mongoose.Schema({
   number: {
     type: Number,
@@ -36,22 +32,24 @@ let venueSchema = mongoose.Schema({
   url: String
 });
 
-// TODO: create new schema for users
-  // number, user name, imageUrl, review history
-// var userSchema = mongoose.Schema({
-//   number: {
-//     type: Number,
-//     unique: true
-//   },
-//   name: {
-//     type: String,
-//     unique: true
-//   },
-//   reviews: [String],
-//   imageUrl: String
-// });
+let userSchema = mongoose.Schema({
+  facebook: {
+    id: {
+      type: Number,
+      unique: true,
+      required: true
+    },
+    token: String,
+    name: String,
+    email: String,
+  },
+  reviews: [{
+    venueName: String,
+    date: Date,
+    review: String
+  }],
+  imageUrl: String
+});
 
-
-// Registers the venuesSchema with Mongoose as the 'Venues' collection.
 exports.Venues = mongoose.model('Venues', venueSchema);
-// var Users = mongoose.model('Users', userSchema);
+exports.Users = mongoose.model('Users', userSchema);

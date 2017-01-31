@@ -31,17 +31,15 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Hide API keys
 [ ] Known Bugs
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
-  [ ] truncated viewport height
+  [X] truncated viewport height
   [ ] marker A dissapears if too close to marker B
-[ ] Final Features
-  [ ] include link to venue website
+[ ] Final v0.10 Features
+  [X] include links to venue websites
+  [X] Authentication
   [ ] Leave review
-  [ ] Authentication
-  [ ] Official reviews
-    [ ] crawl urls for contact info
-  [ ] Toggle all reviews in Popup component
-  [ ] Visible venues sidebar (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
-
+  [ ] Toggle from one review to another in Popup component
+  [ ] google analytics middleware
+  [ ] Write tests
 [ ] Replace `How to start this app` with script and update README.md
 
 [X] Conflicts overcome
@@ -58,12 +56,14 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Render popup component
   [X] Refactor markers as MapboxGL layers
   [X] Dynamically render smiley assets for rating
-  [ ] Transition popups
-  [ ] Mobile first styling
+  [X] Mobile first styling
 
-Optional
-[ ] Play map locations as a slideshow
+v0.20
 [ ] Restyle button bar - `buttons` branch
+[ ] Official reviews
+  [ ] crawl urls for contact info
+[ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
+[ ] Play map locations as a slideshow
   [ ] Font
 [ ] Implement react-redux-mapbox-gl - 'react' branch ?
 [ ] Implement server side React
