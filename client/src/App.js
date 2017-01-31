@@ -1,25 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Popup from './Popup';
 import Nav from './Nav';
 import Modal from './Modal';
 import './assets/index.css';
 import './semantic-ui/semantic.min.css';
-// import axios from 'axios';
 
 let $ = require('jquery');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
 let helpers = require('./lib/helpers');
-let facebook = require ('./lib/facebook');
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       user: undefined,
+      currentVenue: undefined,
       visibleVenues: [],
     }
   }
+
   updateVisibleVenues(e){
     let classNames = ['restaurant', 'park', 'event'];
     let venue;
@@ -67,81 +66,72 @@ class App extends React.Component {
     $('.ui.modal').css('display', (display === 'none' ? 'inline' : 'none') );
   }
 
-  facebookLogin(){
-    fetch('/login/facebook')
-      .then( response => response.json() )
-      .then( function(profile){
-        debugger;
-        this.setState({user: profile})
-        let that = this.state.user;
-        console.log(that);
-      })
-      .catch(function(e){
-        console.log('error fetching mapbox token:\n', e);
-      })
-  }
-
   setUser(profile){
     this.setState({user: profile})
   }
 
-  saveToLocal(){
-    window.location.assign('auth/facebook');
+  setCurrentVenue(marker){
+    this.setState({currentVenue: marker});
   }
 
   render(){
     return (
       <div id="container">
-        <Nav updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
+        <Nav
+          updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
         <div id="map"></div>
         <Modal
-          toggle={this.toggleModal}
-          setUser={this.setUser.bind(this)}
-          facebookLogin={this.facebookLogin}
-          saveToLocal={this.saveToLocal.bind(this)}
-        />
-        <div id="popup"></div>
+          toggle={this.toggleModal.bind(this)}
+          setUser={this.setUser.bind(this)} />
+        <div id="popup">
+          <Popup
+            marker={this.state.currentVenue}
+            setUser={this.setUser.bind(this)}
+            toggleModal={this.toggleModal.bind(this)}
+            loggedIn={this.state.user} />,
+        </div>
       </div>
     )
   }
 
   componentDidMount(){
-    if (!this.state.user) setTimeout(this.toggleModal, 1000);
-    let toggleModal = this.toggleModal;
-    // fetch( '/api/keys' )
-    //   .then( response => response.json() )
-    //   .then( function(token){
-    //     mapboxgl.accessToken = token;
-    //     let map = new mapboxgl.Map({
-    //         container: 'map',
-    //         style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
-    //         center: [-122.413692, 37.775712],
-    //         zoom: 12
-    //     });
+    // if (!this.user) this.toggleModal();
+    let setCurrentVenue = this.setCurrentVenue.bind(this);
+    fetch( 'http://localhost:3000/api/keys' )
+      .then( response => response.json() )
+      .then( function(token) {
+        mapboxgl.accessToken = token;
+        let map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
+            center: [-122.413692, 37.775712],
+            zoom: 12
+        });
 
-    //     const venues = ['restaurant', 'park', 'event'];
-    //     map.on('load', function() {
-    //       venues.forEach(function(venue){
-    //         helpers.renderMarkers(map, venue);
-    //       });
-    //     });
+        const venues = ['restaurant', 'park', 'event'];
+        map.on('load', function() {
+          venues.forEach(function(venue){
+            helpers.renderMarkers(map, venue);
+          });
+        });
 
-    //     map.on('click', function (e) {
-    //       let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
-    //       if (features.length) {
-    //         console.log('feature clicked');
-    //         let marker = features[0];
-    //         ReactDOM.render(<Popup marker={marker.properties} toggleModal={toggleModal}/>, document.getElementById('popup'));
-    //       };
-    //     });
-
-    //   })
-    //   .catch( function(e){
-    //     console.log('error fetching mapbox token:\n', e);
-    //   })
-
+        map.on('click', function (e) {
+          let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
+          if (features.length) {
+            // console.log('feature clicked\nsetUser = ', setUser, '\ntoggleModal = ', toggleModal);
+            let marker = features[0];
+            setCurrentVenue(marker.properties);
+          }
+        });
+      })
+      .catch( function(e){
+        console.log('error fetching mapbox token:\n', e);
+      })
   }
 }
+
+// ReactDOM.render(
+//   document.getElementById('popup'));
 
 
 export default App

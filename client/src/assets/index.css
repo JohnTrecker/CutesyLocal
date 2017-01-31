@@ -5,6 +5,10 @@ body {
   touch-action: none;
 }
 
+button.kep-login-facebook {
+  display: none;
+}
+
 .App {
   position: absolute;
   top: 0;
@@ -96,6 +100,9 @@ img.notsogood{
   max-height: 20px;
 }
 
+img.FBlogin {
+  content: url("login.png");
+}
 /* End Assets*/
 
 /* ----------- */
@@ -295,6 +302,19 @@ div.review-info {
   margin: 0 5px;
 }
 
+div.hiden.conent.no-review {
+  margin: 20px;
+}
+
+i.facebook.icon {
+  color: #f7f7f7;
+}
+
+button.my-facebook-button-class {
+  background-color: #3b5998;
+  color: #f7f7f7;
+}
+
 /* ---------- */
 /* End Popups */
 /* ---------- */
@@ -302,12 +322,6 @@ div.review-info {
 /* ---------- */
 /* Modal      */
 /* ---------- */
-
-/*div.ui.modal {
-  z-index: 4;
-  top: 100px;
-  left: 100px;
-}*/
 
 /* ---------- */
 /* End Modal  */

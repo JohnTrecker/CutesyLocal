@@ -1,4 +1,3 @@
-import '../assets/index.css';
 
 exports.renderMarkers = (map, venue) => {
   fetch( `http://localhost:3000/api/venues/${venue}` )
@@ -80,9 +79,11 @@ exports.renderMarkers = (map, venue) => {
     })
 }
 
-exports.getMapboxToken = () => {
+exports.renderMapbox = (cb) => {
+  // fetch mapbox private token from server's config
   fetch( 'http://localhost:3000/api/keys' )
     .then( response => response.json() )
+    .then( (token) => cb(token) )
     .catch( function(e){
       console.log('error fetching mapbox token:\n', e);
     })

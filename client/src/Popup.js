@@ -1,25 +1,30 @@
 import React from 'react';
+import Login from './Login';
 import './semantic-ui/semantic.min.css';
 import './assets/index.css';
 
 class Popup extends React.Component {
   render(){
-    const rating = this.props.marker.rating * 20;
+    if (!this.props.marker) return( <div></div> );
+    const venue = this.props.marker;
+    const rating = venue.rating * 20;
     const ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
-    const showDates = this.props.marker.dates !== "null";
-    const showReview = this.props.marker.reviews !== "[]";
-    const review = showReview === true ? JSON.parse(this.props.marker.reviews)[0].review : null;
-    const reviewer = showReview === true ? JSON.parse(this.props.marker.reviews)[0].reviewer.toLowerCase() : null;
+    const showDates = venue.dates !== "null";
+    const showReview = venue.reviews !== "[]";
+    let loggedIn = this.props.loggedIn;
+    const review = showReview === true ? JSON.parse(venue.reviews)[0].review : null;
+    const reviewer = showReview === true ? JSON.parse(venue.reviews)[0].reviewer.toLowerCase() : null;
+
     return (
       <div className="popup-contents ui slide left instant reveal">
         <div className="visible content">
           <div className="image">
-            <img className={`pop_${this.props.marker.venueType}`} role="presentation"/>
+            <img className={`pop_${venue.venueType}`} role="presentation"/>
           </div>
           <div className="description">
-            <p className="title">{ this.props.marker.name }</p>
-            <p className="address">{ this.props.marker.address }</p>
-            { showDates && <Dates timeAndDate={ this.props.marker.dates } /> }
+            <p className="title">{ venue.name }</p>
+            <p className="address">{ venue.address }</p>
+            { showDates &&  <p className="dates"> {venue.dates} </p> }
             <div className="rating">
               <img className={ ratingClass } alt="http://emojipedia-us.s3.amazonaws.com/cache/6b/16/6b164a624288271a884ab2a22f9bb693.png" />
               <p className="percentage">&ensp; { rating } </p>
@@ -27,15 +32,29 @@ class Popup extends React.Component {
             </div>
           </div>
         </div>
-          { showReview && <Reviews review={ review } reviewer={ reviewer }/> }
-          { !showReview && <NoReviews name={ this.props.marker.name } toggleModal={this.props.toggleModal}/> }
+
+          { showReview &&
+            <Reviews
+              review={ review }
+              reviewer={ reviewer }/>
+          }
+          {
+            !showReview && loggedIn &&
+            <LeaveReview
+              name={ venue.name }
+              toggleModal={this.props.toggleModal}
+              setUser={this.props.setUser}/>
+          }
+          { !showReview && !loggedIn &&
+            <Login
+              name={ venue.name }
+              setUser={this.props.setUser}/>
+          }
+
       </div>
     )
   }
 };
-
-const Dates = (props) =>
-  <p className="dates"> {props.timeAndDate} </p>
 
 const Reviews = (props) =>
   <div className="hidden content" >
@@ -48,11 +67,10 @@ const Reviews = (props) =>
     </div>
   </div>
 
-const NoReviews = (props) =>
-  <p className="hidden content address" style="curser:pointer">
-    Been to { props.name } before?&ensp;
-    <a onClick={ props.toggleModal }>Leave a review</a>.
-  </p>
-
+const LeaveReview = (props) =>
+  <div className="hidden content no-review">
+    <p>Been to { props.name } before?&ensp;</p>
+    <a onClick={ props.toggleModal}>Leave a review.</a>
+  </div>
 
 export default Popup;
