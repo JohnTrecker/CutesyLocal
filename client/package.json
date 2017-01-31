@@ -13,7 +13,7 @@
     "mapbox-gl": "^0.28.0",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "react-facebook-login-component": "^0.6.0"
+    "react-facebook-login": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",

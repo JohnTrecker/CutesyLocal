@@ -4,4 +4,3 @@ npm-debug.log
 
 # api keys
 server/config/config.json
-server/config/auth.js
