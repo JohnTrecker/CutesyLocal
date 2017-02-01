@@ -1,5 +1,5 @@
-import React from 'react'
-import { Accordion, Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
+import React from 'react';
+import { Accordion, Button, Checkbox, Form, Header, Icon, Image, Modal, Rating, TextArea } from 'semantic-ui-react'
 
 class Review extends React.Component {
   render(props) {
@@ -11,15 +11,15 @@ class Review extends React.Component {
     return (
       <div>
         <Modal dimmer='dimming' open={open} onClose={toggleModal}>
-          <Modal.Header>Select a Photo</Modal.Header>
+          <Modal.Header>What did your think?</Modal.Header>
           <Modal.Content>
-            <AccordianExample />
+            <Sections />
           </Modal.Content>
           <Modal.Actions>
             <Button color='black' onClick={toggleModal}>
-              Nope
+              Nah
             </Button>
-            <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={toggleModal} />
+            <Button positive icon='checkmark' labelPosition='right' content="Yep, that's it" onClick={toggleModal} />
           </Modal.Actions>
         </Modal>
       </div>
@@ -27,39 +27,13 @@ class Review extends React.Component {
   }
 }
 
+// do somethign with Textarea.value
 
-const AccordianExample = () => (
+const Sections = () => (
   <Accordion styled>
     <Accordion.Title>
       <Icon name='dropdown' />
       Upload
-    </Accordion.Title>
-    <Accordion.Content>
-      <p>
-        Insert embed photo component here
-      </p>
-    </Accordion.Content>
-    <Accordion.Title>
-      <Icon name='dropdown' />
-      Review
-    </Accordion.Title>
-    <Accordion.Content>
-      <p>
-        Insert dialogue box here
-      </p>
-    </Accordion.Content>
-    <Accordion.Title>
-      <Icon name='dropdown' />
-      Perks
-    </Accordion.Title>
-    <Accordion.Content>
-      <p>
-        insert check boxes here
-      </p>
-    </Accordion.Content>
-    <Accordion.Title>
-      <Icon name='dropdown' />
-      Text with other modules
     </Accordion.Title>
     <Accordion.Content>
       <Image wrapped size='medium' src='http://semantic-ui.com/images/avatar2/large/rachel.png' />
@@ -68,6 +42,35 @@ const AccordianExample = () => (
         <p>We've found the following gravatar image associated with your e-mail address.</p>
         <p>Is it okay to use this photo?</p>
       </Modal.Description>
+    </Accordion.Content>
+    <Accordion.Title>
+      <Icon name='dropdown' />
+      Review
+    </Accordion.Title>
+    <Accordion.Content>
+      <Rating icon='star' defaultRating={0} maxRating={5} />
+      <p></p>
+      <Form>
+        <TextArea placeholder='What did you love?'/>
+      </Form>
+    </Accordion.Content>
+    <Accordion.Title>
+      <Icon name='dropdown' />
+      Perks
+    </Accordion.Title>
+    <Accordion.Content>
+      <Checkbox label="Dogs allowed in patio"/><br></br>
+      <Checkbox label="Allowed inside"/><br></br>
+      <Checkbox label="Serves water or treats"/>
+    </Accordion.Content>
+    <Accordion.Title>
+      <Icon name='dropdown' />
+      Text with other modules
+    </Accordion.Title>
+    <Accordion.Content>
+      <p>
+        More modules embed photo component here
+      </p>
     </Accordion.Content>
 
   </Accordion>
