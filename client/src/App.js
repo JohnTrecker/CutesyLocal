@@ -1,7 +1,7 @@
 import React from 'react';
 import Popup from './Popup';
 import Nav from './Nav';
-import Modal from './Modal';
+import Review from './Review';
 import './assets/index.css';
 import './semantic-ui/semantic.min.css';
 
@@ -15,8 +15,11 @@ class App extends React.Component {
     this.state = {
       user: undefined,
       currentVenue: undefined,
+      modalOpen: false,
       visibleVenues: [],
     }
+    // this.toggleModal.bind(this);
+    // this.setUser.bind(this);
   }
 
   updateVisibleVenues(e){
@@ -62,8 +65,7 @@ class App extends React.Component {
   }
 
   toggleModal(){
-    let display = $('.ui.modal').css('display');
-    $('.ui.modal').css('display', (display === 'none' ? 'inline' : 'none') );
+    this.setState({modalOpen: !this.state.modalOpen})
   }
 
   setUser(profile){
@@ -80,16 +82,16 @@ class App extends React.Component {
         <Nav
           updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
         <div id="map"></div>
-        <Modal
-          toggle={this.toggleModal.bind(this)}
-          setUser={this.setUser.bind(this)} />
-        <div id="popup">
-          <Popup
-            marker={this.state.currentVenue}
-            setUser={this.setUser.bind(this)}
-            toggleModal={this.toggleModal.bind(this)}
-            loggedIn={this.state.user} />,
-        </div>
+        <Review
+          marker={this.state.currentVenue}
+          user={this.state.user}
+          open={this.state.modalOpen}
+          toggleModal={this.toggleModal.bind(this)} />
+        <Popup
+          marker={this.state.currentVenue}
+          user={this.state.user}
+          setUser={this.setUser.bind(this)}
+          toggleModal={this.toggleModal.bind(this)} />,
       </div>
     )
   }

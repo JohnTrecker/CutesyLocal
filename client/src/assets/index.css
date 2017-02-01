@@ -26,11 +26,6 @@ button.kep-login-facebook {
   overflow:hidden;
 }
 
-div.ui.modal {
-  z-index: 2;
-  top: 25%;
-}
-
 /* ------- */
 /* Nav Bar */
 /* ------- */
@@ -318,8 +313,12 @@ div.review-info {
   margin: 0 5px;
 }
 
-div.hiden.conent.no-review {
+div.hiden.content.no-review {
   margin: 20px;
+}
+
+div.hiden.content.no-review > a:hover {
+  cursor: pointer;
 }
 
 i.facebook.icon {
@@ -338,6 +337,7 @@ button.my-facebook-button-class {
 /* ---------- */
 /* Modal      */
 /* ---------- */
+
 
 /* ---------- */
 /* End Modal  */

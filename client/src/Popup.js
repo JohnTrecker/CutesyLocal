@@ -11,7 +11,7 @@ class Popup extends React.Component {
     const ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
     const showDates = venue.dates !== "null";
     const showReview = venue.reviews !== "[]";
-    let loggedIn = this.props.loggedIn;
+    let loggedIn = this.props.user;
     const review = showReview === true ? JSON.parse(venue.reviews)[0].review : null;
     const reviewer = showReview === true ? JSON.parse(venue.reviews)[0].reviewer.toLowerCase() : null;
 
@@ -73,7 +73,7 @@ const Reviews = (props) =>
 const LeaveReview = (props) =>
   <div className="hidden content no-review">
     <p>Been to { props.name } before?&ensp;</p>
-    <a onClick={ props.toggleModal}>Leave a review.</a>
+    <a onClick={ props.toggleModal }>Leave a review.</a>
   </div>
 
 export default Popup;
