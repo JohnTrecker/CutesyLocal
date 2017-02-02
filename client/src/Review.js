@@ -1,5 +1,6 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
+import $ from 'jquery';
 
 class Review extends React.Component {
   constructor(){
@@ -17,6 +18,18 @@ class Review extends React.Component {
     this.setState(newState);
   }
 
+  submitReview(props){
+    // update venue in db
+      // update venue schema
+      // review, reviewer, rating, perks (3)
+    // update user in db
+      // user facebook.id (or MongoDB _id), venue, date, review
+    let body = {};
+    let user, venue, review;
+    [body.user, body.venue, body.review] = [this.props.user, this.props.marker, this.state];
+    console.log(body);
+  }
+
   render(props) {
     // const { marker, user, open, toggleModal } = this.props
     const { open, toggleModal } = this.props
@@ -30,8 +43,8 @@ class Review extends React.Component {
             <ReviewCategories handleChange={ this.handleChange.bind(this) }/>
           </Modal.Content>
           <Modal.Actions>
-            <Button color='black' onClick={ toggleModal }>Nah</Button>
-            <Button positive icon='checkmark' labelPosition='right' content="Yep, that's it" onClick={toggleModal} />
+            <Button color='black' onClick={ toggleModal }>Nevermind</Button>
+            <Button positive icon='checkmark' labelPosition='right' content="Submit" onClick={this.submitReview.bind(this)} />
           </Modal.Actions>
         </Modal>
       </div>
