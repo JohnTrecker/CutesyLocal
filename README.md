@@ -31,13 +31,17 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Hide API keys
 [ ] Known Bugs
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
-  [X] truncated viewport height
+  [ ] truncated viewport height
   [ ] marker A dissapears if too close to marker B
 [ ] Final v0.10 Features
   [X] include links to venue websites
   [X] Authentication
   [ ] Leave review
-  [ ] Toggle from one review to another in Popup component
+    [ ] expand venues schema
+    [ ] persist review
+    [ ] reset review state on `submit` onClick
+  [ ] clean up Popup (Sidebar) and Nav with semantic ui
+    [ ] Toggle from one review to another in Popup component
   [ ] google analytics middleware
   [ ] Write tests
 [ ] Replace `How to start this app` with script and update README.md

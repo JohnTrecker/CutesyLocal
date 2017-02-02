@@ -1,24 +1,36 @@
 import React from 'react';
-import { Accordion, Button, Checkbox, Form, Header, Icon, Image, Modal, Rating, TextArea } from 'semantic-ui-react'
+import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
 
 class Review extends React.Component {
+  constructor(){
+    super();
+    this.state = {rating:null, review:null, outside:null, inside:null, service:null}
+  }
+
+  handleChange(e, el){
+    const key = el.className;
+    const value = key === 'rating' ? el.rating :
+      (key === 'review' ? el.value : el.checked)
+    // TODO: validate `value` for XSS prevention
+    const newState = {}
+    newState[key] = value
+    this.setState(newState);
+  }
+
   render(props) {
-    const { marker, user, open, toggleModal } = this.props
+    // const { marker, user, open, toggleModal } = this.props
+    const { open, toggleModal } = this.props
 
-    if (!marker) return (<div></div>)
-    const panel = JSON.parse(marker.reviews);
-
+    // if (!marker) return (<div></div>)
     return (
       <div>
-        <Modal dimmer='dimming' open={open} onClose={toggleModal}>
+        <Modal dimmer='dimming' open={ open } onClose={ toggleModal }>
           <Modal.Header>What did your think?</Modal.Header>
           <Modal.Content>
-            <Sections />
+            <ReviewCategories handleChange={ this.handleChange.bind(this) }/>
           </Modal.Content>
           <Modal.Actions>
-            <Button color='black' onClick={toggleModal}>
-              Nah
-            </Button>
+            <Button color='black' onClick={ toggleModal }>Nah</Button>
             <Button positive icon='checkmark' labelPosition='right' content="Yep, that's it" onClick={toggleModal} />
           </Modal.Actions>
         </Modal>
@@ -27,31 +39,26 @@ class Review extends React.Component {
   }
 }
 
-// do somethign with Textarea.value
-
-const Sections = () => (
+const ReviewCategories = (props) => (
   <Accordion styled>
-    <Accordion.Title>
-      <Icon name='dropdown' />
-      Upload
-    </Accordion.Title>
-    <Accordion.Content>
-      <Image wrapped size='medium' src='http://semantic-ui.com/images/avatar2/large/rachel.png' />
-      <Modal.Description>
-        <Header>Default Profile Image</Header>
-        <p>We've found the following gravatar image associated with your e-mail address.</p>
-        <p>Is it okay to use this photo?</p>
-      </Modal.Description>
-    </Accordion.Content>
     <Accordion.Title>
       <Icon name='dropdown' />
       Review
     </Accordion.Title>
     <Accordion.Content>
-      <Rating icon='star' defaultRating={0} maxRating={5} />
-      <p></p>
+      <Rating
+        className="rating"
+        icon='star'
+        size='huge'
+        defaultRating={0}
+        maxRating={5}
+        onRate={props.handleChange} />
+      <br/>
       <Form>
-        <TextArea placeholder='What did you love?'/>
+        <TextArea
+          placeholder='What did you love?'
+          className="review"
+          onChange={props.handleChange} />
       </Form>
     </Accordion.Content>
     <Accordion.Title>
@@ -59,48 +66,41 @@ const Sections = () => (
       Perks
     </Accordion.Title>
     <Accordion.Content>
-      <Checkbox label="Dogs allowed in patio"/><br></br>
-      <Checkbox label="Allowed inside"/><br></br>
-      <Checkbox label="Serves water or treats"/>
+      <Checkbox
+        className="outside"
+        label="Dogs allowed in patio"
+        onChange={props.handleChange} />
+      <br/>
+      <Checkbox
+        className="inside"
+        label="Allowed inside"
+        onChange={props.handleChange} />
+      <br/>
+      <Checkbox
+        className="service"
+        label="Serves water or treats"
+        onChange={props.handleChange} />
     </Accordion.Content>
-    <Accordion.Title>
-      <Icon name='dropdown' />
-      Text with other modules
-    </Accordion.Title>
-    <Accordion.Content>
-      <p>
-        More modules embed photo component here
-      </p>
-    </Accordion.Content>
-
   </Accordion>
 )
 
 export default Review
 
-
-// import React from 'react';
-// import './semantic-ui/semantic.min.css';
-// class Modal extends React.Component {
-//   render(props){
-//     return (
-//       <div id="login-modal" className="ui small modal">
-//         <i className="close icon" onClick={this.props.toggle}></i>
-//         <div className="header">Welcome To Cutesy Local</div>
-//         <div className="image content">
-//           <div className="ui medium image">
-//             <img className="pop_restaurant" role="presentation"/>
-//           </div>
-//           <div className="description">
-//             <div className="ui header">Some text</div>
-//             <p>Some more text</p>
-//           </div>
-//         </div>
-//         <div className="actions">
-
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-// export default Modal;
+// ========================================================
+// Upload Photo component
+// ========================================================
+    // <Accordion.Title>
+    //   <Icon name='dropdown' />
+    //   Upload
+    // </Accordion.Title>
+    // <Accordion.Content>
+    //   <Image
+    //     wrapped
+    //     size='medium'
+    //     src='http://semantic-ui.com/images/avatar2/large/rachel.png' />
+    //   <Modal.Description>
+    //     <Header>Default Profile Image</Header>
+    //     <p>We've found the following gravatar image associated with your e-mail address.</p>
+    //     <p>Is it okay to use this photo?</p>
+    //   </Modal.Description>
+    // </Accordion.Content>

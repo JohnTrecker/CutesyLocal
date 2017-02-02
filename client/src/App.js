@@ -18,8 +18,6 @@ class App extends React.Component {
       modalOpen: false,
       visibleVenues: [],
     }
-    // this.toggleModal.bind(this);
-    // this.setUser.bind(this);
   }
 
   updateVisibleVenues(e){
@@ -62,6 +60,10 @@ class App extends React.Component {
       toggledButtons.push(venue);
     }
     this.setState({visibleVenues: toggledButtons});
+  }
+
+  // TODO: persist UG review data
+  saveReview(){
   }
 
   toggleModal(){
