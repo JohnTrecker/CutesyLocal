@@ -6,14 +6,16 @@ import './assets/index.css';
 class Popup extends React.Component {
   render(){
     if (!this.props.marker) return( <div></div> );
-    const venue = this.props.marker;
-    const rating = venue.rating * 20;
-    const ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
-    const showDates = venue.dates !== "null";
-    const showReview = venue.reviews !== "[]";
+    let venue = this.props.marker;
+    let rating = venue.rating * 20;
+    let ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
+    let showDates = venue.dates !== "null";
+    let showReview = venue.reviews.length !== 0;
     let loggedIn = this.props.user;
-    const review = showReview === true ? JSON.parse(venue.reviews)[0].review : null;
-    const reviewer = showReview === true ? JSON.parse(venue.reviews)[0].reviewer.toLowerCase() : null;
+    let review = showReview === true ? venue.reviews[0].review : null;
+    let reviewer = showReview === true ? venue.reviews[0].reviewer.toLowerCase() : null;
+
+    // const panel = JSON.parse(marker.reviews);
 
     return (
       <div className="popup-contents ui slide left instant reveal">
@@ -39,7 +41,8 @@ class Popup extends React.Component {
           { showReview &&
             <Reviews
               review={ review }
-              reviewer={ reviewer }/>
+              reviewer={ reviewer }
+              image={ venue.reviews[0].image } />
           }
           {
             !showReview && loggedIn &&
@@ -62,7 +65,7 @@ class Popup extends React.Component {
 const Reviews = (props) =>
   <div className="hidden content" >
     <div className="review-image">
-      <img id="reviewer" className={ props.reviewer} role="presentation"/>
+      <img id="reviewer" src={ props.image } className={ props.reviewer } role="presentation"/>
     </div>
     <div className="review-info">
       <p className="title">{ props.reviewer }</p>

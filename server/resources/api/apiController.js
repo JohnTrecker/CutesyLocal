@@ -1,30 +1,14 @@
-let mongoose = require('mongoose'),
-    axios = require('axios'),
-    Venues = require('./db').Venues,
-    Users = require('./db').Users,
-    helpers = require('../lib/helpers'),
-    mapboxToken = require('../../config/config').mapboxgl_access_token;
+const mongoose = require('mongoose');
+const axios = require('axios');
+const Venues = require('../../db/models/venues.js');
+const Users = require('../../db/models/users');
+const helpers = require('../lib/helpers');
+const mapboxToken = require('../../config/config').mapboxgl_access_token;
 mongoose.Promise = require('bluebird');
 
 // ===============
 // User methods
 // ===============
-
-exports.createUser = function (req, res) {
-  let user = req;
-  console.log('_________________________creating new user in controller user:_________________\n', user);
-  Users.create(newUser, function(error, user) {
-    if (error) {
-      console.log('error creating one: ', error);
-      res.sendStatus(404);
-    } else {
-      console.log('create user data:\n', user);
-      res.send(201)
-      .json(user);
-    }
-  });
-
-};
 
 // ===============
 // Venues methods
@@ -34,6 +18,20 @@ exports.retrieve = function (req, res) {
   Venues.find({}, function(error, venues) {
     if (error) {
       console.log('error retrieving venues: ', error);
+      res.send(404);
+    } else {
+      console.log('serving venues from controller...');
+      let result = helpers.geojsonify(venues);
+      res.status(202)
+      .json(result);
+    }
+  });
+};
+
+exports.retrieveById = function (req, res) {
+  Venues.find({ _id: '5899120bc19279088548cbc8' }, function(error, venues) {
+    if (error) {
+      console.log('error retrieving ', venueType, ' data:', error);
       res.send(404);
     } else {
       let result = helpers.geojsonify(venues);
@@ -99,14 +97,25 @@ exports.retrieveOne = function (req, res) {
   });
 };
 
-exports.updateOne = function (req, res) {
-  var number = req.params.number;
-  var update = req.body;
-  Venues.findOneAndUpdate({ number: number }, update, { new: true }, function(error, venue) {
+exports.updateOneVenue = function (req, res) {
+  let data = req.body,
+      user = data.user,
+      id   = data.venue._id,
+      review = data.review;
+
+  Venues.findOne({ _id: id }, function(error, venue) {
     if (error) {
       console.log('error updating one: ', error);
       res.send(404);
     } else {
+      venue.reviews.push({
+        reviewer: user.name,
+        review: review.review,
+        rating: review.rating,
+        image: user.picture.data.url,
+      });
+      venue.rating = helpers.avgRating(venue);
+      venue.save();
       res.status(200)
       .json(venue);
     }

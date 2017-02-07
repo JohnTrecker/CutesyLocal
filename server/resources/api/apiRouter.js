@@ -10,16 +10,8 @@ apiRouter.route('/users')
   })
   .post(function(req, res) {
     let request = req;
-    console.log('----------------------------request in apiRouter.js:\n', request);
     apiController.createUser(req, res);
   });
-  // .put(function(req, res) {
-  //   apiController.updateOne(req, res);
-  // })
-  // .delete(function(req, res) {
-  //   if (req.params.number) apiController.deleteOne(req, res);
-  //   else apiController.delete(req, res);
-  // });
 
 apiRouter.route('/venues')
   .get(function(req, res) {
@@ -29,11 +21,16 @@ apiRouter.route('/venues')
     apiController.createOne(req, res);
   })
   .put(function(req, res) {
-    apiController.updateOne(req, res);
+    apiController.updateOneVenue(req, res);
   })
   .delete(function(req, res) {
     if (req.params.number) apiController.deleteOne(req, res)
     else apiController.delete(req, res);
+  });
+
+apiRouter.route('/venues/test')
+  .get(function(req, res) {
+    apiController.retrieveById(req, res);
   });
 
 apiRouter.route('/venues/:venueType')

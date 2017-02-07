@@ -1,4 +1,4 @@
-{
+[{
   "name": "The Homestead (Mission)",
   "address": "2301 Folsom St,",
   "longitude": -122.4147,
@@ -13,7 +13,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "http://homesteadsf.com"
-}
+},
 {
   "name": "Rose's Cafe",
   "address": "2298 Union St.",
@@ -29,7 +29,7 @@
   "rating": 4,
   "dates": null,
   "url": "http://rosescafesf.com"
-}
+},
 {
   "name": "Park Chow",
   "address": "1240 9th Ave",
@@ -45,7 +45,7 @@
   "rating": 4,
   "dates": null,
   "url": "http://chowfoodbar.com/"
-}
+},
 {
   "name": "Churchill",
   "address": "198 Church St",
@@ -61,7 +61,7 @@
   "rating": 4,
   "dates": null,
   "url": "http://churchillsf.com/"
-}
+},
 {
   "name": "El Rio",
   "address": "3158 Mission St",
@@ -77,7 +77,7 @@
   "rating": 4,
   "dates": null,
   "url": "http://elriosf.com"
-}
+},
 {
   "name": "Holy Water",
   "address": "309 Cortland Ave",
@@ -93,7 +93,7 @@
   "rating": 4,
   "dates": null,
   "url": "http://holywatersf.com/"
-}
+},
 {
   "name": "Momo's Restaurant",
   "address": "760 2nd St.",
@@ -109,7 +109,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "http://www.sfmomos.com/"
-}
+},
 {
   "name": "Murio's Trophy Room",
   "address": "1811 Haight St",
@@ -125,7 +125,7 @@
   "rating": 4,
   "dates": null,
   "url": ""
-}
+},
 {
   "name": "Bus Stop",
   "address": "1901 Union St",
@@ -141,7 +141,7 @@
   "rating": 4,
   "dates": null,
   "url": "busstop-sf.com"
-}
+},
 {
   "name": "Bloodhound",
   "address": "1145 Folsom St",
@@ -157,7 +157,7 @@
   "rating": 4,
   "dates": null,
   "url": "bloodhoundsf.com"
-}
+},
 {
   "name": "The Black Horse London Pub",
   "address": "1514 Union St.",
@@ -173,7 +173,7 @@
   "rating": 4,
   "dates": null,
   "url": "http://www.blackhorselondon.com/"
-}
+},
 {
   "name": "Zazie",
   "address": "941 Cole St",
@@ -189,7 +189,7 @@
   "rating": 4,
   "dates": null,
   "url": "zaziesf.com"
-}
+},
 {
   "name": "Kitchen Story",
   "address": "3499 16th St",
@@ -205,7 +205,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/kitchen-story-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Pizzeria Delfina",
   "address": "3611 18th St",
@@ -221,7 +221,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/pizzeria-delfina-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Stuffed",
   "address": "2788 Mission St",
@@ -237,7 +237,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/stuffed-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Tacolicious",
   "address": "741 Valencia St",
@@ -253,7 +253,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/tacolicious-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Chicks and Love Pizza Patio",
   "address": "1701 Folsom St",
@@ -269,7 +269,7 @@
   "rating": 5,
   "dates": null,
   "url": "https://www.yelp.com/biz/chicks-and-love-pizza-patio-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "The Monk's Kettle",
   "address": "3141 16th St",
@@ -280,7 +280,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/the-monks-kettle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "NoVY Restaurant",
   "address": "4000 24th St",
@@ -296,7 +296,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/novy-san-francisco-6?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Cafe Me",
   "address": "500 Washington St",
@@ -307,7 +307,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/cafe-me-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Marcella's Lasagneria",
   "address": "1099 Tennessee St",
@@ -323,7 +323,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/marcellas-lasagneria-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Skool",
   "address": "1725 Alameda St",
@@ -339,7 +339,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/skool-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Bayshore Taqueria",
   "address": "300 Bayshore Blvd",
@@ -350,7 +350,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/bayshore-taqueria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Myriad Gastropub",
   "address": "2491 Mission St",
@@ -366,7 +366,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/myriad-gastropub-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "FOB Kitchen",
   "address": "2351 Mission St",
@@ -382,7 +382,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/fob-kitchen-san-francisco-4?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Craftsman and Wolves",
   "address": "746 Valencia St",
@@ -398,7 +398,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/craftsman-and-wolves-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Gott's Roadside",
   "address": "1 Ferry Bldg",
@@ -414,7 +414,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/gotts-roadside-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Poke Delish",
   "address": "2175 Market Street",
@@ -430,7 +430,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/poke-delish-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Luna's Coffee House",
   "address": "1101 Potrero Ave",
@@ -441,7 +441,7 @@
   "rating": 5,
   "dates": null,
   "url": "https://www.yelp.com/biz/lunas-coffee-house-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Juice Shop",
   "address": "432 Octavia St",
@@ -452,7 +452,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/juice-shop-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Universal Cafe",
   "address": "2814 19th St",
@@ -468,7 +468,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/universal-cafe-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Hops & Hominy",
   "address": "1 Tillman Pl",
@@ -484,7 +484,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/hops-and-hominy-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Nopalito",
   "address": "306 Broderick St",
@@ -495,7 +495,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/nopalito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Turner's Kitchen",
   "address": "3505 B 17th St",
@@ -506,7 +506,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/turners-kitchen-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Roli Roti Gourmet Rotisserie",
   "address": "1 Ferry Bldg",
@@ -517,7 +517,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/roli-roti-gourmet-rotisserie-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Revelry Bistro",
   "address": "297 Page Street",
@@ -528,7 +528,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/revelry-bistro-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Tanguito",
   "address": "2850 Jones St",
@@ -544,7 +544,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/tanguito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Bender's Bar and Grill",
   "address": "806 S Van Ness Ave",
@@ -560,7 +560,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/benders-bar-and-grill-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Scullery",
   "address": "687 Geary St",
@@ -571,7 +571,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/scullery-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Thoughts Style Cuisine Showroom",
   "address": "139 8th St",
@@ -582,7 +582,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/thoughts-style-cuisine-showroom-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "The Sandwich Spot",
   "address": "3213 Pierce St",
@@ -593,7 +593,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/the-sandwich-spot-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Golden Gate Market Deli & Liquor",
   "address": "2767 Lombard St",
@@ -604,7 +604,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/golden-gate-market-deli-and-liquor-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Pacific Catch",
   "address": "2027 Chestnut St",
@@ -620,7 +620,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/pacific-catch-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Jackson Place Cafe",
   "address": "633 Battery St",
@@ -631,7 +631,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/jackson-place-cafe-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "All Good Pizza",
   "address": "1605 Jerrold Ave",
@@ -642,7 +642,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/all-good-pizza-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Terzo",
   "address": "3011 Steiner St",
@@ -653,7 +653,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/terzo-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Vinyl Coffee & Wine Bar",
   "address": "359 Divisadero St",
@@ -664,7 +664,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/vinyl-coffee-and-wine-bar-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Mission Bowling Club",
   "address": "3176 17th St",
@@ -675,7 +675,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/mission-bowling-club-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Stanza Coffee",
   "address": "3126 16th St",
@@ -686,7 +686,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/stanza-coffee-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Olea",
   "address": "1494 California St",
@@ -697,7 +697,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/olea-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "St. Francis Fountain",
   "address": "2801 24th St",
@@ -713,7 +713,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/st-francis-fountain-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Castagna",
   "address": "2015 Chestnut St",
@@ -724,7 +724,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/castagna-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Mason Pacific",
   "address": "1358 Mason St",
@@ -740,7 +740,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/mason-pacific-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Firehouse Pizzeria",
   "address": "6001 California St",
@@ -751,7 +751,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/firehouse-pizzeria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "The Steamin' Burger",
   "address": "",
@@ -762,7 +762,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/the-steamin-burger-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Small Dog Meet and Greet at Friditas",
   "address": "132 Hazelwood Dr.",
@@ -773,7 +773,7 @@
   "rating": 4,
   "dates": "November 22, 2016 to June 20, 2017 6:30 p.m. to 8:00 p.m.",
   "url": "http://dogtrekker.com/event/small-dog-meet-and-greet-at-friditas"
-}
+},
 {
   "name": "Treasure Island Flea",
   "address": "1 Ave. of the Palms",
@@ -784,7 +784,7 @@
   "rating": 4,
   "dates": "November 26, 2016 to November 27, 2016 10:00 a.m. to 4:00 p.m.",
   "url": "http://dogtrekker.com/event/treasure-island-flea-11"
-}
+},
 {
   "name": "Festive Holiday Luncheon",
   "address": "335 Powell St.",
@@ -795,7 +795,7 @@
   "rating": 4,
   "dates": "December 1, 2016 7:00 p.m. to 10:00 p.m.",
   "url": "http://dogtrekker.com/event/festive-holiday-luncheon-2016"
-}
+},
 {
   "name": "SF Beer Week Opening Day - Picnic in the Park",
   "address": "601 Mission Bay Blvd. N.",
@@ -806,7 +806,7 @@
   "rating": 4.5,
   "dates": "February 11, 2017 12:00 p.m. to 4:00 p.m.",
   "url": "https://dogtrekker.com/event/sf-beer-week-opening-day-picnic-in-the-park-february-11-2017"
-}
+},
 {
   "name": "SF Race for the Paws",
   "address": "Crissy Field",
@@ -817,7 +817,7 @@
   "rating": 4.8,
   "dates": "February 25, 2017 7:00 a.m. to 1:00 p.m.",
   "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017"
-}
+},
 {
   "name": "Pug Sunday",
   "address": "Alta Plaza Park",
@@ -828,7 +828,7 @@
   "rating": 4.8,
   "dates": "February 5, 2017 2:30 p.m. to 4:00 p.m.",
   "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017"
-}
+},
 {
   "name": "Fort Funston",
   "address": "Fort Funston Rd",
@@ -844,7 +844,7 @@
   "rating": 5,
   "dates": null,
   "url": "http://parksconservancy.org"
-}
+},
 {
   "name": "Crissy Field",
   "address": "1199 E Beach",
@@ -855,7 +855,7 @@
   "rating": 5,
   "dates": null,
   "url": "http://parksconservancy.org"
-}
+},
 {
   "name": "Ocean Beach",
   "address": "Great Highway",
@@ -871,7 +871,7 @@
   "rating": 5,
   "dates": null,
   "url": "http://parksconservancy.org"
-}
+},
 {
   "name": "Baker Beach",
   "address": "1504 Pershing Dr",
@@ -887,7 +887,7 @@
   "rating": 5,
   "dates": null,
   "url": "http://parksconservancy.org"
-}
+},
 {
   "name": "Corona Heights Park",
   "address": "32 Museum Way",
@@ -903,7 +903,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/corona-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Bernal Heights Park",
   "address": "10 Bernal Heights Blvd",
@@ -914,7 +914,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/bernal-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Lafayette Park",
   "address": "Gough and Sacramento Street",
@@ -925,7 +925,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/lafayette-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Upper Douglass Dog Park",
   "address": "27th and Douglass Blvd",
@@ -936,7 +936,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/upper-douglass-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "St. Marys Park and Dog Park",
   "address": "95 Justin Dr",
@@ -947,7 +947,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/st-marys-park-and-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Rincon Hill Dog Park",
   "address": "486 Beale St",
@@ -958,7 +958,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/rincon-hill-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Pine Lake Park",
   "address": "Vale Ave & Crestlake Dr",
@@ -969,7 +969,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/pine-lake-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Mission Creek Dog Park",
   "address": "485 Berry St",
@@ -980,7 +980,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/mission-creek-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Duboce Park",
   "address": "Duboce Ave and Noe St",
@@ -996,7 +996,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/duboce-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Walter Haas Park and Playground",
   "address": "Diamond Heights Blvd",
@@ -1007,7 +1007,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/walter-haas-park-and-playground-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Golden Gate Park: Dog Training Area",
   "address": "38th and Fulton St",
@@ -1018,7 +1018,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/golden-gate-park-dog-training-area-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Cole Valley Dog Park",
   "address": "86 Carl St",
@@ -1029,7 +1029,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/cole-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Eureka Valley Dog Park",
   "address": "100 Collingwood St",
@@ -1045,7 +1045,7 @@
   "rating": 3.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/eureka-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "SoMa West Skate and Dog Park",
   "address": "Central Fwy",
@@ -1056,7 +1056,7 @@
   "rating": 3,
   "dates": null,
   "url": "https://www.yelp.com/biz/soma-west-skate-and-dog-park-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Alemany Blvd Dog Park",
   "address": "3550-3598 Alemany Blvd",
@@ -1067,7 +1067,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/alemany-blvd-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "25th St Dog Park",
   "address": "Indiana & 25th",
@@ -1078,7 +1078,7 @@
   "rating": 4,
   "dates": null,
   "url": "https://www.yelp.com/biz/25th-st-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Crocker Amazon Dog Park",
   "address": "Italy Ave & Moscow St",
@@ -1089,7 +1089,7 @@
   "rating": 3,
   "dates": null,
   "url": "https://www.yelp.com/biz/crocker-amazon-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Upper Noe Recreation Center: Dog Park",
   "address": "299 Day Street",
@@ -1100,7 +1100,7 @@
   "rating": 3,
   "dates": null,
   "url": "https://www.yelp.com/biz/upper-noe-recreation-center-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Golden Gate Park Kezar Triangle",
   "address": "788 Kezar Dr",
@@ -1111,7 +1111,7 @@
   "rating": 4.5,
   "dates": null,
   "url": "https://www.yelp.com/biz/golden-gate-park-kezar-triangle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+},
 {
   "name": "Dog Runs at Golden Gate Park",
   "address": "1233-1275 Martin Luther King Jr Dr",
@@ -1122,4 +1122,4 @@
   "rating": 3,
   "dates": null,
   "url": "https://www.yelp.com/biz/dog-runs-at-golden-gate-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA"
-}
+}]

@@ -1,7 +1,37 @@
+function status(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return Promise.resolve(response)
+  } else {
+    return Promise.reject(new Error(response.statusText))
+  }
+}
+
+function json(response) {
+  return response.json()
+}
+
+exports.saveReview = (review) => {
+  fetch('/api/venues', {
+    method: 'PUT',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(review)
+  })
+  .then(status)
+  .then(json)
+  .then(function(data){
+    console.log('Request succeeded with JSON response', data);
+  })
+  .catch(function (error) {
+    console.log('Request failed', error);
+  });
+}
 
 exports.renderMarkers = (map, venue) => {
-  fetch( `http://localhost:3000/api/venues/${venue}` )
-    .then( response => response.json() )
+  fetch( `/api/venues/${venue}` )
+    .then(status)
+    .then(json)
     .then( (venueData) => {
       let source = `${venue}Data`;
       map.addSource(source, {
@@ -59,7 +89,7 @@ exports.renderMarkers = (map, venue) => {
       });
 
       // for each coorespnding button in nav bar
-      //   add onclick behavior to toggle layer visibility
+        // add onclick behavior to toggle layer visibility
       let button = document.getElementsByClassName(venue)[0];
       let markerLayers = [`unclustered-points-${venue}`, `cluster-${venue}`, `cluster-count-${venue}`];
 
@@ -82,7 +112,8 @@ exports.renderMarkers = (map, venue) => {
 exports.renderMapbox = (cb) => {
   // fetch mapbox private token from server's config
   fetch( 'http://localhost:3000/api/keys' )
-    .then( response => response.json() )
+    .then(status)
+    .then(json)
     .then( (token) => cb(token) )
     .catch( function(e){
       console.log('error fetching mapbox token:\n', e);

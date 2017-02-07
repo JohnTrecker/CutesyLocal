@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
-import $ from 'jquery';
+let saveReview = require('./lib/helpers').saveReview;
 
 class Review extends React.Component {
   constructor(){
@@ -19,22 +19,18 @@ class Review extends React.Component {
   }
 
   submitReview(props){
-    // update venue in db
-      // update venue schema
-      // review, reviewer, rating, perks (3)
-    // update user in db
-      // user facebook.id (or MongoDB _id), venue, date, review
+    // compose body
     let body = {};
-    let user, venue, review;
     [body.user, body.venue, body.review] = [this.props.user, this.props.marker, this.state];
-    console.log(body);
+    // update venue
+    saveReview(body);
+    //
   }
 
   render(props) {
-    // const { marker, user, open, toggleModal } = this.props
-    const { open, toggleModal } = this.props
+    const { marker, user, open, toggleModal } = this.props
 
-    // if (!marker) return (<div></div>)
+    if (!marker) return (<div></div>)
     return (
       <div>
         <Modal dimmer='dimming' open={ open } onClose={ toggleModal }>

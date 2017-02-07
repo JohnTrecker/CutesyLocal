@@ -62,10 +62,6 @@ class App extends React.Component {
     this.setState({visibleVenues: toggledButtons});
   }
 
-  // TODO: persist UG review data
-  saveReview(){
-  }
-
   toggleModal(){
     this.setState({modalOpen: !this.state.modalOpen})
   }
@@ -99,7 +95,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    // if (!this.user) this.toggleModal();
+    if (!this.user) this.toggleModal();
     let setCurrentVenue = this.setCurrentVenue.bind(this);
     fetch( 'http://localhost:3000/api/keys' )
       .then( response => response.json() )
@@ -122,8 +118,9 @@ class App extends React.Component {
         map.on('click', function (e) {
           let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
           if (features.length) {
-            // console.log('feature clicked\nsetUser = ', setUser, '\ntoggleModal = ', toggleModal);
             let marker = features[0];
+            marker.properties.reviews = JSON.parse(marker.properties.reviews);
+            console.log('number of reviews for', marker.properties.name, ': ', marker.properties.reviews.length);
             setCurrentVenue(marker.properties);
           }
         });
@@ -133,9 +130,5 @@ class App extends React.Component {
       })
   }
 }
-
-// ReactDOM.render(
-//   document.getElementById('popup'));
-
 
 export default App

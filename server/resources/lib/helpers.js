@@ -6,8 +6,45 @@
 // let NodeGeocoder = require('node-geocoder');
 // let keys = require('../../config/config.json');
 let fs = require('fs');
+let _ = require('underscore');
 
 module.exports = {
+
+  avgRating: function(venue){
+    let sum = venue.reviews.reduce(function(memo, curr){
+      return curr.rating + memo;
+    }, 0);
+    return sum/venue.reviews.length
+  },
+
+  dropCollection: function(modelName) {
+    if (!modelName || !modelName.length) {
+      Promise.reject(new Error('You must provide the name of a model.'));
+    }
+
+    try {
+      var model = mongoose.model(modelName);
+      var collection = mongoose.connection.collections[model.collection.collectionName];
+    } catch (err) {
+      return Promise.reject(err);
+    }
+
+    return new Promise(function (resolve, reject) {
+      collection.drop(function (err) {
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        // Remove mongoose's internal records of this
+        // temp. model and the schema associated with it
+        delete mongoose.models[modelName];
+        delete mongoose.modelSchemas[modelName];
+
+        resolve();
+      });
+    });
+  },
 
   simplify: function(geojson) {
     return geojson.features.map(function(entry) {
@@ -54,8 +91,36 @@ module.exports = {
       if (err) throw err;
       console.log("new file generated");
     });
+  },
+
+  addSchemata: function(json, newFields) {
+
+    let result = json.map( function(venue) {
+      return _.extend(venue, newFields);
+    })
+
+    fs.writeFile('./data/venues.json', JSON.stringify(result, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+  },
+
+  removeNull: function(json){
+    json.forEach(function(venue){
+      venue.inside = false;
+      venue.outside = false;
+      venue.service = false;
+    })
+
+    fs.writeFile('./data/venues2.json', JSON.stringify(json, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+
   }
 }
+
+
 
 // function oldGeojsonify (json) {
 //   let options = {
