@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
+let mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-let venueSchema = mongoose.Schema({
+let venueSchema = new Schema({
   name: {
     type: String,
     unique: true,
@@ -18,9 +19,19 @@ let venueSchema = mongoose.Schema({
   dates: String,
   url: String,
   imageUrl: String,
-  inside: Boolean,
-  outside: Boolean,
-  service: Boolean
+  inside: {
+    type: Boolean,
+    default: false
+  },
+  outside: {
+    type: Boolean,
+    default: false
+  },
+  service: {
+    type: Boolean,
+    default: false
+  }
 });
 
-exports.Venues = mongoose.model('Venues', venueSchema);
+let Venue = mongoose.model('Venue', venueSchema);
+module.exports = Venue

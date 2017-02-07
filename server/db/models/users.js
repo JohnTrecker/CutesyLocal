@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
+let mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-let userSchema = mongoose.Schema({
+let userSchema = new Schema({
   facebook: {
     id: Number,
     accessToken: String,
@@ -16,4 +17,5 @@ let userSchema = mongoose.Schema({
   imageUrl: String
 });
 
-exports.Users = mongoose.model('Users', userSchema);
+let User = mongoose.model('User', userSchema);
+module.exports = User

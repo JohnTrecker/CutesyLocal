@@ -1,19 +1,33 @@
 let express  = require('express');
 let mongoose = require('mongoose');
-let helpers  = require('./resources/lib/helpers');
 let bodyParser = require('body-parser');
 let app      = express();
+let helpers  = require('./resources/lib/helpers');
 let configDB = require('./config/database.js');
+let Venue   = require('./db/models/venues');
+let data     = require('./data/venues.json');
 
-// configuration ===============================================================
+// configuration ================b===============================================
 mongoose.connect(configDB.url); // connect to our database
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', function(callback){
   console.log('Huzzah. DB connected.')
+
+  helpers.dropCollection(Venue);
+  data.forEach(function(venue) {
+    let newVenue = new Venue(venue);
+
+    newVenue.save(function(error) {
+      if (!error) {
+        console.log('new venue saved!:\n', venue);
+      }
+    });
+  });
+
 })
 
-// set up express application ==================================================
+// middleware ==================================================================
 app.use(require('morgan')('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // get information from html forms
