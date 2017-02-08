@@ -14,7 +14,8 @@ class App extends React.Component {
     super();
     this.state = {
       user: undefined,
-      currentVenue: undefined,
+      venue: undefined,
+      review: {rating:null, review:null, outside:null, inside:null, service:null},
       modalOpen: false,
       visibleVenues: [],
     }
@@ -66,12 +67,36 @@ class App extends React.Component {
     this.setState({modalOpen: !this.state.modalOpen})
   }
 
+  // TODO: refactor into one function
   setUser(profile){
     this.setState({user: profile})
   }
 
-  setCurrentVenue(marker){
-    this.setState({currentVenue: marker});
+  setVenue(marker){
+    this.setState({venue: marker})
+  }
+
+  setReview(review){
+    this.setState({review: review})
+  }
+
+  handleChange(e, el){
+    const key = el.className;
+    const value = key === 'rating' ? el.rating :
+      (key === 'review' ? el.value : el.checked)
+    // TODO: validate `value` for XSS prevention
+    const newState = Object.assign({}, this.state.review);
+    newState[key] = value
+    this.setState({review: newState});
+  }
+
+  submitReview(){
+    // compose body
+    let body = {};
+    [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
+    // update venue
+    helpers.saveReview(body);
+    //
   }
 
   render(){
@@ -81,12 +106,14 @@ class App extends React.Component {
           updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
         <div id="map"></div>
         <Review
-          marker={this.state.currentVenue}
+          marker={this.state.venue}
           user={this.state.user}
+          handleChange={this.handleChange.bind(this)}
+          submitReview={this.submitReview.bind(this)}
           open={this.state.modalOpen}
           toggleModal={this.toggleModal.bind(this)} />
         <Popup
-          marker={this.state.currentVenue}
+          marker={this.state.venue}
           user={this.state.user}
           setUser={this.setUser.bind(this)}
           toggleModal={this.toggleModal.bind(this)} />,
@@ -96,7 +123,7 @@ class App extends React.Component {
 
   componentDidMount(){
     if (!this.user) this.toggleModal();
-    let setCurrentVenue = this.setCurrentVenue.bind(this);
+    let setVenue = this.setVenue.bind(this);
     fetch( 'http://localhost:3000/api/keys' )
       .then( response => response.json() )
       .then( function(token) {
@@ -121,7 +148,7 @@ class App extends React.Component {
             let marker = features[0];
             marker.properties.reviews = JSON.parse(marker.properties.reviews);
             console.log('number of reviews for', marker.properties.name, ': ', marker.properties.reviews.length);
-            setCurrentVenue(marker.properties);
+            setVenue(marker.properties);
           }
         });
       })

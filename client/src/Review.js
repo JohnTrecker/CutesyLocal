@@ -3,30 +3,6 @@ import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from
 let saveReview = require('./lib/helpers').saveReview;
 
 class Review extends React.Component {
-  constructor(){
-    super();
-    this.state = {rating:null, review:null, outside:null, inside:null, service:null}
-  }
-
-  handleChange(e, el){
-    const key = el.className;
-    const value = key === 'rating' ? el.rating :
-      (key === 'review' ? el.value : el.checked)
-    // TODO: validate `value` for XSS prevention
-    const newState = {}
-    newState[key] = value
-    this.setState(newState);
-  }
-
-  submitReview(props){
-    // compose body
-    let body = {};
-    [body.user, body.venue, body.review] = [this.props.user, this.props.marker, this.state];
-    // update venue
-    saveReview(body);
-    //
-  }
-
   render(props) {
     const { marker, user, open, toggleModal } = this.props
 
@@ -36,11 +12,11 @@ class Review extends React.Component {
         <Modal dimmer='dimming' open={ open } onClose={ toggleModal }>
           <Modal.Header>What did your think?</Modal.Header>
           <Modal.Content>
-            <ReviewCategories handleChange={ this.handleChange.bind(this) }/>
+            <ReviewCategories handleChange={ this.props.handleChange }/>
           </Modal.Content>
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>Nevermind</Button>
-            <Button positive icon='checkmark' labelPosition='right' content="Submit" onClick={this.submitReview.bind(this)} />
+            <Button positive icon='checkmark' labelPosition='right' content="Submit" onClick={this.props.submitReview} />
           </Modal.Actions>
         </Modal>
       </div>

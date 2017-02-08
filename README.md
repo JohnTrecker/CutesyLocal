@@ -30,6 +30,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Fetch and handle data on client side
   [X] Hide API keys
 [ ] Known Bugs
+  [ ] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height
   [ ] marker A dissapears if too close to marker B
