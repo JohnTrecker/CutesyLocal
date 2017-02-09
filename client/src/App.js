@@ -98,6 +98,7 @@ class App extends React.Component {
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
     helpers.saveReview(body, map, this.state.venue.venueType);
+    this.toggleModal();
   }
 
   render(){
