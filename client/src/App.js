@@ -84,12 +84,6 @@ class App extends React.Component {
     this.setState({review: review})
   }
 
-  // updateVenues(venue, data){
-  //   const newState = Object.assign({}, this.state.review);
-  //   newState[venue] = data;
-  //   this.setState({data: newState});
-  // }
-
   handleChange(e, el){
     const key = el.className;
     const value = key === 'rating' ? el.rating :

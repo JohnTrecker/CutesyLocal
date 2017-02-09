@@ -41,9 +41,8 @@ Pull requests are welcome and greatly appreciated! The priority for this project
     [X] expand venues schema
     [X] persist review
     [X] reset review state on `submit` onClick
-    [ ] retrieve updated db data
-      [ ] Find out why server no longer dropping records?
-      [ ] Verify that updateOldMarkers is getting the right data
+    [X] retrieve updated db data
+    [ ] close modal on `submit` and execute behavior similar to clicking marker
   [ ] clean up Popup (Sidebar) and Nav with semantic ui
     [ ] Toggle from one review to another in Popup component
   [ ] google analytics middleware

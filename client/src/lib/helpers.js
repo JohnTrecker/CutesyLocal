@@ -85,18 +85,7 @@ function renderNewMarkers(map, venueType, data){
   };
 }
 
-function updateOldMarkers(map, venueType, data){
-  // saveReview finishes executing before updateOldMarks is called. Problem is
-  // those changes aren't showing up in the db results... Mixed results though...
-
-  // console.log('geojson from db:\n', JSON.stringify(data, null, 2));
-  // console.log('Length is:\n', map.getSource(`parkData`)._data.features[1].properties.reviews.length );
-  map.getSource(`${venueType}Data`).setData(data);
-  // console.log('updateOldMarkers triggered...');
-  // console.log('Now the length is:\n', map.getSource(`parkData`)._data.features[1].properties.reviews.length );
-}
-
-exports.renderMarkers = (map, venue, update) => {
+function renderMarkers(map, venue, update){
   fetch( `/api/venues/${venue}` )
     .then(status)
     .then(json)
@@ -109,7 +98,31 @@ exports.renderMarkers = (map, venue, update) => {
     })
 }
 
-exports.saveReview = (review, map, venue) => {
+function updateOldMarkers(map, venueType, data){
+  // saveReview finishes executing before updateOldMarks is called. Problem is
+  // those changes aren't showing up in the db results...
+
+  console.log('geojson from db:\n', JSON.stringify(data, null, 2));
+  // console.log('Length is:\n', map.getSource(`parkData`)._data.features[1].properties.reviews.length );
+  map.getSource(`${venueType}Data`).setData(data);
+  // console.log('updateOldMarkers triggered...');
+  // console.log('Now the length is:\n', map.getSource(`parkData`)._data.features[1].properties.reviews.length );
+}
+
+// exports.renderMarkers = (map, venue, update) => {
+//   fetch( `/api/venues/${venue}` )
+//     .then(status)
+//     .then(json)
+//     .then( (venueData) => {
+//       if (!update) renderNewMarkers(map, venue, venueData);
+//       else updateOldMarkers(map, venue, venueData);
+//     })
+//     .catch( function(e) {
+//       console.log(`error fetching ${venue} data:\n`, e);
+//     })
+// }
+
+function saveReview(review, map, venue) {
   fetch('/api/venues', {
     method: 'PUT',
     headers: {
@@ -122,12 +135,13 @@ exports.saveReview = (review, map, venue) => {
   .then(function(data){
     console.log('Request succeeded with JSON response', data);
   })
+  .then(renderMarkers(map, venue, true))
   .catch(function (error) {
     console.log('Request failed', error);
   });
 }
 
-exports.renderMapbox = (cb) => {
+function renderMapbox(cb){
   // fetch mapbox private token from server's config
   fetch( 'http://localhost:3000/api/keys' )
     .then(status)
@@ -137,3 +151,9 @@ exports.renderMapbox = (cb) => {
       console.log('error fetching mapbox token:\n', e);
     })
 };
+
+module.exports = {
+  saveReview: saveReview,
+  renderMarkers: renderMarkers,
+  renderMapbox: renderMapbox
+}
