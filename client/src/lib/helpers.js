@@ -10,7 +10,106 @@ function json(response) {
   return response.json()
 }
 
-exports.saveReview = (review) => {
+function renderNewMarkers(map, venueType, data){
+  console.log('renderNewMarkers triggered...');
+  let source = `${venueType}Data`;
+
+  map.addSource(source, {
+    type: "geojson",
+    data: data,
+    cluster: true,
+    clusterMaxZoom: 14,
+    clusterRadius: 50
+  });
+
+  map.addLayer({
+    "id": "unclustered-points-" + venueType,
+    "type": "symbol",
+    "source": source,
+    "filter": ["!has", "point_count"],
+    "layout": {
+        "icon-image": "icon_mkr_" + venueType,
+        "visibility": "none"
+    }
+  });
+
+  let palette = {
+    'restaurant': '#2ab7ca',
+    'park': '#7ed321',
+    'event': '#d0021b'
+  };
+
+  map.addLayer({
+    "id": "cluster-" + venueType,
+    "type": "circle",
+    "source": source,
+    "paint": {
+      "circle-color": palette[venueType],
+      "circle-radius": 18
+    },
+    "layout": {
+      "visibility": "none"
+    },
+    "filter": ["has", "point_count"],
+  });
+
+  map.addLayer({
+    "id": "cluster-count-" + venueType,
+    "type": "symbol",
+    "source": source,
+    "layout": {
+      "visibility": "none",
+      "text-field": "{point_count}",
+      "text-font": [
+        "DIN Offc Pro Medium",
+        "Arial Unicode MS Bold"
+      ],
+      "text-size": 12
+    }
+  });
+
+  // for each coorespnding button in nav bar
+    // add onclick behavior to toggle layer visibility
+  let button = document.getElementsByClassName(venueType)[0];
+  let markerLayers = [`unclustered-points-${venueType}`, `cluster-${venueType}`, `cluster-count-${venueType}`];
+
+  button.onclick = function(e) {
+    markerLayers.forEach(function(markerLayer){
+      let visibility = map.getLayoutProperty(markerLayer, 'visibility');
+      if (visibility === 'visible') {
+        map.setLayoutProperty(markerLayer, 'visibility', 'none');
+      } else {
+        map.setLayoutProperty(markerLayer, 'visibility', 'visible');
+      }
+    });
+  };
+}
+
+function updateOldMarkers(map, venueType, data){
+  // saveReview finishes executing before updateOldMarks is called. Problem is
+  // those changes aren't showing up in the db results... Mixed results though...
+
+  // console.log('geojson from db:\n', JSON.stringify(data, null, 2));
+  // console.log('Length is:\n', map.getSource(`parkData`)._data.features[1].properties.reviews.length );
+  map.getSource(`${venueType}Data`).setData(data);
+  // console.log('updateOldMarkers triggered...');
+  // console.log('Now the length is:\n', map.getSource(`parkData`)._data.features[1].properties.reviews.length );
+}
+
+exports.renderMarkers = (map, venue, update) => {
+  fetch( `/api/venues/${venue}` )
+    .then(status)
+    .then(json)
+    .then( (venueData) => {
+      if (!update) renderNewMarkers(map, venue, venueData);
+      else updateOldMarkers(map, venue, venueData);
+    })
+    .catch( function(e) {
+      console.log(`error fetching ${venue} data:\n`, e);
+    })
+}
+
+exports.saveReview = (review, map, venue) => {
   fetch('/api/venues', {
     method: 'PUT',
     headers: {
@@ -26,87 +125,6 @@ exports.saveReview = (review) => {
   .catch(function (error) {
     console.log('Request failed', error);
   });
-}
-
-exports.renderMarkers = (map, venue) => {
-  fetch( `/api/venues/${venue}` )
-    .then(status)
-    .then(json)
-    .then( (venueData) => {
-      let source = `${venue}Data`;
-      map.addSource(source, {
-        type: "geojson",
-        data: venueData,
-        cluster: true,
-        clusterMaxZoom: 14,
-        clusterRadius: 50
-      });
-
-      map.addLayer({
-        "id": "unclustered-points-" + venue,
-        "type": "symbol",
-        "source": source,
-        "filter": ["!has", "point_count"],
-        "layout": {
-            "icon-image": "icon_mkr_" + venue,
-            "visibility": "none"
-        }
-      });
-
-      let palette = {
-        'restaurant': '#2ab7ca',
-        'park': '#7ed321',
-        'event': '#d0021b'
-      };
-
-      map.addLayer({
-        "id": "cluster-" + venue,
-        "type": "circle",
-        "source": source,
-        "paint": {
-          "circle-color": palette[venue],
-          "circle-radius": 18
-        },
-        "layout": {
-          "visibility": "none"
-        },
-        "filter": ["has", "point_count"],
-      });
-
-      map.addLayer({
-        "id": "cluster-count-" + venue,
-        "type": "symbol",
-        "source": source,
-        "layout": {
-          "visibility": "none",
-          "text-field": "{point_count}",
-          "text-font": [
-            "DIN Offc Pro Medium",
-            "Arial Unicode MS Bold"
-          ],
-          "text-size": 12
-        }
-      });
-
-      // for each coorespnding button in nav bar
-        // add onclick behavior to toggle layer visibility
-      let button = document.getElementsByClassName(venue)[0];
-      let markerLayers = [`unclustered-points-${venue}`, `cluster-${venue}`, `cluster-count-${venue}`];
-
-      button.onclick = function(e) {
-        markerLayers.forEach(function(markerLayer){
-          let visibility = map.getLayoutProperty(markerLayer, 'visibility');
-          if (visibility === 'visible') {
-            map.setLayoutProperty(markerLayer, 'visibility', 'none');
-          } else {
-            map.setLayoutProperty(markerLayer, 'visibility', 'visible');
-          }
-        });
-      };
-    })
-    .catch( function(e) {
-      console.log(`error fetching ${venue} data:\n`, e);
-    })
 }
 
 exports.renderMapbox = (cb) => {

@@ -1,22 +1,20 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
-let saveReview = require('./lib/helpers').saveReview;
 
 class Review extends React.Component {
   render(props) {
-    const { marker, user, open, toggleModal } = this.props
-
+    const { marker, open, toggleModal, submitReview, handleChange } = this.props
     if (!marker) return (<div></div>)
     return (
       <div>
         <Modal dimmer='dimming' open={ open } onClose={ toggleModal }>
-          <Modal.Header>What did your think?</Modal.Header>
+          <Modal.Header>Leave a Review</Modal.Header>
           <Modal.Content>
-            <ReviewCategories handleChange={ this.props.handleChange }/>
+            <ReviewCategories handleChange={ handleChange }/>
           </Modal.Content>
           <Modal.Actions>
-            <Button color='black' onClick={ toggleModal }>Nevermind</Button>
-            <Button positive icon='checkmark' labelPosition='right' content="Submit" onClick={this.props.submitReview} />
+            <Button color='black' onClick={ toggleModal }>No thanks</Button>
+            <Button positive icon='checkmark' labelPosition='right' content="Submit" onClick={ submitReview } />
           </Modal.Actions>
         </Modal>
       </div>

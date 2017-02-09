@@ -37,10 +37,13 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 [ ] Final v0.10 Features
   [X] include links to venue websites
   [X] Authentication
-  [ ] Leave review
-    [ ] expand venues schema
-    [ ] persist review
-    [ ] reset review state on `submit` onClick
+  [X] Leave review
+    [X] expand venues schema
+    [X] persist review
+    [X] reset review state on `submit` onClick
+    [ ] retrieve updated db data
+      [ ] Find out why server no longer dropping records?
+      [ ] Verify that updateOldMarkers is getting the right data
   [ ] clean up Popup (Sidebar) and Nav with semantic ui
     [ ] Toggle from one review to another in Popup component
   [ ] google analytics middleware

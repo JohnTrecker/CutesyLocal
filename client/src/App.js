@@ -7,6 +7,9 @@ import './semantic-ui/semantic.min.css';
 
 let $ = require('jquery');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
+mapboxgl.accessToken = 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
+let map;
+
 let helpers = require('./lib/helpers');
 
 class App extends React.Component {
@@ -17,6 +20,7 @@ class App extends React.Component {
       venue: undefined,
       review: {rating:null, review:null, outside:null, inside:null, service:null},
       modalOpen: false,
+      // data: {restaurants:undefined, parks:undefined, events:undefined},
       visibleVenues: [],
     }
   }
@@ -80,6 +84,12 @@ class App extends React.Component {
     this.setState({review: review})
   }
 
+  // updateVenues(venue, data){
+  //   const newState = Object.assign({}, this.state.review);
+  //   newState[venue] = data;
+  //   this.setState({data: newState});
+  // }
+
   handleChange(e, el){
     const key = el.className;
     const value = key === 'rating' ? el.rating :
@@ -91,12 +101,14 @@ class App extends React.Component {
   }
 
   submitReview(){
-    // compose body
-    let body = {};
+    const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
-    // update venue
     helpers.saveReview(body);
-    //
+    this.rerenderMap();
+  }
+
+  rerenderMap(){
+    helpers.renderMarkers(map, this.state.venue.venueType, true);
   }
 
   render(){
@@ -122,13 +134,13 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    if (!this.user) this.toggleModal();
+    if (this.user) this.toggleModal();
     let setVenue = this.setVenue.bind(this);
     fetch( 'http://localhost:3000/api/keys' )
       .then( response => response.json() )
       .then( function(token) {
         mapboxgl.accessToken = token;
-        let map = new mapboxgl.Map({
+        map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
             center: [-122.413692, 37.775712],
@@ -147,7 +159,6 @@ class App extends React.Component {
           if (features.length) {
             let marker = features[0];
             marker.properties.reviews = JSON.parse(marker.properties.reviews);
-            console.log('number of reviews for', marker.properties.name, ': ', marker.properties.reviews.length);
             setVenue(marker.properties);
           }
         });

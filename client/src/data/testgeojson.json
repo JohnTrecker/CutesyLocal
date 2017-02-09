@@ -1,0 +1,645 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5025,
+          37.7163
+        ]
+      },
+      "properties": {
+        "name": "Fort Funston",
+        "address": "Fort Funston Rd",
+        "longitude": -122.5025,
+        "latitude": 37.7163,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Stevie",
+            "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep)."
+          }
+        ],
+        "rating": 5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4641,
+          37.8039
+        ]
+      },
+      "properties": {
+        "name": "Crissy Field",
+        "address": "1199 E Beach",
+        "longitude": -122.4641,
+        "latitude": 37.8039,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5107,
+          37.7594
+        ]
+      },
+      "properties": {
+        "name": "Ocean Beach",
+        "address": "Great Highway",
+        "longitude": -122.5107,
+        "latitude": 37.7594,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Matt",
+            "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. "
+          }
+        ],
+        "rating": 5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4836,
+          37.7936
+        ]
+      },
+      "properties": {
+        "name": "Baker Beach",
+        "address": "1504 Pershing Dr",
+        "longitude": -122.4836,
+        "latitude": 37.7936,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Chloe",
+            "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with."
+          }
+        ],
+        "rating": 5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.439369238287,
+          37.7652326194395
+        ]
+      },
+      "properties": {
+        "name": "Corona Heights Park",
+        "address": "32 Museum Way",
+        "longitude": -122.439369238287,
+        "latitude": 37.7652326194395,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Veronika",
+            "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page."
+          }
+        ],
+        "rating": 4.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.414903640747,
+          37.7432657658517
+        ]
+      },
+      "properties": {
+        "name": "Bernal Heights Park",
+        "address": "10 Bernal Heights Blvd",
+        "longitude": -122.414903640747,
+        "latitude": 37.7432657658517,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.427656421507,
+          37.7916042473676
+        ]
+      },
+      "properties": {
+        "name": "Lafayette Park",
+        "address": "Gough and Sacramento Street",
+        "longitude": -122.427656421507,
+        "latitude": 37.7916042473676,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Lorenzo",
+            "review": "That was a bloody ordeal! But looks like you should pass in a URL to update a map source. Good to know..."
+          }
+        ],
+        "rating": 4.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.438453989347,
+          37.7464918024673
+        ]
+      },
+      "properties": {
+        "name": "Upper Douglass Dog Park",
+        "address": "27th and Douglass Blvd",
+        "longitude": -122.438453989347,
+        "latitude": 37.7464918024673,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4223233,
+          37.734052
+        ]
+      },
+      "properties": {
+        "name": "St. Marys Park and Dog Park",
+        "address": "95 Justin Dr",
+        "longitude": -122.4223233,
+        "latitude": 37.734052,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3919647,
+          37.7863424
+        ]
+      },
+      "properties": {
+        "name": "Rincon Hill Dog Park",
+        "address": "486 Beale St",
+        "longitude": -122.3919647,
+        "latitude": 37.7863424,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "John",
+            "review": "Here's a hard-coded review."
+          }
+        ],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.48412,
+          37.7352599
+        ]
+      },
+      "properties": {
+        "name": "Pine Lake Park",
+        "address": "Vale Ave & Crestlake Dr",
+        "longitude": -122.48412,
+        "latitude": 37.7352599,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3987043,
+          37.7702005
+        ]
+      },
+      "properties": {
+        "name": "Mission Creek Dog Park",
+        "address": "485 Berry St",
+        "longitude": -122.3987043,
+        "latitude": 37.7702005,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 3.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.433431,
+          37.769425
+        ]
+      },
+      "properties": {
+        "name": "Duboce Park",
+        "address": "Duboce Ave and Noe St",
+        "longitude": -122.433431,
+        "latitude": 37.769425,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Lorenzo",
+            "review": "East part of the park is off-lease with plenty of space to run and play."
+          }
+        ],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.434515953064,
+          37.7404829776916
+        ]
+      },
+      "properties": {
+        "name": "Walter Haas Park and Playground",
+        "address": "Diamond Heights Blvd",
+        "longitude": -122.434515953064,
+        "latitude": 37.7404829776916,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.499004493393,
+          37.7711452940714
+        ]
+      },
+      "properties": {
+        "name": "Golden Gate Park: Dog Training Area",
+        "address": "38th and Fulton St",
+        "longitude": -122.499004493393,
+        "latitude": 37.7711452940714,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 3.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.44969,
+          37.76601
+        ]
+      },
+      "properties": {
+        "name": "Cole Valley Dog Park",
+        "address": "86 Carl St",
+        "longitude": -122.44969,
+        "latitude": 37.76601,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.43629,
+          37.759856
+        ]
+      },
+      "properties": {
+        "name": "Eureka Valley Dog Park",
+        "address": "100 Collingwood St",
+        "longitude": -122.43629,
+        "latitude": 37.759856,
+        "venueType": "park",
+        "reviews": [
+          {
+            "reviewer": "Chloe",
+            "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike."
+          }
+        ],
+        "rating": 3.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4225187,
+          37.770472
+        ]
+      },
+      "properties": {
+        "name": "SoMa West Skate and Dog Park",
+        "address": "Central Fwy",
+        "longitude": -122.4225187,
+        "latitude": 37.770472,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 3,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4645233,
+          37.7117996
+        ]
+      },
+      "properties": {
+        "name": "Alemany Blvd Dog Park",
+        "address": "3550-3598 Alemany Blvd",
+        "longitude": -122.4645233,
+        "latitude": 37.7117996,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3913574,
+          37.7526703
+        ]
+      },
+      "properties": {
+        "name": "25th St Dog Park",
+        "address": "Indiana & 25th",
+        "longitude": -122.3913574,
+        "latitude": 37.7526703,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.42753,
+          37.7150739
+        ]
+      },
+      "properties": {
+        "name": "Crocker Amazon Dog Park",
+        "address": "Italy Ave & Moscow St",
+        "longitude": -122.42753,
+        "latitude": 37.7150739,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 3,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4286111,
+          37.7426253
+        ]
+      },
+      "properties": {
+        "name": "Upper Noe Recreation Center: Dog Park",
+        "address": "299 Day Street",
+        "longitude": -122.4286111,
+        "latitude": 37.7426253,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 3,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4596024,
+          37.7664146
+        ]
+      },
+      "properties": {
+        "name": "Golden Gate Park Kezar Triangle",
+        "address": "788 Kezar Dr",
+        "longitude": -122.4596024,
+        "latitude": 37.7664146,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 4.5,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.495435073541,
+          37.7659108503427
+        ]
+      },
+      "properties": {
+        "name": "Dog Runs at Golden Gate Park",
+        "address": "1233-1275 Martin Luther King Jr Dr",
+        "longitude": -122.495435073541,
+        "latitude": 37.7659108503427,
+        "venueType": "park",
+        "reviews": [],
+        "rating": 3,
+        "dates": null,
+        "url": null,
+        "imageUrl": null,
+        "inside": null,
+        "outside": null,
+        "service": null
+      }
+    }
+  ]
+}
