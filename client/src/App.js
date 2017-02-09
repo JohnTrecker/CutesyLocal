@@ -97,12 +97,7 @@ class App extends React.Component {
   submitReview(){
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
-    helpers.saveReview(body);
-    this.rerenderMap();
-  }
-
-  rerenderMap(){
-    helpers.renderMarkers(map, this.state.venue.venueType, true);
+    helpers.saveReview(body, map, this.state.venue.venueType);
   }
 
   render(){
