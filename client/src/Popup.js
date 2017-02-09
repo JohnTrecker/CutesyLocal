@@ -13,7 +13,7 @@ class Popup extends React.Component {
     let showReview = venue.reviews.length !== 0;
     let loggedIn = this.props.user;
     let review = showReview === true ? venue.reviews[0].review : null;
-    let reviewer = showReview === true ? venue.reviews[0].reviewer.toLowerCase() : null;
+    let reviewer = showReview === true ? venue.reviews[0].reviewer : null;
 
     // const panel = JSON.parse(marker.reviews);
 
