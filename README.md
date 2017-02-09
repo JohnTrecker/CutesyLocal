@@ -30,6 +30,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Fetch and handle data on client side
   [X] Hide API keys
 [ ] Known Bugs
+  [ ] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
   [ ] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height
@@ -42,9 +43,11 @@ Pull requests are welcome and greatly appreciated! The priority for this project
     [X] persist review
     [X] reset review state on `submit` onClick
     [X] retrieve updated db data
-    [ ] close modal on `submit` and execute behavior similar to clicking marker
-  [ ] clean up Popup (Sidebar) and Nav with semantic ui
+    [X] close modal on `submit`
+    [ ] execute behavior similar to clicking marker (the only way changes rerender)
+  [ ] clean up Popup (Sidebar) with semantic ui react
     [ ] Toggle from one review to another in Popup component
+  [ ] clean up Nav with semantic ui
   [ ] google analytics middleware
   [ ] Write tests
 [ ] Replace `How to start this app` with script and update README.md
@@ -66,14 +69,15 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Mobile first styling
 
 v0.20
+[ ] Allow users to review new venues
 [ ] Restyle button bar - `buttons` branch
-[ ] Official reviews
-  [ ] crawl urls for contact info
 [ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
-[ ] Play map locations as a slideshow
-  [ ] Font
 [ ] Implement react-redux-mapbox-gl - 'react' branch ?
 [ ] Implement server side React
+[ ] Official reviews
+  [ ] crawl urls for contact info
+[ ] Play map locations as a slideshow
+  [ ] Font
 [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
   [ ] include MozSwipeGesture listener into the library
 

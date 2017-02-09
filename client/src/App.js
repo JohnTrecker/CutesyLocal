@@ -20,6 +20,7 @@ class App extends React.Component {
       venue: undefined,
       review: {rating:null, review:null, outside:null, inside:null, service:null},
       modalOpen: false,
+      popupOpen: false,
       // data: {restaurants:undefined, parks:undefined, events:undefined},
       visibleVenues: [],
     }
@@ -71,6 +72,9 @@ class App extends React.Component {
     this.setState({modalOpen: !this.state.modalOpen})
   }
 
+  togglePopup(){
+    this.setState({popupOpen: !this.state.popupOpen})
+  }
   // TODO: refactor into one function
   setUser(profile){
     this.setState({user: profile})
@@ -117,6 +121,7 @@ class App extends React.Component {
         <Popup
           marker={this.state.venue}
           user={this.state.user}
+          visible={this.state.popupOpen}
           setUser={this.setUser.bind(this)}
           toggleModal={this.toggleModal.bind(this)} />,
       </div>
@@ -126,6 +131,8 @@ class App extends React.Component {
   componentDidMount(){
     if (this.user) this.toggleModal();
     let setVenue = this.setVenue.bind(this);
+    let togglePopup = this.togglePopup.bind(this);
+
     fetch( 'http://localhost:3000/api/keys' )
       .then( response => response.json() )
       .then( function(token) {
@@ -146,10 +153,12 @@ class App extends React.Component {
 
         map.on('click', function (e) {
           let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
-          if (features.length) {
+          if (!features.length) togglePopup()
+          else {
             let marker = features[0];
             marker.properties.reviews = JSON.parse(marker.properties.reviews);
             setVenue(marker.properties);
+            togglePopup();
           }
         });
       })
