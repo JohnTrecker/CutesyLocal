@@ -4,7 +4,7 @@ let bodyParser = require('body-parser');
 let app      = express();
 let helpers  = require('./resources/lib/helpers');
 let configDB = require('./config/database.js');
-let Venue   = require('./db/models/venues');
+let Venue    = require('./db/models/venues');
 let data     = require('./data/venues.json');
 
 // configuration ===============================================================
@@ -31,7 +31,6 @@ db.once('open', function(callback){
 app.use(require('morgan')('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // get information from html forms
-
 app.use(require('connect-flash')()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================

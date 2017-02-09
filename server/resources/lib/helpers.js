@@ -7,6 +7,7 @@
 // let keys = require('../../config/config.json');
 let fs = require('fs');
 let _ = require('underscore');
+let mongoose = require('mongoose');
 
 module.exports = {
 
