@@ -11,7 +11,9 @@ class Reviews extends React.Component {
         <Header as='h3' dividing>Comments</Header>
 
         {marker.reviews.map(function(review){
+
           return <ReviewItem
+            key={review._id || 1}
             image={review.image}
             name={review.reviewer}
             review={review.review}
