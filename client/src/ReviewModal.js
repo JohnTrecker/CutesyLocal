@@ -3,11 +3,11 @@ import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from
 
 class ReviewModal extends React.Component {
   render(props) {
-    const { marker, open, toggleModal, submitReview, handleChange } = this.props
+    const { handleChange, marker, open, toggleModal, submitReview,  } = this.props
     if (!marker) return (<div></div>)
     return (
       <div>
-        <Modal dimmer='dimming' open={ open } onClose={ toggleModal }>
+        <Modal dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Leave a Review</Modal.Header>
           <Modal.Content>
             <ReviewCategories handleChange={ handleChange }/>
