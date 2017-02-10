@@ -1,9 +1,10 @@
 import React from 'react';
 import Popup from './Popup';
 import Nav from './Nav';
-import Review from './Review';
+import ReviewForm from './ReviewForm';
 import './assets/index.css';
-import './semantic-ui/semantic.min.css';
+// import './semantic-ui/semantic.min.css';
+import { Container, Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
 
 let $ = require('jquery');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
@@ -72,8 +73,10 @@ class App extends React.Component {
     this.setState({modalOpen: !this.state.modalOpen})
   }
 
-  togglePopup(){
-    this.setState({popupOpen: !this.state.popupOpen})
+  togglePopup(markerPresent){
+    const either = markerPresent && !this.state.popupOpen
+    const or = !markerPresent && this.state.popupOpen
+    if (either || or) this.setState({popupOpen: !this.state.popupOpen})
   }
   // TODO: refactor into one function
   setUser(profile){
@@ -107,24 +110,26 @@ class App extends React.Component {
 
   render(){
     return (
-      <div id="container">
-        <Nav
-          updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
-        <div id="map"></div>
-        <Review
-          marker={this.state.venue}
-          user={this.state.user}
-          handleChange={this.handleChange.bind(this)}
-          submitReview={this.submitReview.bind(this)}
-          open={this.state.modalOpen}
-          toggleModal={this.toggleModal.bind(this)} />
+      <Sidebar.Pushable id="container">
         <Popup
           marker={this.state.venue}
           user={this.state.user}
           visible={this.state.popupOpen}
           setUser={this.setUser.bind(this)}
-          toggleModal={this.toggleModal.bind(this)} />,
-      </div>
+          toggleModal={this.toggleModal.bind(this)} />
+        <Sidebar.Pusher>
+          <Nav
+            updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
+          <div id="map"></div>
+          <ReviewForm
+            marker={this.state.venue}
+            user={this.state.user}
+            handleChange={this.handleChange.bind(this)}
+            submitReview={this.submitReview.bind(this)}
+            open={this.state.modalOpen}
+            toggleModal={this.toggleModal.bind(this)} />
+        </Sidebar.Pusher>
+      </Sidebar.Pushable>
     )
   }
 
@@ -153,13 +158,13 @@ class App extends React.Component {
 
         map.on('click', function (e) {
           let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
-          if (!features.length) togglePopup()
-          else {
+          let markersPresent = features.length > 0 ? true : false;
+          if (markersPresent) {
             let marker = features[0];
             marker.properties.reviews = JSON.parse(marker.properties.reviews);
             setVenue(marker.properties);
-            togglePopup();
           }
+          togglePopup(markersPresent);
         });
       })
       .catch( function(e){

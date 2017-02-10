@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
 
-class Review extends React.Component {
+class ReviewForm extends React.Component {
   render(props) {
     const { marker, open, toggleModal, submitReview, handleChange } = this.props
     if (!marker) return (<div></div>)
@@ -67,7 +67,7 @@ const ReviewCategories = (props) => (
   </Accordion>
 )
 
-export default Review
+export default ReviewForm
 
 // ========================================================
 // Upload Photo component
