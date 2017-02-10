@@ -8,7 +8,7 @@ class Reviews extends React.Component {
     const { marker } = this.props
     return (
       <Comment.Group minimal>
-        <Header as='h3' dividing>Comments</Header>
+        <Header as='h3' dividing>Reviews</Header>
 
         {marker.reviews.map(function(review){
 

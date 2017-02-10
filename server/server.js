@@ -5,7 +5,7 @@ let app      = express();
 let helpers  = require('./resources/lib/helpers');
 let configDB = require('./config/database.js');
 let Venue    = require('./db/models/venues');
-let data     = require('./data/venues.json');
+let data     = require('./data/venues2.json');
 
 // configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database

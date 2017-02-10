@@ -1,9 +1,16 @@
 import React from 'react'
-import { Comment } from 'semantic-ui-react'
+import { Comment, Image } from 'semantic-ui-react'
 
 const ReviewItem = (props) =>
   <Comment>
-    <Comment.Avatar as='a' src={props.image} className={props.name}/>
+    <Image
+      as='a'
+      src={props.image}
+      className={props.name}
+      size="tiny"
+      floated="left"
+      shape="rounded"
+      bordered={true} />
     <Comment.Content>
       <Comment.Author as='a'>{props.name}</Comment.Author>
       <Comment.Metadata>
