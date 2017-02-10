@@ -1,7 +1,7 @@
 import React from 'react';
 import Popup from './Popup';
 import Nav from './Nav';
-import ReviewForm from './ReviewForm';
+import ReviewModal from './ReviewModal';
 import './assets/index.css';
 // import './semantic-ui/semantic.min.css';
 import { Container, Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
@@ -121,7 +121,7 @@ class App extends React.Component {
           <Nav
             updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
           <div id="map"></div>
-          <ReviewForm
+          <ReviewModal
             marker={this.state.venue}
             user={this.state.user}
             handleChange={this.handleChange.bind(this)}
