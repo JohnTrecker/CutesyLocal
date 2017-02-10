@@ -15,7 +15,8 @@ let venueSchema = new Schema({
     reviewer: String,
     review: String,
     image: String,
-    rating: Number
+    rating: Number,
+    timestamp: Date,
   }],
   rating: Number,
   dates: String,

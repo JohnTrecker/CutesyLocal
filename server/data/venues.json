@@ -8,7 +8,8 @@
     "reviews": [
       {
         "reviewer": "Matt",
-        "review": "If you were to play a word-association game with the Homestead, you’d get two responses: \"peanuts\" and \"dogs\"."
+        "review": "If you were to play a word-association game with the Homestead, you’d get two responses: \"peanuts\" and \"dogs\".",
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
       }
     ],
     "rating": 4.5,
@@ -28,7 +29,8 @@
     "reviews": [
       {
         "reviewer": "Stevie",
-        "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
+        "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake.",
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
       }
     ],
     "rating": 4,
@@ -48,7 +50,8 @@
     "reviews": [
       {
         "reviewer": "Joe",
-        "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
+        "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake.",
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
       }
     ],
     "rating": 4,
@@ -68,7 +71,8 @@
     "reviews": [
       {
         "reviewer": "Veronika",
-        "review": "Grab a seat on one of the couches by the windows; it's the perfect spot to tuck in for a few hours with your best friend laying at your feet."
+        "review": "Grab a seat on one of the couches by the windows; it's the perfect spot to tuck in for a few hours with your best friend laying at your feet.",
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
       }
     ],
     "rating": 4,
@@ -87,8 +91,9 @@
     "venueType": "restaurant",
     "reviews": [
       {
-        "reviewer": "Lorenzo",
-        "review": "There's no where better than El Rio's back yard on a sunny day, but dogs are allowed inside at this Mission dive bar as well, so it's also a great option when the fog blankets the city or it's, uh, raining cats and dogs. "
+        "reviewer": "Patrick",
+        "review": "There's no where better than El Rio's back yard on a sunny day, but dogs are allowed inside at this Mission dive bar as well, so it's also a great option when the fog blankets the city or it's, uh, raining cats and dogs. ",
+        "image": "http://semantic-ui.com/images/avatar/large/patrick.jpg"
       }
     ],
     "rating": 4,
@@ -108,7 +113,8 @@
     "reviews": [
       {
         "reviewer": "Jenny",
-        "review": "Professor Wagglesworth is totally welcome with all of his doggie colleagues"
+        "review": "Professor Wagglesworth is totally welcome with all of his doggie colleagues",
+        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg"
       }
     ],
     "rating": 4,
@@ -128,7 +134,8 @@
     "reviews": [
       {
         "reviewer": "Helen",
-        "review": "While MoMo's is not a place you want to take your dog when the Giants are playing at home (too crowded), the patio makes the perfect spot to lunch and day drink with Squeakers pretty much every other time."
+        "review": "While MoMo's is not a place you want to take your dog when the Giants are playing at home (too crowded), the patio makes the perfect spot to lunch and day drink with Squeakers pretty much every other time.",
+        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg"
       }
     ],
     "rating": 3.5,
@@ -148,7 +155,8 @@
     "reviews": [
       {
         "reviewer": "Elliot",
-        "review": "This Upper Haight watering hole has a long bar, comfy chairs, Moroccan-inspired light fixtures, a pool table, and the same jukebox it had before it got a 2012 remodel, and is the perfect place to grab a drink with your dog (he'll have a water, please) after work or on a weekend afternoon."
+        "review": "This Upper Haight watering hole has a long bar, comfy chairs, Moroccan-inspired light fixtures, a pool table, and the same jukebox it had before it got a 2012 remodel, and is the perfect place to grab a drink with your dog (he'll have a water, please) after work or on a weekend afternoon.",
+        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg"
       }
     ],
     "rating": 4,
@@ -168,7 +176,8 @@
     "reviews": [
       {
         "reviewer": "Christian",
-        "review": "The saddest part about going out to watch the game is leaving your pup at home for three hours. Thank goodness for the Bus Stop in Cow Hollow, wich doesn't make you choose one or the other. "
+        "review": "The saddest part about going out to watch the game is leaving your pup at home for three hours. Thank goodness for the Bus Stop in Cow Hollow, wich doesn't make you choose one or the other. ",
+        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg"
       }
     ],
     "rating": 4,
@@ -187,8 +196,9 @@
     "venueType": "restaurant",
     "reviews": [
       {
-        "reviewer": "Chloe",
-        "review": "The drinks are great, there's a pool table, Big Buck Hunter, a legit jukebox, and you can bring your canine companion with you to keep you company."
+        "reviewer": "Laura",
+        "review": "The drinks are great, there's a pool table, Big Buck Hunter, a legit jukebox, and you can bring your canine companion with you to keep you company.",
+        "image": "http://semantic-ui.com/images/avatar/large/laura.jpg"
       }
     ],
     "rating": 4,
@@ -208,7 +218,8 @@
     "reviews": [
       {
         "reviewer": "Stevie",
-        "review": "This itty bitty pub is one of the most dog-friendly in town. Everyone inside (employees and patrons alike) are incredibly sociable."
+        "review": "This itty bitty pub is one of the most dog-friendly in town. Everyone inside (employees and patrons alike) are incredibly sociable.",
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
       }
     ],
     "rating": 4,
@@ -228,7 +239,8 @@
     "reviews": [
       {
         "reviewer": "Matt",
-        "review": "on Monday nights \"Zazie Goes to the Dogs\" and you can dine with your pooch on the heated and covered garden patio. What's even crazier is that Zazie actually rewards you for bringing in your dog by providing endless dog treats and $10 off any bottle on the wine list. C'est bon!"
+        "review": "on Monday nights \"Zazie Goes to the Dogs\" and you can dine with your pooch on the heated and covered garden patio. What's even crazier is that Zazie actually rewards you for bringing in your dog by providing endless dog treats and $10 off any bottle on the wine list. C'est bon!",
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
       }
     ],
     "rating": 4,
@@ -248,7 +260,8 @@
     "reviews": [
       {
         "reviewer": "Joe",
-        "review": "This is brunch, done right. Bring your dog and enjoy your ‘frisco benedict’ on the patio."
+        "review": "This is brunch, done right. Bring your dog and enjoy your ‘frisco benedict’ on the patio.",
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
       }
     ],
     "rating": 4,
@@ -268,7 +281,8 @@
     "reviews": [
       {
         "reviewer": "Veronika",
-        "review": "The patio provides the kind of dog-watching that your dog dreams about."
+        "review": "The patio provides the kind of dog-watching that your dog dreams about.",
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
       }
     ],
     "rating": 4,
@@ -287,8 +301,9 @@
     "venueType": "restaurant",
     "reviews": [
       {
-        "reviewer": "Lorenzo",
-        "review": "Dogs allowed in front patio area."
+        "reviewer": "Patrick",
+        "review": "Dogs allowed in front patio area.",
+        "image": "http://semantic-ui.com/images/avatar/large/patrick.jpg"
       }
     ],
     "rating": 4.5,
@@ -308,7 +323,8 @@
     "reviews": [
       {
         "reviewer": "Jenny",
-        "review": "Si, se puede traer Fiddo."
+        "review": "Si, se puede traer Fiddo.",
+        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg"
       }
     ],
     "rating": 3.5,
@@ -328,7 +344,8 @@
     "reviews": [
       {
         "reviewer": "Helen",
-        "review": "Outdoor picnic style tables perfect for that mid-walk snack."
+        "review": "Outdoor picnic style tables perfect for that mid-walk snack.",
+        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg"
       }
     ],
     "rating": 5,
@@ -363,7 +380,8 @@
     "reviews": [
       {
         "reviewer": "Elliot",
-        "review": "We sat outside so I can't speak to the ambiance inside but bonus points for being dog-friendly in their outdoor seating area."
+        "review": "We sat outside so I can't speak to the ambiance inside but bonus points for being dog-friendly in their outdoor seating area.",
+        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg"
       }
     ],
     "rating": 4,
@@ -398,7 +416,8 @@
     "reviews": [
       {
         "reviewer": "Christian",
-        "review": "Outdoor bistro chair seating for the pupster."
+        "review": "Outdoor bistro chair seating for the pupster.",
+        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg"
       }
     ],
     "rating": 4.5,
@@ -418,7 +437,8 @@
     "reviews": [
       {
         "reviewer": "Stevie",
-        "review": "The patio is dog friendly."
+        "review": "The patio is dog friendly.",
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
       }
     ],
     "rating": 4,
@@ -453,7 +473,8 @@
     "reviews": [
       {
         "reviewer": "Matt",
-        "review": "My small dog was also welcomed, and she had a deviled egg from the starter menu."
+        "review": "My small dog was also welcomed, and she had a deviled egg from the starter menu.",
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
       }
     ],
     "rating": 4.5,
@@ -473,7 +494,8 @@
     "reviews": [
       {
         "reviewer": "Joe",
-        "review": "Dog-freindly seating!"
+        "review": "Dog-freindly seating!",
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
       }
     ],
     "rating": 4.5,
@@ -493,7 +515,8 @@
     "reviews": [
       {
         "reviewer": "Veronika",
-        "review": "Bring your fur baby here before or after a visit to the Mission Pet Hospital."
+        "review": "Bring your fur baby here before or after a visit to the Mission Pet Hospital.",
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
       }
     ],
     "rating": 4,
@@ -512,8 +535,9 @@
     "venueType": "restaurant",
     "reviews": [
       {
-        "reviewer": "Lorenzo",
-        "review": "Home of the Puppy Bowl duting Super Bowl week! Bring your lil champion here for great outdoor patio dogwatching."
+        "reviewer": "Patrick",
+        "review": "Home of the Puppy Bowl duting Super Bowl week! Bring your lil champion here for great outdoor patio dogwatching.",
+        "image": "http://semantic-ui.com/images/avatar/large/patrick.jpg"
       }
     ],
     "rating": 3.5,
@@ -533,7 +557,8 @@
     "reviews": [
       {
         "reviewer": "Jenny",
-        "review": "Hip Duboce Triangle food court space that welcomes dogs."
+        "review": "Hip Duboce Triangle food court space that welcomes dogs.",
+        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg"
       }
     ],
     "rating": 4.5,
@@ -583,7 +608,8 @@
     "reviews": [
       {
         "reviewer": "Helen",
-        "review": "Outdoor patio seating is very dog friendly; come early, there's almost always a line on weekends."
+        "review": "Outdoor patio seating is very dog friendly; come early, there's almost always a line on weekends.",
+        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg"
       }
     ],
     "rating": 4,
@@ -603,7 +629,8 @@
     "reviews": [
       {
         "reviewer": "Elliot",
-        "review": "Bring the hounds—This Deep-South-meets-California restaurant has a quaint patio where you can enjoy the microbrews and Southern staples."
+        "review": "Bring the hounds—This Deep-South-meets-California restaurant has a quaint patio where you can enjoy the microbrews and Southern staples.",
+        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg"
       }
     ],
     "rating": 4,
@@ -683,7 +710,8 @@
     "reviews": [
       {
         "reviewer": "Christian",
-        "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend."
+        "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend.",
+        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg"
       }
     ],
     "rating": 4,
@@ -703,7 +731,8 @@
     "reviews": [
       {
         "reviewer": "Stevie",
-        "review": "You can totally bring your dog there (inside and out) and house made dog treats are available to purchase so that Fifi doesn't get too jealous of your beer-battered fried Oreos."
+        "review": "You can totally bring your dog there (inside and out) and house made dog treats are available to purchase so that Fifi doesn't get too jealous of your beer-battered fried Oreos.",
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
       }
     ],
     "rating": 4,
@@ -783,7 +812,8 @@
     "reviews": [
       {
         "reviewer": "Matt",
-        "review": "My dog was just one if three on the patio at Pacific Catch. I even saw one gentleman pick his smaller dog up and take him inside while he grabbed his to-go order (he asked if it was ok first) and the food/drinks were great! Me and my dog will be back."
+        "review": "My dog was just one if three on the patio at Pacific Catch. I even saw one gentleman pick his smaller dog up and take him inside while he grabbed his to-go order (he asked if it was ok first) and the food/drinks were great! Me and my dog will be back.",
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
       }
     ],
     "rating": 4,
@@ -908,7 +938,8 @@
     "reviews": [
       {
         "reviewer": "Joe",
-        "review": "We came with our dog, and had a wonderful table outside. We were even offered water for our dog, SUPER PLUS."
+        "review": "We came with our dog, and had a wonderful table outside. We were even offered water for our dog, SUPER PLUS.",
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
       }
     ],
     "rating": 4,
@@ -943,7 +974,8 @@
     "reviews": [
       {
         "reviewer": "Veronika",
-        "review": "They are dog friendly!! I sat on the patio with my pup and they brought me a nice blanket and my pup a fresh bowl of water."
+        "review": "They are dog friendly!! I sat on the patio with my pup and they brought me a nice blanket and my pup a fresh bowl of water.",
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
       }
     ],
     "rating": 4,
@@ -1083,7 +1115,8 @@
     "reviews": [
       {
         "reviewer": "Stevie",
-        "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep)."
+        "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep).",
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
       }
     ],
     "rating": 5,
@@ -1118,7 +1151,8 @@
     "reviews": [
       {
         "reviewer": "Matt",
-        "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. "
+        "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. ",
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
       }
     ],
     "rating": 5,
@@ -1137,8 +1171,9 @@
     "venueType": "park",
     "reviews": [
       {
-        "reviewer": "Chloe",
-        "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with."
+        "reviewer": "Laura",
+        "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with.",
+        "image": "http://semantic-ui.com/images/avatar/large/laura.jpg"
       }
     ],
     "rating": 5,
@@ -1158,7 +1193,8 @@
     "reviews": [
       {
         "reviewer": "Veronika",
-        "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page."
+        "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page.",
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
       }
     ],
     "rating": 4.5,
@@ -1282,8 +1318,9 @@
     "venueType": "park",
     "reviews": [
       {
-        "reviewer": "Lorenzo",
-        "review": "East part of the park is off-lease with plenty of space to run and play."
+        "reviewer": "Patrick",
+        "review": "East part of the park is off-lease with plenty of space to run and play.",
+        "image": "http://semantic-ui.com/images/avatar/large/patrick.jpg"
       }
     ],
     "rating": 4,
@@ -1347,8 +1384,9 @@
     "venueType": "park",
     "reviews": [
       {
-        "reviewer": "Chloe",
-        "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike."
+        "reviewer": "Laura",
+        "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike.",
+        "image": "http://semantic-ui.com/images/avatar/large/laura.jpg"
       }
     ],
     "rating": 3.5,

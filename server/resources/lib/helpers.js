@@ -11,6 +11,52 @@ let mongoose = require('mongoose');
 
 module.exports = {
 
+  replaceImages: function(file){
+    const index = {
+      "Patrick": {
+        name: "Patrick",
+        image: "http://semantic-ui.com/images/avatar2/large/patrick.png"
+      },
+      "Laura": {
+        name: "Laura",
+        image: "http://1.semantic-ui.com/images/avatar/large/laura.jpg"
+      }
+    };
+
+    let result = file.map(function(venue){
+      if(venue.reviews.length && (venue.reviews[0].reviewer === 'Laura' || venue.reviews[0].reviewer === 'Patrick') ) {
+      let nomen = venue.reviews[0].reviewer;
+        venue.reviews[0].image = index[nomen].image;
+      }
+      return venue;
+    })
+
+    fs.writeFile('./server/data/venues2.json', JSON.stringify(result, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+  },
+
+  addImages: function(file){
+    let avatars = ['Elliot', 'Jenny', 'Joe', 'Kristy', 'Matt', 'Stevie', 'Ade', 'Daniel', 'Molly', 'Veronika', 'Chris', 'Helen', 'Christian', 'Laura', 'Chloe', 'Elyse', 'Justen', 'Lena', 'Lindsay', 'Lorenzo', 'Mark', 'Nan', 'Patrick', 'Tom', 'Warren']
+    const index = {};
+    avatars.forEach(function(avatar){
+      index[avatar] = `http://semantic-ui.com/images/avatar/large/${avatar.toLowerCase()}.jpg`
+    })
+
+    let result = file.map(function(venue){
+      if (venue.reviews.length){
+        venue.reviews[0].image = index[venue.reviews[0].reviewer]
+      }
+      return venue;
+    })
+
+    fs.writeFile('./server/data/venues3.json', JSON.stringify(result, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+  },
+
   avgRating: function(venue){
     let sum = venue.reviews.reduce(function(memo, curr){
       return curr.rating + memo;
