@@ -264,53 +264,6 @@ img#reviewer {
   height: 100%;
 }
 
-img.Stevie {
-  background-image: url("./avatars/stevie.jpg");
-}
-
-img.Matt {
-  background-image: url("./avatars/matt.jpg");
-}
-
-img.Joe {
-  background-image: url("./avatars/joe.jpg");
-}
-
-img.Veronika {
-  background-image: url("./avatars/veronika.jpg");
-}
-
-img.Lorenzo {
-  background-image: url("./avatars/lorenzo.jpg");
-}
-
-img.Jenny {
-  background-image: url("./avatars/jenny.jpg");
-}
-
-img.Helen {
-  background-image: url("./avatars/helen.jpg");
-}
-
-img.Elliot {
-  background-image: url("./avatars/elliot.jpg");
-}
-
-img.Christian {
-  background-image: url("./avatars/christian.jpg");
-}
-
-img.Chloe {
-  background-image: url("./avatars/chloe.jpg");
-}
-
-img.Molly {
-  zoom: 40%;
-  width: 750px;
-  height: 800px;
-  background-image: url("./avatars/molly.png");
-}
-
 div.review-info {
   flex-direction: column;
   width: 80vw;
