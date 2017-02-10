@@ -2,7 +2,7 @@ import React from 'react';
 import Login from './Login';
 import Reviews from './Reviews';
 import Info from './Info';
-import { Button, Comment, Form, Grid, Header, Image, Menu, Reveal, Segment, Sidebar } from 'semantic-ui-react'
+import { Menu, Sidebar } from 'semantic-ui-react'
 // import './semantic-ui/semantic.min.css';
 // import './assets/index.css';
 

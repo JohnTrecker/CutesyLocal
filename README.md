@@ -45,9 +45,13 @@ Pull requests are welcome and greatly appreciated! The priority for this project
     [X] retrieve updated db data
     [X] close modal on `submit`
     [ ] execute behavior similar to clicking marker (the only way changes rerender)
-  [ ] clean up Popup (Sidebar) with semantic ui react
+  [ ] Implement Popup (Sidebar) with semantic ui react
+    [ ] Transition from visible to hidden views
+      [ ] find react equivalent
     [ ] Toggle from one review to another in Popup component
-  [ ] clean up Nav with semantic ui
+  [ ]
+    [ ]
+  [X] clean up Nav with semantic ui
   [ ] google analytics middleware
   [ ] Write tests
 [ ] Replace `How to start this app` with script and update README.md
@@ -71,6 +75,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 v0.20
 [ ] Allow users to review new venues
 [ ] Restyle button bar - `buttons` branch
+  [ ] SUI-React stackable Menu?
 [ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
 [ ] Implement react-redux-mapbox-gl - 'react' branch ?
 [ ] Implement server side React

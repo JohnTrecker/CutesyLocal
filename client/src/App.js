@@ -4,7 +4,7 @@ import Nav from './Nav';
 import ReviewModal from './ReviewModal';
 import './assets/index.css';
 // import './semantic-ui/semantic.min.css';
-import { Container, Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import { Sidebar } from 'semantic-ui-react'
 
 let $ = require('jquery');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
