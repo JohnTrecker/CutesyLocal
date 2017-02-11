@@ -2,9 +2,10 @@ import React from 'react';
 import Login from './Login';
 import Reviews from './Reviews';
 import Info from './Info';
-import { Menu, Sidebar } from 'semantic-ui-react'
+import { Sidebar } from 'semantic-ui-react'
 // import './semantic-ui/semantic.min.css';
 // import './assets/index.css';
+console.log(Sidebar._meta.props.width);
 
 class Popup extends React.Component {
   // on marker click render Info
@@ -12,14 +13,12 @@ class Popup extends React.Component {
   render() {
    const { marker, user, visible } = this.props
     return (
-      <Sidebar as={Menu} animation='overlay' direction='bottom' visible={visible}>
+      <Sidebar animation='overlay' direction='bottom' visible={visible}>
         <Info marker={marker} user={user}/>
       </Sidebar>
     )
   }
 }
-
-
         // <Reviews marker={marker} />
 
 export default Popup;

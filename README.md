@@ -45,12 +45,10 @@ Pull requests are welcome and greatly appreciated! The priority for this project
     [X] retrieve updated db data
     [X] close modal on `submit`
     [ ] execute behavior similar to clicking marker (the only way changes rerender)
-  [ ] Implement Popup (Sidebar) with semantic ui react
-    [ ] Transition from visible to hidden views
-      [ ] find react equivalent
+  [X] Implement Popup (Sidebar) with semantic ui react
+    [ ] New popup on `see reviews` click
     [ ] Toggle from one review to another in Popup component
-  [ ]
-    [ ]
+  [ ] Login on site load
   [X] clean up Nav with semantic ui
   [ ] google analytics middleware
   [ ] Write tests
@@ -73,6 +71,9 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] Mobile first styling
 
 v0.20
+[ ] Popup
+  [ ] Link to venue URL on venue name click
+  [ ] Pad sides and include accomodation ribbons
 [ ] Allow users to review new venues
 [ ] Restyle button bar - `buttons` branch
   [ ] SUI-React stackable Menu?

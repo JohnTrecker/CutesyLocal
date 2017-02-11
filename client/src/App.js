@@ -150,17 +150,24 @@ class App extends React.Component {
         });
 
         const venues = ['restaurant', 'park', 'event'];
+        const markers = ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'];
         map.on('load', function() {
           venues.forEach(function(venue){
             helpers.renderMarkers(map, venue);
           });
         });
 
+        map.on('mousemove', function (e) {
+          // let features = map.queryRenderedFeatures(e.point, { layers: markers });
+          // if (!features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+        });
+
         map.on('click', function (e) {
-          let features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'] });
+          let features = map.queryRenderedFeatures(e.point, { layers: markers });
           let markersPresent = features.length > 0 ? true : false;
           if (markersPresent) {
             let marker = features[0];
+            map.flyTo({center: marker.geometry.coordinates});
             marker.properties.reviews = JSON.parse(marker.properties.reviews);
             setVenue(marker.properties);
           }
