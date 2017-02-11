@@ -22,6 +22,8 @@ class App extends React.Component {
       review: {rating:null, review:null, outside:null, inside:null, service:null},
       modalOpen: false,
       popupOpen: false,
+      infoOpen: true,
+      reviewsOpen: false,
       // data: {restaurants:undefined, parks:undefined, events:undefined},
       visibleVenues: [],
     }
@@ -78,6 +80,14 @@ class App extends React.Component {
     const or = !markerPresent && this.state.popupOpen
     if (either || or) this.setState({popupOpen: !this.state.popupOpen})
   }
+
+  toggleInfo(){
+    this.setState({infoOpen: !this.state.infoOpen})
+  }
+
+  toggleReviews(){
+    this.setState({reviewsOpen: !this.state.reviewsOpen})
+  }
   // TODO: refactor into one function
   setUser(profile){
     this.setState({user: profile})
@@ -115,6 +125,8 @@ class App extends React.Component {
           marker={this.state.venue}
           user={this.state.user}
           visible={this.state.popupOpen}
+          infoVisible={this.state.infoOpen}
+          reviewsVisible={this.state.reviewsOpen}
           setUser={this.setUser.bind(this)}
           toggleModal={this.toggleModal.bind(this)} />
         <Sidebar.Pusher>
@@ -134,7 +146,6 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    if (this.user) this.toggleModal();
     let setVenue = this.setVenue.bind(this);
     let togglePopup = this.togglePopup.bind(this);
 
@@ -158,8 +169,8 @@ class App extends React.Component {
         });
 
         map.on('mousemove', function (e) {
-          // let features = map.queryRenderedFeatures(e.point, { layers: markers });
-          // if (!features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+          let features = map.queryRenderedFeatures(e.point, { layers: markers });
+          map.getCanvas().style.cursor = features.length ? 'pointer' : '';
         });
 
         map.on('click', function (e) {
