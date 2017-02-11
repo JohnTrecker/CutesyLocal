@@ -14,10 +14,10 @@ class Info extends React.Component{
     let reviewer = showReview === true ? venue.reviews[0].reviewer : null;
     return(
       <Segment.Group horizontal raised>
-        <Segment compact>
+        <Segment>
 
           <Item.Image floated="left" spaced={true} size="small" src={`./assets/img_pop_${venue.venueType}.jpg`}/>
-
+          <ReviewButtons/>
           <Item.Content>
             <Item.Header as='a' to={venue.url}>{venue.name}</Item.Header>
             <Item.Meta>
@@ -30,13 +30,10 @@ class Info extends React.Component{
                 <p className="percentage">&ensp; { rating } </p>
                 <p className="dog-friendly">% dog friendly</p>
               </div>
+            <Ammenities />
             </Item.Description>
           </Item.Content>
 
-        </Segment>
-
-        <Segment textAlign="center">
-          <ReviewButtons/>
         </Segment>
 
       </Segment.Group>
@@ -45,14 +42,28 @@ class Info extends React.Component{
 }
 
 const ReviewButtons = () => (
-  <Button.Group attached='top' vertical>
+  <Button.Group floated="right" attached='top' vertical>
     <Button>Reviews</Button>
     <Button>Leave Review</Button>
     <Button>Photos</Button>
   </Button.Group>
 )
 const paragraph = <ImageComponent src='http://semantic-ui.com/images/wireframe/short-paragraph.png' />
-const Ammenities = (props) => <Label attached="bottom" size="small">Allowed Inside</Label>
+const Ammenities = (props) =>
+  <Label.Group size="small">
+    <Label
+      color='red'
+      content='Patio Seating'
+      icon='sun' />
+    <Label
+      color='orange'
+      content='Allowed Inside'
+      icon='spoon' />
+    <Label
+      color='teal'
+      content='Dog Treats'
+      icon='winner' />
+  </Label.Group>
 
 export default Info
 /*
