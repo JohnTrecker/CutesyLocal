@@ -186,10 +186,11 @@ class App extends React.Component {
         });
 
         const venues = ['restaurant', 'park', 'event'];
-        const markers = ['unclustered-points-restaurant', 'unclustered-points-park', 'unclustered-points-event'];
+        const markers = [];
         map.on('load', function() {
           venues.forEach(function(venue){
             helpers.renderMarkers(map, venue);
+            venues.push(`unclustered-points-${venue}`);
           });
         });
 
