@@ -157,6 +157,10 @@ div.ui.vertical.attached.buttons {
   position: sticky;
 }
 
+div.Info-item-content.content {
+  clear: left;
+}
+
 div.image img {
   flex-basis: 75px 5 auto;
   height: 75px;
@@ -289,6 +293,11 @@ button.my-facebook-button-class {
   div.review-icons {
     visibility: hidden;
   }
+
+  div.Info-item-content.content {
+    clear: none;
+  }
+
 }
 
 
