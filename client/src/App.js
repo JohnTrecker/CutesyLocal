@@ -2,7 +2,7 @@ import React from 'react';
 import Popup from './Popup';
 import Login from './Login';
 import Nav from './Nav';
-import Review from './ReviewModal';
+import ReviewModal from './ReviewModal';
 import './assets/index.css';
 // import './semantic-ui/semantic.min.css';
 import { Sidebar } from 'semantic-ui-react'
@@ -157,7 +157,7 @@ class App extends React.Component {
             open={this.state.loginModalOpen}
             toggleModal={this.toggleLoginModal.bind(this)}
             setUser={this.setUser.bind(this)} />
-          <Review
+          <ReviewModal
             marker={this.state.venue}
             user={this.state.user}
             handleChange={this.handleChange.bind(this)}
