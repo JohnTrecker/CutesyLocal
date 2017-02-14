@@ -124,14 +124,18 @@ class App extends React.Component {
   submitReview(){
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
-    helpers.saveReview(body, map, this.state.venue.venueType);
-    this.toggleReviewModal();
-    // const newState = Object.assign({}, this.state.venue);
-    // newState["reviews"] = updatedReviews;
-    // console.log('updatedReviews:\n', updatedReviews);
-    // console.log('new venue state:\n', newState);
-    // this.setState({venue: newState});
 
+    let promise = new Promise(function(resolve, reject){
+      resolve(helpers.saveReview(body, map, body.venue.venueType));
+    })
+
+    const newState = Object.assign({}, this.state.venue);
+    const that = this;
+    promise.then(function(value) {
+      newState["reviews"] = value.reviews;
+      that.setState({venue: newState});
+      that.toggleReviewModal();
+    });
   }
 
   render(){

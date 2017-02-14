@@ -102,7 +102,7 @@ function updateOldMarkers(map, venueType, data){
 }
 
 function saveReview(review, map, venue) {
-  fetch('/api/venues', {
+  return fetch('/api/venues', {
     method: 'PUT',
     headers: {
       "Content-Type": "application/json"
@@ -111,10 +111,8 @@ function saveReview(review, map, venue) {
   })
   .then(status)
   .then(json)
-  .then(function(data){
-    console.log('Request succeeded with JSON response', data);
-  })
   .then(renderMarkers(map, venue, true))
+  .then((data) => data)
   .catch(function (error) {
     console.log('Request failed', error);
   });
