@@ -148,10 +148,10 @@ img.FBlogin {
 /* Popups */
 /* ------ */
 
-/*div.Info-item-content {
-  display: inline-block;
+div.ui.sidebar {
+  max-height: 200px;
 }
-*/
+
 div.image img {
   flex-basis: 75px 5 auto;
   height: 75px;

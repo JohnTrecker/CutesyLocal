@@ -1,5 +1,5 @@
 import React from 'react'
-import { Comment, CommentAvatar, Image } from 'semantic-ui-react'
+import { Comment } from 'semantic-ui-react'
 
 const ReviewItem = (props) =>
   <Comment>
