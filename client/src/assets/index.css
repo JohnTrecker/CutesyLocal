@@ -148,20 +148,10 @@ img.FBlogin {
 /* Popups */
 /* ------ */
 
-.popup-contents {
-  z-index: 2;
-  bottom: 0px;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 10px 10px 5px 10px;
-  width: 100%;
-  background-color: rgba(255,255,255,0.90);
-  border-top: thin solid lightgrey;
-  flex-wrap: nowrap;
+/*div.Info-item-content {
+  display: inline-block;
 }
-
+*/
 div.image img {
   flex-basis: 75px 5 auto;
   height: 75px;
@@ -239,19 +229,6 @@ div.rating p.percentage {
   font-weight: bold;
 }
 
-.ui.slide.reveal {
-  position:absolute!important;
-  white-space: normal;
-}
-
-.ui.reveal>.content {
-  display: flex;
-}
-
-.ui.slide.reveal>.content {
-  display: flex;
-}
-
 div.review-image {
   width: 90px;
   height: 90px;
@@ -270,22 +247,6 @@ div.review-info {
   margin: 0 5px;
 }
 
-div.hiden.content.no-review {
-  margin: 20px;
-}
-
-div.hiden.content.no-review > a:hover {
-  cursor: pointer;
-}
-
-i.facebook.icon {
-  color: #f7f7f7;
-}
-
-button.my-facebook-button-class {
-  background-color: #3b5998;
-  color: #f7f7f7;
-}
 
 /* ---------- */
 /* End Popups */
@@ -295,6 +256,21 @@ button.my-facebook-button-class {
 /* Modal      */
 /* ---------- */
 
+i.facebook.icon {
+  color: #f7f7f7;
+}
+
+button.my-facebook-button-class {
+  background-color: #3b5998;
+  color: #f7f7f7;
+  border: 0;
+  padding: 11px 10px 11px 6px;
+  font-weight: bold;
+}
+
+.ui.modal > div.content {
+  padding: 0;
+}
 
 /* ---------- */
 /* End Modal  */

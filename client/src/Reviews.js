@@ -1,14 +1,13 @@
 import React from 'react'
 import ReviewItem from './ReviewItem';
-import { Comment, Header } from 'semantic-ui-react'
+import { Comment } from 'semantic-ui-react'
 
 class Reviews extends React.Component {
   render(){
-    if (!this.props.marker) return <div></div>
+    if (!this.props.marker) return <div style={{display: "none"}}></div>
     const { marker } = this.props
     return (
       <Comment.Group minimal>
-        <Header as='h3' dividing>Reviews</Header>
 
         {marker.reviews.map(function(review){
 

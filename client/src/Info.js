@@ -1,24 +1,24 @@
 import React from 'react';
-import { Image, Item, ItemContent, Button, Icon, Image as ImageComponent, Label, Segment } from 'semantic-ui-react';
+import { Item, Label, Segment } from 'semantic-ui-react';
 
 class Info extends React.Component{
   render(){
-    if (!this.props.marker) return (<div></div>)
+    if (!this.props.marker) return (<div style={{display: "none"}}></div>)
     let venue = this.props.marker;
     let rating = venue.rating * 20;
     let ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
     let showDates = venue.dates !== "null";
-    let showReview = venue.reviews.length !== 0;
-    let loggedIn = this.props.user;
-    let review = showReview === true ? venue.reviews[0].review : null;
-    let reviewer = showReview === true ? venue.reviews[0].reviewer : null;
+    // let loggedIn = this.props.user;
     return(
-      <Segment.Group horizontal raised>
         <Segment>
 
-          <Item.Image floated="left" spaced={true} size="small" src={`./assets/img_pop_${venue.venueType}.jpg`}/>
-          <ReviewButtons/>
-          <Item.Content>
+          <Item.Image
+            floated="left"
+            spaced={true}
+            size="small"
+            src={`./assets/img_pop_${venue.venueType}.jpg`} />
+
+          <Item.Content className="Info-item-content">
             <Item.Header as='a' to={venue.url}>{venue.name}</Item.Header>
             <Item.Meta>
               <span>{venue.address}</span>
@@ -35,20 +35,10 @@ class Info extends React.Component{
           </Item.Content>
 
         </Segment>
-
-      </Segment.Group>
     )
   }
 }
 
-const ReviewButtons = () => (
-  <Button.Group floated="right" attached='top' vertical>
-    <Button>Reviews</Button>
-    <Button>Leave Review</Button>
-    <Button>Photos</Button>
-  </Button.Group>
-)
-const paragraph = <ImageComponent src='http://semantic-ui.com/images/wireframe/short-paragraph.png' />
 const Ammenities = (props) =>
   <Label.Group size="small">
     <Label

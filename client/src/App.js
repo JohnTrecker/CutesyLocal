@@ -1,7 +1,8 @@
 import React from 'react';
 import Popup from './Popup';
+import Login from './Login';
 import Nav from './Nav';
-import ReviewModal from './ReviewModal';
+import Review from './ReviewModal';
 import './assets/index.css';
 // import './semantic-ui/semantic.min.css';
 import { Sidebar } from 'semantic-ui-react'
@@ -20,10 +21,10 @@ class App extends React.Component {
       user: undefined,
       venue: undefined,
       review: {rating:null, review:null, outside:null, inside:null, service:null},
-      modalOpen: false,
+      reviewModalOpen: false,
+      loginModalOpen: false,
       popupOpen: false,
-      infoOpen: true,
-      reviewsOpen: false,
+      reviewsVisible: false,
       // data: {restaurants:undefined, parks:undefined, events:undefined},
       visibleVenues: [],
     }
@@ -71,14 +72,22 @@ class App extends React.Component {
     this.setState({visibleVenues: toggledButtons});
   }
 
-  toggleModal(){
-    this.setState({modalOpen: !this.state.modalOpen})
+  toggleReviewModal(){
+    this.setState({reviewModalOpen: !this.state.reviewModalOpen})
+  }
+
+  toggleLoginModal(){
+    this.setState({loginModalOpen: !this.state.loginModalOpen})
   }
 
   togglePopup(markerPresent){
     const either = markerPresent && !this.state.popupOpen
     const or = !markerPresent && this.state.popupOpen
     if (either || or) this.setState({popupOpen: !this.state.popupOpen})
+  }
+
+  showReviews(){
+    this.setState({reviewsVisible: !this.state.reviewsVisible})
   }
 
   toggleInfo(){
@@ -91,10 +100,11 @@ class App extends React.Component {
   // TODO: refactor into one function
   setUser(profile){
     this.setState({user: profile})
+    this.toggleLoginModal();
   }
 
   setVenue(marker){
-    this.setState({venue: marker})
+    this.setState({venue: marker, reviewsVisible: false})
   }
 
   setReview(review){
@@ -115,7 +125,13 @@ class App extends React.Component {
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
     helpers.saveReview(body, map, this.state.venue.venueType);
-    this.toggleModal();
+    this.toggleReviewModal();
+    // const newState = Object.assign({}, this.state.venue);
+    // newState["reviews"] = updatedReviews;
+    // console.log('updatedReviews:\n', updatedReviews);
+    // console.log('new venue state:\n', newState);
+    // this.setState({venue: newState});
+
   }
 
   render(){
@@ -125,27 +141,32 @@ class App extends React.Component {
           marker={this.state.venue}
           user={this.state.user}
           visible={this.state.popupOpen}
-          infoVisible={this.state.infoOpen}
-          reviewsVisible={this.state.reviewsOpen}
           setUser={this.setUser.bind(this)}
-          toggleModal={this.toggleModal.bind(this)} />
+          toggleModal={this.toggleReviewModal.bind(this)}
+          reviewsVisible={this.state.reviewsVisible}
+          showReviews={this.showReviews.bind(this)} />
         <Sidebar.Pusher>
           <Nav
             updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
           <div id="map"></div>
-          <ReviewModal
+          <Login
+            open={this.state.loginModalOpen}
+            toggleModal={this.toggleLoginModal.bind(this)}
+            setUser={this.setUser.bind(this)} />
+          <Review
             marker={this.state.venue}
             user={this.state.user}
             handleChange={this.handleChange.bind(this)}
             submitReview={this.submitReview.bind(this)}
-            open={this.state.modalOpen}
-            toggleModal={this.toggleModal.bind(this)} />
+            open={this.state.reviewModalOpen}
+            toggleModal={this.toggleReviewModal.bind(this)} />
         </Sidebar.Pusher>
       </Sidebar.Pushable>
     )
   }
 
   componentDidMount(){
+    if (!this.user) this.toggleLoginModal()
     let setVenue = this.setVenue.bind(this);
     let togglePopup = this.togglePopup.bind(this);
 
@@ -170,7 +191,7 @@ class App extends React.Component {
 
         map.on('mousemove', function (e) {
           let features = map.queryRenderedFeatures(e.point, { layers: markers });
-          map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+          if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
         });
 
         map.on('click', function (e) {

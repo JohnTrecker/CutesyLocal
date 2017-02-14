@@ -9,7 +9,7 @@ class ReviewModal extends React.Component {
       <div>
         <Modal dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Leave a Review</Modal.Header>
-          <Modal.Content>
+          <Modal.Content image>
             <ReviewCategories handleChange={ handleChange }/>
           </Modal.Content>
           <Modal.Actions>
@@ -23,7 +23,7 @@ class ReviewModal extends React.Component {
 }
 
 const ReviewCategories = (props) => (
-  <Accordion styled>
+  <Accordion styled fluid>
     <Accordion.Title>
       <Icon name='dropdown' />
       Review
