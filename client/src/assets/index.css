@@ -152,6 +152,11 @@ div.ui.sidebar {
   max-height: 200px;
 }
 
+div.ui.vertical.attached.buttons {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 div.image img {
   flex-basis: 75px 5 auto;
   height: 75px;

@@ -33,6 +33,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [X] breaks when review submitted without user
   [X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
   [X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
+  [ ] bottombar buttons don't stick to top of container in Safari browser
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height
   [ ] marker A dissapears if too close to marker B
