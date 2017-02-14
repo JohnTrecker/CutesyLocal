@@ -5,7 +5,7 @@ import { Button, Segment, Sidebar } from 'semantic-ui-react'
 
 class Popup extends React.Component {
   render() {
-  const { marker, visible, reviewsVisible, showReviews, toggleModal } = this.props
+  const { marker, reviewsVisible, showReviews, user, toggleReviewModal, toggleLoginModal, visible } = this.props
   if (!marker) return (<div style={{display: "none"}}></div>)
     return (
       <Sidebar animation='overlay' direction='bottom' visible={visible}>
@@ -17,10 +17,12 @@ class Popup extends React.Component {
 
           <Segment textAlign="center">
             <ReviewButtons
+              user={user}
               reviewsAvailable={marker.reviews.length}
               showReviews={showReviews}
               reviewsVisible={reviewsVisible}
-              toggleModal={toggleModal} />
+              toggleReviewModal={toggleReviewModal}
+              toggleLoginModal={toggleLoginModal} />
           </Segment>
 
         </Segment.Group>
@@ -35,9 +37,17 @@ const ReviewButtons = (props) => (
       disabled={!props.reviewsAvailable}
       onClick={props.showReviews}
       content={props.reviewsVisible === true ? "Info" : "Reviews"} />
-    <Button
-      onClick={props.toggleModal}
-      content="Leave Review" />
+    { props.user &&
+      <Button
+        onClick={props.toggleReviewModal}
+        content="Leave Review" />
+    }
+    {
+      !props.user &&
+      <Button
+        onClick={props.toggleLoginModal}
+        content="Sign In to Leave Review" />
+    }
     <Button disabled>Photos</Button>
   </Button.Group>
 )

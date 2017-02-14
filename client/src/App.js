@@ -145,8 +145,8 @@ class App extends React.Component {
           marker={this.state.venue}
           user={this.state.user}
           visible={this.state.popupOpen}
-          setUser={this.setUser.bind(this)}
-          toggleModal={this.toggleReviewModal.bind(this)}
+          toggleReviewModal={this.toggleReviewModal.bind(this)}
+          toggleLoginModal={this.toggleLoginModal.bind(this)}
           reviewsVisible={this.state.reviewsVisible}
           showReviews={this.showReviews.bind(this)} />
         <Sidebar.Pusher>
