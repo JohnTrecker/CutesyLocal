@@ -190,7 +190,7 @@ class App extends React.Component {
         map.on('load', function() {
           venues.forEach(function(venue){
             helpers.renderMarkers(map, venue);
-            venues.push(`unclustered-points-${venue}`);
+            markers.push(`unclustered-points-${venue}`);
           });
         });
 
