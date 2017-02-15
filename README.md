@@ -23,13 +23,7 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 ## Front End
 
-[X] Serve all data from back end - `db` branch
-  [X] Debug filter on layer `cluster-${venue}`
-  [X] refactor data fetched from db
-  [X] separate components
-  [X] Fetch and handle data on client side
-  [X] Hide API keys
-[ ] Known Bugs
+Known Bugs
   [X] breaks when review submitted without user
   [X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
   [X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
@@ -37,64 +31,81 @@ Pull requests are welcome and greatly appreciated! The priority for this project
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
   [ ] truncated viewport height
   [ ] marker A dissapears if too close to marker B
-[ ] Final v0.10 Features
-  [X] include links to venue websites
-  [X] Authentication
-  [X] Leave review
-    [X] expand venues schema
-    [X] persist review
-    [X] reset review state on `submit` onClick
-    [X] retrieve updated db data
-    [X] close modal on `submit`
-    [ ] execute behavior similar to clicking marker (the only way changes rerender)
-  [X] Implement Popup (Sidebar) with semantic ui react
-    [X] stretch review across
-    [X] show reviews on `see reviews` click
-    [ ] Toggle from one review to another in Popup component
-  [X] Login modal on site load
-  [X] clean up Nav with semantic ui
-  [ ] google analytics middleware
-  [ ] Write tests
-[ ] Replace `How to start this app` with script and update README.md
 
-[X] Conflicts overcome
-  [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
-
+Change Log
 [X] Cluster markers - `cluster` branch
   [X] Refactor marker divs into MapboxGL layers
   [X] Add Mapbox Sources and Layers
   [X] Coordinate venue cluster colors
 [X] Toggle markers
-  [ ] Give markers rendering preference over other MapBox elements
 [X] Include Popups - `cluster` branch
   [X] Add onClick behavior to markers
   [X] Render popup component
   [X] Refactor markers as MapboxGL layers
   [X] Dynamically render smiley assets for rating
   [X] Mobile first styling
+[X] Serve all data from back end - `db` branch
+  [X] Debug filter on layer `cluster-${venue}`
+  [X] refactor data fetched from db
+  [X] separate components
+  [X] Fetch and handle data on client side
+  [X] Hide API keys
+[ ] Final v0.10 Features
+  [X] include links to venue websites
+  [X] Authentication
+  [X] Implement Popup (Sidebar) with semantic ui react
+    [X] stretch review across
+    [X] show reviews on `see reviews` click
+    [X] scroll between reviews in Popup component
+  [X] Leave review
+    [X] expand venues schema
+    [X] persist review
+    [X] reset review state on `submit` onClick
+    [X] retrieve updated db data
+    [X] close modal on `submit`
+    [ ] assign venue accomodations to `accomodations` object
+      [ ] change model
+      [ ] follow up front-end logic in Info component
+    [ ] render accomodations ribbons dynamically
+      [ ] Park:         gated area, off-leash,
+      [ ] Restaurant:   patio seating, allowed inside, water bowls
+      [ ] Event:
+    [ ] implemnent and render timestamp dynamically for each review
+    [ ] include URLs in initial venues data
+    [ ] scrape for dog events
+  [X] Login modal on site load
+  [X] clean up Nav with semantic ui
+  [ ] google analytics middleware
+  [ ] Final code review
+[ ] Replace `How to start this app` with script and update README.md
+
+[X] Conflicts overcome
+  [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
+
 
 v0.20
-[ ] Popup
-  [ ] Link to venue URL on venue name click
-  [ ] Pad sides and include accomodation ribbons
-[ ] Allow users to review new venues
-[ ] Restyle button bar - `buttons` branch
-  [ ] SUI-React stackable Menu?
-[ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
-[ ] Implement react-redux-mapbox-gl - 'react' branch ?
-[ ] Implement server side React
-[ ] Official reviews
-  [ ] crawl urls for contact info
-[ ] Play map locations as a slideshow
-  [ ] Font
-[ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
+[ ] Performance
+  [ ] Implement server side React for much faster UX
+  [ ] replace mapboxgl dependency with react-redux-mapbox-gl implementation for speed and stability
+[ ] Features
+  [ ] * call to action link to App Store
+  [ ] Allow users to review new venues
+  [ ] Collect statements of dog-friendliness from businesses for Info view
+    [ ] crawl urls for contact info
+  [ ] Cool Mapbox features
+    [ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
+    [ ] featured venue slideshow (https://www.mapbox.com/mapbox-gl-js/example/...)
+    [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
+[ ] Styling
+  [ ] Swap images, fonts, etc. for Cutesy logo and other assets
+  [ ] Restyle button bar as SUI topbar
   [ ] include MozSwipeGesture listener into the library
 
 
 
 ## Middleware
 
-[ ] Implement google analytics - `analytics` branch
+[ ] Implement google analytics
 
 
 ### Back-end

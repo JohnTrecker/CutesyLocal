@@ -30,6 +30,84 @@ class App extends React.Component {
     }
   }
 
+  render(){
+    return (
+      <Sidebar.Pushable id="container">
+        <Popup
+          marker={this.state.venue}
+          user={this.state.user}
+          visible={this.state.popupOpen}
+          toggleReviewModal={this.toggleState.bind(this, 'reviewModalOpen')}
+          toggleLoginModal={this.toggleState.bind(this, 'loginModalOpen')}
+          reviewsVisible={this.state.reviewsVisible}
+          showReviews={this.toggleState.bind(this, 'reviewsVisible')} />
+        <Sidebar.Pusher>
+          <Nav
+            updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
+          <div id="map"></div>
+          <Login
+            open={this.state.loginModalOpen}
+            setUser={this.setUser.bind(this)}
+            toggleModal={this.toggleState.bind(this, 'loginModalOpen')} />
+          <ReviewModal
+            marker={this.state.venue}
+            user={this.state.user}
+            handleChange={this.handleChange.bind(this)}
+            submitReview={this.submitReview.bind(this)}
+            open={this.state.reviewModalOpen}
+            toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
+        </Sidebar.Pusher>
+      </Sidebar.Pushable>
+    )
+  }
+
+  componentDidMount(){
+    if (!this.user) this.toggleState('loginModalOpen')
+    let setVenue = this.toggleState.bind(this);
+    let togglePopup = this.togglePopup.bind(this);
+
+    fetch( 'http://localhost:3000/api/keys' )
+      .then( response => response.json() )
+      .then( function(token) {
+        mapboxgl.accessToken = token;
+        map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
+            center: [-122.413692, 37.775712],
+            zoom: 12
+        });
+
+        const venues = ['restaurant', 'park', 'event'];
+        const markers = [];
+        map.on('load', function() {
+          venues.forEach(function(venue){
+            helpers.renderMarkers(map, venue);
+            markers.push(`unclustered-points-${venue}`);
+          });
+        });
+
+        map.on('mousemove', function (e) {
+          let features = map.queryRenderedFeatures(e.point, { layers: markers });
+          if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+        });
+
+        map.on('click', function (e) {
+          let features = map.queryRenderedFeatures(e.point, { layers: markers });
+          let markersPresent = features.length > 0 ? true : false;
+          if (markersPresent) {
+            let marker = features[0];
+            map.flyTo({center: marker.geometry.coordinates});
+            marker.properties.reviews = JSON.parse(marker.properties.reviews);
+            setVenue({venue: marker.properties, reviewsVisible: false});
+          }
+          togglePopup(markersPresent);
+        });
+      })
+      .catch( function(e){
+        console.log('error fetching mapbox token:\n', e);
+      })
+  }
+
   updateVisibleVenues(e){
     let classNames = ['restaurant', 'park', 'event'];
     let venue;
@@ -72,43 +150,21 @@ class App extends React.Component {
     this.setState({visibleVenues: toggledButtons});
   }
 
-  toggleReviewModal(){
-    this.setState({reviewModalOpen: !this.state.reviewModalOpen})
-  }
-
-  toggleLoginModal(){
-    this.setState({loginModalOpen: !this.state.loginModalOpen})
+  toggleState(stateOrObj){
+    let newState = {};
+    if (typeof stateOrObj === 'string') newState[stateOrObj] = !this.state[stateOrObj];
+    else newState = stateOrObj;
+    this.setState(newState);
   }
 
   togglePopup(markerPresent){
     const either = markerPresent && !this.state.popupOpen
     const or = !markerPresent && this.state.popupOpen
-    if (either || or) this.setState({popupOpen: !this.state.popupOpen})
+    if (either || or) this.toggleState('popupOpen');
   }
 
-  showReviews(){
-    this.setState({reviewsVisible: !this.state.reviewsVisible})
-  }
-
-  toggleInfo(){
-    this.setState({infoOpen: !this.state.infoOpen})
-  }
-
-  toggleReviews(){
-    this.setState({reviewsOpen: !this.state.reviewsOpen})
-  }
-  // TODO: refactor into one function
   setUser(profile){
-    this.setState({user: profile})
-    this.toggleLoginModal();
-  }
-
-  setVenue(marker){
-    this.setState({venue: marker, reviewsVisible: false})
-  }
-
-  setReview(review){
-    this.setState({review: review})
+    this.setState({user: profile, loginModalOpen: !this.state.loginModalOpen});
   }
 
   handleChange(e, el){
@@ -134,87 +190,10 @@ class App extends React.Component {
     promise.then(function(value) {
       newState["reviews"] = value.reviews;
       that.setState({venue: newState});
-      that.toggleReviewModal();
+      that.toggleState('reviewModalOpen');
     });
   }
 
-  render(){
-    return (
-      <Sidebar.Pushable id="container">
-        <Popup
-          marker={this.state.venue}
-          user={this.state.user}
-          visible={this.state.popupOpen}
-          toggleReviewModal={this.toggleReviewModal.bind(this)}
-          toggleLoginModal={this.toggleLoginModal.bind(this)}
-          reviewsVisible={this.state.reviewsVisible}
-          showReviews={this.showReviews.bind(this)} />
-        <Sidebar.Pusher>
-          <Nav
-            updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
-          <div id="map"></div>
-          <Login
-            open={this.state.loginModalOpen}
-            toggleModal={this.toggleLoginModal.bind(this)}
-            setUser={this.setUser.bind(this)} />
-          <ReviewModal
-            marker={this.state.venue}
-            user={this.state.user}
-            handleChange={this.handleChange.bind(this)}
-            submitReview={this.submitReview.bind(this)}
-            open={this.state.reviewModalOpen}
-            toggleModal={this.toggleReviewModal.bind(this)} />
-        </Sidebar.Pusher>
-      </Sidebar.Pushable>
-    )
-  }
-
-  componentDidMount(){
-    if (!this.user) this.toggleLoginModal()
-    let setVenue = this.setVenue.bind(this);
-    let togglePopup = this.togglePopup.bind(this);
-
-    fetch( 'http://localhost:3000/api/keys' )
-      .then( response => response.json() )
-      .then( function(token) {
-        mapboxgl.accessToken = token;
-        map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
-            center: [-122.413692, 37.775712],
-            zoom: 12
-        });
-
-        const venues = ['restaurant', 'park', 'event'];
-        const markers = [];
-        map.on('load', function() {
-          venues.forEach(function(venue){
-            helpers.renderMarkers(map, venue);
-            markers.push(`unclustered-points-${venue}`);
-          });
-        });
-
-        map.on('mousemove', function (e) {
-          let features = map.queryRenderedFeatures(e.point, { layers: markers });
-          if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-        });
-
-        map.on('click', function (e) {
-          let features = map.queryRenderedFeatures(e.point, { layers: markers });
-          let markersPresent = features.length > 0 ? true : false;
-          if (markersPresent) {
-            let marker = features[0];
-            map.flyTo({center: marker.geometry.coordinates});
-            marker.properties.reviews = JSON.parse(marker.properties.reviews);
-            setVenue(marker.properties);
-          }
-          togglePopup(markersPresent);
-        });
-      })
-      .catch( function(e){
-        console.log('error fetching mapbox token:\n', e);
-      })
-  }
 }
 
 export default App
