@@ -161,6 +161,11 @@ div.Info-item-content.content {
   clear: left;
 }
 
+div.ui.horizontal.segments>.segment {
+  min-width: 110px;
+}
+
+
 div.image img {
   flex-basis: 75px 5 auto;
   height: 75px;
