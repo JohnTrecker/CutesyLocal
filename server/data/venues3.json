@@ -14,8 +14,8 @@
     ],
     "rating": 4.5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://homesteadsf.com",
+    "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/3FzJGyYqQDZ9TgtTXjKZSw/ls.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -38,8 +38,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://rosescafesf.com",
+    "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/zoDQy7BGKdZ3M3_ejEUYaw/258s.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -62,8 +62,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://chowfoodbar.com/",
+    "imageUrl": "https://s-media-cache-ak0.pinimg.com/564x/84/34/11/843411220360af1b354c2b597336168c.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -86,8 +86,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://churchillsf.com/",
+    "imageUrl": "https://cdn0.vox-cdn.com/thumbor/LdmTS-YmX-2vYitIVBl0U_WUExI=/104x0:1944x1380/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743129/Chuchill.0.0.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -110,8 +110,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://elriosf.com",
+    "imageUrl": "https://cdn0.vox-cdn.com/thumbor/UcAIZX4qW2Pvd8hLXpWmmFsTXRU=/125x0:874x562/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743131/El_Rio.0.0.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -134,8 +134,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://holywatersf.com/",
+    "imageUrl": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15492409_1178808875541693_5474739865037708423_n.jpg?oh=6b27171c40792b1c5fe4a33e357211e7&oe=58DFE2FE",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -158,8 +158,8 @@
     ],
     "rating": 3.5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://www.sfmomos.com/",
+    "imageUrl": "https://cdn0.vox-cdn.com/thumbor/0WtaHNSjRwGzChlo2_vAoTBjAUY=/0x120:960x840/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743135/Momos.0.0.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -182,8 +182,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "https://www.yelp.com/biz/murios-trophy-room-san-francisco",
+    "imageUrl": "http://insidescoopsf.sfgate.com/files/2012/01/muriosin-600x437.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -206,8 +206,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "busstop-sf.com",
+    "imageUrl": "https://cdn0.vox-cdn.com/thumbor/0gLTW4D9MsUC6MTMrfbs5ktH3qo=/0x0:700x525/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743127/Bus_Stop.0.0.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -230,8 +230,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "bloodhoundsf.com",
+    "imageUrl": "https://cdn0.vox-cdn.com/thumbor/9uTduJAUP1gcw3omfvdz4hKsIcI=/120x0:688x426/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743125/Bloodhound.0.0.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -254,8 +254,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://www.blackhorselondon.com/",
+    "imageUrl": "https://images.bringfido.com/site_media/photos/2016/05/16/blackhorse.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -278,8 +278,8 @@
     ],
     "rating": 4,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "zaziesf.com",
+    "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
     "accommodations": {
       "inside": null,
       "outside": null,
@@ -1193,8 +1193,9 @@
     "url": "http://dogtrekker.com/event/small-dog-meet-and-greet-at-friditas",
     "accommodations": {
       "allowed": null,
-      "featured": null
-    }
+      "encouraged": null
+    },
+    "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg"
   },
   {
     "name": "Treasure Island Flea",
@@ -1208,8 +1209,9 @@
     "url": "http://dogtrekker.com/event/treasure-island-flea-11",
     "accommodations": {
       "allowed": null,
-      "featured": null
-    }
+      "encouraged": null
+    },
+    "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg"
   },
   {
     "name": "Festive Holiday Luncheon",
@@ -1223,8 +1225,9 @@
     "url": "http://dogtrekker.com/event/festive-holiday-luncheon-2016",
     "accommodations": {
       "allowed": null,
-      "featured": null
-    }
+      "encouraged": null
+    },
+    "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg"
   },
   {
     "name": "SF Beer Week Opening Day - Picnic in the Park",
@@ -1235,11 +1238,11 @@
     "reviews": [],
     "rating": 4.5,
     "dates": "February 11, 2017 12:00 p.m. to 4:00 p.m.",
-    "url": null,
+    "url": "https://dogtrekker.com/event/sf-beer-week-opening-day-picnic-in-the-park-february-11-2017",
     "imageUrl": null,
     "accommodations": {
       "allowed": null,
-      "featured": null
+      "encouraged": null
     }
   },
   {
@@ -1251,11 +1254,11 @@
     "reviews": [],
     "rating": 4.8,
     "dates": "February 25, 2017 7:00 a.m. to 1:00 p.m.",
-    "url": null,
+    "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
     "imageUrl": null,
     "accommodations": {
       "allowed": null,
-      "featured": null
+      "encouraged": null
     }
   },
   {
@@ -1267,11 +1270,11 @@
     "reviews": [],
     "rating": 4.8,
     "dates": "February 5, 2017 2:30 p.m. to 4:00 p.m.",
-    "url": null,
+    "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
     "imageUrl": "http://media1.fdncms.com/sfweekly/imager/pug-sunday/u/story/2752400/6024402.0.jpg",
     "accommodations": {
       "allowed": null,
-      "featured": null
+      "encouraged": null
     }
   },
   {
@@ -1289,8 +1292,8 @@
     ],
     "rating": 5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://parksconservancy.org",
+    "imageUrl": "http://media.mnn.com/assets/images/2013/03/san_francisco_fort_funston_dogs.jpg",
     "accommodations": {
       "offleash": null,
       "disposal": null,
@@ -1310,8 +1313,8 @@
     "reviews": [],
     "rating": 5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://parksconservancy.org",
+    "imageUrl": "https://assets.rbl.ms/5434855/980x.jpg",
     "accommodations": {
       "offleash": null,
       "disposal": null,
@@ -1337,8 +1340,8 @@
     ],
     "rating": 5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://parksconservancy.org",
+    "imageUrl": "https://assets.rbl.ms/5434854/980x.jpg",
     "accommodations": {
       "offleash": null,
       "disposal": null,
@@ -1364,8 +1367,8 @@
     ],
     "rating": 5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "http://parksconservancy.org",
+    "imageUrl": "http://data.whicdn.com/images/9172993/original.jpg",
     "accommodations": {
       "offleash": null,
       "disposal": null,
@@ -1475,8 +1478,8 @@
     "reviews": [],
     "rating": 4.5,
     "dates": null,
-    "url": null,
-    "imageUrl": null,
+    "url": "https://www.yelp.com/biz/st-marys-park-and-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+    "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/dXT84JaTH4626b6v8asgOg/o.jpg",
     "accommodations": {
       "offleash": null,
       "disposal": null,
@@ -1802,8 +1805,8 @@
     "reviews": [],
     "rating": 3,
     "dates": null,
-    "url": "https://www.yelp.com/biz/dog-runs-at-golden-gate-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
-    "imageUrl": "",
+    "url": "https://goldengatepark.com/dog-runs.html",
+    "imageUrl": "https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/dog-running-golden-gate-park-1-1280x640.jpg",
     "accommodations": {
       "offleash": null,
       "disposal": null,

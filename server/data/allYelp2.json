@@ -1,0 +1,3579 @@
+{
+  "restaurant": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4147,
+              37.7604
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/3FzJGyYqQDZ9TgtTXjKZSw/ls.jpg",
+            "phone": "+4152824663",
+            "rating": 4.5,
+            "url": "http://homesteadsf.com",
+            "name": "The Homestead (Mission)",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2301 Folsom St,",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Matt",
+                "review": "If you were to play a word-association game with the Homestead, you’d get two responses: \"peanuts\" and \"dogs\"."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4371,
+              37.7971
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "restaurant",
+                "title": "Restaurant"
+              }
+            ],
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/zoDQy7BGKdZ3M3_ejEUYaw/258s.jpg",
+            "phone": "+4157752200",
+            "rating": 4,
+            "url": "http://rosescafesf.com",
+            "name": "Rose's Cafe",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "2298 Union St.",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4662,
+              37.7652
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "restaurant",
+                "title": "Restaurant"
+              }
+            ],
+            "image_url": "https://s-media-cache-ak0.pinimg.com/564x/84/34/11/843411220360af1b354c2b597336168c.jpg",
+            "phone": "+4156659912",
+            "rating": 4,
+            "url": "http://chowfoodbar.com/",
+            "name": "Park Chow",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94122",
+              "state": "CA",
+              "address1": "1240 9th Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Joe",
+                "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4292,
+              37.7679
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/LdmTS-YmX-2vYitIVBl0U_WUExI=/104x0:1944x1380/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743129/Chuchill.0.0.jpg",
+            "phone": "+4157540194",
+            "rating": 4,
+            "url": "http://churchillsf.com/",
+            "name": "Churchill",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94114",
+              "state": "CA",
+              "address1": "198 Church St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Veronika",
+                "review": "Grab a seat on one of the couches by the windows; it's the perfect spot to tuck in for a few hours with your best friend laying at your feet."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4194,
+              37.7468
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/UcAIZX4qW2Pvd8hLXpWmmFsTXRU=/125x0:874x562/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743131/El_Rio.0.0.jpg",
+            "phone": "+4152823325",
+            "rating": 4,
+            "url": "http://elriosf.com",
+            "name": "El Rio",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "3158 Mission St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Lorenzo",
+                "review": "There's no where better than El Rio's back yard on a sunny day, but dogs are allowed inside at this Mission dive bar as well, so it's also a great option when the fog blankets the city or it's, uh, raining cats and dogs. "
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4183,
+              37.7394
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15492409_1178808875541693_5474739865037708423_n.jpg?oh=6b27171c40792b1c5fe4a33e357211e7&oe=58DFE2FE",
+            "phone": "+",
+            "rating": 4,
+            "url": "http://holywatersf.com/",
+            "name": "Holy Water",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "309 Cortland Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Jenny",
+                "review": "Professor Wagglesworth is totally welcome with all of his doggie colleagues"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.3903,
+              37.7799
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/0WtaHNSjRwGzChlo2_vAoTBjAUY=/0x120:960x840/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743135/Momos.0.0.jpg",
+            "phone": "+4152278660",
+            "rating": 3.5,
+            "url": "http://www.sfmomos.com/",
+            "name": "Momo's Restaurant",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94107",
+              "state": "CA",
+              "address1": "760 2nd St.",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Helen",
+                "review": "While MoMo's is not a place you want to take your dog when the Giants are playing at home (too crowded), the patio makes the perfect spot to lunch and day drink with Squeakers pretty much every other time."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4522,
+              37.7692
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "",
+            "phone": "+4157522971",
+            "rating": 4,
+            "url": "",
+            "name": "Murio's Trophy Room",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94117",
+              "state": "CA",
+              "address1": "1811 Haight St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Elliot",
+                "review": "This Upper Haight watering hole has a long bar, comfy chairs, Moroccan-inspired light fixtures, a pool table, and the same jukebox it had before it got a 2012 remodel, and is the perfect place to grab a drink with your dog (he'll have a water, please) after work or on a weekend afternoon."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4307,
+              37.7976
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/0gLTW4D9MsUC6MTMrfbs5ktH3qo=/0x0:700x525/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743127/Bus_Stop.0.0.jpg",
+            "phone": "+4155676905",
+            "rating": 4,
+            "url": "busstop-sf.com",
+            "name": "Bus Stop",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "1901 Union St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Christian",
+                "review": "The saddest part about going out to watch the game is leaving your pup at home for three hours. Thank goodness for the Bus Stop in Cow Hollow, wich doesn't make you choose one or the other. "
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4088,
+              37.7758
+            ]
+          },
+          "properties": {
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "image_url": "https://cdn0.vox-cdn.com/thumbor/9uTduJAUP1gcw3omfvdz4hKsIcI=/120x0:688x426/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743125/Bloodhound.0.0.jpg",
+            "phone": "+4158632840",
+            "rating": 4,
+            "url": "bloodhoundsf.com",
+            "name": "Bloodhound",
+            "location": {
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "1145 Folsom St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Chloe",
+                "review": "The drinks are great, there's a pool table, Big Buck Hunter, a legit jukebox, and you can bring your canine companion with you to keep you company."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4267343,
+              37.7986484
+            ]
+          },
+          "properties": {
+            "id": "black-horse-london-pub",
+            "categories": [
+              {
+                "alias": "bar",
+                "title": "Bar"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1792,
+            "image_url": "https://images.bringfido.com/site_media/photos/2016/05/16/blackhorse.jpg",
+            "phone": "+4156785697",
+            "price": "$$",
+            "distance": null,
+            "rating": 4,
+            "url": "http://www.blackhorselondon.com/",
+            "name": "The Black Horse London Pub",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "1514 Union St.",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "This itty bitty pub is one of the most dog-friendly in town. Everyone inside (employees and patrons alike) are incredibly sociable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4500069,
+              37.7652548
+            ]
+          },
+          "properties": {
+            "id": "zazie",
+            "categories": [
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              },
+              {
+                "alias": "french",
+                "title": "French"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1792,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
+            "phone": "+4155645332",
+            "price": "$$",
+            "distance": null,
+            "rating": 4,
+            "url": "zaziesf.com",
+            "name": "Zazie",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94117",
+              "state": "CA",
+              "address1": "941 Cole St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Matt",
+                "review": "on Monday nights \"Zazie Goes to the Dogs\" and you can dine with your pooch on the heated and covered garden patio. What's even crazier is that Zazie actually rewards you for bringing in your dog by providing endless dog treats and $10 off any bottle on the wine list. C'est bon!"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4308676,
+              37.7643545
+            ]
+          },
+          "properties": {
+            "id": "kitchen-story-san-francisco",
+            "categories": [
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              },
+              {
+                "alias": "asianfusion",
+                "title": "Asian Fusion"
+              },
+              {
+                "alias": "newamerican",
+                "title": "American (New)"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1792,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
+            "phone": "+14155254905",
+            "price": "$$",
+            "distance": 412.9377825352,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/kitchen-story-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Kitchen Story",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94114",
+              "state": "CA",
+              "address1": "3499 16th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Joe",
+                "review": "This is brunch, done right. Bring your dog and enjoy your ‘frisco benedict’ on the patio."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.42418,
+              37.76136
+            ]
+          },
+          "properties": {
+            "id": "pizzeria-delfina-san-francisco",
+            "categories": [
+              {
+                "alias": "pizza",
+                "title": "Pizza"
+              },
+              {
+                "alias": "italian",
+                "title": "Italian"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 2146,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Bfo-c4t6xv51RKuwCMgWHA/o.jpg",
+            "phone": "+14154376800",
+            "price": "$$",
+            "distance": 755.643709976,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/pizzeria-delfina-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Pizzeria Delfina",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "3611 18th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Veronika",
+                "review": "The patio provides the kind of dog-watching that your dog dreams about."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.41882,
+              37.75257
+            ]
+          },
+          "properties": {
+            "id": "stuffed-san-francisco",
+            "categories": [
+              {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+              },
+              {
+                "alias": "polish",
+                "title": "Polish"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 182,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/GQGwWdUR89MixZtcOG62yA/o.jpg",
+            "phone": "+14156421069",
+            "price": "$$",
+            "distance": 1868.0034245759998,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/stuffed-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Stuffed",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2788 Mission St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Lorenzo",
+                "review": "Dogs allowed in front patio area."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4213802,
+              37.7605905
+            ]
+          },
+          "properties": {
+            "id": "tacolicious-san-francisco-7",
+            "categories": [
+              {
+                "alias": "mexican",
+                "title": "Mexican"
+              },
+              {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1117,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ZqgxKvxnXguwGFMxYY64Dg/o.jpg",
+            "phone": "+14156496077",
+            "price": "$$",
+            "distance": 967.565946394,
+            "rating": 3.5,
+            "url": "https://www.yelp.com/biz/tacolicious-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Tacolicious",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "741 Valencia St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Jenny",
+                "review": "Si, se puede traer Fiddo."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.415308338623,
+              37.7693226761551
+            ]
+          },
+          "properties": {
+            "id": "chicks-and-love-pizza-patio-san-francisco-5",
+            "categories": [
+              {
+                "alias": "pizza",
+                "title": "Pizza"
+              },
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              },
+              {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 40,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4HG6U5cpmcbaF7auXcAE4w/o.jpg",
+            "phone": "+14159126648",
+            "price": "$$",
+            "distance": 1153.702452195,
+            "rating": 5,
+            "url": "https://www.yelp.com/biz/chicks-and-love-pizza-patio-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Chicks and Love Pizza Patio",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "1701 Folsom St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Helen",
+                "review": "Outdoor picnic style tables perfect for that mid-walk snack."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.42297490884,
+              37.7647290879634
+            ]
+          },
+          "properties": {
+            "id": "the-monks-kettle-san-francisco",
+            "categories": [
+              {
+                "alias": "bars",
+                "title": "Bars"
+              },
+              {
+                "alias": "gastropubs",
+                "title": "Gastropubs"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1984,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/47kA45l9yNMMPg1P_qbCGw/o.jpg",
+            "phone": "+14158659523",
+            "price": "$$",
+            "distance": 548.48962611,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/the-monks-kettle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "The Monk's Kettle",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "3141 16th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.43212,
+              37.75153
+            ]
+          },
+          "properties": {
+            "id": "novy-san-francisco-6",
+            "categories": [
+              {
+                "alias": "mediterranean",
+                "title": "Mediterranean"
+              },
+              {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+              },
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 201,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/JcA_zVTFiqM_NBF1jDXhHw/o.jpg",
+            "phone": "+14158298383",
+            "price": "$$",
+            "distance": 1797.5024234599998,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/novy-san-francisco-6?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "NoVY Restaurant",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94114",
+              "state": "CA",
+              "address1": "4000 24th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Elliot",
+                "review": "We sat outside so I can't speak to the ambiance inside but bonus points for being dog-friendly in their outdoor seating area."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.40185511318,
+              37.7958367325659
+            ]
+          },
+          "properties": {
+            "id": "cafe-me-san-francisco-2",
+            "categories": [
+              {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+              },
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              },
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 243,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eWKVQdJUpwFkt8GvBRRi3g/o.jpg",
+            "phone": "+14152888628",
+            "price": "$",
+            "distance": 3918.300814302,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/cafe-me-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Cafe Me",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94111",
+              "state": "CA",
+              "address1": "500 Washington St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.3890915,
+              37.7580376
+            ]
+          },
+          "properties": {
+            "id": "marcellas-lasagneria-san-francisco-3",
+            "categories": [
+              {
+                "alias": "italian",
+                "title": "Italian"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 247,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/J8XAYvv7NYgcPo5xdl3f3Q/o.jpg",
+            "phone": "+14159202225",
+            "price": "$$",
+            "distance": 3587.3221796279995,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/marcellas-lasagneria-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Marcella's Lasagneria",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94107",
+              "state": "CA",
+              "address1": "1099 Tennessee St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Christian",
+                "review": "Outdoor bistro chair seating for the pupster."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.402136325836,
+              37.7685096967036
+            ]
+          },
+          "properties": {
+            "id": "skool-san-francisco",
+            "categories": [
+              {
+                "alias": "seafood",
+                "title": "Seafood"
+              },
+              {
+                "alias": "japanese",
+                "title": "Japanese"
+              },
+              {
+                "alias": "asianfusion",
+                "title": "Asian Fusion"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1282,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/47i057bRXAm_sIvA2obD5A/o.jpg",
+            "phone": "+14152558800",
+            "price": "$$",
+            "distance": 2294.795403622,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/skool-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Skool",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "1725 Alameda St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "The patio is dog friendly."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4053719,
+              37.7430959
+            ]
+          },
+          "properties": {
+            "id": "bayshore-taqueria-san-francisco",
+            "categories": [
+              {
+                "alias": "mexican",
+                "title": "Mexican"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 131,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/B0Jeuy5uSCyikyMw-jAbgQ/o.jpg",
+            "phone": "+14152851100",
+            "price": "$",
+            "distance": 3355.7941586599995,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/bayshore-taqueria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Bayshore Taqueria",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94124",
+              "state": "CA",
+              "address1": "300 Bayshore Blvd",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.418840453029,
+              37.7572277060474
+            ]
+          },
+          "properties": {
+            "id": "myriad-gastropub-san-francisco",
+            "categories": [
+              {
+                "alias": "gastropubs",
+                "title": "Gastropubs"
+              },
+              {
+                "alias": "venues",
+                "title": "Venues & Event Spaces"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 265,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/bHXXEbxW7K1-_SMb9QKRmg/o.jpg",
+            "phone": "+14155254335",
+            "price": "$$",
+            "distance": 1400.376454705,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/myriad-gastropub-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Myriad Gastropub",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2491 Mission St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Matt",
+                "review": "My small dog was also welcomed, and she had a deviled egg from the starter menu."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.41892,
+              37.75921
+            ]
+          },
+          "properties": {
+            "id": "fob-kitchen-san-francisco-4",
+            "categories": [
+              {
+                "alias": "filipino",
+                "title": "Filipino"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 67,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/tAqzrc9VAcPcyGlr63-Ybw/o.jpg",
+            "phone": "+14157569844",
+            "price": "$$",
+            "distance": 1200.880173828,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/fob-kitchen-san-francisco-4?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "FOB Kitchen",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2351 Mission St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Joe",
+                "review": "Dog-freindly seating!"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4218206,
+              37.7609695
+            ]
+          },
+          "properties": {
+            "id": "craftsman-and-wolves-san-francisco",
+            "categories": [
+              {
+                "alias": "bakeries",
+                "title": "Bakeries"
+              },
+              {
+                "alias": "cafes",
+                "title": "Cafes"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1138,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/QXNHbCQT1EWKrsZaa-p1XQ/o.jpg",
+            "phone": "+14159137713",
+            "price": "$$",
+            "distance": 910.173663314,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/craftsman-and-wolves-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Craftsman and Wolves",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "746 Valencia St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Veronika",
+                "review": "Bring your fur baby here before or after a visit to the Mission Pet Hospital."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.394304275513,
+              37.7960849485032
+            ]
+          },
+          "properties": {
+            "id": "gotts-roadside-san-francisco-2",
+            "categories": [
+              {
+                "alias": "burgers",
+                "title": "Burgers"
+              },
+              {
+                "alias": "diners",
+                "title": "Diners"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 2278,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/hJAPNfUXxaIB5SbNydbDQw/o.jpg",
+            "phone": "+14153183423",
+            "price": "$$",
+            "distance": 4363.877653564,
+            "rating": 3.5,
+            "url": "https://www.yelp.com/biz/gotts-roadside-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Gott's Roadside",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94111",
+              "state": "CA",
+              "address1": "1 Ferry Bldg",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Lorenzo",
+                "review": "Home of the Puppy Bowl duting Super Bowl week! Bring your lil champion here for great outdoor patio dogwatching."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.42991,
+              37.76628
+            ]
+          },
+          "properties": {
+            "id": "poke-delish-san-francisco",
+            "categories": [
+              {
+                "alias": "hawaiian",
+                "title": "Hawaiian"
+              },
+              {
+                "alias": "asianfusion",
+                "title": "Asian Fusion"
+              },
+              {
+                "alias": "poke",
+                "title": "Poke"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 124,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8qjSxfrpu9JnCrfzybffXQ/o.jpg",
+            "phone": "+16287776772",
+            "price": "$$",
+            "distance": 199.8224297214,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/poke-delish-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Poke Delish",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94114",
+              "state": "CA",
+              "address1": "2175 Market Street",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Jenny",
+                "review": "Hip Duboce Triangle food court space that welcomes dogs."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.406396576686,
+              37.7542538394443
+            ]
+          },
+          "properties": {
+            "id": "lunas-coffee-house-san-francisco-3",
+            "categories": [
+              {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+              },
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 27,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nTbx2U65PFgogTAqWgzroA/o.jpg",
+            "phone": "+14157103066",
+            "price": "$",
+            "distance": 2412.1771226739997,
+            "rating": 5,
+            "url": "https://www.yelp.com/biz/lunas-coffee-house-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Luna's Coffee House",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "1101 Potrero Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4242157,
+              37.7763714
+            ]
+          },
+          "properties": {
+            "id": "juice-shop-san-francisco-7",
+            "categories": [
+              {
+                "alias": "juicebars",
+                "title": "Juice Bars & Smoothies"
+              },
+              {
+                "alias": "foodstands",
+                "title": "Food Stands"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 69,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/3q_un-XarjP9y0fyO25iLw/o.jpg",
+            "phone": "+14157570696",
+            "price": "$$",
+            "distance": 1055.9362542,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/juice-shop-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Juice Shop",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94102",
+              "state": "CA",
+              "address1": "432 Octavia St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.41064,
+              37.76062
+            ]
+          },
+          "properties": {
+            "id": "universal-cafe-san-francisco-5",
+            "categories": [
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              },
+              {
+                "alias": "newamerican",
+                "title": "American (New)"
+              },
+              {
+                "alias": "diners",
+                "title": "Diners"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1194,
+            "image_url": "https://images.bringfido.com/site_media/photos/restaurants/0/7/8/1870/1870_48265.jpg",
+            "phone": "+14158214608",
+            "price": "$$",
+            "distance": 1726.6521955639998,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/universal-cafe-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Universal Cafe",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2814 19th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Helen",
+                "review": "Outdoor patio seating is very dog friendly; come early, there's almost always a line on weekends."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.405591253967,
+              37.7892737258644
+            ]
+          },
+          "properties": {
+            "id": "hops-and-hominy-san-francisco",
+            "categories": [
+              {
+                "alias": "southern",
+                "title": "Southern"
+              },
+              {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1455,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xJ6mi9tza2IcPTpBHSRvPg/o.jpg",
+            "phone": "+14153736341",
+            "price": "$$",
+            "distance": 3139.72175625,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/hops-and-hominy-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Hops & Hominy",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94108",
+              "state": "CA",
+              "address1": "1 Tillman Pl",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Elliot",
+                "review": "Bring the hounds—This Deep-South-meets-California restaurant has a quaint patio where you can enjoy the microbrews and Southern staples."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.438993048014,
+              37.77343530099
+            ]
+          },
+          "properties": {
+            "id": "nopalito-san-francisco",
+            "categories": [
+              {
+                "alias": "mexican",
+                "title": "Mexican"
+              },
+              {
+                "alias": "gluten_free",
+                "title": "Gluten-Free"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1552,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/f13-4rbvvHDkhyYIttMnMQ/o.jpg",
+            "phone": "+14154370303",
+            "price": "$$",
+            "distance": 1160.700103916,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/nopalito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Nopalito",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94117",
+              "state": "CA",
+              "address1": "306 Broderick St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.424349,
+              37.763082
+            ]
+          },
+          "properties": {
+            "id": "turners-kitchen-san-francisco",
+            "categories": [
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              },
+              {
+                "alias": "soup",
+                "title": "Soup"
+              },
+              {
+                "alias": "salad",
+                "title": "Salad"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 195,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kmn1Z_EEOB4II1TOo0yAfQ/o.jpg",
+            "phone": "+14156213505",
+            "price": "$",
+            "distance": 589.3770492322,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/turners-kitchen-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Turner's Kitchen",
+            "location": {
+              "address3": "Former Clare's Deli",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "3505 B 17th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.392534017563,
+              37.795398235987
+            ]
+          },
+          "properties": {
+            "id": "roli-roti-gourmet-rotisserie-san-francisco",
+            "categories": [
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              },
+              {
+                "alias": "foodtrucks",
+                "title": "Food Trucks"
+              },
+              {
+                "alias": "gourmet",
+                "title": "Specialty Food"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1253,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YF3HmR4hChuXo-YggILkzQ/o.jpg",
+            "phone": "+15107800300",
+            "price": "$",
+            "distance": 4417.43632783,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/roli-roti-gourmet-rotisserie-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Roli Roti Gourmet Rotisserie",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94105",
+              "state": "CA",
+              "address1": "1 Ferry Bldg",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.42549,
+              37.77351
+            ]
+          },
+          "properties": {
+            "id": "revelry-bistro-san-francisco",
+            "categories": [
+              {
+                "alias": "french",
+                "title": "French"
+              },
+              {
+                "alias": "newamerican",
+                "title": "American (New)"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 49,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/65dgW_zi23gxR9zFq5iyaA/o.jpg",
+            "phone": "+14152416833",
+            "price": "$$$",
+            "distance": 719.6741080257999,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/revelry-bistro-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Revelry Bistro",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94102",
+              "state": "CA",
+              "address1": "297 Page Street",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.417203,
+              37.807614
+            ]
+          },
+          "properties": {
+            "id": "tanguito-san-francisco",
+            "categories": [
+              {
+                "alias": "argentine",
+                "title": "Argentine"
+              },
+              {
+                "alias": "burgers",
+                "title": "Burgers"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 488,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/dWICf8NhesjFCrW3cSWqiw/o.jpg",
+            "phone": "+14155774223",
+            "price": "$",
+            "distance": 4573.429654029999,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/tanguito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Tanguito",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94133",
+              "state": "CA",
+              "address1": "2850 Jones St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {"reviewer": "Christian",
+               "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4171804,
+              37.7601948
+            ]
+          },
+          "properties": {
+            "id": "benders-bar-and-grill-san-francisco",
+            "categories": [
+              {
+                "alias": "divebars",
+                "title": "Dive Bars"
+              },
+              {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 418,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/F3s43Tfcll16o1T5c-kpuA/o.jpg",
+            "phone": "+14158241800",
+            "price": "$",
+            "distance": 1258.2939094102,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/benders-bar-and-grill-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Bender's Bar and Grill",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "806 S Van Ness Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Stevie",
+                "review": "You can totally bring your dog there (inside and out) and house made dog treats are available to purchase so that Fifi doesn't get too jealous of your beer-battered fried Oreos."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.41451,
+              37.7864
+            ]
+          },
+          "properties": {
+            "id": "scullery-san-francisco",
+            "categories": [
+              {
+                "alias": "cafes",
+                "title": "Cafes"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 32,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/cUBkYz6_N7mXGQX1UNp9bw/o.jpg",
+            "phone": "+14154404497",
+            "price": "$",
+            "distance": 2429.4202351699996,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/scullery-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Scullery",
+            "location": {
+              "address3": null,
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94102",
+              "state": "CA",
+              "address1": "687 Geary St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.41251,
+              37.77722
+            ]
+          },
+          "properties": {
+            "id": "thoughts-style-cuisine-showroom-san-francisco",
+            "categories": [
+              {
+                "alias": "thai",
+                "title": "Thai"
+              },
+              {
+                "alias": "italian",
+                "title": "Italian"
+              },
+              {
+                "alias": "comfortfood",
+                "title": "Comfort Food"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 171,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/cqbiFujpixkelEs060Un4g/o.jpg",
+            "phone": "+14152527919",
+            "price": "$$",
+            "distance": 1739.0154673119998,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/thoughts-style-cuisine-showroom-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Thoughts Style Cuisine Showroom",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "139 8th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.439576733921,
+              37.7997036480886
+            ]
+          },
+          "properties": {
+            "id": "the-sandwich-spot-san-francisco-2",
+            "categories": [
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              },
+              {
+                "alias": "delis",
+                "title": "Delis"
+              },
+              {
+                "alias": "cafes",
+                "title": "Cafes"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 536,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/mpSmk3l64WU9Og_KJgsTRQ/o.jpg",
+            "phone": "+14158292587",
+            "price": "$",
+            "distance": 3727.1244188899996,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/the-sandwich-spot-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "The Sandwich Spot",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "3213 Pierce St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4471147,
+              37.7983492
+            ]
+          },
+          "properties": {
+            "id": "golden-gate-market-deli-and-liquor-san-francisco-2",
+            "categories": [
+              {
+                "alias": "delis",
+                "title": "Delis"
+              },
+              {
+                "alias": "beer_and_wine",
+                "title": "Beer, Wine & Spirits"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 76,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EKMZpkEb_fBYqsJ6QjSNGw/o.jpg",
+            "phone": "+14153466052",
+            "price": "$",
+            "distance": 3832.66091274,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/golden-gate-market-deli-and-liquor-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Golden Gate Market Deli & Liquor",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "2767 Lombard St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.43652,
+              37.80057
+            ]
+          },
+          "properties": {
+            "id": "pacific-catch-san-francisco",
+            "categories": [
+              {
+                "alias": "seafood",
+                "title": "Seafood"
+              },
+              {
+                "alias": "gluten_free",
+                "title": "Gluten-Free"
+              },
+              {
+                "alias": "mexican",
+                "title": "Mexican"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1393,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/-_cAnXv5WzJaxdl1--vEYA/o.jpg",
+            "phone": "+14154401950",
+            "price": "$$",
+            "distance": 3768.804876484,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/pacific-catch-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Pacific Catch",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "2027 Chestnut St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Matt",
+                "review": "My dog was just one if three on the patio at Pacific Catch. I even saw one gentleman pick his smaller dog up and take him inside while he grabbed his to-go order (he asked if it was ok first) and the food/drinks were great! Me and my dog will be back."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.401331702377,
+              37.797125033325
+            ]
+          },
+          "properties": {
+            "id": "jackson-place-cafe-san-francisco",
+            "categories": [
+              {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+              },
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 183,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Xb-bjxLK1v3mTmt050kYmg/o.jpg",
+            "phone": "+14152254891",
+            "price": "$",
+            "distance": 4061.561525224,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/jackson-place-cafe-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Jackson Place Cafe",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94111",
+              "state": "CA",
+              "address1": "633 Battery St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.3897508,
+              37.7390445
+            ]
+          },
+          "properties": {
+            "id": "all-good-pizza-san-francisco",
+            "categories": [
+              {
+                "alias": "pizza",
+                "title": "Pizza"
+              },
+              {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+              },
+              {
+                "alias": "salad",
+                "title": "Salad"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 163,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/DDhR9iL2dFHe98CY_d28jQ/o.jpg",
+            "phone": "+14159339384",
+            "price": "$$",
+            "distance": 4624.444444558,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/all-good-pizza-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "All Good Pizza",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94124",
+              "state": "CA",
+              "address1": "1605 Jerrold Ave",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.43744,
+              37.7971
+            ]
+          },
+          "properties": {
+            "id": "terzo-san-francisco",
+            "categories": [
+              {
+                "alias": "mediterranean",
+                "title": "Mediterranean"
+              },
+              {
+                "alias": "tapasmallplates",
+                "title": "Tapas/Small Plates"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 533,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/e0G8iBFcuO8i__dcnA8ARQ/o.jpg",
+            "phone": "+14154413200",
+            "price": "$$$",
+            "distance": 3400.0790111759998,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/terzo-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Terzo",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "3011 Steiner St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4375011,
+              37.7726857
+            ]
+          },
+          "properties": {
+            "id": "vinyl-coffee-and-wine-bar-san-francisco",
+            "categories": [
+              {
+                "alias": "wine_bars",
+                "title": "Wine Bars"
+              },
+              {
+                "alias": "cafes",
+                "title": "Cafes"
+              },
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 238,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/TnIYv3Rv6fhc4lVEPMIg9w/o.jpg",
+            "phone": "+14156214132",
+            "price": "$$",
+            "distance": 1031.9326262319998,
+            "rating": 3.5,
+            "url": "https://www.yelp.com/biz/vinyl-coffee-and-wine-bar-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Vinyl Coffee & Wine Bar",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94117",
+              "state": "CA",
+              "address1": "359 Divisadero St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.416815797941,
+              37.7637146469497
+            ]
+          },
+          "properties": {
+            "id": "mission-bowling-club-san-francisco",
+            "categories": [
+              {
+                "alias": "bowling",
+                "title": "Bowling"
+              },
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              },
+              {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 476,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/yuPSZ_nDPoFOylFYYcEvCQ/o.jpg",
+            "phone": "+14158632695",
+            "price": "$$",
+            "distance": 1082.536874126,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/mission-bowling-club-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Mission Bowling Club",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "3176 17th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4225344,
+              37.7648968
+            ]
+          },
+          "properties": {
+            "id": "stanza-coffee-san-francisco",
+            "categories": [
+              {
+                "alias": "cafes",
+                "title": "Cafes"
+              },
+              {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 243,
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Jlpa_sphmKl39FYMJ9bVyw/o.jpg",
+            "phone": "+14155538966",
+            "price": "$",
+            "distance": 572.1414040738,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/stanza-coffee-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Stanza Coffee",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "3126 16th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4189313,
+              37.79093
+            ]
+          },
+          "properties": {
+            "id": "olea-san-francisco",
+            "categories": [
+              {
+                "alias": "newamerican",
+                "title": "American (New)"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 816,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/odCh7F44KBR1oM7-ufGA-Q/o.jpg",
+            "phone": "+14152028521",
+            "price": "$$",
+            "distance": 2739.272580862,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/olea-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Olea",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94109",
+              "state": "CA",
+              "address1": "1494 California St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.40834,
+              37.7527199
+            ]
+          },
+          "properties": {
+            "id": "st-francis-fountain-san-francisco",
+            "categories": [
+              {
+                "alias": "icecream",
+                "title": "Ice Cream & Frozen Yogurt"
+              },
+              {
+                "alias": "diners",
+                "title": "Diners"
+              },
+              {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 1054,
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/v_XbkoPOHZTgdL-_frg_yw/o.jpg",
+            "phone": "+14158264210",
+            "price": "$$",
+            "distance": 2394.3921454,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/st-francis-fountain-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "St. Francis Fountain",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94110",
+              "state": "CA",
+              "address1": "2801 24th St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Joe",
+                "review": "We came with our dog, and had a wonderful table outside. We were even offered water for our dog, SUPER PLUS."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.4365,
+              37.80055
+            ]
+          },
+          "properties": {
+            "id": "castagna-san-francisco",
+            "categories": [
+              {
+                "alias": "french",
+                "title": "French"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 225,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-Q5QFzsCV0fI9DVg-7VZRg/o.jpg",
+            "phone": "+14154404290",
+            "price": "$$",
+            "distance": 3762.587513262,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/castagna-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Castagna",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94123",
+              "state": "CA",
+              "address1": "2015 Chestnut St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.411513944775,
+              37.7961947180551
+            ]
+          },
+          "properties": {
+            "id": "mason-pacific-san-francisco",
+            "categories": [
+              {
+                "alias": "newamerican",
+                "title": "American (New)"
+              },
+              {
+                "alias": "desserts",
+                "title": "Desserts"
+              },
+              {
+                "alias": "seafood",
+                "title": "Seafood"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 308,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/jMaFqtjM43zAZtAEpOlJfQ/o.jpg",
+            "phone": "+14153747185",
+            "price": "$$$",
+            "distance": 3520.7120798299998,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/mason-pacific-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Mason Pacific",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94133",
+              "state": "CA",
+              "address1": "1358 Mason St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": [
+              {
+                "reviewer": "Veronika",
+                "review": "They are dog friendly!! I sat on the patio with my pup and they brought me a nice blanket and my pup a fresh bowl of water."
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.48196,
+              37.7837699
+            ]
+          },
+          "properties": {
+            "id": "firehouse-pizzeria-san-francisco",
+            "categories": [
+              {
+                "alias": "pizza",
+                "title": "Pizza"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 234,
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/XDNdb_lIKoosJKoVftUOZg/o.jpg",
+            "phone": "+14152217603",
+            "price": "$$",
+            "distance": 5064.697104297999,
+            "rating": 4,
+            "url": "https://www.yelp.com/biz/firehouse-pizzeria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "Firehouse Pizzeria",
+            "location": {
+              "address3": "",
+              "address2": "",
+              "city": "San Francisco",
+              "zip_code": "94121",
+              "state": "CA",
+              "address1": "6001 California St",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -122.411664200278,
+              37.7699602873082
+            ]
+          },
+          "properties": {
+            "id": "the-steamin-burger-san-francisco",
+            "categories": [
+              {
+                "alias": "foodtrucks",
+                "title": "Food Trucks"
+              },
+              {
+                "alias": "burgers",
+                "title": "Burgers"
+              }
+            ],
+            "is_closed": false,
+            "review_count": 35,
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/F5m9eLF4BjUdjpYFd6K-dw/o.jpg",
+            "phone": "+16509184777",
+            "price": "$",
+            "distance": 1481.198394642,
+            "rating": 4.5,
+            "url": "https://www.yelp.com/biz/the-steamin-burger-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+            "name": "The Steamin' Burger",
+            "location": {
+              "address3": "",
+              "address2": null,
+              "city": "San Francisco",
+              "zip_code": "94103",
+              "state": "CA",
+              "address1": "",
+              "country": "US"
+            },
+            "venue": "restaurant",
+            "reviews": []
+          }
+        }
+      ],
+  "park": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.5025,
+            37.7163
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "http://media.mnn.com/assets/images/2013/03/san_francisco_fort_funston_dogs.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Fort Funston",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94118",
+            "state": "CA",
+            "address1": "Fort Funston Rd",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Stevie",
+              "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep)."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4641,
+            37.8039
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "https://assets.rbl.ms/5434855/980x.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Crissy Field",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94129",
+            "state": "CA",
+            "address1": "1199 E Beach",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.5107,
+            37.7594
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "https://assets.rbl.ms/5434854/980x.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Ocean Beach",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94121",
+            "state": "CA",
+            "address1": "Great Highway",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Matt",
+              "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. "
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4836,
+            37.7936
+          ]
+        },
+        "properties": {
+          "categories": [
+            {
+              "alias": "beach",
+              "title": "beach"
+            }
+          ],
+          "image_url": "http://data.whicdn.com/images/9172993/original.jpg",
+          "phone": "+4155614323",
+          "rating": 5,
+          "url": "http://parksconservancy.org",
+          "name": "Baker Beach",
+          "location": {
+            "city": "San Francisco",
+            "zip_code": "94129",
+            "state": "CA",
+            "address1": "1504 Pershing Dr",
+            "country": "US"
+          },
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Chloe",
+              "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.439369238287,
+            37.7652326194395
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "32 Museum Way",
+            "zip_code": "94114",
+            "state": "CA",
+            "address2": null,
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 162,
+          "name": "Corona Heights Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "corona-heights-park-san-francisco",
+          "url": "https://www.yelp.com/biz/corona-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4.5,
+          "distance": 1010.7182097915999,
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Veronika",
+              "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.414903640747,
+            37.7432657658517
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/obx_BgFsKnj_jEL0pIQE7Q/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "10 Bernal Heights Blvd",
+            "zip_code": "94110",
+            "state": "CA",
+            "address2": null,
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 239,
+          "name": "Bernal Heights Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            },
+            {
+              "alias": "hiking",
+              "title": "Hiking"
+            }
+          ],
+          "id": "bernal-heights-park-san-francisco",
+          "url": "https://www.yelp.com/biz/bernal-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4.5,
+          "distance": 2928.8492923139997,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.427656421507,
+            37.7916042473676
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/aMlS8pPqFMDSrI0sYWKXgA/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "Gough and Sacramento Street",
+            "zip_code": "94109",
+            "state": "CA",
+            "address2": null,
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 141,
+          "name": "Lafayette Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "lafayette-park-san-francisco",
+          "url": "https://www.yelp.com/biz/lafayette-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4.5,
+          "distance": 2690.1972059679997,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.438453989347,
+            37.7464918024673
+          ]
+        },
+        "properties": {
+          "phone": "+14159708063",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "review_count": 75,
+          "rating": 4,
+          "distance": 2494.95255997,
+          "id": "upper-douglass-dog-park-san-francisco",
+          "location": {
+            "address1": "27th and Douglass Blvd",
+            "zip_code": "94131",
+            "state": "CA",
+            "address2": null,
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "Upper Douglass Dog Park",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/k6LLSnLN3gJYRUYOuBLEqg/o.jpg",
+          "url": "https://www.yelp.com/biz/upper-douglass-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4223233,
+            37.734052
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dXT84JaTH4626b6v8asgOg/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "95 Justin Dr",
+            "zip_code": "94112",
+            "state": "CA",
+            "address2": null,
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 70,
+          "name": "St. Marys Park and Dog Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            },
+            {
+              "alias": "basketballcourts",
+              "title": "Basketball Courts"
+            }
+          ],
+          "id": "st-marys-park-and-dog-park-san-francisco",
+          "url": "https://www.yelp.com/biz/st-marys-park-and-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4.5,
+          "distance": 3729.616160012,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3919647,
+            37.7863424
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/hE85L9-yCmhAfVXrbljN9Q/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "486 Beale St",
+            "zip_code": "94105",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 36,
+          "name": "Rincon Hill Dog Park",
+          "categories": [
+            {
+              "alias": "pets",
+              "title": "Pets"
+            },
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "rincon-hill-dog-park-san-francisco",
+          "url": "https://www.yelp.com/biz/rincon-hill-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4,
+          "distance": 3817.7658273039997,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.48412,
+            37.7352599
+          ]
+        },
+        "properties": {
+          "phone": "",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "review_count": 56,
+          "rating": 4,
+          "distance": 6074.477004496,
+          "id": "pine-lake-park-san-francisco",
+          "location": {
+            "address1": "Vale Ave & Crestlake Dr",
+            "zip_code": "94132",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "Pine Lake Park",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/p4FCz-jrBHoMS8R81w4mvA/o.jpg",
+          "url": "https://www.yelp.com/biz/pine-lake-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3987043,
+            37.7702005
+          ]
+        },
+        "properties": {
+          "phone": "",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "review_count": 68,
+          "rating": 3.5,
+          "distance": 2598.789268912,
+          "id": "mission-creek-dog-park-san-francisco",
+          "location": {
+            "address1": "485 Berry St",
+            "zip_code": "94158",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "Mission Creek Dog Park",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/9X9HCNMR9kH-JNZlQnQTDg/o.jpg",
+          "url": "https://www.yelp.com/biz/mission-creek-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.433431,
+            37.769425
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/eYzXqFa8hQCLlkGBsfzgAw/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "Duboce Ave and Noe St",
+            "zip_code": "94117",
+            "state": "CA",
+            "address2": null,
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 119,
+          "name": "Duboce Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            },
+            {
+              "alias": "playgrounds",
+              "title": "Playgrounds"
+            }
+          ],
+          "id": "duboce-park-san-francisco",
+          "url": "https://www.yelp.com/biz/duboce-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4,
+          "distance": 510.8870268618,
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Lorenzo",
+              "review": "East part of the park is off-lease with plenty of space to run and play."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.434515953064,
+            37.7404829776916
+          ]
+        },
+        "properties": {
+          "phone": "",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "review_count": 44,
+          "rating": 4,
+          "distance": 3045.6963886179997,
+          "id": "walter-haas-park-and-playground-san-francisco",
+          "location": {
+            "address1": "Diamond Heights Blvd",
+            "zip_code": "94131",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "Walter Haas Park and Playground",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KYXdvl4asJdyqbtvVAlxwA/o.jpg",
+          "url": "https://www.yelp.com/biz/walter-haas-park-and-playground-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.499004493393,
+            37.7711452940714
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mwZfBefM3fXRqhnMaJBG1w/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "38th and Fulton St",
+            "zip_code": "94121",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 36,
+          "name": "Golden Gate Park: Dog Training Area",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "golden-gate-park-dog-training-area-san-francisco",
+          "url": "https://www.yelp.com/biz/golden-gate-park-dog-training-area-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 3.5,
+          "distance": 6237.20477486,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.44969,
+            37.76601
+          ]
+        },
+        "properties": {
+          "phone": "",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "review_count": 7,
+          "rating": 4,
+          "distance": 1893.3698416559998,
+          "id": "cole-valley-dog-park-san-francisco",
+          "location": {
+            "address1": "86 Carl St",
+            "zip_code": "94117",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "Cole Valley Dog Park",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/zbC3iEfVyJA1xcZm9_Bg2Q/o.jpg",
+          "url": "https://www.yelp.com/biz/cole-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.43629,
+            37.759856
+          ]
+        },
+        "properties": {
+          "phone": "",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "review_count": 27,
+          "rating": 3.5,
+          "distance": 1100.260857414,
+          "id": "eureka-valley-dog-park-san-francisco",
+          "location": {
+            "address1": "100 Collingwood St",
+            "zip_code": "94114",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "Eureka Valley Dog Park",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IINInQP1O3LbooaFziCrfA/o.jpg",
+          "url": "https://www.yelp.com/biz/eureka-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": [
+            {
+              "reviewer": "Chloe",
+              "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike."
+            }
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4225187,
+            37.770472
+          ]
+        },
+        "properties": {
+          "phone": "+14152426390",
+          "is_closed": false,
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            },
+            {
+              "alias": "skate_parks",
+              "title": "Skate Parks"
+            }
+          ],
+          "review_count": 15,
+          "rating": 3,
+          "distance": 604.997737794,
+          "id": "soma-west-skate-and-dog-park-san-francisco-2",
+          "location": {
+            "address1": "Central Fwy",
+            "zip_code": "94103",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "name": "SoMa West Skate and Dog Park",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/WaWnXsDUcWysxdwY_IuDAA/o.jpg",
+          "url": "https://www.yelp.com/biz/soma-west-skate-and-dog-park-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4645233,
+            37.7117996
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/5ptnOZG-6aWwf_gzRGU2jg/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "3550-3598 Alemany Blvd",
+            "zip_code": "94132",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 8,
+          "name": "Alemany Blvd Dog Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "alemany-blvd-dog-park-san-francisco",
+          "url": "https://www.yelp.com/biz/alemany-blvd-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4,
+          "distance": 6986.852566797999,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3913574,
+            37.7526703
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3PKDe4cZQp8Qf8mi37BOng/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "Indiana & 25th",
+            "zip_code": "94107",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 4,
+          "name": "25th St Dog Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "25th-st-dog-park-san-francisco",
+          "url": "https://www.yelp.com/biz/25th-st-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4,
+          "distance": 3684.080528448,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.42753,
+            37.7150739
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/n43nlrCS4ixH1aBjzHxjNQ/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "Italy Ave & Moscow St",
+            "zip_code": "94112",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 22,
+          "name": "Crocker Amazon Dog Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "crocker-amazon-dog-park-san-francisco",
+          "url": "https://www.yelp.com/biz/crocker-amazon-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 3,
+          "distance": 5820.55710957,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4286111,
+            37.7426253
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/URV0uv8QXHWs_M286UsEfg/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "299 Day Street",
+            "zip_code": "94131",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 7,
+          "name": "Upper Noe Recreation Center: Dog Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "upper-noe-recreation-center-dog-park-san-francisco",
+          "url": "https://www.yelp.com/biz/upper-noe-recreation-center-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 3,
+          "distance": 2749.8591412499995,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4596024,
+            37.7664146
+          ]
+        },
+        "properties": {
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rWdbk-OQCPkwpmvEz6OyDQ/o.jpg",
+          "is_closed": false,
+          "location": {
+            "address1": "788 Kezar Dr",
+            "zip_code": "94122",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 2,
+          "name": "Golden Gate Park Kezar Triangle",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "golden-gate-park-kezar-triangle-san-francisco",
+          "url": "https://www.yelp.com/biz/golden-gate-park-kezar-triangle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 4.5,
+          "distance": 2683.372799698,
+          "venue": "park",
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.495435073541,
+            37.7659108503427
+          ]
+        },
+        "properties": {
+          "image_url": "",
+          "is_closed": false,
+          "location": {
+            "address1": "1233-1275 Martin Luther King Jr Dr",
+            "zip_code": "94122",
+            "state": "CA",
+            "address2": "",
+            "country": "US",
+            "address3": "",
+            "city": "San Francisco"
+          },
+          "review_count": 1,
+          "name": "Dog Runs at Golden Gate Park",
+          "categories": [
+            {
+              "alias": "dog_parks",
+              "title": "Dog Parks"
+            }
+          ],
+          "id": "dog-runs-at-golden-gate-park-san-francisco",
+          "url": "https://www.yelp.com/biz/dog-runs-at-golden-gate-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
+          "rating": 3,
+          "distance": 5912.1127840379995,
+          "venue": "park",
+          "reviews": []
+        }
+      }],
+  "event": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4263566,
+            37.64223
+          ]
+        },
+        "properties": {
+          "dates": "November 22, 2016 to June 20, 2017 6:30 p.m. to 8:00 p.m.",
+          "description": null,
+          "location": {
+            "address1": "132 Hazelwood Dr.",
+            "zip_code": "94080",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "Small Dog Meet and Greet at Friditas",
+          "url": "http://dogtrekker.com/event/small-dog-meet-and-greet-at-friditas",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg",
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4,
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3709364,
+            37.8172777
+          ]
+        },
+        "properties": {
+          "dates": "November 26, 2016 to November 27, 2016 10:00 a.m. to 4:00 p.m.",
+          "description": null,
+          "location": {
+            "address1": "1 Ave. of the Palms",
+            "zip_code": "& Map",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "Treasure Island Flea",
+          "url": "http://dogtrekker.com/event/treasure-island-flea-11",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg",
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4,
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.40873149,
+            37.7878279
+          ]
+        },
+        "properties": {
+          "dates": "December 1, 2016 7:00 p.m. to 10:00 p.m.",
+          "description": null,
+          "location": {
+            "address1": "335 Powell St.",
+            "zip_code": "94102",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "Festive Holiday Luncheon",
+          "url": "http://dogtrekker.com/event/festive-holiday-luncheon-2016",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg",
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4,
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3916,
+            37.7708
+          ]
+        },
+        "properties": {
+          "dates": "February 11, 2017 12:00 p.m. to 4:00 p.m.",
+          "description": null,
+          "location": {
+            "address1": "601 Mission Bay Blvd. N.",
+            "zip_code": "94158",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "SF Beer Week Opening Day - Picnic in the Park",
+          "url": "https://dogtrekker.com/event/sf-beer-week-opening-day-picnic-in-the-park-february-11-2017",
+          "image_url": null,
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4.5,
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.46406,
+            37.8039
+          ]
+        },
+        "properties": {
+          "dates": "February 25, 2017 7:00 a.m. to 1:00 p.m.",
+          "description": "SF Race for the Paws is an annual 5K run and adoption event benefiting our furry friends at Family Dog Rescue.",
+          "location": {
+            "address1": "Crissy Field",
+            "zip_code": "",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "SF Race for the Paws",
+          "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
+          "image_url": null,
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4.8,
+          "reviews": []
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4376241,
+            37.7911417
+          ]
+        },
+        "properties": {
+          "dates": "February 5, 2017 2:30 p.m. to 4:00 p.m.",
+          "description": "",
+          "location": {
+            "address1": "Alta Plaza Park",
+            "zip_code": "",
+            "state": "CA",
+            "country": "US",
+            "city": "San Francisco"
+          },
+          "name": "Pug Sunday",
+          "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
+          "image_url": "http://media1.fdncms.com/sfweekly/imager/pug-sunday/u/story/2752400/6024402.0.jpg",
+          "categories": [
+            {
+              "alias": "events",
+              "title": "Dog Events"
+            }
+          ],
+          "venue": "event",
+          "rating": 4.8,
+          "reviews": []
+        }
+      }]
+}

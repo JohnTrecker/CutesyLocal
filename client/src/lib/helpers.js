@@ -112,7 +112,10 @@ function saveReview(review, map, venue) {
   .then(status)
   .then(json)
   .then(renderMarkers(map, venue, true))
-  .then((data) => data)
+  .then(function(data){
+    console.log('Step 2 - data returned from controller:\n', data);
+    return data
+  })
   .catch(function (error) {
     console.log('Request failed', error);
   });
@@ -129,8 +132,25 @@ function renderMapbox(cb){
     })
 };
 
+const ammenities = {
+  inside: {color: 'red', icon: 'sun', content: 'Patio Seating'},
+  outside: {color: 'orange', icon: 'spoon', content: 'Allowed Inside'},
+  service: {color: 'blue', icon: 'winner', content: 'Water Bowls'},
+  specials: {color: 'yellow', icon: 'paw', content: 'Specials'},
+  offleash: {color: 'green', icon: 'street view', content: 'Offleash'},
+  water: {color: 'blue', icon: 'winner', content: 'Water Bowls'},
+  disposal: {color: 'brown', icon: 'trash outline', content: 'Disposal Bags'},
+  shade: {color: 'teal', icon: 'leaf', content: 'Shade'},
+  fenced: {color: 'purple', icon: 'unlock', content: 'Fenced Area'},
+  equipment: {color: 'violet', icon: 'trophy', content: 'Agility Equipment'},
+  smallDogEnclosure: {color: 'pink', icon: 'github alternate', content: 'Small Dog Enclosure'},
+  allowed: {color: '', icon: 'checkmark', content: 'Allowed'},
+  encouraged: {color: 'yellow', icon: 'checkmark box', content: 'Encouraged'}
+}
+
 module.exports = {
   saveReview: saveReview,
   renderMarkers: renderMarkers,
-  renderMapbox: renderMapbox
+  renderMapbox: renderMapbox,
+  ammenities: ammenities
 }

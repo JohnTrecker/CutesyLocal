@@ -16,23 +16,41 @@ let venueSchema = new Schema({
     review: String,
     image: String,
     rating: Number,
+    accommodations: {
+      inside: Boolean,
+      outside: Boolean,
+      service: Boolean,
+      specials: Boolean,
+      allowed: Boolean,
+      encouraged: Boolean,
+      offleash: Boolean,
+      disposal: Boolean,
+      shade: Boolean,
+      water: Boolean,
+      fenced: Boolean,
+      equipment: Boolean,
+      smallDogEnclosure: Boolean
+    },
     timestamp: Date,
   }],
   rating: Number,
   dates: String,
   url: String,
   imageUrl: String,
-  inside: {
-    type: Boolean,
-    default: false
-  },
-  outside: {
-    type: Boolean,
-    default: false
-  },
-  service: {
-    type: Boolean,
-    default: false
+  accommodations: {
+    inside: Boolean,
+    outside: Boolean,
+    service: Boolean,
+    specials: Boolean,
+    allowed: Boolean,
+    encouraged: Boolean,
+    offleash: Boolean,
+    disposal: Boolean,
+    shade: Boolean,
+    water: Boolean,
+    fenced: Boolean,
+    equipment: Boolean,
+    smallDogEnclosure: Boolean
   }
 });
 

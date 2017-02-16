@@ -11,6 +11,43 @@ let mongoose = require('mongoose');
 
 module.exports = {
 
+  encouraged: function(file){
+    let result = file.map(function(venue){
+      if (venue.venueType === 'event') {
+        delete venue.accommodations.featured
+        venue.accommodations.encouraged = null;
+      }
+      return venue;
+    });
+
+    fs.writeFile('./server/data/venues3.json', JSON.stringify(result, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+
+  },
+
+  transferYelpData: function(file, yelpData){
+
+    let result = file.map(function(venue){
+      yelpData[venue.venueType].forEach(function(yelpVenue){
+        let props = yelpVenue.properties;
+        if (props.name === venue.name) {
+          if (!venue.url) venue.url = props.url;
+          if (!venue.imageUrl) venue.imageUrl = props.image_url;
+          if (venue.url === "") venue.url = null;
+          if (venue.imageUrl === "") venue.imageUrl = null;
+        }
+      })
+      return venue;
+    });
+
+    fs.writeFile('./server/data/venues2.json', JSON.stringify(result, null, 2), function(err){
+      if (err) throw err;
+      console.log("new file generated");
+    });
+  },
+
   replaceImages: function(file){
     const index = {
       "Patrick": {
@@ -62,6 +99,30 @@ module.exports = {
       return curr.rating + memo;
     }, 0);
     return sum/venue.reviews.length
+  },
+
+  avgAccomRating: function(review, venue){
+    let cumAccomm = _.extend({}, venue.accommodations);
+    for (let prop in cumAccomm) {
+      cumAccomm[prop] = 0;
+    }
+
+    console.log('helper 1: cumAccomm: ', cumAccomm);
+    venue.reviews.forEach(function(review){
+      Object.entries(review.accommodations)
+        .forEach(function(checkboxResult){
+          if (checkboxResult[1] === true) cumAccomm[checkboxResult[0]]++
+        })
+    })
+
+    console.log('helper 2: cumAccomm: ', cumAccomm);
+
+    for (let key in cumAccomm){
+      let avg = cumAccomm[key]/venue.reviews.length;
+      cumAccomm[key] = avg > 0 ? true : false;
+    }
+    console.log('helper 3 - cumAccomm: ', cumAccomm);
+    return cumAccomm
   },
 
   dropCollection: function(modelName) {

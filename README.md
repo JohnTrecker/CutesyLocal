@@ -64,12 +64,15 @@ Change Log
     [X] retrieve updated db data
     [X] close modal on `submit`
     [ ] assign venue accomodations to `accomodations` object
-      [ ] change model
-      [ ] follow up front-end logic in Info component
+      [X] change model
+      [ ] follow up back-end logic in controller
+      [ ] follow up front-end logic in Info component children
+        [ ] Popup
+        [ ] ReviewModal
     [ ] render accomodations ribbons dynamically
-      [ ] Park:         gated area, off-leash,
-      [ ] Restaurant:   patio seating, allowed inside, water bowls
-      [ ] Event:
+      [ ] implement accommodations subSchema in venues model
+      [ ] don't forget to reset App.state.review after submittal
+      [ ] check all uses of Object.assign to make sure it's right
     [ ] implemnent and render timestamp dynamically for each review
     [ ] include URLs in initial venues data
     [ ] scrape for dog events
@@ -84,6 +87,8 @@ Change Log
 
 
 v0.20
+[ ] Data
+  [ ] incorporate http://petfriendlyrestaurants.com/state/CA/San_Francisco#page:[1-5]
 [ ] Performance
   [ ] Implement server side React for much faster UX
   [ ] replace mapboxgl dependency with react-redux-mapbox-gl implementation for speed and stability

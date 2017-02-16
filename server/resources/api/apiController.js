@@ -102,6 +102,7 @@ exports.updateOneVenue = function (req, res) {
       user = data.user,
       id   = data.venue._id,
       review = data.review;
+      console.log('Step 3 - review data in Controller:', review);
 
   Venues.findOne({ _id: id }, function(error, venue) {
     if (error) {
@@ -113,8 +114,10 @@ exports.updateOneVenue = function (req, res) {
         review: review.review,
         rating: review.rating,
         image: user.picture.data.url,
+        accommodations: review.accommodations
       });
       venue.rating = helpers.avgRating(venue);
+      venue.accommodations = review.accommodations;
       venue.save();
       res.status(200)
       .json(venue);

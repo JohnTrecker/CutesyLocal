@@ -4,7 +4,6 @@ import Login from './Login';
 import Nav from './Nav';
 import ReviewModal from './ReviewModal';
 import './assets/index.css';
-// import './semantic-ui/semantic.min.css';
 import { Sidebar } from 'semantic-ui-react'
 
 let $ = require('jquery');
@@ -20,12 +19,11 @@ class App extends React.Component {
     this.state = {
       user: undefined,
       venue: undefined,
-      review: {rating:null, review:null, outside:null, inside:null, service:null},
+      review: {accommodations: {}},
       reviewModalOpen: false,
       loginModalOpen: false,
       popupOpen: false,
       reviewsVisible: false,
-      // data: {restaurants:undefined, parks:undefined, events:undefined},
       visibleVenues: [],
     }
   }
@@ -98,6 +96,7 @@ class App extends React.Component {
             let marker = features[0];
             map.flyTo({center: marker.geometry.coordinates});
             marker.properties.reviews = JSON.parse(marker.properties.reviews);
+            marker.properties.accommodations = JSON.parse(marker.properties.accommodations);
             setVenue({venue: marker.properties, reviewsVisible: false});
           }
           togglePopup(markersPresent);
@@ -168,18 +167,21 @@ class App extends React.Component {
   }
 
   handleChange(e, el){
-    const key = el.className;
-    const value = key === 'rating' ? el.rating :
+    let key = el.className;
+    let value = key === 'rating' ? el.rating :
       (key === 'review' ? el.value : el.checked)
     // TODO: validate `value` for XSS prevention
-    const newState = Object.assign({}, this.state.review);
-    newState[key] = value
+    let newState = Object.assign({}, this.state.review);
+    if (key === 'rating') newState[key] = value
+    else if (key === 'review') newState[key] = value
+    else newState.accommodations[key] = value
     this.setState({review: newState});
   }
 
   submitReview(){
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
+    console.log('Step 1 - body passed to saveReview in helpers:\n', body);
 
     let promise = new Promise(function(resolve, reject){
       resolve(helpers.saveReview(body, map, body.venue.venueType));
@@ -188,7 +190,9 @@ class App extends React.Component {
     const newState = Object.assign({}, this.state.venue);
     const that = this;
     promise.then(function(value) {
+      console.log('Step 5: returned value from Controller', value);
       newState["reviews"] = value.reviews;
+      newState["accommodations"] = value.accommodations;
       that.setState({venue: newState});
       that.toggleState('reviewModalOpen');
     });

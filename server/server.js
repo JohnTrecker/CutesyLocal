@@ -5,7 +5,7 @@ let app      = express();
 let helpers  = require('./resources/lib/helpers');
 let configDB = require('./config/database.js');
 let Venue    = require('./db/models/venues');
-let data     = require('./data/venues2.json');
+let data     = require('./data/venues3.json');
 
 // configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
@@ -20,7 +20,7 @@ db.once('open', function(callback){
 
     newVenue.save(function(error) {
       if (!error) {
-        console.log('new venue saved!:\n', venue);
+        // console.log('new venue saved!:\n', venue);
       }
     });
   });

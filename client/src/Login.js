@@ -5,9 +5,7 @@ import { Button, Image, Modal } from 'semantic-ui-react';
 class Login extends React.Component {
   render(){
     const { open, toggleModal, setUser} = this.props;
-    const responseFacebook = function(response){
-      setUser(response);
-    };
+    const responseFacebook = (response) => setUser(response);
     return (
         <Modal size="small" dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Welcome to Cutesy Local</Modal.Header>

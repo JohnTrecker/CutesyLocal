@@ -1,5 +1,7 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
+import _ from 'underscore';
+const index = require('./lib/helpers').ammenities;
 
 class ReviewModal extends React.Component {
   render(props) {
@@ -10,11 +12,19 @@ class ReviewModal extends React.Component {
         <Modal dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Leave a Review</Modal.Header>
           <Modal.Content image>
-            <ReviewCategories handleChange={ handleChange }/>
+            <ReviewCategories ammenities={marker.accommodations} handleChange={ handleChange }/>
           </Modal.Content>
           <Modal.Actions>
-            <Button color='black' onClick={ toggleModal }>No thanks</Button>
-            <Button positive icon='checkmark' labelPosition='right' content="Submit" onClick={ submitReview } />
+            <Button
+              color='black'
+              content='No thanks'
+              onClick={ toggleModal } />
+            <Button
+              positive
+              icon='checkmark'
+              labelPosition='right'
+              content='Submit'
+              onClick={ submitReview } />
           </Modal.Actions>
         </Modal>
       </div>
@@ -46,23 +56,21 @@ const ReviewCategories = (props) => (
     </Accordion.Content>
     <Accordion.Title>
       <Icon name='dropdown' />
-      Perks
+      Ammenities
     </Accordion.Title>
     <Accordion.Content>
-      <Checkbox
-        className="outside"
-        label="Dogs allowed in patio"
-        onChange={props.handleChange} />
-      <br/>
-      <Checkbox
-        className="inside"
-        label="Allowed inside"
-        onChange={props.handleChange} />
-      <br/>
-      <Checkbox
-        className="service"
-        label="Serves water or treats"
-        onChange={props.handleChange} />
+
+      {Object.keys(props.ammenities).map(function(val, i){
+
+        let prop = index[val];
+        return <Checkbox
+          key={i}
+          className={val}
+          label={prop.content}
+          onChange={props.handleChange} />
+
+      })}
+
     </Accordion.Content>
   </Accordion>
 )
