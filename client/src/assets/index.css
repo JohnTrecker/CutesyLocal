@@ -45,29 +45,6 @@ body {
   border-radius: 5px;
 }
 
-button {
-  flex: 1;
-  border-radius: 5px;
-  margin: 5px;
-  max-width: 165px;
-  background-color: rgb(221, 221, 221);
-  color: black;
-  outline: none;
-}
-
-.btn-contents {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px auto;
-  font: 15px arial, sans-serif;
-}
-
-button img {
-  max-height: 30px;
-  margin: 5px;
-}
-
 /* ------ */
 /* Assets */
 /* ------ */
@@ -124,21 +101,6 @@ img.FBlogin {
   will-change: transform;
 }
 
-/*.mkr-restaurant {
-  visibility: hidden;
-  background-image: url("icon_mkr_coffee.png");
-}
-
-.mkr-park {
-  visibility: hidden;
-  background-image: url("icon_mkr_park.png");
-}
-
-.mkr-event {
-  visibility: hidden;
-  background-image: url("icon_mkr_event.png");
-}
-*/
 /* ----------- */
 /* End Markers */
 /* ----------- */
@@ -148,120 +110,29 @@ img.FBlogin {
 /* Popups */
 /* ------ */
 
-div.ui.sidebar.bottom.overlay.visible {
-  max-height: 200px;
-}
-
 div.ui.vertical.attached.buttons {
   position: -webkit-sticky;
   position: sticky;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
-div.Info-item-content.content {
-  clear: left;
-}
-
-div.ui.horizontal.segments>.segment {
+div.ui.horizontal.segments>.ui.segment {
   min-width: 110px;
+  max-height: 180px;
+  overflow: scroll;
 }
 
-
-div.image img {
-  flex-basis: 75px 5 auto;
-  height: 75px;
-  border-radius: 5px;
-  align-items: center;
-}
-
-img.pop_restaurant {
-  content: url("img_pop_restaurant.jpg");
-}
-
-img.pop_park {
-  content: url("img_pop_park.jpg");
-}
-
-img.pop_event {
-  content: url("img_pop_event.jpg");
-}
-
-div.description {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  margin: 0px;
-  padding: 5px;
-  white-space: pre-line;
-}
-
-div.review-icons {
-  /*flex: 1;*/
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
-i.comments {
-  font-size: x-large;
-  color: grey;
-}
-
-i.comments:active {
-  font-size: xx-large;
-  color: black;
-}
-
-p.title {
-  flex-shrink: 50;
-  margin: 0px;
-  font-size: 18px;
-
-}
-
-p.address {
-  flex: 1;
-  margin: 0px;
-  color: grey;
-  word-wrap: normal;
-}
-
-div.description p.dates {
-  flex: 1;
-  margin: 0px;
-  color: grey;
+div.Info.segment.left {
+  min-height: 141px;
 }
 
 div.rating {
-  flex: 1;
   display: inline-flex;
-  flex-direction: row;
-  margin: 0px;
-  padding-right: 5px;
 }
 
 div.rating p.percentage {
   font-weight: bold;
 }
-
-div.review-image {
-  width: 90px;
-  height: 90px;
-  margin: 0 5px;
-}
-
-img#reviewer {
-  zoom: 13.75%;
-  width: 100%;
-  height: 100%;
-}
-
-div.review-info {
-  flex-direction: column;
-  width: 80vw;
-  margin: 0 5px;
-}
-
 
 /* ---------- */
 /* End Popups */
@@ -304,10 +175,10 @@ button.my-facebook-button-class {
     min-height: 199px;
   }
 
-  div.Info-item-content.content {
+/*  div.Info-item-content.content {
     clear: none;
     min-height: 110px
-  }
+  }*/
 
 }
 
