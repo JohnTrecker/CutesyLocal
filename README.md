@@ -82,6 +82,10 @@ Change Log
   [X] Login modal on site load
   [X] clean up Nav with semantic ui
   [ ] Restyle button bar as SUI topbar
+    [ ] change button style on click
+    [ ] capture toggledVenues
+    [ ] figure out why tf markers still toggle on button click
+      [ ] something to do with button's classname
   [ ] google analytics middleware
   [ ] Final code review
 [ ] Replace `How to start this app` with script and update README.md
