@@ -1,13 +1,13 @@
 import React from 'react'
 import ReviewItem from './ReviewItem';
-import { Comment } from 'semantic-ui-react'
+import { Comment, Segment } from 'semantic-ui-react'
 
 class Reviews extends React.Component {
   render(){
     if (!this.props.marker) return <div style={{display: "none"}}></div>
     const { marker } = this.props
     return (
-      <Comment.Group minimal>
+      <Comment.Group as={Segment} textAlign="left" minimal>
 
         { marker.reviews.map(function(review){
 

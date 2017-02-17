@@ -1,7 +1,7 @@
 import React from 'react';
 import Reviews from './Reviews';
 import Info from './Info';
-import { Button, Segment, Sidebar } from 'semantic-ui-react'
+import { Button, Container, Segment, Sidebar } from 'semantic-ui-react'
 
 class Popup extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class Popup extends React.Component {
             { reviewsVisible && <Reviews marker={marker} /> }
           </Segment>
 
-          <Segment textAlign="center">
+          <Segment className="bottombar_buttons">
             <ReviewButtons
               user={user}
               reviewsAvailable={marker.reviews.length}
@@ -24,8 +24,8 @@ class Popup extends React.Component {
               toggleReviewModal={toggleReviewModal}
               toggleLoginModal={toggleLoginModal} />
           </Segment>
-
         </Segment.Group>
+
       </Sidebar>
     )
   }
