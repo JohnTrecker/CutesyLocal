@@ -11,19 +11,17 @@ let mongoose = require('mongoose');
 
 module.exports = {
 
-  addRatingAndAccomm: function(file){
+  addTimestamp: function(file){
     let result = file.map(function(venue){
-      if (!venue.reviews.length) return venue
-
+      if (!venue.reviews) return venue
       venue.reviews.map(function(review){
-        review.accommodations = venue.accommodations;
-        review.rating = venue.rating;
+        review.timestamp = Date.now()
         return review
       })
       return venue;
     });
 
-    fs.writeFile('./server/data/venues2.json', JSON.stringify(result, null, 2), function(err){
+    fs.writeFile('./server/data/venues3.json', JSON.stringify(result, null, 2), function(err){
       if (err) throw err;
       console.log("new file generated");
     });

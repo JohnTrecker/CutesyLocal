@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
-import _ from 'underscore';
+
 const index = require('./lib/helpers').ammenities;
 
 class ReviewModal extends React.Component {

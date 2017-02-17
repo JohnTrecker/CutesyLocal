@@ -17,7 +17,7 @@ class Info extends React.Component{
           size="small"
           src={`./assets/img_pop_${venue.venueType}.jpg`} />
         <Item.Content className="Info-item-content">
-          <Item.Header as='a' to={venue.url}>{venue.name}</Item.Header>
+          <Item.Header as='a' href={venue.url}>{venue.name}</Item.Header>
           <Item.Meta>
             <span>{venue.address}</span>
             { showDates &&  <span> {venue.dates} </span> }

@@ -3,7 +3,6 @@ import Popup from './Popup';
 import Login from './Login';
 import Nav from './Nav';
 import ReviewModal from './ReviewModal';
-import './assets/index.css';
 import { Sidebar } from 'semantic-ui-react'
 
 let $ = require('jquery');

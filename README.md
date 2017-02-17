@@ -68,19 +68,20 @@ Change Log
       [X] follow up back-end logic in controller
       [X] follow up front-end logic in Info component children
         [X] Popup
-        [ ] ReviewModal
-    [ ] render accomodations ribbons dynamically
+        [X] ReviewModal
+    [X] render accomodations ribbons dynamically
       [ ] implement accommodations subSchema in venues model
-      [ ] don't forget to reset App.state.review after submittal
-      [ ] check all uses of Object.assign to make sure it's right
-      [ ] Bug fixes
-        [ ] calculate cummlative average among all reviews
-        [ ] set venue accomodations to fixed value in ReviewModal component
-    [ ] implemnent and render timestamp dynamically for each review
-    [ ] include URLs in initial venues data
+      [X] don't forget to reset App.state.review after submittal
+      [X] check all uses of Object.assign to make sure it's right
+      [X] Bug fixes
+        [X] calculate cummlative average among all reviews
+        [X] set venue accomodations to fixed value in ReviewModal component
+    [X] implemnent and render timestamp dynamically for each review
+    [X] include URLs in initial venues data
     [ ] scrape for dog events
   [X] Login modal on site load
   [X] clean up Nav with semantic ui
+  [ ] Restyle button bar as SUI topbar
   [ ] google analytics middleware
   [ ] Final code review
 [ ] Replace `How to start this app` with script and update README.md
@@ -106,7 +107,6 @@ v0.20
     [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
 [ ] Styling
   [ ] Swap images, fonts, etc. for Cutesy logo and other assets
-  [ ] Restyle button bar as SUI topbar
   [ ] include MozSwipeGesture listener into the library
 
 
