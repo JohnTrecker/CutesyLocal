@@ -19,7 +19,9 @@ class App extends React.Component {
     this.state = {
       user: undefined,
       venue: undefined,
-      review: {accommodations: {}},
+      review: {
+        accommodations: {}
+      },
       reviewModalOpen: false,
       loginModalOpen: false,
       popupOpen: false,
@@ -95,8 +97,13 @@ class App extends React.Component {
           if (markersPresent) {
             let marker = features[0];
             map.flyTo({center: marker.geometry.coordinates});
-            marker.properties.reviews = JSON.parse(marker.properties.reviews);
-            marker.properties.accommodations = JSON.parse(marker.properties.accommodations);
+            if (typeof marker.properties.reviews === 'string') {
+              marker.properties.reviews = JSON.parse(marker.properties.reviews)
+            }
+            if (typeof marker.properties.accommodations === 'string') {
+              marker.properties.accommodations = JSON.parse(marker.properties.accommodations)
+            }
+            // marker.properties.reviews.accommodations = marker.properties.accommodations;
             setVenue({venue: marker.properties, reviewsVisible: false});
           }
           togglePopup(markersPresent);
@@ -181,19 +188,24 @@ class App extends React.Component {
   submitReview(){
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
-    console.log('Step 1 - body passed to saveReview in helpers:\n', body);
-
+    // console.log('Step 1 - body passed to saveReview in helpers:\n', body);
+    if (!body.review.review) {
+      window.alert('Woops, you forgot to write a review.');
+      return
+    }
     let promise = new Promise(function(resolve, reject){
       resolve(helpers.saveReview(body, map, body.venue.venueType));
     })
 
-    const newState = Object.assign({}, this.state.venue);
+    const newVenueState = Object.assign({}, this.state.venue);
     const that = this;
     promise.then(function(value) {
-      console.log('Step 5: returned value from Controller', value);
-      newState["reviews"] = value.reviews;
-      newState["accommodations"] = value.accommodations;
-      that.setState({venue: newState});
+      newVenueState["reviews"] = value.reviews;
+      newVenueState["accommodations"] = value.accommodations;
+      newVenueState["rating"] = value.rating;
+
+      that.setState({venue: newVenueState});
+      that.setState({review: {accommodations: {}} });
       that.toggleState('reviewModalOpen');
     });
   }

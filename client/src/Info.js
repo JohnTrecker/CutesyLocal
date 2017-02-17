@@ -6,7 +6,7 @@ class Info extends React.Component{
   render(){
     if (!this.props.marker) return (<div style={{display: "none"}}></div>)
     let venue = this.props.marker;
-    let rating = venue.rating * 20;
+    let rating = Math.round(venue.rating * 20);
     let ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
     let showDates = venue.dates !== "null";
     return(

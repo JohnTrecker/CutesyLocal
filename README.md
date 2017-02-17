@@ -65,14 +65,17 @@ Change Log
     [X] close modal on `submit`
     [ ] assign venue accomodations to `accomodations` object
       [X] change model
-      [ ] follow up back-end logic in controller
-      [ ] follow up front-end logic in Info component children
-        [ ] Popup
+      [X] follow up back-end logic in controller
+      [X] follow up front-end logic in Info component children
+        [X] Popup
         [ ] ReviewModal
     [ ] render accomodations ribbons dynamically
       [ ] implement accommodations subSchema in venues model
       [ ] don't forget to reset App.state.review after submittal
       [ ] check all uses of Object.assign to make sure it's right
+      [ ] Bug fixes
+        [ ] calculate cummlative average among all reviews
+        [ ] set venue accomodations to fixed value in ReviewModal component
     [ ] implemnent and render timestamp dynamically for each review
     [ ] include URLs in initial venues data
     [ ] scrape for dog events

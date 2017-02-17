@@ -9,7 +9,14 @@
       {
         "reviewer": "Matt",
         "review": "If you were to play a word-association game with the Homestead, you’d get two responses: \"peanuts\" and \"dogs\".",
-        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -17,10 +24,10 @@
     "url": "http://homesteadsf.com",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/3FzJGyYqQDZ9TgtTXjKZSw/ls.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -33,7 +40,14 @@
       {
         "reviewer": "Stevie",
         "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake.",
-        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -41,10 +55,10 @@
     "url": "http://rosescafesf.com",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/zoDQy7BGKdZ3M3_ejEUYaw/258s.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -57,7 +71,14 @@
       {
         "reviewer": "Joe",
         "review": "Your server will bring a water bowl for your dog and a craft beer for you. And don't leave without ordering a piece of pie or the ginger cake.",
-        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -65,10 +86,10 @@
     "url": "http://chowfoodbar.com/",
     "imageUrl": "https://s-media-cache-ak0.pinimg.com/564x/84/34/11/843411220360af1b354c2b597336168c.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -81,7 +102,14 @@
       {
         "reviewer": "Veronika",
         "review": "Grab a seat on one of the couches by the windows; it's the perfect spot to tuck in for a few hours with your best friend laying at your feet.",
-        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -89,10 +117,10 @@
     "url": "http://churchillsf.com/",
     "imageUrl": "https://cdn0.vox-cdn.com/thumbor/LdmTS-YmX-2vYitIVBl0U_WUExI=/104x0:1944x1380/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743129/Chuchill.0.0.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -105,7 +133,14 @@
       {
         "reviewer": "Patrick",
         "review": "There's no where better than El Rio's back yard on a sunny day, but dogs are allowed inside at this Mission dive bar as well, so it's also a great option when the fog blankets the city or it's, uh, raining cats and dogs. ",
-        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png"
+        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -113,10 +148,10 @@
     "url": "http://elriosf.com",
     "imageUrl": "https://cdn0.vox-cdn.com/thumbor/UcAIZX4qW2Pvd8hLXpWmmFsTXRU=/125x0:874x562/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743131/El_Rio.0.0.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -129,7 +164,14 @@
       {
         "reviewer": "Jenny",
         "review": "Professor Wagglesworth is totally welcome with all of his doggie colleagues",
-        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -137,10 +179,10 @@
     "url": "http://holywatersf.com/",
     "imageUrl": "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15492409_1178808875541693_5474739865037708423_n.jpg?oh=6b27171c40792b1c5fe4a33e357211e7&oe=58DFE2FE",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -153,7 +195,14 @@
       {
         "reviewer": "Helen",
         "review": "While MoMo's is not a place you want to take your dog when the Giants are playing at home (too crowded), the patio makes the perfect spot to lunch and day drink with Squeakers pretty much every other time.",
-        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 3.5
       }
     ],
     "rating": 3.5,
@@ -161,10 +210,10 @@
     "url": "http://www.sfmomos.com/",
     "imageUrl": "https://cdn0.vox-cdn.com/thumbor/0WtaHNSjRwGzChlo2_vAoTBjAUY=/0x120:960x840/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743135/Momos.0.0.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -177,7 +226,14 @@
       {
         "reviewer": "Elliot",
         "review": "This Upper Haight watering hole has a long bar, comfy chairs, Moroccan-inspired light fixtures, a pool table, and the same jukebox it had before it got a 2012 remodel, and is the perfect place to grab a drink with your dog (he'll have a water, please) after work or on a weekend afternoon.",
-        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -185,10 +241,10 @@
     "url": "https://www.yelp.com/biz/murios-trophy-room-san-francisco",
     "imageUrl": "http://insidescoopsf.sfgate.com/files/2012/01/muriosin-600x437.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -201,7 +257,14 @@
       {
         "reviewer": "Christian",
         "review": "The saddest part about going out to watch the game is leaving your pup at home for three hours. Thank goodness for the Bus Stop in Cow Hollow, wich doesn't make you choose one or the other. ",
-        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -209,10 +272,10 @@
     "url": "busstop-sf.com",
     "imageUrl": "https://cdn0.vox-cdn.com/thumbor/0gLTW4D9MsUC6MTMrfbs5ktH3qo=/0x0:700x525/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743127/Bus_Stop.0.0.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -225,7 +288,14 @@
       {
         "reviewer": "Laura",
         "review": "The drinks are great, there's a pool table, Big Buck Hunter, a legit jukebox, and you can bring your canine companion with you to keep you company.",
-        "image": "http://1.semantic-ui.com/images/avatar/large/laura.jpg"
+        "image": "http://1.semantic-ui.com/images/avatar/large/laura.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -233,10 +303,10 @@
     "url": "bloodhoundsf.com",
     "imageUrl": "https://cdn0.vox-cdn.com/thumbor/9uTduJAUP1gcw3omfvdz4hKsIcI=/120x0:688x426/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/49743125/Bloodhound.0.0.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -249,7 +319,14 @@
       {
         "reviewer": "Stevie",
         "review": "This itty bitty pub is one of the most dog-friendly in town. Everyone inside (employees and patrons alike) are incredibly sociable.",
-        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -257,10 +334,10 @@
     "url": "http://www.blackhorselondon.com/",
     "imageUrl": "https://images.bringfido.com/site_media/photos/2016/05/16/blackhorse.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -273,7 +350,14 @@
       {
         "reviewer": "Matt",
         "review": "on Monday nights \"Zazie Goes to the Dogs\" and you can dine with your pooch on the heated and covered garden patio. What's even crazier is that Zazie actually rewards you for bringing in your dog by providing endless dog treats and $10 off any bottle on the wine list. C'est bon!",
-        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -281,10 +365,10 @@
     "url": "zaziesf.com",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -297,7 +381,14 @@
       {
         "reviewer": "Joe",
         "review": "This is brunch, done right. Bring your dog and enjoy your ‘frisco benedict’ on the patio.",
-        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -305,10 +396,10 @@
     "url": "https://www.yelp.com/biz/kitchen-story-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/f8Q9kkvApHfKyX4dcdeTEA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -321,7 +412,14 @@
       {
         "reviewer": "Veronika",
         "review": "The patio provides the kind of dog-watching that your dog dreams about.",
-        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -329,10 +427,10 @@
     "url": "https://www.yelp.com/biz/pizzeria-delfina-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/Bfo-c4t6xv51RKuwCMgWHA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -345,7 +443,14 @@
       {
         "reviewer": "Patrick",
         "review": "Dogs allowed in front patio area.",
-        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png"
+        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -353,10 +458,10 @@
     "url": "https://www.yelp.com/biz/stuffed-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/GQGwWdUR89MixZtcOG62yA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -369,7 +474,14 @@
       {
         "reviewer": "Jenny",
         "review": "Si, se puede traer Fiddo.",
-        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 3.5
       }
     ],
     "rating": 3.5,
@@ -377,10 +489,10 @@
     "url": "https://www.yelp.com/biz/tacolicious-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/ZqgxKvxnXguwGFMxYY64Dg/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -393,7 +505,14 @@
       {
         "reviewer": "Helen",
         "review": "Outdoor picnic style tables perfect for that mid-walk snack.",
-        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 5
       }
     ],
     "rating": 5,
@@ -401,10 +520,10 @@
     "url": "https://www.yelp.com/biz/chicks-and-love-pizza-patio-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/4HG6U5cpmcbaF7auXcAE4w/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -419,10 +538,10 @@
     "url": "https://www.yelp.com/biz/the-monks-kettle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/47kA45l9yNMMPg1P_qbCGw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -435,7 +554,14 @@
       {
         "reviewer": "Elliot",
         "review": "We sat outside so I can't speak to the ambiance inside but bonus points for being dog-friendly in their outdoor seating area.",
-        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -443,10 +569,10 @@
     "url": "https://www.yelp.com/biz/novy-san-francisco-6?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/JcA_zVTFiqM_NBF1jDXhHw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -461,10 +587,10 @@
     "url": "https://www.yelp.com/biz/cafe-me-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/eWKVQdJUpwFkt8GvBRRi3g/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -477,7 +603,14 @@
       {
         "reviewer": "Christian",
         "review": "Outdoor bistro chair seating for the pupster.",
-        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -485,10 +618,10 @@
     "url": "https://www.yelp.com/biz/marcellas-lasagneria-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/J8XAYvv7NYgcPo5xdl3f3Q/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -501,7 +634,14 @@
       {
         "reviewer": "Stevie",
         "review": "The patio is dog friendly.",
-        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -509,10 +649,10 @@
     "url": "https://www.yelp.com/biz/skool-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/47i057bRXAm_sIvA2obD5A/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -527,10 +667,10 @@
     "url": "https://www.yelp.com/biz/bayshore-taqueria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/B0Jeuy5uSCyikyMw-jAbgQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -543,7 +683,14 @@
       {
         "reviewer": "Matt",
         "review": "My small dog was also welcomed, and she had a deviled egg from the starter menu.",
-        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -551,10 +698,10 @@
     "url": "https://www.yelp.com/biz/myriad-gastropub-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/bHXXEbxW7K1-_SMb9QKRmg/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -567,7 +714,14 @@
       {
         "reviewer": "Joe",
         "review": "Dog-freindly seating!",
-        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -575,10 +729,10 @@
     "url": "https://www.yelp.com/biz/fob-kitchen-san-francisco-4?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/tAqzrc9VAcPcyGlr63-Ybw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -591,7 +745,14 @@
       {
         "reviewer": "Veronika",
         "review": "Bring your fur baby here before or after a visit to the Mission Pet Hospital.",
-        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -599,10 +760,10 @@
     "url": "https://www.yelp.com/biz/craftsman-and-wolves-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/QXNHbCQT1EWKrsZaa-p1XQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -615,7 +776,14 @@
       {
         "reviewer": "Patrick",
         "review": "Home of the Puppy Bowl duting Super Bowl week! Bring your lil champion here for great outdoor patio dogwatching.",
-        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png"
+        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 3.5
       }
     ],
     "rating": 3.5,
@@ -623,10 +791,10 @@
     "url": "https://www.yelp.com/biz/gotts-roadside-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/bsksNkOwGtIcZvOiohXeWA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -639,7 +807,14 @@
       {
         "reviewer": "Jenny",
         "review": "Hip Duboce Triangle food court space that welcomes dogs.",
-        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/jenny.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -647,10 +822,10 @@
     "url": "https://www.yelp.com/biz/poke-delish-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/8qjSxfrpu9JnCrfzybffXQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -665,10 +840,10 @@
     "url": "https://www.yelp.com/biz/lunas-coffee-house-san-francisco-3?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/nTbx2U65PFgogTAqWgzroA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -683,10 +858,10 @@
     "url": "https://www.yelp.com/biz/juice-shop-san-francisco-7?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/3q_un-XarjP9y0fyO25iLw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -699,7 +874,14 @@
       {
         "reviewer": "Helen",
         "review": "Outdoor patio seating is very dog friendly; come early, there's almost always a line on weekends.",
-        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/helen.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -707,10 +889,10 @@
     "url": "https://www.yelp.com/biz/universal-cafe-san-francisco-5?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/TV5qFbWgPdDSnFWNjYw77w/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -723,7 +905,14 @@
       {
         "reviewer": "Elliot",
         "review": "Bring the hounds—This Deep-South-meets-California restaurant has a quaint patio where you can enjoy the microbrews and Southern staples.",
-        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/elliot.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -731,10 +920,10 @@
     "url": "https://www.yelp.com/biz/hops-and-hominy-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/xJ6mi9tza2IcPTpBHSRvPg/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -749,10 +938,10 @@
     "url": "https://www.yelp.com/biz/nopalito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/f13-4rbvvHDkhyYIttMnMQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -767,10 +956,10 @@
     "url": "https://www.yelp.com/biz/turners-kitchen-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/kmn1Z_EEOB4II1TOo0yAfQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -785,10 +974,10 @@
     "url": "https://www.yelp.com/biz/roli-roti-gourmet-rotisserie-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/YF3HmR4hChuXo-YggILkzQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -803,10 +992,10 @@
     "url": "https://www.yelp.com/biz/revelry-bistro-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/65dgW_zi23gxR9zFq5iyaA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -819,7 +1008,14 @@
       {
         "reviewer": "Christian",
         "review": "The atmosphere here is amazing... Very welcoming and dog friendly... Add dog biscuits for your furry friend.",
-        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/christian.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -827,10 +1023,10 @@
     "url": "https://www.yelp.com/biz/tanguito-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/dWICf8NhesjFCrW3cSWqiw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -843,7 +1039,14 @@
       {
         "reviewer": "Stevie",
         "review": "You can totally bring your dog there (inside and out) and house made dog treats are available to purchase so that Fifi doesn't get too jealous of your beer-battered fried Oreos.",
-        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -851,10 +1054,10 @@
     "url": "https://www.yelp.com/biz/benders-bar-and-grill-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/F3s43Tfcll16o1T5c-kpuA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -869,10 +1072,10 @@
     "url": "https://www.yelp.com/biz/scullery-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/cUBkYz6_N7mXGQX1UNp9bw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -887,10 +1090,10 @@
     "url": "https://www.yelp.com/biz/thoughts-style-cuisine-showroom-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/cqbiFujpixkelEs060Un4g/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -905,10 +1108,10 @@
     "url": "https://www.yelp.com/biz/the-sandwich-spot-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/mpSmk3l64WU9Og_KJgsTRQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -923,10 +1126,10 @@
     "url": "https://www.yelp.com/biz/golden-gate-market-deli-and-liquor-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/EKMZpkEb_fBYqsJ6QjSNGw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -939,7 +1142,14 @@
       {
         "reviewer": "Matt",
         "review": "My dog was just one if three on the patio at Pacific Catch. I even saw one gentleman pick his smaller dog up and take him inside while he grabbed his to-go order (he asked if it was ok first) and the food/drinks were great! Me and my dog will be back.",
-        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -947,10 +1157,10 @@
     "url": "https://www.yelp.com/biz/pacific-catch-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/-_cAnXv5WzJaxdl1--vEYA/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -965,10 +1175,10 @@
     "url": "https://www.yelp.com/biz/jackson-place-cafe-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/Xb-bjxLK1v3mTmt050kYmg/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -983,10 +1193,10 @@
     "url": "https://www.yelp.com/biz/all-good-pizza-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/DDhR9iL2dFHe98CY_d28jQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1001,10 +1211,10 @@
     "url": "https://www.yelp.com/biz/terzo-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/e0G8iBFcuO8i__dcnA8ARQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1019,10 +1229,10 @@
     "url": "https://www.yelp.com/biz/vinyl-coffee-and-wine-bar-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/TnIYv3Rv6fhc4lVEPMIg9w/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1037,10 +1247,10 @@
     "url": "https://www.yelp.com/biz/mission-bowling-club-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/yuPSZ_nDPoFOylFYYcEvCQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1055,10 +1265,10 @@
     "url": "https://www.yelp.com/biz/stanza-coffee-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/Jlpa_sphmKl39FYMJ9bVyw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1073,10 +1283,10 @@
     "url": "https://www.yelp.com/biz/olea-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/odCh7F44KBR1oM7-ufGA-Q/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1089,7 +1299,14 @@
       {
         "reviewer": "Joe",
         "review": "We came with our dog, and had a wonderful table outside. We were even offered water for our dog, SUPER PLUS.",
-        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/joe.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -1097,10 +1314,10 @@
     "url": "https://www.yelp.com/biz/st-francis-fountain-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/v_XbkoPOHZTgdL-_frg_yw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1115,10 +1332,10 @@
     "url": "https://www.yelp.com/biz/castagna-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/-Q5QFzsCV0fI9DVg-7VZRg/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1131,7 +1348,14 @@
       {
         "reviewer": "Veronika",
         "review": "They are dog friendly!! I sat on the patio with my pup and they brought me a nice blanket and my pup a fresh bowl of water.",
-        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg",
+        "accommodations": {
+          "inside": false,
+          "outside": false,
+          "service": false,
+          "specials": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -1139,10 +1363,10 @@
     "url": "https://www.yelp.com/biz/mason-pacific-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/jMaFqtjM43zAZtAEpOlJfQ/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1157,10 +1381,10 @@
     "url": "https://www.yelp.com/biz/firehouse-pizzeria-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/XDNdb_lIKoosJKoVftUOZg/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1175,10 +1399,10 @@
     "url": "https://www.yelp.com/biz/the-steamin-burger-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/F5m9eLF4BjUdjpYFd6K-dw/o.jpg",
     "accommodations": {
-      "inside": null,
-      "outside": null,
-      "service": null,
-      "specials": null
+      "inside": false,
+      "outside": false,
+      "service": false,
+      "specials": false
     }
   },
   {
@@ -1192,8 +1416,8 @@
     "dates": "November 22, 2016 to June 20, 2017 6:30 p.m. to 8:00 p.m.",
     "url": "http://dogtrekker.com/event/small-dog-meet-and-greet-at-friditas",
     "accommodations": {
-      "allowed": null,
-      "featured": null
+      "allowed": false,
+      "encouraged": false
     },
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg"
   },
@@ -1208,8 +1432,8 @@
     "dates": "November 26, 2016 to November 27, 2016 10:00 a.m. to 4:00 p.m.",
     "url": "http://dogtrekker.com/event/treasure-island-flea-11",
     "accommodations": {
-      "allowed": null,
-      "featured": null
+      "allowed": false,
+      "encouraged": false
     },
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg"
   },
@@ -1224,8 +1448,8 @@
     "dates": "December 1, 2016 7:00 p.m. to 10:00 p.m.",
     "url": "http://dogtrekker.com/event/festive-holiday-luncheon-2016",
     "accommodations": {
-      "allowed": null,
-      "featured": null
+      "allowed": false,
+      "encouraged": false
     },
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg"
   },
@@ -1241,8 +1465,8 @@
     "url": "https://dogtrekker.com/event/sf-beer-week-opening-day-picnic-in-the-park-february-11-2017",
     "imageUrl": null,
     "accommodations": {
-      "allowed": null,
-      "featured": null
+      "allowed": false,
+      "encouraged": false
     }
   },
   {
@@ -1257,8 +1481,8 @@
     "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
     "imageUrl": null,
     "accommodations": {
-      "allowed": null,
-      "featured": null
+      "allowed": false,
+      "encouraged": false
     }
   },
   {
@@ -1273,8 +1497,8 @@
     "url": "https://dogtrekker.com/event/sf-race-for-the-paws-february-25-2017",
     "imageUrl": "http://media1.fdncms.com/sfweekly/imager/pug-sunday/u/story/2752400/6024402.0.jpg",
     "accommodations": {
-      "allowed": null,
-      "featured": null
+      "allowed": false,
+      "encouraged": false
     }
   },
   {
@@ -1287,7 +1511,17 @@
       {
         "reviewer": "Stevie",
         "review": "Fort Funston is the best place you can go with an active dog. Enjoy beautiful views of the Pacific from the cliffs, then veer right and hike down through the forest to the beach. Turn left when you reach the beach and walk until you hit the stairs. The full loop is 2.2 miles and quite the workout (the climb back up is steep).",
-        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/stevie.jpg",
+        "accommodations": {
+          "offleash": false,
+          "disposal": false,
+          "shade": false,
+          "water": false,
+          "fenced": false,
+          "equipment": false,
+          "smallDogEnclosure": false
+        },
+        "rating": 5
       }
     ],
     "rating": 5,
@@ -1295,13 +1529,13 @@
     "url": "http://parksconservancy.org",
     "imageUrl": "http://media.mnn.com/assets/images/2013/03/san_francisco_fort_funston_dogs.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1316,13 +1550,13 @@
     "url": "http://parksconservancy.org",
     "imageUrl": "https://assets.rbl.ms/5434855/980x.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1335,7 +1569,17 @@
       {
         "reviewer": "Matt",
         "review": "Ocean Beach provides 3.5 miles of uncrowded space for dogs to run, dig, and play in the water. They can go off leash from stairwell 1 – 21, and need to be on leash south of that (however, youll see dogs off leash on the entirety of the beach). Its a great place to walk or run along the beach while your pup explores. ",
-        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/matt.jpg",
+        "accommodations": {
+          "offleash": false,
+          "disposal": false,
+          "shade": false,
+          "water": false,
+          "fenced": false,
+          "equipment": false,
+          "smallDogEnclosure": false
+        },
+        "rating": 5
       }
     ],
     "rating": 5,
@@ -1343,13 +1587,13 @@
     "url": "http://parksconservancy.org",
     "imageUrl": "https://assets.rbl.ms/5434854/980x.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1362,7 +1606,17 @@
       {
         "reviewer": "Laura",
         "review": "Dogs are allowed on all of Baker Beach, and are allowed to roam off leash north of Lobos Creek. On a sunny day, your pup will have lots of companions to play with.",
-        "image": "http://1.semantic-ui.com/images/avatar/large/laura.jpg"
+        "image": "http://1.semantic-ui.com/images/avatar/large/laura.jpg",
+        "accommodations": {
+          "offleash": false,
+          "disposal": false,
+          "shade": false,
+          "water": false,
+          "fenced": false,
+          "equipment": false,
+          "smallDogEnclosure": false
+        },
+        "rating": 5
       }
     ],
     "rating": 5,
@@ -1370,13 +1624,13 @@
     "url": "http://parksconservancy.org",
     "imageUrl": "http://data.whicdn.com/images/9172993/original.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1389,7 +1643,17 @@
       {
         "reviewer": "Veronika",
         "review": "Not alot of space to run around at the top but this may be the perfect shot for your dogs Instagram page.",
-        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg"
+        "image": "http://semantic-ui.com/images/avatar/large/veronika.jpg",
+        "accommodations": {
+          "offleash": false,
+          "disposal": false,
+          "shade": false,
+          "water": false,
+          "fenced": false,
+          "equipment": false,
+          "smallDogEnclosure": false
+        },
+        "rating": 4.5
       }
     ],
     "rating": 4.5,
@@ -1397,13 +1661,13 @@
     "url": "https://www.yelp.com/biz/corona-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/k52pbYsvcJSXpntLtu4Udg/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1418,13 +1682,13 @@
     "url": "https://www.yelp.com/biz/bernal-heights-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/obx_BgFsKnj_jEL0pIQE7Q/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1439,13 +1703,13 @@
     "url": "https://www.yelp.com/biz/lafayette-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/aMlS8pPqFMDSrI0sYWKXgA/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1460,13 +1724,13 @@
     "url": "https://www.yelp.com/biz/upper-douglass-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/k6LLSnLN3gJYRUYOuBLEqg/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1481,13 +1745,13 @@
     "url": "https://www.yelp.com/biz/st-marys-park-and-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/dXT84JaTH4626b6v8asgOg/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1502,13 +1766,13 @@
     "url": "https://www.yelp.com/biz/rincon-hill-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/hE85L9-yCmhAfVXrbljN9Q/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1523,13 +1787,13 @@
     "url": "https://www.yelp.com/biz/pine-lake-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/p4FCz-jrBHoMS8R81w4mvA/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1544,13 +1808,13 @@
     "url": "https://www.yelp.com/biz/mission-creek-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/9X9HCNMR9kH-JNZlQnQTDg/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1563,7 +1827,17 @@
       {
         "reviewer": "Patrick",
         "review": "East part of the park is off-lease with plenty of space to run and play.",
-        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png"
+        "image": "http://semantic-ui.com/images/avatar2/large/patrick.png",
+        "accommodations": {
+          "offleash": false,
+          "disposal": false,
+          "shade": false,
+          "water": false,
+          "fenced": false,
+          "equipment": false,
+          "smallDogEnclosure": false
+        },
+        "rating": 4
       }
     ],
     "rating": 4,
@@ -1571,13 +1845,13 @@
     "url": "https://www.yelp.com/biz/duboce-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/eYzXqFa8hQCLlkGBsfzgAw/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1592,13 +1866,13 @@
     "url": "https://www.yelp.com/biz/walter-haas-park-and-playground-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/KYXdvl4asJdyqbtvVAlxwA/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1613,13 +1887,13 @@
     "url": "https://www.yelp.com/biz/golden-gate-park-dog-training-area-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/mwZfBefM3fXRqhnMaJBG1w/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1634,13 +1908,13 @@
     "url": "https://www.yelp.com/biz/cole-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/zbC3iEfVyJA1xcZm9_Bg2Q/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1653,7 +1927,17 @@
       {
         "reviewer": "Laura",
         "review": "Best dog socializing in the gayborhood complete with water bowls, abandoned chew toys, and shaded benches for owners and dogs alike.",
-        "image": "http://1.semantic-ui.com/images/avatar/large/laura.jpg"
+        "image": "http://1.semantic-ui.com/images/avatar/large/laura.jpg",
+        "accommodations": {
+          "offleash": false,
+          "disposal": false,
+          "shade": false,
+          "water": false,
+          "fenced": false,
+          "equipment": false,
+          "smallDogEnclosure": false
+        },
+        "rating": 3.5
       }
     ],
     "rating": 3.5,
@@ -1661,13 +1945,13 @@
     "url": "https://www.yelp.com/biz/eureka-valley-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/IINInQP1O3LbooaFziCrfA/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1682,13 +1966,13 @@
     "url": "https://www.yelp.com/biz/soma-west-skate-and-dog-park-san-francisco-2?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/WaWnXsDUcWysxdwY_IuDAA/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1703,13 +1987,13 @@
     "url": "https://www.yelp.com/biz/alemany-blvd-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/5ptnOZG-6aWwf_gzRGU2jg/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1724,13 +2008,13 @@
     "url": "https://www.yelp.com/biz/25th-st-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/3PKDe4cZQp8Qf8mi37BOng/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1745,13 +2029,13 @@
     "url": "https://www.yelp.com/biz/crocker-amazon-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/n43nlrCS4ixH1aBjzHxjNQ/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1766,13 +2050,13 @@
     "url": "https://www.yelp.com/biz/upper-noe-recreation-center-dog-park-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media1.fl.yelpcdn.com/bphoto/URV0uv8QXHWs_M286UsEfg/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1787,13 +2071,13 @@
     "url": "https://www.yelp.com/biz/golden-gate-park-kezar-triangle-san-francisco?adjust_creative=v1e2g9si1QU-s9Wzj6h9VA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=v1e2g9si1QU-s9Wzj6h9VA",
     "imageUrl": "https://s3-media3.fl.yelpcdn.com/bphoto/rWdbk-OQCPkwpmvEz6OyDQ/o.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   },
   {
@@ -1808,13 +2092,13 @@
     "url": "https://goldengatepark.com/dog-runs.html",
     "imageUrl": "https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/dog-running-golden-gate-park-1-1280x640.jpg",
     "accommodations": {
-      "offleash": null,
-      "disposal": null,
-      "shade": null,
-      "water": null,
-      "fenced": null,
-      "equipment": null,
-      "smallDogEnclosure": null
+      "offleash": false,
+      "disposal": false,
+      "shade": false,
+      "water": false,
+      "fenced": false,
+      "equipment": false,
+      "smallDogEnclosure": false
     }
   }
 ]

@@ -11,16 +11,19 @@ let mongoose = require('mongoose');
 
 module.exports = {
 
-  encouraged: function(file){
+  addRatingAndAccomm: function(file){
     let result = file.map(function(venue){
-      if (venue.venueType === 'event') {
-        delete venue.accommodations.featured
-        venue.accommodations.encouraged = null;
-      }
+      if (!venue.reviews.length) return venue
+
+      venue.reviews.map(function(review){
+        review.accommodations = venue.accommodations;
+        review.rating = venue.rating;
+        return review
+      })
       return venue;
     });
 
-    fs.writeFile('./server/data/venues3.json', JSON.stringify(result, null, 2), function(err){
+    fs.writeFile('./server/data/venues2.json', JSON.stringify(result, null, 2), function(err){
       if (err) throw err;
       console.log("new file generated");
     });
@@ -98,30 +101,26 @@ module.exports = {
     let sum = venue.reviews.reduce(function(memo, curr){
       return curr.rating + memo;
     }, 0);
-    return sum/venue.reviews.length
+    return sum/venue.reviews.length;
   },
 
-  avgAccomRating: function(review, venue){
-    let cumAccomm = _.extend({}, venue.accommodations);
+  avgAccomRating: function(venue){
+    let cumAccomm = JSON.parse(JSON.stringify(venue.accommodations));
     for (let prop in cumAccomm) {
       cumAccomm[prop] = 0;
     }
 
-    console.log('helper 1: cumAccomm: ', cumAccomm);
     venue.reviews.forEach(function(review){
       Object.entries(review.accommodations)
-        .forEach(function(checkboxResult){
-          if (checkboxResult[1] === true) cumAccomm[checkboxResult[0]]++
-        })
+            .forEach(function(checkboxResult){
+              if (checkboxResult[1] === true) cumAccomm[checkboxResult[0]]++
+            })
     })
-
-    console.log('helper 2: cumAccomm: ', cumAccomm);
 
     for (let key in cumAccomm){
       let avg = cumAccomm[key]/venue.reviews.length;
-      cumAccomm[key] = avg > 0 ? true : false;
+      cumAccomm[key] = avg > .4 ? true : false;
     }
-    console.log('helper 3 - cumAccomm: ', cumAccomm);
     return cumAccomm
   },
 

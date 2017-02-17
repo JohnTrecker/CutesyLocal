@@ -6,13 +6,6 @@ const helpers = require('../lib/helpers');
 const mapboxToken = require('../../config/config').mapboxgl_access_token;
 mongoose.Promise = require('bluebird');
 
-// ===============
-// User methods
-// ===============
-
-// ===============
-// Venues methods
-// ===============
 exports.retrieve = function (req, res) {
   console.log('Retreive method called. Returning all venues...')
   Venues.find({}, function(error, venues) {
@@ -42,7 +35,7 @@ exports.retrieveById = function (req, res) {
 };
 
 exports.retrieveByVenue = function (req, res) {
-  var venueType = req.params.venueType;
+  let venueType = req.params.venueType;
   Venues.find({ venueType: venueType }, function(error, venues) {
     if (error) {
       console.log('error retrieving ', venueType, ' data:', error);
@@ -56,7 +49,7 @@ exports.retrieveByVenue = function (req, res) {
 };
 
 exports.createOne = function (req, res) {
-  var newVenue = req.body;
+  let newVenue = req.body;
   Venues.create(newVenue, function(error, newVenue) {
     if (error) {
       console.log('error creating one: ', error);
@@ -81,11 +74,7 @@ exports.delete = function (req, res) {
 };
 
 exports.retrieveOne = function (req, res) {
-  // ======================================================================
-  // Use req.params.number to pull number passed into URL as "/api/:number"
-  // ======================================================================
-  // N.b. req.params.number.replace(':number', '') === req.params.number
-  var number = req.params.number;
+  let number = req.params.number;
   Venues.findOne({ number: number }, function(error, venue) {
     if (error) {
       console.log('error retrieving one: ', error);
@@ -102,7 +91,6 @@ exports.updateOneVenue = function (req, res) {
       user = data.user,
       id   = data.venue._id,
       review = data.review;
-      console.log('Step 3 - review data in Controller:', review);
 
   Venues.findOne({ _id: id }, function(error, venue) {
     if (error) {
@@ -117,7 +105,7 @@ exports.updateOneVenue = function (req, res) {
         accommodations: review.accommodations
       });
       venue.rating = helpers.avgRating(venue);
-      venue.accommodations = review.accommodations;
+      venue.accommodations = helpers.avgAccomRating(venue);
       venue.save();
       res.status(200)
       .json(venue);
@@ -127,7 +115,7 @@ exports.updateOneVenue = function (req, res) {
 
 
 exports.deleteOne = function (req, res) {
-  var number = req.params.number;
+  let number = req.params.number;
   Venues.findOneAndRemove({ number: number }, function(error, venue) {
     if (error) {
       console.log('error deleting one: ', error);
@@ -151,8 +139,8 @@ exports.retrieveKey = function (req, res) {
 
 exports.retrieveYelp = function (req, res) {
   // TODO: make yelp request dynamic
-  var yelp_url = 'https://api.yelp.com/v3/businesses/search?term=dogs+allowed&latitude=37.775712&longitude=-122.413692&radius=8000&limit=5&categories=restaurants';
-  var token = 'Bearer ' + keys.yelp_api_token;
+  let yelp_url = 'https://api.yelp.com/v3/businesses/search?term=dogs+allowed&latitude=37.775712&longitude=-122.413692&radius=8000&limit=5&categories=restaurants';
+  let token = 'Bearer ' + keys.yelp_api_token;
 
   axios({
     url: yelp_url,

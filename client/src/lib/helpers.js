@@ -113,7 +113,6 @@ function saveReview(review, map, venue) {
   .then(json)
   .then(renderMarkers(map, venue, true))
   .then(function(data){
-    console.log('Step 2 - data returned from controller:\n', data);
     return data
   })
   .catch(function (error) {
