@@ -31,7 +31,7 @@ let venueSchema = new Schema({
       equipment: Boolean,
       smallDogEnclosure: Boolean
     },
-    timestamp: Date,
+    timestamp: Number,
   }],
   rating: Number,
   dates: String,

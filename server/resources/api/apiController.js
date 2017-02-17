@@ -102,7 +102,8 @@ exports.updateOneVenue = function (req, res) {
         review: review.review,
         rating: review.rating,
         image: user.picture.data.url,
-        accommodations: review.accommodations
+        accommodations: review.accommodations,
+        timestamp: Date.now()
       });
       venue.rating = helpers.avgRating(venue);
       venue.accommodations = helpers.avgAccomRating(venue);

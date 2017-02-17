@@ -9,14 +9,16 @@ class Reviews extends React.Component {
     return (
       <Comment.Group minimal>
 
-        {marker.reviews.map(function(review){
+        { marker.reviews.map(function(review){
 
           return <ReviewItem
             key={review._id || 1}
             image={review.image}
             name={review.reviewer}
             review={review.review}
-            rating={review.rating} />
+            rating={review.rating}
+            timestamp={review.timestamp} />
+
         })}
 
       </Comment.Group>
