@@ -16,7 +16,7 @@ class Login extends React.Component {
             <Button color='black' onClick={ toggleModal }>No thanks</Button>
             <FacebookLogin
               appId="1247036205362895"
-              autoLoad={true}
+              autoLoad={false}
               fields="name,email,picture"
               callback={responseFacebook}
               cssClass="my-facebook-button-class"

@@ -124,7 +124,7 @@ img.FBlogin {
   will-change: transform;
 }
 
-.mkr-restaurant {
+/*.mkr-restaurant {
   visibility: hidden;
   background-image: url("icon_mkr_coffee.png");
 }
@@ -138,7 +138,7 @@ img.FBlogin {
   visibility: hidden;
   background-image: url("icon_mkr_event.png");
 }
-
+*/
 /* ----------- */
 /* End Markers */
 /* ----------- */
