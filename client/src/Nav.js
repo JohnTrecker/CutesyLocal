@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Image, Segment, Sidebar } from 'semantic-ui-react'
+import { Button, Container, Image, Segment } from 'semantic-ui-react'
 
 // const Button = (props) =>
 //   <button className={ props.class } onClick={ props.updateVisibleVenues } >
@@ -18,8 +18,8 @@ class Nav extends React.Component {
   render(){
     let { visible, updateVisibleVenues } = this.props;
     return(
+      <Container textAlign="center">
         <Button.Group attached="top">
-
           { venueTypes.map((type, i) => {
 
             return <Button as={Segment} textAlign="center" className={type[0]} key={i} color={type[2]}>
@@ -27,9 +27,8 @@ class Nav extends React.Component {
                    </Button>
 
           })}
-
         </Button.Group>
-
+      </Container>
     )
   }
 }

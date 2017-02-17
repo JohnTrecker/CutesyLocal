@@ -92,11 +92,9 @@ class App extends React.Component {
         });
 
         map.on('click', function (e) {
-          console.log('map clicked')
           let features = map.queryRenderedFeatures(e.point, { layers: markers });
           let markersPresent = features.length > 0 ? true : false;
           if (markersPresent) {
-            console.log('map clicked and marker present')
 
             let marker = features[0];
             map.flyTo({center: marker.geometry.coordinates});
