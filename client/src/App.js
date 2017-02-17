@@ -178,7 +178,7 @@ class App extends React.Component {
     let value = key === 'rating' ? el.rating :
       (key === 'review' ? el.value : el.checked)
     // TODO: validate `value` for XSS prevention
-    let newState = Object.assign({}, this.state.review);
+    let newState = JSON.parse(JSON.stringify(this.state.review));
     if (key === 'rating') newState[key] = value
     else if (key === 'review') newState[key] = value
     else newState.accommodations[key] = value
@@ -197,7 +197,7 @@ class App extends React.Component {
       resolve(helpers.saveReview(body, map, body.venue.venueType));
     })
 
-    const newVenueState = Object.assign({}, this.state.venue);
+    let newVenueState = JSON.parse(JSON.stringify(this.state.venue));
     const that = this;
     promise.then(function(value) {
       newVenueState["reviews"] = value.reviews;
