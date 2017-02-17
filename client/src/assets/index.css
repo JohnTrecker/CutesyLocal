@@ -110,7 +110,7 @@ img.FBlogin {
 /* Popups */
 /* ------ */
 
-div.ui.bottom.visible.sidebar {
+div.ui.sidebar.bottom.overlay {
   box-shadow: none;
   display: flex;
   justify-content: center;
