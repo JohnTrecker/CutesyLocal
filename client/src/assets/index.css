@@ -110,6 +110,12 @@ img.FBlogin {
 /* Popups */
 /* ------ */
 
+div.ui.bottom.visible.sidebar {
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+}
+
 div.ui.vertical.attached.buttons {
   position: -webkit-sticky;
   position: sticky;
@@ -124,6 +130,14 @@ div.ui.horizontal.segments>.ui.segment {
 
 div.Info.segment.left {
   min-height: 141px;
+}
+
+div.Info.segment.left > div.content {
+  clear: left;
+}
+
+div.bottombar_buttons {
+  max-width: 220px;
 }
 
 div.rating {
@@ -175,10 +189,14 @@ button.my-facebook-button-class {
     min-height: 199px;
   }
 
-/*  div.Info-item-content.content {
+  div.ui.horizontal.segments {
+    max-width: 800px;
+    min-width: 700px;
+  }
+
+  div.Info.segment.left > div.content {
     clear: none;
-    min-height: 110px
-  }*/
+  }
 
 }
 
