@@ -43,6 +43,7 @@ class App extends React.Component {
         <Sidebar.Pusher>
           <Nav
             visible={this.state.navOpen}
+            visibleVenues={this.state.visibleVenues}
             updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
           <div id="map"></div>
           <Login
@@ -91,11 +92,11 @@ class App extends React.Component {
           if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
         });
 
-        map.on('click', function (e) {
+        map.on('click', function (e) {// eslint-disable-next-line
           let features = map.queryRenderedFeatures(e.point, { layers: markers });
           let markersPresent = features.length > 0 ? true : false;
-          if (markersPresent) {
 
+          if (markersPresent) {
             let marker = features[0];
             map.flyTo({center: marker.geometry.coordinates});
             if (typeof marker.properties.reviews === 'string') {
@@ -107,6 +108,7 @@ class App extends React.Component {
             // marker.properties.reviews.accommodations = marker.properties.accommodations;
             setVenue({venue: marker.properties, reviewsVisible: false});
           }
+
           togglePopup(markersPresent);
         });
       })
@@ -117,46 +119,30 @@ class App extends React.Component {
 
   updateVisibleVenues(e){
     let classNames = ['restaurant', 'park', 'event'];
-    let venue = e.target.className.split(' ')[3]
+    let venue;
     let toggledButtons = this.state.visibleVenues.slice();
 
-    // // Find the relevant class name
-    // function findVenue(node, NodeClass) {
-    //   node = node || e.target;
-    //   NodeClass = node.className;
-    //   if ( classNames.includes(NodeClass) ) {
-    //     venue = NodeClass;
-    //     return;
-    //   } else {
-    //     let parentNode = node.parentNode;
-    //     let parentNodeClass = parentNode.className
-    //     findVenue(parentNode, parentNodeClass);
-    //   }
-    // };
-    // findVenue();
+    // Find the relevant class name
+    (function findVenue(node) {
+      node = node || e.target;
+      let NodeClass = node.className.split(' ').pop();
+      if ( classNames.includes(NodeClass) ) {
+        venue = NodeClass;
+        return;
+      } else {
+        let parentNode = node.parentNode;
+        findVenue(parentNode);
+      }
+    })()
 
-    // // toggle button color
-    // let palette = {
-    //   restaurant: "rgb(42, 183, 202)",
-    //   park: "rgb(126, 211, 33)",
-    //   event: "rgb(208, 2, 27)"
-    // };
-    // let updatedButtonBackgroundColor = $("button." + venue).css("background-color") === "rgb(221, 221, 221)" ? palette[venue] : "rgb(221, 221, 221)";
-    // let updatedButtonTextColor = $("button." + venue).css("background-color") === "rgb(221, 221, 221)" ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)";
-
-    // $("button." + venue).css("background-color", updatedButtonBackgroundColor);
-    // $("button." + venue).css("color", updatedButtonTextColor);
-
-    // ==========================
-    // update state.visibleVenues
-    // ==========================
-    // if (toggledButtons.includes(venue)) {
-    //   let i = toggledButtons.indexOf(venue);
-    //   toggledButtons.splice(i, i + 1);
-    // } else {
-    //   toggledButtons.push(venue);
-    // }
-    // this.setState({visibleVenues: toggledButtons});
+    // Reset visibleVenues
+    if (toggledButtons.includes(venue)) {
+      let i = toggledButtons.indexOf(venue);
+      toggledButtons.splice(i, i + 1);
+    } else {
+      toggledButtons.push(venue);
+    }
+    this.setState({visibleVenues: toggledButtons});
   }
 
   toggleState(stateOrObj){
@@ -191,7 +177,6 @@ class App extends React.Component {
   submitReview(){
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
-    // console.log('Step 1 - body passed to saveReview in helpers:\n', body);
     if (!body.review.review) {
       window.alert('Woops, you forgot to write a review.');
       return
