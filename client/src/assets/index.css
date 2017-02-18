@@ -140,6 +140,10 @@ div.bottombar_buttons {
   max-width: 220px;
 }
 
+div.ui.small.spaced.left.floated.image > img {
+  max-height: 100px;
+}
+
 div.rating {
   display: inline-flex;
 }

@@ -15,7 +15,7 @@ class Info extends React.Component{
           floated="left"
           spaced={true}
           size="small"
-          src={`./assets/img_pop_${venue.venueType}.jpg`} />
+          src={venue.imageUrl} />
         <Item.Content>
           <Item.Header as='a' href={venue.url}>{venue.name}</Item.Header>
           <Item.Meta>
