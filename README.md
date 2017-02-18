@@ -63,7 +63,7 @@ Change Log
     [X] reset review state on `submit` onClick
     [X] retrieve updated db data
     [X] close modal on `submit`
-    [ ] assign venue accomodations to `accomodations` object
+    [X] assign venue accomodations to `accomodations` object
       [X] change model
       [X] follow up back-end logic in controller
       [X] follow up front-end logic in Info component children
@@ -81,7 +81,8 @@ Change Log
     [ ] scrape for dog events
   [X] Login modal on site load
   [X] clean up Nav with semantic ui
-  [ ] Restyle button bar as SUI topbar
+  [ ] center and compact bottombar popup elements
+  [X] Restyle button bar as SUI topbar
     [ ] change button style on click
     [ ] capture toggledVenues
     [ ] figure out why tf markers still toggle on button click

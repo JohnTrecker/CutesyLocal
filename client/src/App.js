@@ -62,7 +62,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    // if (!this.user) this.toggleState('loginModalOpen')
+    if (!this.user) this.toggleState('loginModalOpen')
     let setVenue = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
 
