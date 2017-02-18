@@ -5,7 +5,8 @@ import Nav from './Nav';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
-let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js'); // eslint-disable-line no-console
+// eslint-disable-next-line no-console
+let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 mapboxgl.accessToken = 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
 let map;
 
@@ -23,7 +24,6 @@ class App extends React.Component {
       reviewModalOpen: false,
       loginModalOpen: false,
       popupOpen: false,
-      navOpen: true,
       reviewsVisible: false,
       visibleVenues: [],
     }
@@ -42,7 +42,6 @@ class App extends React.Component {
           showReviews={this.toggleState.bind(this, 'reviewsVisible')} />
         <Sidebar.Pusher>
           <Nav
-            visible={this.state.navOpen}
             visibleVenues={this.state.visibleVenues}
             updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
           <div id="map"></div>
@@ -92,8 +91,8 @@ class App extends React.Component {
           if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
         });
 
-        map.on('click', function (e) {// eslint-disable-next-line
-          let features = map.queryRenderedFeatures(e.point, { layers: markers });
+        map.on('click', function (e) { // eslint-disable-next-line no-console
+          let features = map.queryRenderedFeatures(e.point, { layers: markers });// eslint-disable-next-line no-console
           let markersPresent = features.length > 0 ? true : false;
 
           if (markersPresent) {

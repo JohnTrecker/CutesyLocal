@@ -7,7 +7,7 @@ class Nav extends React.Component {
       ['restaurant','Food','blue'],
       ['park','Parks','green'],
       ['event','Events','red']];
-    let { visible, updateVisibleVenues, visibleVenues } = this.props;
+    let { updateVisibleVenues, visibleVenues } = this.props;
     return(
       <Container text textAlign="center">
         <Button.Group attached="top">
