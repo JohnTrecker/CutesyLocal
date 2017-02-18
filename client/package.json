@@ -9,7 +9,6 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
-    "jquery": "^3.1.1",
     "mapbox-gl": "^0.28.0",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
