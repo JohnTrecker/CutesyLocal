@@ -26,9 +26,4 @@ class Reviews extends React.Component {
   }
 }
 
-        // <Form reply onSubmit={e => e.preventDefault()}>
-          // <Form.TextArea />
-          // <Button content='Add Reply' labelPosition='left' icon='edit' primary />
-        // </Form>
-
 export default Reviews

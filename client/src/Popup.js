@@ -1,7 +1,7 @@
 import React from 'react';
 import Reviews from './Reviews';
 import Info from './Info';
-import { Button, Container, Segment, Sidebar } from 'semantic-ui-react'
+import { Button, Segment, Sidebar } from 'semantic-ui-react'
 
 class Popup extends React.Component {
   render() {

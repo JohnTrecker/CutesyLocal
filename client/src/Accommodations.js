@@ -15,10 +15,10 @@ class Accommodations extends React.Component {
                 .map((arr, i) => {
                   const prop = index[arr[0]];
                   return <Label
-                    key={i}
-                    color={prop.color}
-                    icon={prop.icon}
-                    content={prop.content} />
+                  key={i}
+                  color={prop.color}
+                  icon={prop.icon}
+                  content={prop.content} />
           })
         }
       </Label.Group>
