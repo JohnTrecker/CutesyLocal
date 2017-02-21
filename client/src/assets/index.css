@@ -134,18 +134,21 @@ div.ui.horizontal.segments>.ui.segment {
 
 div.Info.segment.left {
   min-height: 141px;
+  width: auto;
 }
 
 div.Info.segment.left > div.content {
   clear: left;
 }
 
-div.bottombar_buttons {
-  max-width: 220px;
+div.ui.small.spaced.left.floated.image > img {
+  object-fit: cover;
+  width: 150px;
+  height: 110px;
 }
 
-div.ui.small.spaced.left.floated.image > img {
-  max-height: 100px;
+div.bottombar_buttons {
+  max-width: 220px;
 }
 
 div.rating {
@@ -189,9 +192,6 @@ button.my-facebook-button-class {
 /* ------------------ */
 
 @media all and (min-width: 420px) {
-  div.review-icons {
-    visibility: hidden;
-  }
 
   div.ui.sidebar.bottom.overlay.visible {
     min-height: 199px;
