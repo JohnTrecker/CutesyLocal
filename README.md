@@ -81,12 +81,14 @@ Change Log
     [ ] scrape for dog events
   [X] Login modal on site load
   [X] clean up Nav with semantic ui
-  [ ] center and compact bottombar popup elements
+  [X] center and compact bottombar popup elements
   [X] Restyle button bar as SUI topbar
-    [ ] change button style on click
-    [ ] capture toggledVenues
+    [X] change button style on click
+    [X] capture toggledVenues
     [ ] figure out why tf markers still toggle on button click
       [ ] something to do with button's classname
+  [X] Loading page
+  [X] Loading reviews / info
   [ ] google analytics middleware
   [ ] Final code review
 [ ] Replace `How to start this app` with script and update README.md

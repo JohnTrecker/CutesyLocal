@@ -1,7 +1,8 @@
-import React from 'react';
-import Popup from './Popup';
+import PageLoader from './PageLoader';
 import Login from './Login';
 import Nav from './Nav';
+import Popup from './Popup';
+import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
@@ -16,6 +17,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      loading: true,
       user: undefined,
       venue: undefined,
       review: {
@@ -30,31 +32,35 @@ class App extends React.Component {
   }
 
   render(){
+    const { loading, loginModalOpen, popupOpen, reviewModalOpen,
+            reviewsVisible, user, venue, visibleVenues } = this.state;
+    if (loading) return (<PageLoader/>);
+
     return (
       <Sidebar.Pushable id="container">
         <Popup
-          marker={this.state.venue}
-          user={this.state.user}
-          visible={this.state.popupOpen}
+          marker={venue}
+          user={user}
+          visible={popupOpen}
           toggleReviewModal={this.toggleState.bind(this, 'reviewModalOpen')}
           toggleLoginModal={this.toggleState.bind(this, 'loginModalOpen')}
-          reviewsVisible={this.state.reviewsVisible}
+          reviewsVisible={reviewsVisible}
           showReviews={this.toggleState.bind(this, 'reviewsVisible')} />
         <Sidebar.Pusher>
           <Nav
-            visibleVenues={this.state.visibleVenues}
+            visibleVenues={visibleVenues}
             updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
           <div id="map"></div>
           <Login
-            open={this.state.loginModalOpen}
+            open={loginModalOpen}
             setUser={this.setUser.bind(this)}
             toggleModal={this.toggleState.bind(this, 'loginModalOpen')} />
           <ReviewModal
-            marker={this.state.venue}
-            user={this.state.user}
+            marker={venue}
+            user={user}
             handleChange={this.handleChange.bind(this)}
             submitReview={this.submitReview.bind(this)}
-            open={this.state.reviewModalOpen}
+            open={reviewModalOpen}
             toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
         </Sidebar.Pusher>
       </Sidebar.Pushable>
@@ -62,7 +68,8 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    if (!this.user) this.toggleState('loginModalOpen')
+    this.toggleState('loading');
+    if (!this.state.user) this.toggleState('loginModalOpen');
     let setVenue = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
 
@@ -114,6 +121,7 @@ class App extends React.Component {
       .catch( function(e){
         console.log('error fetching mapbox token:\n', e);
       })
+
   }
 
   updateVisibleVenues(e){

@@ -1,10 +1,16 @@
 import React from 'react';
+import PopupLoader from './PopupLoader';
 import Accommodations from './Accommodations';
 import { Item, Segment } from 'semantic-ui-react';
 
 class Info extends React.Component{
+  state = {loading: true}
+  toggleLoader = () => this.setState({loading: !this.state.loading})
+
   render(){
-    if (!this.props.marker) return (<div style={{display: "none"}}></div>)
+    // if (!this.props.marker) return (<div style={{display: "none"}}></div>)
+    if (this.state.loading) return (<PopupLoader />)
+
     let venue = this.props.marker;
     let rating = Math.round(venue.rating * 20);
     let ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
@@ -15,7 +21,8 @@ class Info extends React.Component{
           floated="left"
           spaced={true}
           size="small"
-          src={venue.imageUrl} />
+          src={venue.imageUrl}
+          alt={`./assets/img_pop_${venue.venueType}.jpg`} />
         <Item.Content>
           <Item.Header as='a' href={venue.url}>{venue.name}</Item.Header>
           <Item.Meta>
@@ -33,6 +40,10 @@ class Info extends React.Component{
         </Item.Content>
       </Segment>
     )
+  }
+
+  componentDidMount(){
+    this.toggleLoader();
   }
 }
 
