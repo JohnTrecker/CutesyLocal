@@ -13,7 +13,7 @@ body {
   overflow: hidden;
 }
 
-.loading {
+#container {
   height: 100%
 }
 

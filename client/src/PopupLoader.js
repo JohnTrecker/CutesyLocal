@@ -1,12 +1,10 @@
 import React from 'react'
-import { Dimmer, Loader, Segment } from 'semantic-ui-react'
+import { Dimmer, Loader } from 'semantic-ui-react'
 
 const PopupLoader = () => (
-    <Segment className="loading">
-      <Dimmer active inverted>
-        <Loader>Loading</Loader>
-      </Dimmer>
-    </Segment>
+  <Dimmer active inverted>
+    <Loader>Loading</Loader>
+  </Dimmer>
 )
 
 export default PopupLoader

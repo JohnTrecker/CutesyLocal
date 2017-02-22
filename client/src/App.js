@@ -1,6 +1,6 @@
-import PageLoader from './PageLoader';
 import Login from './Login';
 import Nav from './Nav';
+import PageLoader from './PageLoader';
 import Popup from './Popup';
 import React from 'react';
 import ReviewModal from './ReviewModal';
@@ -17,7 +17,6 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      loading: true,
       user: undefined,
       venue: undefined,
       review: {
@@ -32,12 +31,11 @@ class App extends React.Component {
   }
 
   render(){
-    const { loading, loginModalOpen, popupOpen, reviewModalOpen,
-            reviewsVisible, user, venue, visibleVenues } = this.state;
-    if (loading) return (<PageLoader/>);
+    let { loginModalOpen, popupOpen, reviewModalOpen,
+          reviewsVisible, user, venue, visibleVenues } = this.state;
 
     return (
-      <Sidebar.Pushable id="container">
+      <Sidebar.Pushable>
         <Popup
           marker={venue}
           user={user}
@@ -64,11 +62,11 @@ class App extends React.Component {
             toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
         </Sidebar.Pusher>
       </Sidebar.Pushable>
+
     )
   }
 
-  componentDidMount(){
-    this.toggleState('loading');
+  componentDidMount(props){
     if (!this.state.user) this.toggleState('loginModalOpen');
     let setVenue = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);

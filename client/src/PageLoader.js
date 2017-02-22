@@ -1,12 +1,10 @@
 import React from 'react'
-import { Dimmer, Loader, Segment } from 'semantic-ui-react'
+import { Dimmer, Loader } from 'semantic-ui-react'
 
 const PageLoader = () => (
-    <Segment className="loading">
-      <Dimmer active>
-        <Loader>Loading</Loader>
-      </Dimmer>
-    </Segment>
+  <Dimmer active page>
+    <Loader content='Loading' />
+  </Dimmer>
 )
 
 export default PageLoader
