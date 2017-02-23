@@ -17,6 +17,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      loading: true,
       user: undefined,
       venue: undefined,
       review: {
@@ -31,11 +32,11 @@ class App extends React.Component {
   }
 
   render(){
-    let { loginModalOpen, popupOpen, reviewModalOpen,
+    let { loading, loginModalOpen, popupOpen, reviewModalOpen,
           reviewsVisible, user, venue, visibleVenues } = this.state;
 
     return (
-      <Sidebar.Pushable>
+      <Sidebar.Pushable id="container">
         <Popup
           marker={venue}
           user={user}
@@ -61,14 +62,15 @@ class App extends React.Component {
             open={reviewModalOpen}
             toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
         </Sidebar.Pusher>
+        <PageLoader active={loading}/>
       </Sidebar.Pushable>
 
     )
   }
 
   componentDidMount(props){
-    if (!this.state.user) this.toggleState('loginModalOpen');
-    let setVenue = this.toggleState.bind(this);
+    // if (!this.state.user) this.toggleState('loginModalOpen');
+    let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
 
     fetch( 'http://localhost:3000/api/keys' )
@@ -110,12 +112,13 @@ class App extends React.Component {
               marker.properties.accommodations = JSON.parse(marker.properties.accommodations)
             }
             // marker.properties.reviews.accommodations = marker.properties.accommodations;
-            setVenue({venue: marker.properties, reviewsVisible: false});
+            toggleState({venue: marker.properties, reviewsVisible: false});
           }
 
           togglePopup(markersPresent);
         });
       })
+      .then(toggleState('loading'))
       .catch( function(e){
         console.log('error fetching mapbox token:\n', e);
       })

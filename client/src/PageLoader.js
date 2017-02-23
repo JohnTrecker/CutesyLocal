@@ -1,8 +1,8 @@
 import React from 'react'
 import { Dimmer, Loader } from 'semantic-ui-react'
 
-const PageLoader = () => (
-  <Dimmer active page>
+const PageLoader = (props) => (
+  <Dimmer active={props.active} page>
     <Loader content='Loading' />
   </Dimmer>
 )

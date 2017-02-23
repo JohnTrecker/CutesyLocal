@@ -1,19 +1,20 @@
 import React from 'react';
+// import Buttons from './Buttons';
 import { Button, Container, Image, Segment } from 'semantic-ui-react'
 
 class Nav extends React.Component {
   render(){
     const venueTypes = [
-      ['restaurant','Food','blue'],
+      ['restaurant','Food','twitter'],
       ['park','Parks','green'],
-      ['event','Events','red']];
+      ['event','Events','google plus']];
     let { updateVisibleVenues, visibleVenues } = this.props;
     return(
       <Container text textAlign="center">
         <Button.Group attached="top">
-          { venueTypes.map((type, i) => {
-            let color = visibleVenues.includes(type[0]) ? type[2] : undefined;
 
+          {venueTypes.map((type, i) => {
+            let color = visibleVenues.includes(type[0]) ? type[2] : undefined;
             return (
               <Button as={Segment} key={i} textAlign="center"
                 className={type[0]}
@@ -23,13 +24,16 @@ class Nav extends React.Component {
                   src={`./assets/icon_btn_${type[0]}.png`}/>
                 &nbsp;&nbsp;{type[1]}
               </Button>
-            )
+            )})
+          }
 
-          })}
         </Button.Group>
       </Container>
     )
   }
 }
+          // <Buttons
+          //   updateVisibleVenues={updateVisibleVenues}
+          //   visibleVenues={visibleVenues} />
 
 export default Nav
