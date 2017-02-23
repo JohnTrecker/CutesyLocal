@@ -1,5 +1,5 @@
 import React from 'react';
-// import Buttons from './Buttons';
+import PageLoader from './PageLoader';
 import { Button, Container, Image, Segment } from 'semantic-ui-react'
 
 class Nav extends React.Component {
@@ -8,7 +8,7 @@ class Nav extends React.Component {
       ['restaurant','Food','twitter'],
       ['park','Parks','green'],
       ['event','Events','google plus']];
-    let { updateVisibleVenues, visibleVenues } = this.props;
+    let { loading, updateVisibleVenues, visibleVenues } = this.props;
     return(
       <Container text textAlign="center">
         <Button.Group attached="top">
@@ -20,6 +20,7 @@ class Nav extends React.Component {
                 className={type[0]}
                 color={color}
                 onClick={updateVisibleVenues}>
+                <PageLoader loading={loading}/>
                 <Image size="mini" verticalAlign='middle'
                   src={`./assets/icon_btn_${type[0]}.png`}/>
                 &nbsp;&nbsp;{type[1]}
@@ -32,8 +33,5 @@ class Nav extends React.Component {
     )
   }
 }
-          // <Buttons
-          //   updateVisibleVenues={updateVisibleVenues}
-          //   visibleVenues={visibleVenues} />
 
 export default Nav

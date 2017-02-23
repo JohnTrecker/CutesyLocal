@@ -1,16 +1,13 @@
 import Login from './Login';
 import Nav from './Nav';
-import PageLoader from './PageLoader';
 import Popup from './Popup';
 import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
-// eslint-disable-next-line no-console
+let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
-
-let helpers = require('./lib/helpers');
 
 class App extends React.Component {
   constructor() {
@@ -46,8 +43,9 @@ class App extends React.Component {
 
         const venues = ['restaurant', 'park', 'event'];
         const markers = [];
+
         map.on('load', function() {
-          toggleState('loading');
+          setTimeout(() => toggleState('loading'), 700);
           venues.forEach(function(venue){
             helpers.renderMarkers(map, venue);
             markers.push(`unclustered-points-${venue}`);
@@ -102,7 +100,8 @@ class App extends React.Component {
         <Sidebar.Pusher>
           <Nav
             visibleVenues={visibleVenues}
-            updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
+            updateVisibleVenues={this.updateVisibleVenues.bind(this)}
+            loading={loading} />
           <div id="map"></div>
           <Login
             open={loginModalOpen}
@@ -116,7 +115,6 @@ class App extends React.Component {
             open={reviewModalOpen}
             toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
         </Sidebar.Pusher>
-        <PageLoader loading={loading}/>
       </Sidebar.Pushable>
 
     )
