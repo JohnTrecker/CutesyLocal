@@ -8,8 +8,8 @@ class Reviews extends React.Component {
   toggleLoader = () => this.setState({loading: !this.state.loading})
 
   render(){
-    // if (!this.props.marker) return <div style={{display: "none"}}></div>
-    if (this.state.loading) return (<PopupLoader />)
+    if (!this.props.marker) return <div style={{display: "none"}}></div>
+    // if (this.state.loading) return (<PopupLoader />)
 
     const { marker } = this.props
     return (
@@ -32,7 +32,7 @@ class Reviews extends React.Component {
   }
 
   componentDidMount(){
-    this.toggleLoader();
+    // this.toggleLoader();
   }
 }
 

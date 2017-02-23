@@ -45,22 +45,6 @@ div.ui.center.aligned.segment.ui.button {
   border-radius: 5px;
 }
 
-/*.ui.center.aligned.segment.button {
-  background-color: white;
-}
-
-.ui.center.aligned.segment.button.restaurant:focus {
-  background-color: rgb(42, 183, 202);
-}
-
-.ui.center.aligned.segment.button.park:focus {
-  background-color: rgb(126, 211, 33);
-}
-
-.ui.center.aligned.segment.button.event:focus {
-  background-color: rgb(208, 2, 27);
-}
-*/
 img.restaurant{
   content: url("icon_btn_coffee.png");
 }

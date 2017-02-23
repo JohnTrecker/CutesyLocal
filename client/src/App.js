@@ -8,7 +8,6 @@ import { Sidebar } from 'semantic-ui-react'
 
 // eslint-disable-next-line no-console
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-mapboxgl.accessToken = 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
 let map;
 
 let helpers = require('./lib/helpers');
@@ -31,48 +30,9 @@ class App extends React.Component {
     }
   }
 
-  render(){
-    let { loading, loginModalOpen, popupOpen, reviewModalOpen,
-          reviewsVisible, user, venue, visibleVenues } = this.state;
-
-    return (
-      <Sidebar.Pushable id="container">
-        <Popup
-          marker={venue}
-          user={user}
-          visible={popupOpen}
-          toggleReviewModal={this.toggleState.bind(this, 'reviewModalOpen')}
-          toggleLoginModal={this.toggleState.bind(this, 'loginModalOpen')}
-          reviewsVisible={reviewsVisible}
-          showReviews={this.toggleState.bind(this, 'reviewsVisible')} />
-        <Sidebar.Pusher>
-          <Nav
-            visibleVenues={visibleVenues}
-            updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
-          <div id="map"></div>
-          <Login
-            open={loginModalOpen}
-            setUser={this.setUser.bind(this)}
-            toggleModal={this.toggleState.bind(this, 'loginModalOpen')} />
-          <ReviewModal
-            marker={venue}
-            user={user}
-            handleChange={this.handleChange.bind(this)}
-            submitReview={this.submitReview.bind(this)}
-            open={reviewModalOpen}
-            toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
-        </Sidebar.Pusher>
-        <PageLoader active={loading}/>
-      </Sidebar.Pushable>
-
-    )
-  }
-
-  componentDidMount(props){
-    // if (!this.state.user) this.toggleState('loginModalOpen');
+  componentWillMount(){
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
-
     fetch( 'http://localhost:3000/api/keys' )
       .then( response => response.json() )
       .then( function(token) {
@@ -87,6 +47,7 @@ class App extends React.Component {
         const venues = ['restaurant', 'park', 'event'];
         const markers = [];
         map.on('load', function() {
+          toggleState('loading');
           venues.forEach(function(venue){
             helpers.renderMarkers(map, venue);
             markers.push(`unclustered-points-${venue}`);
@@ -118,12 +79,53 @@ class App extends React.Component {
           togglePopup(markersPresent);
         });
       })
-      .then(toggleState('loading'))
       .catch( function(e){
         console.log('error fetching mapbox token:\n', e);
       })
 
   }
+
+  render(){
+    const { loading, loginModalOpen, popupOpen, reviewModalOpen,
+          reviewsVisible, user, venue, visibleVenues } = this.state;
+    console.log(loading);
+    return (
+      <Sidebar.Pushable id="container">
+        <Popup
+          marker={venue}
+          user={user}
+          visible={popupOpen}
+          toggleReviewModal={this.toggleState.bind(this, 'reviewModalOpen')}
+          toggleLoginModal={this.toggleState.bind(this, 'loginModalOpen')}
+          reviewsVisible={reviewsVisible}
+          showReviews={this.toggleState.bind(this, 'reviewsVisible')} />
+        <Sidebar.Pusher>
+          <Nav
+            visibleVenues={visibleVenues}
+            updateVisibleVenues={this.updateVisibleVenues.bind(this)} />
+          <div id="map"></div>
+          <Login
+            open={loginModalOpen}
+            setUser={this.setUser.bind(this)}
+            toggleModal={this.toggleState.bind(this, 'loginModalOpen')} />
+          <ReviewModal
+            marker={venue}
+            user={user}
+            handleChange={this.handleChange.bind(this)}
+            submitReview={this.submitReview.bind(this)}
+            open={reviewModalOpen}
+            toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
+        </Sidebar.Pusher>
+        <PageLoader loading={loading}/>
+      </Sidebar.Pushable>
+
+    )
+  }
+
+  // componentDidMount(){
+  //   // if (!this.state.user) this.toggleState('loginModalOpen');
+  //   setTimeout(() => this.toggleState('loading'), 5000);
+  // }
 
   updateVisibleVenues(e){
     let classNames = ['restaurant', 'park', 'event'];

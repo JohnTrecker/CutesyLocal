@@ -8,8 +8,8 @@ class Info extends React.Component{
   toggleLoader = () => this.setState({loading: !this.state.loading})
 
   render(){
-    // if (!this.props.marker) return (<div style={{display: "none"}}></div>)
-    if (this.state.loading) return (<PopupLoader />)
+    if (!this.props.marker) return (<div style={{display: "none"}}></div>)
+    // if (this.state.loading) return (<PopupLoader />)
 
     let venue = this.props.marker;
     let rating = Math.round(venue.rating * 20);
@@ -43,7 +43,7 @@ class Info extends React.Component{
   }
 
   componentDidMount(){
-    this.toggleLoader();
+    // this.toggleLoader();
   }
 }
 
