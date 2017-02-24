@@ -1,12 +1,19 @@
 {
-  "main.css": "static/css/main.03b6e96f.css",
-  "main.css.map": "static/css/main.03b6e96f.css.map",
-  "main.js": "static/js/main.0fbf6d9f.js",
-  "main.js.map": "static/js/main.0fbf6d9f.js.map",
+  "main.css": "static/css/main.aa5f171e.css",
+  "main.css.map": "static/css/main.aa5f171e.css.map",
+  "main.js": "static/js/main.d539d04b.js",
+  "main.js.map": "static/js/main.d539d04b.js.map",
+  "static/media/emoticon_1.png": "static/media/emoticon_1.6aaf9145.png",
+  "static/media/emoticon_2.png": "static/media/emoticon_2.64a9f7e3.png",
+  "static/media/emoticon_3.png": "static/media/emoticon_3.6b90d7c8.png",
   "static/media/flags.png": "static/media/flags.9c74e172.png",
-  "static/media/icons.eot": "static/media/icons.f7c2b4b7.eot",
-  "static/media/icons.svg": "static/media/icons.29800836.svg",
-  "static/media/icons.ttf": "static/media/icons.706450d7.ttf",
-  "static/media/icons.woff": "static/media/icons.d9ee23d5.woff",
-  "static/media/icons.woff2": "static/media/icons.97493d3f.woff2"
+  "static/media/icon_btn_coffee.png": "static/media/icon_btn_coffee.95faebe6.png",
+  "static/media/icon_btn_event.png": "static/media/icon_btn_event.ab332522.png",
+  "static/media/icon_btn_park.png": "static/media/icon_btn_park.7a3596fd.png",
+  "static/media/icons.eot": "static/media/icons.674f50d2.eot",
+  "static/media/icons.svg": "static/media/icons.912ec66d.svg",
+  "static/media/icons.ttf": "static/media/icons.b06871f2.ttf",
+  "static/media/icons.woff": "static/media/icons.fee66e71.woff",
+  "static/media/icons.woff2": "static/media/icons.af7ae505.woff2",
+  "static/media/login.png": "static/media/login.74c92781.png"
 }

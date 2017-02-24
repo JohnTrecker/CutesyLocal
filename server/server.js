@@ -14,15 +14,18 @@ db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', function(callback){
   console.log('Huzzah. DB connected.')
 
-  helpers.dropCollection('Venue');
-  data.forEach(function(venue) {
-    let newVenue = new Venue(venue);
+  // =====================================
+  // TO DROP USER GENERATED RECORDS...
+  // =====================================
+  // helpers.dropCollection('Venue');
+  // data.forEach(function(venue) {
+  //   let newVenue = new Venue(venue);
 
-    newVenue.save(function(error) {
-      if (!error) {
-        // console.log('new venue saved!:\n', venue);
-      }
-    });
+  //   newVenue.save(function(error) {
+  //     if (!error) {
+  //       // console.log('new venue saved!:\n', venue);
+  //     }
+  //   });
   });
 
 })
