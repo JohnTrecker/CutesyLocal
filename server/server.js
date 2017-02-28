@@ -1,13 +1,17 @@
-let express  = require('express');
-let mongoose = require('mongoose');
+let express    = require('express');
+let mongoose   = require('mongoose');
 let bodyParser = require('body-parser');
-let app      = express();
-let helpers  = require('./resources/lib/helpers');
-let configDB = require('./config/database.js');
-let Venue    = require('./db/models/venues');
-let data     = require('./data/venues3.json');
+let fs         = require('fs');
+let app        = express();
+let helpers    = require('./resources/lib/helpers');
+let configDB   = require('./config/database.js');
+let Venue      = require('./db/models/venues');
+let data       = require('./data/venues3.json');
+let dotenv     = require('dotenv');
 
-// configuration ===============================================================
+dotenv.load();
+
+// db configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'))
@@ -17,15 +21,15 @@ db.once('open', function(callback){
   // =====================================
   // TO DROP USER GENERATED RECORDS...
   // =====================================
-  // helpers.dropCollection('Venue');
-  // data.forEach(function(venue) {
-  //   let newVenue = new Venue(venue);
+  helpers.dropCollection('Venue');
+  data.forEach(function(venue) {
+    let newVenue = new Venue(venue);
 
-  //   newVenue.save(function(error) {
-  //     if (!error) {
-  //       // console.log('new venue saved!:\n', venue);
-  //     }
-  //   });
+    newVenue.save(function(error) {
+      if (!error) {
+        console.log('new venue saved!:\n', venue);
+      }
+    });
   });
 
 })

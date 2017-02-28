@@ -4,11 +4,11 @@ This repo contains the Cutesy Local front-end client and back-end API. Built wit
 
 ## How to start this app
 
+* `node setup.js`, insert API keys in `.env` file
 * `npm install`
 * `cd client`
 * `npm install`
-* `cd ../server/config`, insert API keys in `config.example.json` file, and rename `config.json`
-* `cd ../..`
+* `cd ..`
 * `npm start`
 
 

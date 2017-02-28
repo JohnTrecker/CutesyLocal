@@ -1,0 +1,4 @@
+mapboxgl_access_token=INSERT_HERE
+facebook_client_id=INSERT_HERE
+DB_USER=INSERT_HERE
+DB_PASSWORD=INSERT_HERE

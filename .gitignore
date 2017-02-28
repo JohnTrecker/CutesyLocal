@@ -1,6 +1,7 @@
 cra-server-ex.graffle
 node_modules
 npm-debug.log
+.env
 
 # api keys
 server/config/config.json
