@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Venues = require('../../db/models/venues.js');
 const Users = require('../../db/models/users');
 const helpers = require('../lib/helpers');
-const mapboxToken = process.env.MAPBOXGL_ACCESS_TOKEN;
+const mapboxToken = process.env.MAPBOXGL_ACCESS_TOKEN || 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
 mongoose.Promise = require('bluebird');
 
 exports.retrieve = function (req, res) {
