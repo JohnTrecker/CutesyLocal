@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const axios = require('axios');
 const Venues = require('../../db/models/venues.js');
 const Users = require('../../db/models/users');
 const helpers = require('../lib/helpers');
@@ -143,7 +142,7 @@ exports.retrieveYelp = function (req, res) {
   let yelp_url = 'https://api.yelp.com/v3/businesses/search?term=dogs+allowed&latitude=37.775712&longitude=-122.413692&radius=8000&limit=5&categories=restaurants';
   let token = 'Bearer ' + keys.yelp_api_token;
 
-  axios({
+  fetch({
     url: yelp_url,
     method: 'get',
     headers: { authorization: token }
