@@ -3,7 +3,7 @@ const axios = require('axios');
 const Venues = require('../../db/models/venues.js');
 const Users = require('../../db/models/users');
 const helpers = require('../lib/helpers');
-const mapboxToken = require('../../config/config').mapboxgl_access_token;
+const mapboxToken = process.env.MAPBOXGL_ACCESS_TOKEN;
 mongoose.Promise = require('bluebird');
 
 exports.retrieve = function (req, res) {

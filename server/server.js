@@ -1,15 +1,14 @@
+require('dotenv').config();
+
 let express    = require('express');
 let mongoose   = require('mongoose');
 let bodyParser = require('body-parser');
 let fs         = require('fs');
 let app        = express();
 let helpers    = require('./resources/lib/helpers');
-let configDB   = require('./config/database.js');
+let configDB   = require('./db/database.js');
 let Venue      = require('./db/models/venues');
 let data       = require('./data/venues3.json');
-let dotenv     = require('dotenv');
-
-dotenv.load();
 
 // db configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
@@ -21,16 +20,16 @@ db.once('open', function(callback){
   // =====================================
   // TO DROP USER GENERATED RECORDS...
   // =====================================
-  helpers.dropCollection('Venue');
-  data.forEach(function(venue) {
-    let newVenue = new Venue(venue);
+  // helpers.dropCollection('Venue');
+  // data.forEach(function(venue) {
+  //   let newVenue = new Venue(venue);
 
-    newVenue.save(function(error) {
-      if (!error) {
-        console.log('new venue saved!:\n', venue);
-      }
-    });
-  });
+  //   newVenue.save(function(error) {
+  //     if (!error) {
+        // console.log('new venue saved!:\n', venue);
+  //     }
+  //   });
+  // });
 
 })
 
@@ -44,6 +43,7 @@ app.use(require('connect-flash')()); // use connect-flash for flash messages sto
 app.use('/api', require('./resources/api/apiRouter'));
 
 // launch ======================================================================
+console.log('environment:\n', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 } else {
