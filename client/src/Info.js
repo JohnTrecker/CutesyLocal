@@ -1,6 +1,7 @@
 import React from 'react';
 import Accommodations from './Accommodations';
 import { Item, Segment } from 'semantic-ui-react';
+const index = require('./lib/helpers').images
 
 class Info extends React.Component{
   state = {loading: true}
@@ -21,7 +22,7 @@ class Info extends React.Component{
           spaced={true}
           size="small"
           src={venue.imageUrl}
-          alt={`./assets/img_pop_${venue.venueType}.jpg`} />
+          alt={index[venue.venueType]} />
         <Item.Content>
           <Item.Header as='a' href={venue.url}>{venue.name}</Item.Header>
           <Item.Meta>

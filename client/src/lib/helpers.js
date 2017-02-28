@@ -147,9 +147,16 @@ const ammenities = {
   encouraged: {color: 'yellow', icon: 'checkmark box', content: 'Encouraged'}
 }
 
+const images = {
+  restaurant: 'https://media.timeout.com/images/103324024/image.jpg',
+  park: 'https://www.minneapolisparks.org/_asset/cyvw0o/gallery_thumbnail/Lake-of-the-Isles-Dog-Park-in-Fall-2.jpg',
+  event: 'http://images.says.com/uploads/story/cover_image/20620/3229.jpg'
+}
+
 module.exports = {
   saveReview: saveReview,
   renderMarkers: renderMarkers,
   renderMapbox: renderMapbox,
-  ammenities: ammenities
+  ammenities: ammenities,
+  images: images
 }

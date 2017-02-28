@@ -11,7 +11,7 @@ class Login extends React.Component {
         <Modal size="small" dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Welcome to Cutesy Local</Modal.Header>
           <Modal.Content>
-            <Image spaced={false} fluid src="./assets/img_pop_restaurant.jpg"/>
+            <Image spaced={false} fluid src="http://www.koira.cz/zpravy/1370930959.jpg"/>
           </Modal.Content>
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>No thanks</Button>
