@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 let express    = require('express');
 let mongoose   = require('mongoose');
 let bodyParser = require('body-parser');
@@ -9,6 +7,15 @@ let helpers    = require('./resources/lib/helpers');
 let configDB   = require('./db/database.js');
 let Venue      = require('./db/models/venues');
 let data       = require('./data/venues3.json');
+
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+} else {
+  require('dotenv').config();
+  app.use(express.static('client/public'));
+}
+
 
 // db configuration ===============================================================
 console.log('mongoDB url in server.js:\n', configDB.url);
@@ -44,11 +51,11 @@ app.use(bodyParser.json()); // get information from html forms
 app.use('/api', require('./resources/api/apiRouter'));
 
 // launch ======================================================================
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-} else {
-  app.use(express.static('client/public'));
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'));
+// } else {
+//   app.use(express.static('client/public'));
+// }
 
 app.set('port', (process.env.PORT || 3001));
 app.listen(app.get('port'), () => {
