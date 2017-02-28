@@ -89,8 +89,10 @@ Change Log
       [ ] something to do with button's classname
   [X] Loading page
   [X] Loading reviews / info
-  [ ] google analytics middleware
-  [ ] Final code review
+  [ ] Deployment
+    [ ] hide sensative info on state
+    [ ] google analytics middleware
+    [ ] Final code review
 [ ] Replace `How to start this app` with script and update README.md
 
 [X] Conflicts overcome
