@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "6.2.2"
+    "node": "6.2.2",
+    "npm": "3.10.9"
   },
   "babel": {
     "presets": [
