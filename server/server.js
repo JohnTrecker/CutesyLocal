@@ -43,7 +43,6 @@ app.use(require('connect-flash')()); // use connect-flash for flash messages sto
 app.use('/api', require('./resources/api/apiRouter'));
 
 // launch ======================================================================
-console.log('environment:\n', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 } else {
