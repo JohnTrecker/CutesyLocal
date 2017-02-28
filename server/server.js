@@ -11,6 +11,7 @@ let Venue      = require('./db/models/venues');
 let data       = require('./data/venues3.json');
 
 // db configuration ===============================================================
+console.log('mongoDB url in server.js:\n', configDB.url);
 mongoose.connect(configDB.url); // connect to our database
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'))
