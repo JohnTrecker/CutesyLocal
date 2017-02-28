@@ -6,6 +6,7 @@ import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
 let token = process.env.MAPBOXGL_ACCESS_TOKEN;
+console.log('mapbox token in App.js:\n', token);
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
@@ -31,9 +32,9 @@ class App extends React.Component {
   componentWillMount(){
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
-    // fetch( '/api/keys' )
-      // .then( response => response.json() )
-      // .then( function(token) {
+    fetch( '/api/keys' )
+      .then( response => response.json() )
+      .then( function(token) {
         mapboxgl.accessToken = token;
         map = new mapboxgl.Map({
             container: 'map',
@@ -77,10 +78,10 @@ class App extends React.Component {
 
           togglePopup(markersPresent);
         });
-      // })
-      // .catch( function(e){
-        // console.log('error fetching mapbox token:\n', e);
-      // })
+      })
+      .catch( function(e){
+        console.log('error fetching mapbox token:\n', e);
+      })
 
   }
 
