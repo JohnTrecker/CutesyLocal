@@ -5,6 +5,7 @@ import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
+console.log('mapbox token:\n', process.env.MAPBOXGL_ACCESS_TOKEN);
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
@@ -30,7 +31,7 @@ class App extends React.Component {
   componentWillMount(){
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
-    fetch( 'http://localhost:3000/api/keys' )
+    fetch( '/api/keys' )
       .then( response => response.json() )
       .then( function(token) {
         mapboxgl.accessToken = token;
@@ -86,7 +87,6 @@ class App extends React.Component {
   render(){
     const { loading, loginModalOpen, popupOpen, reviewModalOpen,
           reviewsVisible, user, venue, visibleVenues } = this.state;
-    console.log(loading);
     return (
       <Sidebar.Pushable id="container">
         <Popup
@@ -120,10 +120,9 @@ class App extends React.Component {
     )
   }
 
-  // componentDidMount(){
-  //   // if (!this.state.user) this.toggleState('loginModalOpen');
-  //   setTimeout(() => this.toggleState('loading'), 5000);
-  // }
+  componentDidMount(){
+    if (!this.state.user) this.toggleState('loginModalOpen');
+  }
 
   updateVisibleVenues(e){
     let classNames = ['restaurant', 'park', 'event'];

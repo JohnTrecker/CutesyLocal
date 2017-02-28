@@ -1,5 +1,4 @@
 import React from 'react';
-import PopupLoader from './PopupLoader';
 import Accommodations from './Accommodations';
 import { Item, Segment } from 'semantic-ui-react';
 

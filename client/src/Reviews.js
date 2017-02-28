@@ -1,5 +1,4 @@
 import React from 'react'
-import PopupLoader from './PopupLoader';
 import ReviewItem from './ReviewItem';
 import { Comment, Segment } from 'semantic-ui-react'
 

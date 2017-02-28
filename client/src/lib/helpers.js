@@ -122,7 +122,7 @@ function saveReview(review, map, venue) {
 
 function renderMapbox(cb){
   // fetch mapbox private token from server's config
-  fetch( 'http://localhost:3000/api/keys' )
+  fetch( '/api/keys' )
     .then(status)
     .then(json)
     .then( (token) => cb(token) )

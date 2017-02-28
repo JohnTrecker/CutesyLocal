@@ -15,7 +15,7 @@ class Login extends React.Component {
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>No thanks</Button>
             <FacebookLogin
-              appId="1247036205362895"
+              appId='1247036205362895'
               autoLoad={false}
               fields="name,email,picture"
               callback={responseFacebook}
