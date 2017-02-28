@@ -37,7 +37,7 @@ db.once('open', function(callback){
 app.use(require('morgan')('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // get information from html forms
-app.use(require('connect-flash')()); // use connect-flash for flash messages stored in session
+// app.use(require('connect-flash')()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
 app.use('/api', require('./resources/api/apiRouter'));
