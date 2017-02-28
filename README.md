@@ -24,6 +24,9 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 Known Bugs
+  [ ] Modal elements wider than container
+  [ ] Popup doesn't appear in Safari on marker click
+  [ ] Strange button activation behavior in Safari
   [X] breaks when review submitted without user
   [X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
   [X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
@@ -90,7 +93,6 @@ Change Log
   [X] Loading page
   [X] Loading reviews / info
   [ ] Deployment
-    [ ] hide sensative info on state
     [ ] google analytics middleware
     [ ] Final code review
 [ ] Replace `How to start this app` with script and update README.md

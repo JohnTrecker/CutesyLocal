@@ -5,8 +5,6 @@ import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
-let token = process.env.MAPBOXGL_ACCESS_TOKEN;
-window.alert('mapbox token in App.js:\n', token);
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
