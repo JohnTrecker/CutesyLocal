@@ -35,58 +35,49 @@ class App extends React.Component {
   componentWillMount(){
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
-    fetch( '/api/keys' )
-      .then( response => response.json() )
-      .then( function(token) {
-        console.log('MBGL token in App.js:\n', token);
-        mapboxgl.accessToken = token;
-        map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
-            center: [-122.413692, 37.775712],
-            zoom: 12
-        });
+    mapboxgl.accessToken = process.env.MAPBOXGL_ACCESS_TOKEN;
+    map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
+        center: [-122.413692, 37.775712],
+        zoom: 12
+    });
 
-        const venues = ['restaurant', 'park', 'event'];
-        const markers = [];
+    const venues = ['restaurant', 'park', 'event'];
+    const markers = [];
 
-        map.on('load', function() {
-          setTimeout(() => toggleState('loading'), 700);
-          venues.forEach(function(venue){
-            helpers.renderMarkers(map, venue);
-            markers.push(`unclustered-points-${venue}`);
-          });
-        });
+    map.on('load', function() {
+      setTimeout(() => toggleState('loading'), 700);
+      venues.forEach(function(venue){
+        helpers.renderMarkers(map, venue);
+        markers.push(`unclustered-points-${venue}`);
+      });
+    });
 
-        map.on('mousemove', function (e) {
-          let features = map.queryRenderedFeatures(e.point, { layers: markers });
-          if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-        });
+    map.on('mousemove', function (e) {
+      let features = map.queryRenderedFeatures(e.point, { layers: markers });
+      if (features) map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+    });
 
-        map.on('click', function (e) { // eslint-disable-next-line no-console
-          let features = map.queryRenderedFeatures(e.point, { layers: markers });// eslint-disable-next-line no-console
-          let markersPresent = features.length > 0 ? true : false;
+    map.on('click', function (e) { // eslint-disable-next-line no-console
+      let features = map.queryRenderedFeatures(e.point, { layers: markers });// eslint-disable-next-line no-console
+      let markersPresent = features.length > 0 ? true : false;
 
-          if (markersPresent) {
-            let marker = features[0];
-            map.flyTo({center: marker.geometry.coordinates});
-            if (typeof marker.properties.reviews === 'string') {
-              marker.properties.reviews = JSON.parse(marker.properties.reviews)
-            }
-            if (typeof marker.properties.accommodations === 'string') {
-              marker.properties.accommodations = JSON.parse(marker.properties.accommodations)
-            }
-            // marker.properties.reviews.accommodations = marker.properties.accommodations;
-            toggleState({venue: marker.properties, reviewsVisible: false});
-          }
+      if (markersPresent) {
+        let marker = features[0];
+        map.flyTo({center: marker.geometry.coordinates});
+        if (typeof marker.properties.reviews === 'string') {
+          marker.properties.reviews = JSON.parse(marker.properties.reviews)
+        }
+        if (typeof marker.properties.accommodations === 'string') {
+          marker.properties.accommodations = JSON.parse(marker.properties.accommodations)
+        }
+        // marker.properties.reviews.accommodations = marker.properties.accommodations;
+        toggleState({venue: marker.properties, reviewsVisible: false});
+      }
 
-          togglePopup(markersPresent);
-        });
-      })
-      .catch( function(e){
-        console.log('error fetching mapbox token:\n', e);
-      })
-
+      togglePopup(markersPresent);
+    });
   }
 
   render(){
