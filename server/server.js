@@ -46,7 +46,7 @@ app.use(bodyParser.json()); // get information from html forms
 // routes ======================================================================
 app.use('/api', require('./resources/api/apiRouter'));
 
-// launch ======================================================================
+// launch ===========================================================
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 } else {

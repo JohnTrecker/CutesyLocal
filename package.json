@@ -9,7 +9,8 @@
   "now": {
     "engines": {
       "node": "6.x.x"
-    }
+    },
+    "alias": "cutesylocal.com"
   },
   "babel": {
     "presets": [
@@ -34,6 +35,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "babel-node server/server.js",
     "client": "babel-node start-client.js",
+    "now-start": "NODE_ENV=production node server/server.js",
     "deploy": "now -e DB_USER=@dbuser -e DB_PASSWORD=@dbpassword -e MAPBOXGL_ACCESS_TOKEN=@mbgltoken -e FACEBOOK_CLIENT_ID=@fbid"
   },
   "devDependencies": {
