@@ -5,10 +5,10 @@ import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
-console.log(DB_USER)
-console.log(DB_PASSWORD)
-console.log(MAPBOXGL_ACCESS_TOKEN)
-console.log(FACEBOOK_CLIENT_ID);
+console.log(process.env.DB_USER)
+console.log(process.env.DB_PASSWORD)
+console.log(process.env.MAPBOXGL_ACCESS_TOKEN)
+console.log(process.env.FACEBOOK_CLIENT_ID);
 // require('dotenv').config();
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
