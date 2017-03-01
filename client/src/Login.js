@@ -5,6 +5,7 @@ import { Button, Image, Modal } from 'semantic-ui-react';
 class Login extends React.Component {
   render(){
     const { open, toggleModal, setUser} = this.props;
+    if (!open) return (<div></div>);
     const appId = process.env.FACEBOOK_CLIENT_ID;
     const responseFacebook = (response) => setUser(response);
     return (
