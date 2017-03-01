@@ -5,10 +5,6 @@ import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
-console.log(process.env.DB_USER)
-console.log(process.env.DB_PASSWORD)
-console.log(process.env.MAPBOXGL_ACCESS_TOKEN)
-console.log(process.env.FACEBOOK_CLIENT_ID);
 // require('dotenv').config();
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -33,6 +29,7 @@ class App extends React.Component {
   }
 
   componentWillMount(){
+    let user = this.state.user;
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
     mapboxgl.accessToken = process.env.MAPBOXGL_ACCESS_TOKEN;
@@ -48,6 +45,7 @@ class App extends React.Component {
 
     map.on('load', function() {
       setTimeout(() => toggleState('loading'), 700);
+      if (!user) toggleState('loginModalOpen');
       venues.forEach(function(venue){
         helpers.renderMarkers(map, venue);
         markers.push(`unclustered-points-${venue}`);
@@ -114,10 +112,6 @@ class App extends React.Component {
       </Sidebar.Pushable>
 
     )
-  }
-
-  componentDidMount(){
-    if (!this.state.user) this.toggleState('loginModalOpen');
   }
 
   updateVisibleVenues(e){

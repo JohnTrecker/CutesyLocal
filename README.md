@@ -25,10 +25,16 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 
 Known Bugs
   [ ] Zeit deployment fails
-  [ ] Heroku custom domain registation yeilds DNS Target `www.cutesylocal.com.herokudns.com`
-  [ ] Modal elements wider than container
-  [ ] Popup doesn't appear in Safari on marker click
-  [ ] Strange button activation behavior in Safari
+    [ ] refactor package.json
+      [ ] integrate two packages
+      [ ] refactor scripts
+    [ ] verify env vars
+  [ ] Heroku deployment underperforms
+    [ ] FB Login
+    [ ] Heroku custom domain registation yeilds DNS Target `www.cutesylocal.com.herokudns.com
+    [ ] Modal elements wider than container
+    [ ] Popup doesn't appear in Safari on marker click
+    [ ] Strange button activation behavior in Safari
   [X] breaks when review submitted without user
   [X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
   [X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
