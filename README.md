@@ -24,6 +24,8 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 Known Bugs
+  [ ] Zeit deployment fails
+  [ ] Heroku custom domain registation yeilds DNS Target `www.cutesylocal.com.herokudns.com`
   [ ] Modal elements wider than container
   [ ] Popup doesn't appear in Safari on marker click
   [ ] Strange button activation behavior in Safari

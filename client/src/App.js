@@ -5,6 +5,7 @@ import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
+// require('dotenv').config();
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
