@@ -5,6 +5,10 @@ import React from 'react';
 import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
 
+console.log(DB_USER)
+console.log(DB_PASSWORD)
+console.log(MAPBOXGL_ACCESS_TOKEN)
+console.log(FACEBOOK_CLIENT_ID);
 // require('dotenv').config();
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -34,6 +38,7 @@ class App extends React.Component {
     fetch( '/api/keys' )
       .then( response => response.json() )
       .then( function(token) {
+        console.log('MBGL token in App.js:\n', token);
         mapboxgl.accessToken = token;
         map = new mapboxgl.Map({
             container: 'map',
