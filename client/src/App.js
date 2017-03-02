@@ -28,11 +28,11 @@ class App extends React.Component {
     }
   }
 
-  componentWillMount(){
+  componentDidMount(){
     let user = this.state.user;
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
-    mapboxgl.accessToken = process.env.MAPBOXGL_ACCESS_TOKEN;
+    mapboxgl.accessToken = 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
     map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',

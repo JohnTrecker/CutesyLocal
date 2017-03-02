@@ -1,7 +1,4 @@
-// ======================================
-// To set env variables in development...
-// ======================================
-// require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 let express    = require('express');
 let mongoose   = require('mongoose');
