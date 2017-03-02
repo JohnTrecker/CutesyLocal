@@ -124,7 +124,7 @@ div.ui.horizontal.segments>.ui.segment {
 }
 
 div.Info.segment.left {
-  min-height: 110px;
+  min-height: 10em;
   width: auto;
 }
 
