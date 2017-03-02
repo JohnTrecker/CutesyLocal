@@ -10,15 +10,15 @@ class Accommodations extends React.Component {
     return(
       <Label.Group size="small">
         {
-          Object.entries(ammenities)
-                .filter((arr) => arr[1] === true)
-                .map((arr, i) => {
-                  const prop = index[arr[0]];
-                  return <Label
-                  key={i}
-                  color={prop.color}
-                  icon={prop.icon}
-                  content={prop.content} />
+          Object.keys(ammenities)
+            .filter((key) => ammenities[key] === true)
+            .map((key, i) => {
+              const prop = index[key];
+              return <Label
+                key={i}
+                color={prop.color}
+                icon={prop.icon}
+                content={prop.content} />
           })
         }
       </Label.Group>
