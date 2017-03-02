@@ -9,8 +9,8 @@ class Login extends React.Component {
     return (
         <Modal size="small" dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Welcome to Cutesy Local</Modal.Header>
-          <Modal.Content>
-            <Image spaced={false} fluid src="http://www.koira.cz/zpravy/1370930959.jpg"/>
+          <Modal.Content image>
+            <Image wrapped fluid src="http://www.koira.cz/zpravy/1370930959.jpg"/>
           </Modal.Content>
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>No thanks</Button>

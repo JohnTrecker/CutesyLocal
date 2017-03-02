@@ -24,11 +24,11 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 Known Bugs
-  [ ] Zeit deployment fails
-    [ ] refactor package.json
-      [ ] integrate two packages
-      [ ] refactor scripts
-    [ ] verify env vars
+  [X] Zeit deployment fails
+    [X] refactor package.json
+      [X] refactor scripts
+    [X] verify env vars
+    [ ] save smiley assets to Public folder
   [ ] Heroku deployment underperforms
     [ ] FB Login
     [ ] Heroku custom domain registation yeilds DNS Target `www.cutesylocal.com.herokudns.com

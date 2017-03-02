@@ -11,7 +11,7 @@ class ReviewModal extends React.Component {
       <div>
         <Modal dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Leave a Review</Modal.Header>
-          <Modal.Content image>
+          <Modal.Content>
             <ReviewCategories ammenities={marker.accommodations} handleChange={ handleChange }/>
           </Modal.Content>
           <Modal.Actions>

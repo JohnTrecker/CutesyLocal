@@ -155,9 +155,15 @@ div.rating p.percentage {
 /* ---------- */
 
 /* ---------- */
-/* Modal      */
+/* Modals     */
 /* ---------- */
 
+/* ----- Review ----- */
+div.ui.checkbox > label {
+  padding-right: 5px;
+}
+
+/* ----- Login ----- */
 i.facebook.icon {
   color: #f7f7f7;
 }
