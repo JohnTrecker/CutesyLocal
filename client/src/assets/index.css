@@ -176,8 +176,9 @@ button.my-facebook-button-class {
   font-weight: bold;
 }
 
-.ui.modal > div.content {
-  padding: 0;
+img.modal-image {
+  width: 100%;
+  height: auto;
 }
 
 /* ---------- */
