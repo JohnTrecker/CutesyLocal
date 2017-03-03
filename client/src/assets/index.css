@@ -212,7 +212,7 @@ div.ui.modal > div.content {
     padding: 0px!important;
   }
 
-  form.ui.form > textarea.review {
+  textarea.review {
     width: 91%!important;
   }
 }
