@@ -36,7 +36,7 @@
     "now-start": "NODE_ENV=production node server/server.js",
     "server": "babel-node server/server.js",
     "client": "babel-node start-client.js",
-    "deploy": "now -e DB_USER=@dbuser -e DB_PASSWORD=@dbpassword -e MAPBOXGL_ACCESS_TOKEN=@mbgltoken -e FACEBOOK_CLIENT_ID=@fbid"
+    "deploy": "now -e DB_USER=@dbuser -e DB_PASSWORD=@dbpassword -e DB_URL=@dburl -e MAPBOXGL_ACCESS_TOKEN=@mbgltoken -e FACEBOOK_CLIENT_ID=@fbid"
   },
   "devDependencies": {
     "concurrently": "^3.1.0",

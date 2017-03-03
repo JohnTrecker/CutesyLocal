@@ -181,6 +181,10 @@ img.modal-image {
   height: auto;
 }
 
+div.ui.modal > div.content {
+  padding: 0px!important;
+}
+
 /* ---------- */
 /* End Modal  */
 /* ---------- */
@@ -204,6 +208,13 @@ img.modal-image {
     clear: none;
   }
 
+  div.ui.modal > div.content {
+    padding: 0px!important;
+  }
+
+  form.ui.form > textarea.review {
+    width: 91%!important;
+  }
 }
 
 

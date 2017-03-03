@@ -40,6 +40,8 @@ class App extends React.Component {
         zoom: 12
     });
 
+    // alternate map style: mapbox://styles/jttrecker/cixf8qv1k00ep2psfz0ygfp3s
+
     const venues = ['restaurant', 'park', 'event'];
     const markers = [];
 

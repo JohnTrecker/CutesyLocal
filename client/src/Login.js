@@ -1,6 +1,6 @@
 import React from 'react';
 import FacebookLogin from 'react-facebook-login';
-import { Button, Image, Modal } from 'semantic-ui-react';
+import { Button, Modal } from 'semantic-ui-react';
 
 class Login extends React.Component {
   render(){
@@ -9,7 +9,7 @@ class Login extends React.Component {
     return (
         <Modal size="small" dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Welcome to Cutesy Local</Modal.Header>
-          <img className="modal-image" src="http://www.koira.cz/zpravy/1370930959.jpg"/>
+          <img className="modal-image" src="http://www.koira.cz/zpravy/1370930959.jpg" role="presentation"/>
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>No thanks</Button>
             <FacebookLogin
