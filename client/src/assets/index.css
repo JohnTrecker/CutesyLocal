@@ -185,6 +185,10 @@ div.ui.modal > div.content {
   padding: 0px!important;
 }
 
+form.ui.form {
+  max-width: 91%!important;
+}
+
 /* ---------- */
 /* End Modal  */
 /* ---------- */
@@ -212,9 +216,6 @@ div.ui.modal > div.content {
     padding: 0px!important;
   }
 
-  textarea.review {
-    width: 91%!important;
-  }
 }
 
 
