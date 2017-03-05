@@ -1,5 +1,4 @@
 import React from 'react';
-import PageLoader from './PageLoader';
 import { Button, Container, Image, Segment } from 'semantic-ui-react'
 
 class Nav extends React.Component {
@@ -20,7 +19,6 @@ class Nav extends React.Component {
                 className={type[0]}
                 color={color}
                 onClick={updateVisibleVenues}>
-                <PageLoader loading={loading}/>
                 <Image size="mini" verticalAlign='middle'
                   src={`./assets/icon_btn_${type[0]}.png`}/>
                 &nbsp;&nbsp;{type[1]}

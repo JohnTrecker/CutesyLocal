@@ -1,11 +1,13 @@
-import Login from './Login';
-import Nav from './Nav';
-import Popup from './Popup';
 import React from 'react';
-import ReviewModal from './ReviewModal';
 import { Sidebar } from 'semantic-ui-react'
+import Nav from './Nav';
+import Login from './Login';
+import Popup from './Popup';
+import Bottombar from './Bottombar';
+import ReviewModal from './ReviewModal';
 
-// require('dotenv').config();
+// if (process.env.NODE_ENV !== 'production') require('dotenv').config();
+
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
@@ -29,25 +31,25 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    let user = this.state.user;
+    // let user = this.state.user;
     let toggleState = this.toggleState.bind(this);
     let togglePopup = this.togglePopup.bind(this);
     mapboxgl.accessToken = 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
     map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
+        style: 'mapbox://styles/jttrecker/cixf8qv1k00ep2psfz0ygfp3s',
         center: [-122.413692, 37.775712],
         zoom: 12
     });
 
-    // alternate map style: mapbox://styles/jttrecker/cixf8qv1k00ep2psfz0ygfp3s
+    // alternate map style: mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9
 
     const venues = ['restaurant', 'park', 'event'];
     const markers = [];
 
     map.on('load', function() {
       setTimeout(() => toggleState('loading'), 700);
-      if (!user) toggleState('loginModalOpen');
+      // if (!user) setTimeout(() => toggleState('loginModalOpen'), 3000);
       venues.forEach(function(venue){
         helpers.renderMarkers(map, venue);
         markers.push(`unclustered-points-${venue}`);
@@ -83,21 +85,23 @@ class App extends React.Component {
   render(){
     const { loading, loginModalOpen, popupOpen, reviewModalOpen,
           reviewsVisible, user, venue, visibleVenues } = this.state;
+    let mobile = true
+    if (window.innerWidth > 420) mobile = false
     return (
       <Sidebar.Pushable id="container">
-        <Popup
+        { !mobile && <Popup
           marker={venue}
           user={user}
           visible={popupOpen}
           toggleReviewModal={this.toggleState.bind(this, 'reviewModalOpen')}
           toggleLoginModal={this.toggleState.bind(this, 'loginModalOpen')}
           reviewsVisible={reviewsVisible}
-          showReviews={this.toggleState.bind(this, 'reviewsVisible')} />
+          showReviews={this.toggleState.bind(this, 'reviewsVisible')} /> }
         <Sidebar.Pusher>
-          <Nav
+          { !mobile && <Nav
             visibleVenues={visibleVenues}
             updateVisibleVenues={this.updateVisibleVenues.bind(this)}
-            loading={loading} />
+            loading={loading} /> }
           <div id="map"></div>
           <Login
             open={loginModalOpen}
@@ -110,6 +114,11 @@ class App extends React.Component {
             submitReview={this.submitReview.bind(this)}
             open={reviewModalOpen}
             toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
+          { mobile && <Bottombar
+            visibleVenues={visibleVenues}
+            updateVisibleVenues={this.updateVisibleVenues.bind(this)}
+            marker={venue}
+            user={user} /> }
         </Sidebar.Pusher>
       </Sidebar.Pushable>
 
