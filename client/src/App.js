@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sidebar } from 'semantic-ui-react'
 import Nav from './Nav';
+import NavMobile from './NavMobile';
 import Login from './Login';
 import Popup from './Popup';
 import Bottombar from './Bottombar';
@@ -76,6 +77,8 @@ class App extends React.Component {
         }
         // marker.properties.reviews.accommodations = marker.properties.accommodations;
         toggleState({venue: marker.properties, reviewsVisible: false});
+      } else {
+        toggleState({venue: null});
       }
 
       togglePopup(markersPresent);
@@ -102,6 +105,9 @@ class App extends React.Component {
             visibleVenues={visibleVenues}
             updateVisibleVenues={this.updateVisibleVenues.bind(this)}
             loading={loading} /> }
+          { mobile && <NavMobile
+            updateVisibleVenues={this.updateVisibleVenues.bind(this)}
+            visibleVenues={visibleVenues}/> }
           <div id="map"></div>
           <Login
             open={loginModalOpen}
@@ -115,8 +121,6 @@ class App extends React.Component {
             open={reviewModalOpen}
             toggleModal={this.toggleState.bind(this, 'reviewModalOpen')} />
           { mobile && <Bottombar
-            visibleVenues={visibleVenues}
-            updateVisibleVenues={this.updateVisibleVenues.bind(this)}
             marker={venue}
             user={user} /> }
         </Sidebar.Pusher>

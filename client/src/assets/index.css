@@ -45,6 +45,21 @@ div.ui.center.aligned.segment.ui.button {
   border-radius: 5px;
 }
 
+div.ui.container.mobile-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+div.mobile-btns > .ui.button {
+  margin: 5px 0;
+  padding: 10px;
+  z-index: 2;
+  width: 45px;
+}
+
 img.restaurant{
   content: url("icon_btn_coffee.png");
 }
@@ -204,7 +219,7 @@ div#bottombar {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 85%;
+  height: 100%;
   background-color: rgba(241, 241, 241, 0.93);
   z-index: 4;
   top: 90%;
@@ -216,23 +231,9 @@ div#bottombar {
 hr {
   width: 25px;
 }
-div.ui.container.mobile-btns {
-  display: flex;
-  margin: 5px 0;
-  /*justify-content: space-around;*/
-}
 
-div.mobile-btns > div {
+div#InfoMobile > div.content {
   margin: 10px;
-}
-
-div.ui.padded.segment.InfoMobile {
-  margin: 0;
-  padding: 10px;
-}
-
-div.InfoMobile > div.content {
-  margin-top: 10px;
 }
 
 /* -------------- */
@@ -264,9 +265,9 @@ div.InfoMobile > div.content {
   }
 
 }
-
+/*
 
 -webkit-background-size: contain;
 -moz-background-size: contain;
 -o-background-size: contain;
-background-size: contain;
+background-size: contain;*/

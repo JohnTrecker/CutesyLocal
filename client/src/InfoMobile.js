@@ -5,14 +5,12 @@ const index = require('./lib/helpers').images
 
 class InfoMobile extends React.Component{
   render(){
-    if (!this.props.marker) return (<div style={{display: "none"}}></div>)
-
     let venue = this.props.marker;
     let rating = Math.round(venue.rating * 20);
     let ratingClass = rating >= 80 ? 'great' : (rating < 70 ? 'notsogood' : 'good');
     let showDates = venue.dates !== "null";
     return(
-      <Segment className="InfoMobile" raised padded textAlign="center">
+      <Segment id="InfoMobile" raised textAlign="center">
         <Item.Image
           bordered
           size="medium"

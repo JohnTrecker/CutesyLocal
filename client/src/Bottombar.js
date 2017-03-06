@@ -1,20 +1,22 @@
 import React from 'react';
 import InfoMobile from './InfoMobile';
-import NavMobile from './NavMobile';
 import Draggable from 'react-draggable';
 import { Input } from 'semantic-ui-react';
 
 class Bottombar extends React.Component {
   render(){
-    let { marker, updateVisibleVenues, user, visibleVenues } = this.props;
-    const height = window.innerHeight * -.75;
+    let { marker, user } = this.props;
+    const height = window.innerHeight * -.85;
     return(
       <Draggable
         axis="y"
         bounds={{bottom: 0, top: height}}
-        z-index={4}>
+        position={marker ? null : {x:0, y:-5}}
+        disabled={marker ? false : true}
+        onDrag={() => this.setState({position: null})}
+        z-index={2}>
 
-        <div id="bottombar" onMouseDown>
+        <div id="bottombar">
           <hr/>
           <form>
             <Input
@@ -25,17 +27,15 @@ class Bottombar extends React.Component {
               iconPosition="left"/>
           </form>
 
-          <NavMobile
-            updateVisibleVenues={updateVisibleVenues}
-            visibleVenues={visibleVenues}/>
-
-          <InfoMobile
+          { marker && <InfoMobile
             marker={marker}
-            user={user}/>
+            user={user} /> }
+
         </div>
       </Draggable>
     )
   }
+
 }
 
 export default Bottombar

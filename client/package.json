@@ -12,6 +12,7 @@
     "mapbox-gl": "^0.28.0",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
+    "react-draggable": "^2.2.3",
     "react-facebook-login": "^3.4.3",
     "semantic-ui-css": "^2.2.9",
     "semantic-ui-react": "^0.64.5",
