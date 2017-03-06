@@ -68,7 +68,12 @@ class App extends React.Component {
 
       if (markersPresent) {
         let marker = features[0];
-        map.flyTo({center: marker.geometry.coordinates});
+        map.flyTo({
+          center: marker.geometry.coordinates,
+          speed: 0.7,
+          curve: 1,
+          easing: (t) => t
+        });
         if (typeof marker.properties.reviews === 'string') {
           marker.properties.reviews = JSON.parse(marker.properties.reviews)
         }
