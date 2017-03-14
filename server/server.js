@@ -12,7 +12,9 @@ let data       = require('./data/venues3.json');
 
 // db configuration ===============================================================
 console.log('mongoDB url in server.js:\n', configDB.url);
-mongoose.connect(configDB.url); // connect to our database
+mongoose.connect(configDB.url, (err) => {
+  console.log(err);
+});
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', function(callback){
@@ -27,7 +29,7 @@ db.once('open', function(callback){
 
   //   newVenue.save(function(error) {
   //     if (!error) {
-        // console.log('new venue saved!:\n', venue);
+  //       console.log('new venue saved!:\n', venue);
   //     }
   //   });
   // });

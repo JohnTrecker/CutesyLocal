@@ -1,0 +1,43 @@
+{ "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.679637,
+          38.876260
+        ]
+      },
+      "properties": {
+        "categories": [
+          {
+            "alias": "home",
+            "title": "home"
+          }
+        ],
+        "image_url": "https://rlv.zcache.com/cocker_spaniels_spoiled_here_vintage_chalkboard_throw_pillow-r607fa4166864421c8ed0b369b8ddcb1a_6s3og_8byvr_324.jpg",
+        "phone": "",
+        "rating": 5.0,
+        "url": "",
+        "name": "Charlie's",
+        "location": {
+          "city": "Overland Park",
+          "zip_code": "66224",
+          "state": "KS",
+          "address1": "13814 Hardy",
+          "country": "US"
+        },
+        "venue": "restaurant",
+        "reviews": [
+          {
+            "reviewer": "Matt",
+            "review": "Dog treats shamelessly given out upon arrival at home."
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
