@@ -2,6 +2,10 @@ import React from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { Button, Modal } from 'semantic-ui-react';
 
+let fbid;
+if (process.env.NODE_ENV === 'production') fbid = process.env.FACEBOOK_CLIENT_ID;
+else fbid = '1247056018694247'
+
 class Login extends React.Component {
   render(){
     const { open, toggleModal, setUser} = this.props;
@@ -13,7 +17,7 @@ class Login extends React.Component {
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>No thanks</Button>
             <FacebookLogin
-              appId='1247036205362895'
+              appId={fbid}
               autoLoad={false}
               fields="name,email,picture"
               callback={responseFacebook}

@@ -84,23 +84,6 @@ function renderNewMarkers(map, venueType, data){
   };
 }
 
-function renderMarkers(map, venue, update){
-  fetch( `/api/venues/${venue}` )
-    .then(status)
-    .then(json)
-    .then( (venueData) => {
-      if (!update) renderNewMarkers(map, venue, venueData);
-      else updateOldMarkers(map, venue, venueData);
-    })
-    .catch( function(e) {
-      console.log(`error fetching ${venue} data:\n`, e);
-    })
-}
-
-function updateOldMarkers(map, venueType, data){
-  map.getSource(`${venueType}Data`).setData(data);
-}
-
 function saveReview(review, map, venue) {
   return fetch('/api/venues', {
     method: 'PUT',
@@ -111,13 +94,31 @@ function saveReview(review, map, venue) {
   })
   .then(status)
   .then(json)
-  .then(renderMarkers(map, venue, true))
   .then(function(data){
+    console.log('updated data in saveReview.helpers.js:\n', data);
     return data
   })
+  .then(renderMarkers(map, venue, true))
   .catch(function (error) {
     console.log('Request failed', error);
   });
+}
+
+function renderMarkers(map, venue, update){
+  fetch( `/api/venues/${venue}` )
+    .then(status)
+    .then(json)
+    .then( function(venueData) {
+      if (update) updateOldMarkers(map, venue, venueData);
+      else renderNewMarkers(map, venue, venueData);
+    })
+    .catch( function(e) {
+      console.log(`error fetching ${venue} data:\n`, e);
+    })
+}
+
+function updateOldMarkers(map, venueType, data){
+  map.getSource(`${venueType}Data`).setData(data);
 }
 
 function renderMapbox(cb){

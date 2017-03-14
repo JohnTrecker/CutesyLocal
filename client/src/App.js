@@ -7,7 +7,7 @@ import Popup from './Popup';
 import Bottombar from './Bottombar';
 import ReviewModal from './ReviewModal';
 
-// if (process.env.NODE_ENV !== 'production') require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -192,19 +192,23 @@ class App extends React.Component {
   }
 
   submitReview(){
+    // collect pertinent data
     const body = {};
     [body.user, body.venue, body.review] = [this.state.user, this.state.venue, this.state.review];
     if (!body.review.review) {
       window.alert('Woops, you forgot to write a review.');
       return
     }
+
     let promise = new Promise(function(resolve, reject){
-      resolve(helpers.saveReview(body, map, body.venue.venueType));
+      return resolve(helpers.saveReview(body, map, body.venue.venueType));
     })
 
     let newVenueState = JSON.parse(JSON.stringify(this.state.venue));
     const that = this;
+
     promise.then(function(value) {
+      console.log('value from saveReview Promise:\n', value)
       newVenueState["reviews"] = value.reviews;
       newVenueState["accommodations"] = value.accommodations;
       newVenueState["rating"] = value.rating;
