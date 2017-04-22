@@ -38,12 +38,13 @@ class App extends React.Component {
     mapboxgl.accessToken = 'pk.eyJ1IjoianR0cmVja2VyIiwiYSI6ImNpdWZ1OWliZzAwaHQyenFmOGN0MXN4YTMifQ.iyXRDHRVMREFePkWFQuyfg';
     map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/jttrecker/cixf8qv1k00ep2psfz0ygfp3s',
+        style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9',
         center: [-122.413692, 37.775712],
         zoom: 12
     });
 
-    // alternate map style: mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9
+    // 'mapbox://styles/jttrecker/cixf8qv1k00ep2psfz0ygfp3s'
+    // alternate map style: 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9'
 
     const venues = ['restaurant', 'park', 'event'];
     const markers = [];
