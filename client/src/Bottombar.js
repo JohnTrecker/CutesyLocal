@@ -1,7 +1,21 @@
 import React from 'react';
 import InfoMobile from './InfoMobile';
+import Reviews from './Reviews';
 import Draggable from 'react-draggable';
+import SwipeableViews from 'react-swipeable-views';
 import { Input } from 'semantic-ui-react';
+
+const styles = {
+  slide: {
+    width: '100%'
+  },
+  info: {
+    background: '#FEA900',
+  },
+  review: {
+    background: '#B3DC4A',
+  }
+};
 
 class Bottombar extends React.Component {
   constructor(){
@@ -33,9 +47,20 @@ class Bottombar extends React.Component {
               iconPosition="left"/>
           </form>
 
-          { marker && <InfoMobile
-            marker={marker}
-            user={user} /> }
+          { marker &&
+            <SwipeableViews
+              style={Object.assign({}, styles.slide)}>
+
+              <InfoMobile
+                style={Object.assign({}, styles.slide)}
+                marker={marker}
+                user={user} />
+              <Reviews
+                style={Object.assign({}, styles.slide)}
+                marker={marker}/>
+
+            </SwipeableViews>
+          }
 
         </div>
       </Draggable>

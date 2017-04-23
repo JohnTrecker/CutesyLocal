@@ -15,6 +15,7 @@
     "react-dom": "^15.4.0",
     "react-draggable": "^2.2.3",
     "react-facebook-login": "^3.4.3",
+    "react-swipeable-views": "^0.12.1",
     "semantic-ui-css": "^2.2.9",
     "semantic-ui-react": "^0.64.5",
     "timeago-react": "^1.0.8"

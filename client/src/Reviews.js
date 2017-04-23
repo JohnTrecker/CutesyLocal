@@ -12,17 +12,17 @@ class Reviews extends React.Component {
 
     const { marker } = this.props
     return (
-      <Comment.Group as={Segment} textAlign="left" minimal>
+      <Comment.Group as={Segment} className="Reviews" textAlign="left" minimal>
 
         { marker.reviews.map(function(review){
 
-          return <ReviewItem
-            key={review._id || 1}
-            image={review.image}
-            name={review.reviewer}
-            review={review.review}
-            rating={review.rating}
-            timestamp={review.timestamp} />
+            return <ReviewItem
+              key={review._id || 1}
+              image={review.image}
+              name={review.reviewer}
+              review={review.review}
+              rating={review.rating}
+              timestamp={review.timestamp} />
 
         })}
 
