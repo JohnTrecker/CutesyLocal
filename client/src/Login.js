@@ -13,7 +13,7 @@ class Login extends React.Component {
     return (
         <Modal size="small" dimmer='blurring' open={ open } onClose={ toggleModal }>
           <Modal.Header>Welcome to Cutesy Local</Modal.Header>
-          <img className="modal-image" src="http://www.koira.cz/zpravy/1370930959.jpg" role="presentation"/>
+          <img className="modal-image" src="./assets/img_pop_restaurant.jpg" role="presentation"/>
           <Modal.Actions>
             <Button color='black' onClick={ toggleModal }>No thanks</Button>
             <FacebookLogin
