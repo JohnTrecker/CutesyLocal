@@ -46,12 +46,6 @@ class App extends React.Component {
     // 'mapbox://styles/jttrecker/cixhxpdge00hg2ppdzmrw1ox9'
     // 'mapbox://styles/jttrecker/cixf8qv1k00ep2psfz0ygfp3s'
 
-    map.addControl(new mapboxgl.GeolocateControl({
-        positionOptions: {
-            enableHighAccuracy: true
-        }
-    }));
-
     const venues = ['restaurant', 'park', 'event'];
     const markers = [];
 
