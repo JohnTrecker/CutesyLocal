@@ -21,8 +21,13 @@ class Bottombar extends React.Component {
   constructor(){
     super()
     this.state = {
-      position: {x:0, y:-5}
+      position: {x:0, y:-5},
+      index: 0
     }
+  }
+
+  nullifyIndex(i){
+    this.setState({index: i})
   }
 
   render(){
@@ -49,7 +54,9 @@ class Bottombar extends React.Component {
 
           { marker &&
             <SwipeableViews
-              style={Object.assign({}, styles.slide)}>
+              style={Object.assign({}, styles.slide)}
+              index={this.state.index || this.index}
+              onSwitching={(i) => this.nullifyIndex(i)}>
 
               <InfoMobile
                 style={Object.assign({}, styles.slide)}
@@ -69,7 +76,8 @@ class Bottombar extends React.Component {
 
   componentWillReceiveProps(props){
     this.setState({
-      position: props.marker ? null : {x:0, y: -5}
+      position: props.marker ? null : {x:0, y: -5},
+      index: 0
     });
   }
 }
