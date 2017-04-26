@@ -23,113 +23,113 @@ Pull requests are welcome and greatly appreciated! The priority for this project
 ## Front End
 
 Known Bugs
-  -[X] Zeit deployment fails
-    -[X] refactor package.json
-      -[X] refactor scripts
-    -[X] verify env vars
-    -[X] save smiley assets to Public folder
-  -[X] breaks when review submitted without user
-  -[X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
-  -[X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
+  - [X] Zeit deployment fails
+    - [X] refactor package.json
+      - [X] refactor scripts
+    - [X] verify env vars
+    - [X] save smiley assets to Public folder
+  - [X] breaks when review submitted without user
+  - [X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
+  - [X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
 
-  -[ ] Mobile views
-    -[ ] no content for mobile reviews
-    -[ ] Annoying split-second dimmer on map click
-    -[-- ] draggable also moves onSwipe
+  - [ ] Mobile views
+    - [ ] no content for mobile reviews
+    - [ ] Annoying split-second dimmer on map click
+    - [-- ] draggable also moves onSwipe
 
-  -[ ] Warning: The layer 'unclustered-points-restaurant' does not exist ...
-  -[ ] Safari issues
-    -[ ] "FB.login() called before FB.init()" on FB Login
-    -[ ] bottombar buttons don't stick to top of container
-  -[ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
-  -[ ] occasional truncated viewport height
-  -[ ] marker A dissapears if too close to marker B
-  -[ ] markers offset from geocoordinates
+  - [ ] Warning: The layer 'unclustered-points-restaurant' does not exist ...
+  - [ ] Safari issues
+    - [ ] "FB.login() called before FB.init()" on FB Login
+    - [ ] bottombar buttons don't stick to top of container
+  - [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
+  - [ ] occasional truncated viewport height
+  - [ ] marker A dissapears if too close to marker B
+  - [ ] markers offset from geocoordinates
 
 Change Log
--[X] Cluster markers - `cluster` branch
-  -[X] Refactor marker divs into MapboxGL layers
-  -[X] Add Mapbox Sources and Layers
-  -[X] Coordinate venue cluster colors
--[X] Toggle markers
--[X] Include Popups - `cluster` branch
-  -[X] Add onClick behavior to markers
-  -[X] Render popup component
-  -[X] Refactor markers as MapboxGL layers
-  -[X] Dynamically render smiley assets for rating
-  -[X] Mobile first styling
--[X] Serve all data from back end - `db` branch
-  -[X] Debug filter on layer `cluster-${venue}`
-  -[X] refactor data fetched from db
-  -[X] separate components
-  -[X] Fetch and handle data on client side
-  -[X] Hide API keys
--[ ] Final v0.10 Features
-  -[X] include links to venue websites
-  -[X] Authentication
-  -[X] Implement Popup (Sidebar) with semantic ui react
-    -[X] stretch review across
-    -[X] show reviews on `see reviews` click
-    -[X] scroll between reviews in Popup component
-  -[X] Leave review
-    -[X] expand venues schema
-    -[X] persist review
-    -[X] reset review state on `submit` onClick
-    -[X] retrieve updated db data
-    -[X] close modal on `submit`
-    -[X] assign venue accomodations to `accomodations` object
-      -[X] change model
-      -[X] follow up back-end logic in controller
-      -[X] follow up front-end logic in Info component children
-        -[X] Popup
-        -[X] ReviewModal
-    -[X] render accomodations ribbons dynamically
-      -[ ] implement accommodations subSchema in venues model
-      -[X] don't forget to reset App.state.review after submittal
-      -[X] check all uses of Object.assign to make sure it's right
-      -[X] Bug fixes
-        -[X] calculate cummlative average among all reviews
-        -[X] set venue accomodations to fixed value in ReviewModal component
-    -[X] implemnent and render timestamp dynamically for each review
-    -[X] include URLs in initial venues data
-    -[ ] scrape for dog events
-  -[X] Login modal on site load
-  -[X] clean up Nav with semantic ui
-  -[X] center and compact bottombar popup elements
-  -[X] Restyle button bar as SUI topbar
-    -[X] change button style on click
-    -[X] capture toggledVenues
-    -[ ] figure out why tf markers still toggle on button click
-      -[ ] something to do with button's classname
-  -[X] Loading page
-  -[X] Loading reviews / info
-  -[ ] Deployment
-    -[ ] google analytics middleware
-    -[ ] Final code review
--[ ] Replace `How to start this app` with script and update README.md
+- [X] Cluster markers - `cluster` branch
+  - [X] Refactor marker divs into MapboxGL layers
+  - [X] Add Mapbox Sources and Layers
+  - [X] Coordinate venue cluster colors
+- [X] Toggle markers
+- [X] Include Popups - `cluster` branch
+  - [X] Add onClick behavior to markers
+  - [X] Render popup component
+  - [X] Refactor markers as MapboxGL layers
+  - [X] Dynamically render smiley assets for rating
+  - [X] Mobile first styling
+- [X] Serve all data from back end - `db` branch
+  - [X] Debug filter on layer `cluster-${venue}`
+  - [X] refactor data fetched from db
+  - [X] separate components
+  - [X] Fetch and handle data on client side
+  - [X] Hide API keys
+- [ ] Final v0.10 Features
+  - [X] include links to venue websites
+  - [X] Authentication
+  - [X] Implement Popup (Sidebar) with semantic ui react
+    - [X] stretch review across
+    - [X] show reviews on `see reviews` click
+    - [X] scroll between reviews in Popup component
+  - [X] Leave review
+    - [X] expand venues schema
+    - [X] persist review
+    - [X] reset review state on `submit` onClick
+    - [X] retrieve updated db data
+    - [X] close modal on `submit`
+    - [X] assign venue accomodations to `accomodations` object
+      - [X] change model
+      - [X] follow up back-end logic in controller
+      - [X] follow up front-end logic in Info component children
+        - [X] Popup
+        - [X] ReviewModal
+    - [X] render accomodations ribbons dynamically
+      - [ ] implement accommodations subSchema in venues model
+      - [X] don't forget to reset App.state.review after submittal
+      - [X] check all uses of Object.assign to make sure it's right
+      - [X] Bug fixes
+        - [X] calculate cummlative average among all reviews
+        - [X] set venue accomodations to fixed value in ReviewModal component
+    - [X] implemnent and render timestamp dynamically for each review
+    - [X] include URLs in initial venues data
+    - [ ] scrape for dog events
+  - [X] Login modal on site load
+  - [X] clean up Nav with semantic ui
+  - [X] center and compact bottombar popup elements
+  - [X] Restyle button bar as SUI topbar
+    - [X] change button style on click
+    - [X] capture toggledVenues
+    - [ ] figure out why tf markers still toggle on button click
+      - [ ] something to do with button's classname
+  - [X] Loading page
+  - [X] Loading reviews / info
+  - [ ] Deployment
+    - [ ] google analytics middleware
+    - [ ] Final code review
+- [ ] Replace `How to start this app` with script and update README.md
 
--[X] Conflicts overcome
-  -[X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
+- [X] Conflicts overcome
+  - [X] Sharp UX of MapBoxGL vs. clustering and dynamic geojsonifying with Leaflet
 
 
 v0.20
--[ ] Data
-  -[ ] incorporate http://petfriendlyrestaurants.com/state/CA/San_Francisco#page:[1-5]
--[ ] Performance
-  -[ ] Implement server side React for much faster UX
-  -[ ] replace mapboxgl dependency with react-redux-mapbox-gl implementation for speed and stability
--[ ] Features
-  -[ ] * call to action link to App Store
-  -[ ] Allow users to review new venues
-  -[ ] Collect statements of dog-friendliness from businesses for Info view
-    -[ ] crawl urls for contact info
-  -[ ] Cool Mapbox features
-    -[ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
-    -[ ] featured venue slideshow (https://www.mapbox.com/mapbox-gl-js/example/...)
-    -[ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
--[ ] Styling
-  -[ ] Swap images, fonts, etc. for Cutesy logo and other assets
-  -[ ] include MozSwipeGesture listener into the library
+- [ ] Data
+  - [ ] incorporate http://petfriendlyrestaurants.com/state/CA/San_Francisco#page:[1-5]
+- [ ] Performance
+  - [ ] Implement server side React for much faster UX
+  - [ ] replace mapboxgl dependency with react-redux-mapbox-gl implementation for speed and stability
+- [ ] Features
+  - [ ] * call to action link to App Store
+  - [ ] Allow users to review new venues
+  - [ ] Collect statements of dog-friendliness from businesses for Info view
+    - [ ] crawl urls for contact info
+  - [ ] Cool Mapbox features
+    - [ ] Visible venues sidebar in medium to x-large devices (https://www.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
+    - [ ] featured venue slideshow (https://www.mapbox.com/mapbox-gl-js/example/...)
+    - [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
+- [ ] Styling
+  - [ ] Swap images, fonts, etc. for Cutesy logo and other assets
+  - [ ] include MozSwipeGesture listener into the library
 
 
 
