@@ -11,7 +11,6 @@ This repo contains the Cutesy Local front-end client and back-end API. Built wit
 * `cd ..`
 * `npm start`
 
-
 ## Improvements
 
 Pull requests are welcome and greatly appreciated! The priority for this project is to build out app functionality in the following order, checking off the remaining boxes [ ] as we go:
@@ -28,20 +27,24 @@ Known Bugs
     [X] refactor package.json
       [X] refactor scripts
     [X] verify env vars
-    [ ] save smiley assets to Public folder
-  [ ] Heroku deployment underperforms
-    [ ] FB Login
-    [ ] Heroku custom domain registation yeilds DNS Target `www.cutesylocal.com.herokudns.com
-    [ ] Modal elements wider than container
-    [ ] Popup doesn't appear in Safari on marker click
-    [ ] Strange button activation behavior in Safari
+    [X] save smiley assets to Public folder
   [X] breaks when review submitted without user
   [X] Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the t component.
   [X] Warning: Failed prop type: Invalid prop `dimmer` supplied to `Modal`.
-  [ ] bottombar buttons don't stick to top of container in Safari browser
+
+  [ ] Mobile views
+    [ ] no content for mobile reviews
+    [ ] Annoying split-second dimmer on map click
+    [ ] draggable also moves onSwipe
+
+  [ ] Warning: The layer 'unclustered-points-restaurant' does not exist ...
+  [ ] Safari issues
+    [ ] "FB.login() called before FB.init()" on FB Login
+    [ ] bottombar buttons don't stick to top of container
   [ ] mapbox-gl.js:170 WebGL: INVALID_OPERATION: texSubImage2D: ArrayBufferView not big enough for request
-  [ ] truncated viewport height
+  [ ] occasional truncated viewport height
   [ ] marker A dissapears if too close to marker B
+  [ ] markers offset from geocoordinates
 
 Change Log
 [X] Cluster markers - `cluster` branch

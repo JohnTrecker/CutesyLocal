@@ -12,7 +12,7 @@ class Reviews extends React.Component {
 
     const { marker } = this.props
     return (
-      <Comment.Group as={Segment} className="Reviews" textAlign="left" minimal>
+      <Comment.Group as={Segment} textAlign="left" minimal>
 
         { marker.reviews.map(function(review){
 
@@ -25,6 +25,10 @@ class Reviews extends React.Component {
               timestamp={review.timestamp} />
 
         })}
+
+        {
+          !Boolean(marker.reviews.length) && <p>Insert Review here</p>
+        }
 
       </Comment.Group>
     )
