@@ -69,8 +69,9 @@ class Map extends React.Component {
         let marker = features[0];
         map.flyTo({
           center: marker.geometry.coordinates,
-          speed: 0.75,
-          curve: 3,
+          zoom: 15,
+          speed: 0.85,
+          curve: 1.5,
           easing: (t) => t
         });
         if (typeof marker.properties.reviews === 'string') {
