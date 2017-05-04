@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -6,32 +6,73 @@ body {
 }
 
 #root {
-  position: absolute;
   top: 0;
   bottom: 0;
+  height: inherit;
   width: 100%;
   overflow: hidden;
-}
-
-#container {
-  height: 100%
 }
 
 .App {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   width: 100%;
   overflow: hidden;
 }
+*/
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
 
-#map {
-  z-index: 1;
+div.App > section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  text-align: flex-start;
+
+  /*background-size: contain;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div.App section:nth-of-type(1) {
+  background-image: url('https://cdn3.bigcommerce.com/s-shbhk0/product_images/theme_images/wooldogball_smalldog_banner__19650.jpg?t=1444412186')
+}
+
+p.logo {
+  position: relative;
+  top: 200px;
+  font-family: 'Stalemate', cursive;
+  font-size: 200px;
+  color: white;
+}
+
+p.logo-transitioned {
+  position: fixed;
+  z-index: 3;
+  top: 5px;
+  left: 5px;
+  font-family: 'Stalemate', cursive;
+  color: white;
+}
+
+div#container.pushable {
+  height: 100vh;
+  width: 100vw;
+}
+
+div#map {
   position: absolute;
   top:0;
   bottom:0;
   width:100%;
   overflow:hidden;
+}
+
+canvas.mapboxgl-canvas {
+  position: relative !important;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* ------- */
@@ -266,9 +307,10 @@ div#InfoMobile > div.content {
   }
 
 }
-/*
 
+/*
 -webkit-background-size: contain;
 -moz-background-size: contain;
 -o-background-size: contain;
-background-size: contain;*/
+background-size: contain;
+*/
