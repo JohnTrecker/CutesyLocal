@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
+import { Button, Icon } from 'semantic-ui-react';
 import Map from './Map'
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
@@ -16,6 +16,7 @@ class App extends Component {
   componentWillMount(){
     const index = [].concat('Dog friendly places near you', 'Never leave your wingman', 'Bring him along', 'Love is a four-legged word', 'Life is better with a dog');
     let tagline = index[Math.floor(Math.random() * 5)];
+    window.scrollTop = 500;
     this.setState({tagline: tagline})
   }
   componentDidMount() {
@@ -37,6 +38,11 @@ class App extends Component {
     return
   }
 
+  autoscroll(){
+    const map = document.getElementById('container');
+    map.scrollIntoView({block: "end", behavior: "smooth"})
+  }
+
   render() {
     return (
       <div className='App'>
@@ -47,10 +53,17 @@ class App extends Component {
             style={this.state.logoSize}>
             Cutesy Local
           </p>
-          <p className="tagline">{this.state.tagline}</p>
+          <div className="tagline">
+            <p className="tagline-text">{this.state.tagline}</p>
+            <Icon
+              className="tagline-btn"
+              size="huge"
+              name="chevron circle down"
+              onClick={this.autoscroll.bind(this)}/>
+          </div>
         </section>
         <section>
-          <Map />
+          <Map/>
         </section>
       </div>
     );

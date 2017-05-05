@@ -34,14 +34,26 @@ p.logo-transitioned {
   color: white;
 }
 
-p.tagline {
+div.tagline {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 73vh;
   width: 100%;
-  margin: 0 auto;
+}
+
+p.tagline-text   {
   font-size: 30px;
   color: rgba(0,0,0,.7);
   font-family: 'Arvo';
+}
+
+.tagline-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 div#container.pushable {
