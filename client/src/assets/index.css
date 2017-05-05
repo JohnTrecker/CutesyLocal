@@ -7,9 +7,6 @@ div.App > section {
   width: 100vw;
   height: 100vh;
 
-  display: flex;
-  text-align: center;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +17,7 @@ div.App section:nth-of-type(1) {
 }
 
 p.logo {
-  position: relative;
+  position: absolute;
   top: 200px;
   left: 5px;
   font-family: 'Stalemate', cursive;
@@ -38,9 +35,13 @@ p.logo-transitioned {
 }
 
 p.tagline {
- bottom: 100px;
- font-size: 30px;
- /*align-self: flex-end;*/
+  position: fixed;
+  top: 73vh;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: rgba(0,0,0,.7);
+  font-family: 'Arvo';
 }
 
 div#container.pushable {

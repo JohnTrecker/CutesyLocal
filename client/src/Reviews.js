@@ -8,7 +8,6 @@ class Reviews extends React.Component {
 
   render(){
     if (!this.props.marker) return <div style={{display: "none"}}></div>
-    // if (this.state.loading) return (<PopupLoader />)
 
     const { marker } = this.props
     return (
@@ -32,10 +31,6 @@ class Reviews extends React.Component {
 
       </Comment.Group>
     )
-  }
-
-  componentDidMount(){
-    // this.toggleLoader();
   }
 }
 
