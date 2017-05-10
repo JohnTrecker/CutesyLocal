@@ -35,7 +35,7 @@ Known Bugs
   - [ ] Mobile views
     - [ ] no content for mobile reviews
     - [ ] Annoying split-second dimmer on map click
-    - [-- ] draggable also moves onSwipe
+    - [ ] draggable also moves onSwipe
 
   - [ ] Warning: The layer 'unclustered-points-restaurant' does not exist ...
   - [ ] Safari issues
@@ -128,6 +128,7 @@ v0.20
     - [ ] featured venue slideshow (https://www.mapbox.com/mapbox-gl-js/example/...)
     - [ ] Implement filters using mapbox-gl-compare OR mapbox-gl-sync-move
 - [ ] Styling
+  - [ ] Logo Fonts: Arizonia, Berkshire Swash, Butterfly Kids, Euphoria Script,  Pincess Sophia, STALEMATE
   - [ ] Swap images, fonts, etc. for Cutesy logo and other assets
   - [ ] include MozSwipeGesture listener into the library
 
@@ -135,7 +136,7 @@ v0.20
 
 ## Middleware
 
-[ ] Implement google analytics
+- [ ] Implement google analytics
 
 
 ### Back-end
@@ -161,7 +162,7 @@ Using the existing code provided in `server/`, follow the steps below to build o
 | /api/users/:number   |   DELETE  |    empty     |       Delete user with matching `number` and return JSON of deleted user |
 
 
-[ ] Replace MongoDB with PostgreSQL
+- [ ] Replace MongoDB with PostgreSQL
 - [ ] Save PostgreSQL to `package.json`
 - [ ] Connect PostgreSQL ODM to local db in `db/index.js`
 - [ ] Create two models in `resources/api/api.js` and register it with db as the `Venues` & `Users` collections
