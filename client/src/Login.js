@@ -3,7 +3,7 @@ import FacebookLogin from 'react-facebook-login';
 import { Button, Modal } from 'semantic-ui-react';
 
 let fbid;
-if (process.env.NODE_ENV === 'production') fbid = process.env.FACEBOOK_CLIENT_ID;
+if (process.env.NODE_ENV === 'production') fbid = '1247036205362895';
 else fbid = '1247056018694247'
 
 class Login extends React.Component {
