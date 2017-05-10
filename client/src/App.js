@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Button, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import Map from './Map'
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
@@ -44,9 +44,11 @@ class App extends Component {
   }
 
   render() {
+    let mobile = true
+    if (window.innerWidth > 420) mobile = false
     return (
       <div className='App'>
-        <section>
+        { !mobile && <section>
           <p
             ref='logo'
             className='logo'
@@ -61,7 +63,7 @@ class App extends Component {
               name="chevron circle down"
               onClick={this.autoscroll.bind(this)}/>
           </div>
-        </section>
+        </section> }
         <section>
           <Map/>
         </section>
