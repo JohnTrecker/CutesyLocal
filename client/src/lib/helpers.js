@@ -18,7 +18,7 @@ function renderNewMarkers(map, venueType, data){
     data: data,
     cluster: true,
     clusterMaxZoom: 14,
-    clusterRadius: 60
+    clusterRadius: 70
   });
 
   map.addLayer({

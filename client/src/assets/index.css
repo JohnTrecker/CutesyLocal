@@ -27,7 +27,7 @@ p.logo {
 
 p.logo-transitioned {
   position: fixed;
-  z-index: 1;
+  z-index: 13;
   top: 5px;
   left: 5px;
   font-family: 'Stalemate', cursive;

@@ -49,7 +49,6 @@ class Map extends React.Component {
 
     map.on('load', function() {
       setTimeout(() => toggleState('loading'), 700);
-      // if (!user) setTimeout(() => toggleState('loginModalOpen'), 3000);
       venues.forEach(function(venue){
         helpers.renderMarkers(map, venue);
         markers.push(`unclustered-points-${venue}`);
