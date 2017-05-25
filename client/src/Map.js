@@ -11,7 +11,7 @@ let helpers = require('./lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
 
-class Map extends React.Component {
+class Mapbox extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -220,4 +220,4 @@ class Map extends React.Component {
 
 }
 
-export default Map
+export default Mapbox;
