@@ -14,18 +14,25 @@ div.App > section {
 
 div.App section:nth-of-type(1) {
   background-image: url('https://cdn3.bigcommerce.com/s-shbhk0/product_images/theme_images/wooldogball_smalldog_banner__19650.jpg?t=1444412186');
+  background-size: auto;
 }
 div.App section:nth-of-type(2) {
   background-image: none;
 }
 div.App section:nth-of-type(3) {
-  background-image: url('mask_park.jpg');
+  background-image: url('mask_event.jpg');
 }
 div.App section:nth-of-type(4) {
   background-image: none;
 }
 div.App section:nth-of-type(5) {
   background-image: url('mask_restaurant.jpg');
+}
+div.App section:nth-of-type(6) {
+  background-image: none;
+}
+div.App section:nth-of-type(7) {
+  background-image: url('mask_park.jpg');
 }
 
 p.logo {

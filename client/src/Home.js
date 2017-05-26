@@ -75,6 +75,12 @@ class Home extends Component {
         <section>
           <p> Fifth section goes here. </p>
         </section>
+        <section>
+          <p> Sixth section goes here. </p>
+        </section>
+        <section>
+          <p> Seventh section goes here. </p>
+        </section>
       </div>
     );
   }
