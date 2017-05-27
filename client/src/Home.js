@@ -64,16 +64,22 @@ class Home extends Component {
           </div>
         </section>
         <section>
-          <p> Second section goes here. </p>
+          <h1> Dog Days of Summer </h1>
+          <h3> Pre-game parade and costume contest. Then watch the Giants vs. Twins. </h3>
+          <h3> June 11, 2017 </h3>
+          <h4>Presented by</h4>
+          <img  className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg"/>
         </section>
         <section>
           <p> Third section goes here. </p>
         </section>
         <section>
-          <p> Fourth section goes here. </p>
+          <h1> Monday nights at Zazie's </h1>
+          <h3> $10 off any bottle of wine and treats for your pup. </h3>
+          <h4> as Featured in </h4>
+          <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg"/>
         </section>
         <section>
-          <p> Fifth section goes here. </p>
         </section>
         <section>
           <p> Sixth section goes here. </p>

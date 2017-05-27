@@ -35,6 +35,10 @@ div.App section:nth-of-type(7) {
   background-image: url('mask_park.jpg');
 }
 
+img.partnerLogo {
+  width: 400px;
+}
+
 p.logo {
   position: absolute;
   top: 200px;
