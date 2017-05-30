@@ -68,13 +68,15 @@ class Home extends Component {
           <h3> Pre-game parade and costume contest. Then watch the Giants vs. Twins. </h3>
           <h3> June 11, 2017 </h3>
           <h4>Presented by</h4>
-          <img  className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg"/>
+          <a href="https://www.thisdogslife.co/this-san-francisco-bistro-rewards-you-for-bringing-your-dog-with-a-sweet-wine-special/">
+            <img className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg"/>
+          </a>
         </section>
         <section>
           <Button text="Dog-Friendly Events"/>
         </section>
         <section>
-          <h1> Monday nights at Zazie's </h1>
+          <h1> Monday Nights at Zazie's </h1>
           <h3> $10 off any bottle of wine and treats for your pup. </h3>
           <h4> as Featured in </h4>
           <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg"/>
@@ -83,7 +85,13 @@ class Home extends Component {
           <Button text="Bars and Restaurants"/>
         </section>
         <section>
-          <p> Sixth section goes here. </p>
+          <h1> Pug Sunday </h1>
+          <h3> Alta Plaza Park's monthly cuddle puddle </h3>
+          <h3> First Sundays, 2:30pm </h3>
+          <h4>as Featured in</h4>
+          <a href="https://ww2.kqed.org/news/2013/05/07/pug-sunday/">
+            <img className="partnerLogo" src="https://ww2.kqed.org/arts/wp-content/themes/KQED-unified/img/hd-kqed-news.png"/>
+          </a>
         </section>
         <section>
           <Button text="Dog Parks" style={'color: white'}/>
