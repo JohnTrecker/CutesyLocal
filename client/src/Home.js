@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { Icon } from 'semantic-ui-react';
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -15,7 +14,6 @@ class Home extends Component {
   componentWillMount(){
     const index = [].concat('Dog friendly places near you', 'Never leave your wingman', 'Bring him along', 'Love is a four-legged word', 'Life is better with a dog');
     let tagline = index[Math.floor(Math.random() * 5)];
-    window.scrollTop = 500;
     this.setState({tagline: tagline})
   }
   componentDidMount() {
@@ -27,19 +25,14 @@ class Home extends Component {
   handleScroll(event) {
     let scrollTop = event.target.body.scrollTop;
 
-    if (scrollTop < 200) this.refs.logo.className = 'logo'
+    if (scrollTop < 200) this.refs.logo.className = 'logo';
     if (scrollTop >= 200 && scrollTop < 650) {
       let size = Math.floor( (scrollTop - 800) / -3 );
       let styledSize = {'fontSize': `${size}px`}
       this.refs.logo.className = 'logo-transitioned'
-      this.setState({logoSize: styledSize })
+      this.setState({logoSize: styledSize})
     }
     return
-  }
-
-  autoscroll(){
-    const map = document.getElementById('container');
-    map.scrollIntoView({block: "end", behavior: "smooth"})
   }
 
   render() {
@@ -48,13 +41,8 @@ class Home extends Component {
     return (
       <div className='App'>
         <section>
-          <p
-            ref='logo'
-            className='logo'
-            style={this.state.logoSize}>
-            Cutesy Local
-          </p>
-          <p className='tagline'>{this.state.tagline}</p>
+          <p ref='logo' className='logo' style={this.state.logoSize}> Cutesy Local </p>
+          <p ref='tagline' className='tagline'> {this.state.tagline} </p>
         </section>
         <section>
           <h1> Dog Days of Summer </h1>
@@ -62,7 +50,7 @@ class Home extends Component {
           <h2> June 11, 2017 </h2>
           <h4>Presented by</h4>
           <a href="http://sanfrancisco.giants.mlb.com/sf/fan_forum/experiences/dog-day.jsp">
-            <img className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg"/>
+            <img className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg" role="presentation"/>
           </a>
         </section>
         <section>
@@ -73,7 +61,7 @@ class Home extends Component {
           <h2> $10 off any bottle of wine and treats for your pup. </h2>
           <h4> as Featured in </h4>
           <a href="https://www.thisdogslife.co/this-san-francisco-bistro-rewards-you-for-bringing-your-dog-with-a-sweet-wine-special/">
-            <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg"/>
+            <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg" role="presentation"/>
           </a>
         </section>
         <section>
@@ -85,11 +73,11 @@ class Home extends Component {
           <h2> First Sundays, 2:30pm </h2>
           <h4>as Featured in</h4>
           <a href="https://ww2.kqed.org/news/2013/05/07/pug-sunday/">
-            <img className="partnerLogo" src="https://ww2.kqed.org/arts/wp-content/themes/KQED-unified/img/hd-kqed-news.png"/>
+            <img className="partnerLogo" src="https://ww2.kqed.org/arts/wp-content/themes/KQED-unified/img/hd-kqed-news.png" role="presentation"/>
           </a>
         </section>
         <section>
-          <Button text="Dog Parks" style={'color: white'}/>
+          <Button text="Dog Parks"/>
         </section>
       </div>
     );

@@ -60,7 +60,6 @@ p.logo {
   font-size: 200px;
   color: white;
 }
-
 p.logo-transitioned {
   position: fixed;
   z-index: 4;
@@ -70,24 +69,14 @@ p.logo-transitioned {
   color: white;
 }
 
-div.tagline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 73vh;
-  width: 100%;
-}
-
 p.tagline {
+  z-index: -1;
   position: relative;
-  top: 30vh;
   font-size: 30px;
+  top: 30vh;
   color: rgba(0,0,0,.7);
   font-family: 'Arvo';
 }
-
 
 section h1 {
   font-size: 50px;
