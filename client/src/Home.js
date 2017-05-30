@@ -54,14 +54,14 @@ class Home extends Component {
             style={this.state.logoSize}>
             Cutesy Local
           </p>
-          <div className="tagline">
-            <p className="tagline-text">{this.state.tagline}</p>
-            <Icon
-              className="tagline-btn"
-              size="huge"
-              name="chevron circle down"
-              href='/map' />
-          </div>
+        <div className="tagline">
+          <p className="tagline-text">{this.state.tagline}</p>
+          <Icon
+            className="tagline-btn"
+            size="huge"
+            name="chevron circle down"
+            href='/map' />
+        </div>
         </section>
         <section>
           <h1> Dog Days of Summer </h1>
@@ -71,7 +71,7 @@ class Home extends Component {
           <img  className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg"/>
         </section>
         <section>
-          <p> Third section goes here. </p>
+          <Button text="Dog-Friendly Events"/>
         </section>
         <section>
           <h1> Monday nights at Zazie's </h1>
@@ -80,16 +80,19 @@ class Home extends Component {
           <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg"/>
         </section>
         <section>
+          <Button text="Bars and Restaurants"/>
         </section>
         <section>
           <p> Sixth section goes here. </p>
         </section>
         <section>
-          <p> Seventh section goes here. </p>
+          <Button text="Dog Parks" style={'color: white'}/>
         </section>
       </div>
     );
   }
 }
 
+
+const Button = (props) => <a className="btn-map" href='/map'>{props.text}</a>
 export default Home;

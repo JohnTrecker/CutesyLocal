@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Stalemate|Arvo';
+
 .App {
   text-align: center;
   margin: 0 auto;
@@ -15,20 +17,24 @@ div.App > section {
 div.App section:nth-of-type(1) {
   background-image: url('https://cdn3.bigcommerce.com/s-shbhk0/product_images/theme_images/wooldogball_smalldog_banner__19650.jpg?t=1444412186');
   background-size: auto;
+  z-index: 3;
 }
 div.App section:nth-of-type(2) {
   background-image: none;
+  height: 70vh;
 }
 div.App section:nth-of-type(3) {
   background-image: url('mask_event.jpg');
 }
 div.App section:nth-of-type(4) {
+  height: 70vh;
   background-image: none;
 }
 div.App section:nth-of-type(5) {
   background-image: url('mask_restaurant.jpg');
 }
 div.App section:nth-of-type(6) {
+  height: 70vh;
   background-image: none;
 }
 div.App section:nth-of-type(7) {
@@ -50,7 +56,7 @@ p.logo {
 
 p.logo-transitioned {
   position: fixed;
-  z-index: 13;
+  z-index: 4;
   top: 5px;
   left: 5px;
   font-family: 'Stalemate', cursive;
@@ -58,7 +64,7 @@ p.logo-transitioned {
 }
 
 div.tagline {
-  position: fixed;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +84,19 @@ p.tagline-text   {
   height: 30px;
   cursor: pointer;
 }
+
+a.btn-map {
+  position: relative;
+  top: 50vh;
+  font-size: 30px;
+  border-style: solid;
+  padding: 15px 20px;
+  color: rgba(0,0,0,.7);
+  font-family: 'Arvo';
+}
+
+a.btn-map:hover {color: rgba(0,0,0,.7);}
+
 
 div#container.pushable {
   height: 100vh;
