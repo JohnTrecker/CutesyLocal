@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -85,5 +86,5 @@ class Home extends Component {
 }
 
 
-const Button = (props) => <a className="btn-map" href='/map'>{props.text}</a>
+const Button = (props) => <Link className="btn-map" to='/map'>{props.text}</Link>
 export default Home;

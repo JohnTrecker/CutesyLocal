@@ -7,7 +7,7 @@ const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
-      <Route exact path="/map" component={Mapbox} />
+      <Route path="/map" component={Mapbox} />
     </div>
   </Router>
 );
