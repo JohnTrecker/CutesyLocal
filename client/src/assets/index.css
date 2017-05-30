@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Stalemate|Arvo';
 
+/* Start Landing */
+
 .App {
   text-align: center;
   margin: 0 auto;
@@ -8,6 +10,11 @@
 div.App > section {
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +49,7 @@ div.App section:nth-of-type(7) {
 }
 
 img.partnerLogo {
-  width: 400px;
+  width: 300px;
 }
 
 p.logo {
@@ -73,12 +80,30 @@ div.tagline {
   width: 100%;
 }
 
-p.tagline-text   {
+p.tagline {
+  position: relative;
+  top: 30vh;
   font-size: 30px;
   color: rgba(0,0,0,.7);
   font-family: 'Arvo';
 }
 
+
+section h1 {
+  font-size: 50px;
+  color: rgba(0,0,0,.7);
+  font-family: 'Arvo';
+}
+section h2 {
+  font-size: 30px;
+  color: rgba(0,0,0,.7);
+  font-family: 'Arvo';
+}
+section h4 {
+  font-size: 20px;
+  color: rgba(0,0,0,.7);
+  font-family: 'Arvo';
+}
 .tagline-btn {
   width: 30px;
   height: 30px;
@@ -87,7 +112,7 @@ p.tagline-text   {
 
 a.btn-map {
   position: relative;
-  top: 50vh;
+  right: 20vw;
   font-size: 30px;
   border-style: solid;
   padding: 15px 20px;
@@ -97,6 +122,8 @@ a.btn-map {
 
 a.btn-map:hover {color: rgba(0,0,0,.7);}
 
+
+/* End Landing */
 
 div#container.pushable {
   height: 100vh;

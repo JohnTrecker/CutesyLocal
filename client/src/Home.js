@@ -54,40 +54,35 @@ class Home extends Component {
             style={this.state.logoSize}>
             Cutesy Local
           </p>
-        <div className="tagline">
-          <p className="tagline-text">{this.state.tagline}</p>
-          <Icon
-            className="tagline-btn"
-            size="huge"
-            name="chevron circle down"
-            href='/map' />
-        </div>
+          <p className='tagline'>{this.state.tagline}</p>
         </section>
         <section>
           <h1> Dog Days of Summer </h1>
-          <h3> Pre-game parade and costume contest. Then watch the Giants vs. Twins. </h3>
-          <h3> June 11, 2017 </h3>
+          <h2> Pre-game parade, costume contest, Giants vs. Twins. </h2>
+          <h2> June 11, 2017 </h2>
           <h4>Presented by</h4>
-          <a href="https://www.thisdogslife.co/this-san-francisco-bistro-rewards-you-for-bringing-your-dog-with-a-sweet-wine-special/">
+          <a href="http://sanfrancisco.giants.mlb.com/sf/fan_forum/experiences/dog-day.jsp">
             <img className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg"/>
           </a>
         </section>
         <section>
-          <Button text="Dog-Friendly Events"/>
+          <Button text="Dog Events"/>
         </section>
         <section>
           <h1> Monday Nights at Zazie's </h1>
-          <h3> $10 off any bottle of wine and treats for your pup. </h3>
+          <h2> $10 off any bottle of wine and treats for your pup. </h2>
           <h4> as Featured in </h4>
-          <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg"/>
+          <a href="https://www.thisdogslife.co/this-san-francisco-bistro-rewards-you-for-bringing-your-dog-with-a-sweet-wine-special/">
+            <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg"/>
+          </a>
         </section>
         <section>
           <Button text="Bars and Restaurants"/>
         </section>
         <section>
           <h1> Pug Sunday </h1>
-          <h3> Alta Plaza Park's monthly cuddle puddle </h3>
-          <h3> First Sundays, 2:30pm </h3>
+          <h2> Alta Plaza Park's monthly cuddle puddle </h2>
+          <h2> First Sundays, 2:30pm </h2>
           <h4>as Featured in</h4>
           <a href="https://ww2.kqed.org/news/2013/05/07/pug-sunday/">
             <img className="partnerLogo" src="https://ww2.kqed.org/arts/wp-content/themes/KQED-unified/img/hd-kqed-news.png"/>
