@@ -47,7 +47,7 @@ class Home extends Component {
         </section>
         <section>
           <h1> Dog Days of Summer </h1>
-          <h2> Pre-game parade, costume contest, Giants vs. Twins. </h2>
+          <h2> Pre-game parade, costume contest, Giants vs. Twins </h2>
           <h2> June 11, 2017 </h2>
           <h4>Presented by</h4>
           <a href="http://sanfrancisco.giants.mlb.com/sf/fan_forum/experiences/dog-day.jsp">
@@ -59,7 +59,7 @@ class Home extends Component {
         </section>
         <section>
           <h1> Monday Nights at Zazie's </h1>
-          <h2> $10 off any bottle of wine and treats for your pup. </h2>
+          <h2> $10 off any bottle of wine and treats for your pup </h2>
           <h4> as Featured in </h4>
           <a href="https://www.thisdogslife.co/this-san-francisco-bistro-rewards-you-for-bringing-your-dog-with-a-sweet-wine-special/">
             <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg" role="presentation"/>
