@@ -101,7 +101,7 @@ section h4 {
 
 a.btn-map {
   position: relative;
-  right: 20vw;
+  /*right: 20vw;*/
   font-size: 30px;
   border-style: solid;
   padding: 15px 20px;
