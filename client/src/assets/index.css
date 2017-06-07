@@ -9,6 +9,20 @@
 
 div.App > section {
   width: 100vw;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div.react-parallax {
+  width: 100vw;
   height: 100vh;
 
   display: flex;
@@ -21,31 +35,18 @@ div.App > section {
   background-attachment: fixed;
 }
 
+img.react-parallax-bgImage {
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 div.App section:nth-of-type(1) {
   background-image: url('https://cdn3.bigcommerce.com/s-shbhk0/product_images/theme_images/wooldogball_smalldog_banner__19650.jpg?t=1444412186');
   background-size: auto;
-  z-index: 3;
-}
-div.App section:nth-of-type(2) {
-  background-image: none;
-  height: 70vh;
-}
-div.App section:nth-of-type(3) {
-  background-image: url('mask_event.jpg');
-}
-div.App section:nth-of-type(4) {
-  height: 70vh;
-  background-image: none;
-}
-div.App section:nth-of-type(5) {
-  background-image: url('mask_restaurant.jpg');
-}
-div.App section:nth-of-type(6) {
-  height: 70vh;
-  background-image: none;
-}
-div.App section:nth-of-type(7) {
-  background-image: url('mask_park.jpg');
 }
 
 img.partnerLogo {
@@ -101,7 +102,6 @@ section h4 {
 
 a.btn-map {
   position: relative;
-  /*right: 20vw;*/
   font-size: 30px;
   border-style: solid;
   padding: 15px 20px;
@@ -111,6 +111,9 @@ a.btn-map {
 
 a.btn-map:hover {color: rgba(0,0,0,.7);}
 
+a#btn-park {
+  color: rgba(250,250,250,.7);
+}
 
 /* End Landing */
 

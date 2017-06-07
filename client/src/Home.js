@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
+import { Parallax } from 'react-parallax';
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -41,10 +42,12 @@ class Home extends Component {
     if (window.innerWidth > 420) mobile = false
     return (
       <div className='App'>
+
         <section>
           <p ref='logo' className='logo' style={this.state.logoSize}> Cutesy Local </p>
           <p ref='tagline' className='tagline'> {this.state.tagline} </p>
         </section>
+
         <section>
           <h1> Dog Days of Summer </h1>
           <h2> Pre-game parade, costume contest, Giants vs. Twins </h2>
@@ -54,9 +57,11 @@ class Home extends Component {
             <img className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg" role="presentation"/>
           </a>
         </section>
-        <section>
+
+        <Parallax bgImage='assets/mask_event.jpg' strength={300}>
           <Button text="Dog Events"/>
-        </section>
+        </Parallax>
+
         <section>
           <h1> Monday Nights at Zazie's </h1>
           <h2> $10 off any bottle of wine and treats for your pup </h2>
@@ -65,9 +70,11 @@ class Home extends Component {
             <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg" role="presentation"/>
           </a>
         </section>
-        <section>
+
+        <Parallax bgImage='assets/mask_restaurant.jpg' strength={300}>
           <Button text="Bars and Restaurants"/>
-        </section>
+        </Parallax>
+
         <section>
           <h1> Pug Sunday </h1>
           <h2> Alta Plaza Park's monthly cuddle puddle </h2>
@@ -77,9 +84,11 @@ class Home extends Component {
             <img className="partnerLogo" src="https://ww2.kqed.org/arts/wp-content/themes/KQED-unified/img/hd-kqed-news.png" role="presentation"/>
           </a>
         </section>
-        <section>
+
+        <Parallax bgImage='assets/mask_park.jpg' strength={300}>
           <Button text="Dog Parks"/>
-        </section>
+        </Parallax>
+
       </div>
     );
   }
