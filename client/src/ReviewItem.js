@@ -1,11 +1,12 @@
 import React from 'react'
 import TimeAgo from 'timeago-react';
-import { Comment } from 'semantic-ui-react'
+import { Comment, Image } from 'semantic-ui-react'
 
 const ReviewItem = (props) =>
   <Comment>
-    <Comment.Avatar
+    <Comment.Avatar as={Image}
       src={props.image}
+      alt='assets/alt-img.jpg'
       className={props.name} />
     <Comment.Content>
       <Comment.Author as='a'>{props.name}</Comment.Author>
