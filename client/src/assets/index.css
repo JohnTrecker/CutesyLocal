@@ -106,14 +106,11 @@ a.btn-map {
   border-style: solid;
   padding: 15px 20px;
   color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.1);
   font-family: 'Arvo';
 }
 
-a.btn-map:hover {color: rgba(0,0,0,.7);}
-
-a#btn-park {
-  color: rgba(250,250,250,.7);
-}
+a.btn-map:hover {color: rgba(30,30,30,.7);}
 
 /* End Landing */
 
