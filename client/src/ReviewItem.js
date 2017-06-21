@@ -1,6 +1,6 @@
 import React from 'react'
 import TimeAgo from 'timeago-react';
-import { Comment, Image } from 'semantic-ui-react'
+import { Comment } from 'semantic-ui-react'
 
 const ReviewItem = (props) =>
   <Comment>
