@@ -37,6 +37,8 @@ class Home extends Component {
     return
   }
 
+          // <p ref='tagline' className='tagline'> {this.state.tagline} </p>
+          // <img src="./assets/logo.svg" className="logo" style={this.state.logoSize} alt="Cutesy Local"/>
   render() {
     let mobile = true
     if (window.innerWidth > 420) mobile = false
@@ -45,16 +47,15 @@ class Home extends Component {
 
         <section>
           <p ref='logo' className='logo' style={this.state.logoSize}> Cutesy Local </p>
-          <p ref='tagline' className='tagline'> {this.state.tagline} </p>
         </section>
 
         <section>
-          <h1> Dog Days of Summer </h1>
-          <h2> Pre-game parade, costume contest, Giants vs. Twins </h2>
-          <h2> June 11, 2017 </h2>
-          <h4>Presented by</h4>
-          <a href="http://sanfrancisco.giants.mlb.com/sf/fan_forum/experiences/dog-day.jsp">
-            <img className="partnerLogo" src="https://static.seekingalpha.com/uploads/2016/11/37462776_14782012598722_rId6.jpg" role="presentation"/>
+          <h1> Moraga July 4th Dog Parade </h1>
+          <h2> Every dog registered for the parade receives a special award and a treat! </h2>
+          <h2> 9:30am July 4, 2017 </h2>
+          <h4> Register at </h4>
+          <a href="https://www.eventbrite.com/e/moraga-july-4th-dog-parade-tickets-34941831960?aff=es2">
+            <img className="partnerLogo" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F32087499%2F132841432042%2F1%2Foriginal.jpg?h=150&w=300&rect=0%2C26%2C2160%2C1080&s=a307f528a19468bf7f7adf53af93a535" role="presentation"/>
           </a>
         </section>
 
