@@ -74,7 +74,7 @@ p.tagline {
   z-index: -1;
   position: relative;
   font-size: 30px;
-  top: 35vh;
+  top: 30vh;
   color: rgba(0,0,0,.7);
   font-family: 'Arvo';
 }
