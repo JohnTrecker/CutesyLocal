@@ -8,7 +8,7 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      logoSize: {'fontSize':'200px'},
+      logoSize: {'width':'45vw'},
       tagline: '' }
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -29,8 +29,9 @@ class Home extends Component {
 
     if (scrollTop < 200) this.refs.logo.className = 'logo';
     if (scrollTop >= 200 && scrollTop < 650) {
-      let size = Math.floor( (scrollTop - 800) / -3 );
-      let styledSize = {'fontSize': `${size}px`}
+      let size = 20;
+      // let size = Math.floor( (scrollTop - 800) / -3 );
+      let styledSize = {'width': `${size}vw`}
       this.refs.logo.className = 'logo-transitioned'
       this.setState({logoSize: styledSize})
     }
@@ -39,6 +40,7 @@ class Home extends Component {
 
           // <p ref='tagline' className='tagline'> {this.state.tagline} </p>
           // <img src="./assets/logo.svg" className="logo" style={this.state.logoSize} alt="Cutesy Local"/>
+          // <p ref='logo' className='logo' style={this.state.logoSize}> Cutesy Local </p>
   render() {
     let mobile = true
     if (window.innerWidth > 420) mobile = false
@@ -46,7 +48,7 @@ class Home extends Component {
       <div className='App'>
 
         <section>
-          <p ref='logo' className='logo' style={this.state.logoSize}> Cutesy Local </p>
+          <div ref="logo" className="logo" style={this.state.logoSize}></div>
         </section>
 
         <section>
