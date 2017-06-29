@@ -8,7 +8,7 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      logoSize: {'width':'45vw'},
+      logoSize: {'width':'600px'},
       tagline: '' }
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -24,23 +24,21 @@ class Home extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
+  adjust(scrollTop, className){
+    let size = Math.floor( (-39 * scrollTop) / 99 + 636.36 );
+    let styledSize = {'width': `${size}px`}
+    this.refs.logo.className = `logo ${className}`;
+    this.setState({logoSize: styledSize});
+  }
   handleScroll(event) {
     let scrollTop = event.target.body.scrollTop;
 
-    if (scrollTop < 200) this.refs.logo.className = 'logo';
-    if (scrollTop >= 200 && scrollTop < 650) {
-      let size = 20;
-      // let size = Math.floor( (scrollTop - 800) / -3 );
-      let styledSize = {'width': `${size}vw`}
-      this.refs.logo.className = 'logo-transitioned'
-      this.setState({logoSize: styledSize})
-    }
+    if (scrollTop < 100) this.refs.logo.className = 'logo';
+    if (scrollTop >= 100 && scrollTop < 200) this.adjust(scrollTop, 'transitioning');
+    if (scrollTop >= 200 && scrollTop < 650) this.adjust(scrollTop, 'transitioned');
     return
   }
 
-          // <p ref='tagline' className='tagline'> {this.state.tagline} </p>
-          // <img src="./assets/logo.svg" className="logo" style={this.state.logoSize} alt="Cutesy Local"/>
-          // <p ref='logo' className='logo' style={this.state.logoSize}> Cutesy Local </p>
   render() {
     let mobile = true
     if (window.innerWidth > 420) mobile = false
