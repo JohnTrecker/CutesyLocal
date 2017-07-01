@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import { Parallax } from 'react-parallax';
+import Parallax2 from './Parallax';
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -39,6 +40,11 @@ class Home extends Component {
     return
   }
 
+      // <div className="parallax">
+
+      //   <Parallax2 image="http://www.intrawallpaper.com/static/images/City_Landscape_Background_B5hx2zA.jpg"/>
+
+      // </div>
   render() {
     let mobile = true
     if (window.innerWidth > 420) mobile = false
