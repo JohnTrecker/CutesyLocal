@@ -80,6 +80,7 @@ img.react-parallax-bgImage {
 div.App section:nth-of-type(1) {
   background-image: url('https://cdn3.bigcommerce.com/s-shbhk0/product_images/theme_images/wooldogball_smalldog_banner__19650.jpg?t=1444412186');
   background-size: auto;
+  height: 100vh;
 }
 
 img.partnerLogo {

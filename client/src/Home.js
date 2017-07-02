@@ -53,6 +53,7 @@ class Home extends Component {
 
         <section>
           <div ref="logo" className="logo" style={this.state.logoSize}></div>
+          <p className="tagline">{this.state.tagline}</p>
         </section>
 
         <section>
@@ -92,7 +93,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage='assets/mask_park.jpg' strength={300}>
+        <Parallax className="mask-parks" bgImage='assets/mask_park.jpg' strength={300}>
           <Button text="Dog Parks"/>
         </Parallax>
 
