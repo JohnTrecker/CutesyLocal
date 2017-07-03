@@ -39,12 +39,6 @@ class Home extends Component {
     if (scrollTop >= 200 && scrollTop < 650) this.adjust(scrollTop, 'transitioned');
     return
   }
-
-      // <div className="parallax">
-
-      //   <Parallax2 image="http://www.intrawallpaper.com/static/images/City_Landscape_Background_B5hx2zA.jpg"/>
-
-      // </div>
   render() {
     let mobile = true
     if (window.innerWidth > 420) mobile = false
