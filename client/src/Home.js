@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import { Parallax } from 'react-parallax';
-import Parallax2 from './Parallax';
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
