@@ -39,8 +39,6 @@ class Home extends Component {
     return
   }
   render() {
-    let mobile = true
-    if (window.innerWidth > 420) mobile = false
     return (
       <div className='App'>
 
@@ -59,9 +57,9 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage='assets/mask_event.jpg' strength={300}>
+        <section >
           <Button text="Dog Events"/>
-        </Parallax>
+        </section>
 
         <section>
           <h1> Monday Nights at Zazie's </h1>
@@ -72,9 +70,9 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage='assets/mask_restaurant.jpg' strength={300}>
+        <section >
           <Button text="Bars and Restaurants"/>
-        </Parallax>
+        </section>
 
         <section>
           <h1> Pug Sunday </h1>
@@ -86,9 +84,9 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax className="mask-parks" bgImage='assets/mask_park.jpg' strength={300}>
+        <section className="mask-parks" >
           <Button text="Dog Parks"/>
-        </Parallax>
+        </section>
 
       </div>
     );

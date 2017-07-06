@@ -1,12 +1,12 @@
 import React from 'react';
 import Mapbox from './Map'
-import Home from './Home'
+import Landing from './Landing'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => (
   <Router>
     <div>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Landing} />
       <Route path="/map" component={Mapbox} />
     </div>
   </Router>
