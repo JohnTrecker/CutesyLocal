@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
+import { Parallax } from 'react-parallax';
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -56,9 +57,9 @@ class Home extends Component {
           </a>
         </section>
 
-        <section >
+        <Parallax bgImage="assets/mask_event.jpg" strength="300">
           <Button text="Dog Events"/>
-        </section>
+        </Parallax>
 
         <section>
           <h1> Monday Nights at Zazie's </h1>
@@ -69,9 +70,9 @@ class Home extends Component {
           </a>
         </section>
 
-        <section >
+        <Parallax bgImage="assets/mask_restaurant.jpg" strength="300">
           <Button text="Bars and Restaurants"/>
-        </section>
+        </Parallax>
 
         <section>
           <h1> Pug Sunday </h1>
@@ -83,9 +84,9 @@ class Home extends Component {
           </a>
         </section>
 
-        <section className="mask-parks" >
+        <Parallax bgImage="assets/mask_park.jpg" strength="300">
           <Button text="Dog Parks"/>
-        </section>
+        </Parallax>
 
       </div>
     );
