@@ -48,17 +48,17 @@ class Home extends Component {
         </section>
 
         <section>
-          <h1> Moraga July 4th Dog Parade </h1>
-          <h2> Every dog registered for the parade receives a special award and a treat! </h2>
-          <h2> 9:30am July 4, 2017 </h2>
-          <h4> Register at </h4>
-          <a href="https://www.eventbrite.com/e/moraga-july-4th-dog-parade-tickets-34941831960?aff=es2">
-            <img className="partnerLogo" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F32087499%2F132841432042%2F1%2Foriginal.jpg?h=150&w=300&rect=0%2C26%2C2160%2C1080&s=a307f528a19468bf7f7adf53af93a535" role="presentation"/>
+          <h1> Summer of Pug </h1>
+          <h2> Wine tasting and pug chasing at Wine Makers Studio on Treasure Island </h2>
+          <h2> 1-4pm July 9, 2017 </h2>
+          <h4> Hosted by </h4>
+          <a href="https://www.eventbrite.com/e/summer-of-pug-tickets-35131999757?aff=eiosprexshreclip&ref=eiosprexshreclip">
+            <img className="partnerLogo" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F32917952%2F215123113033%2F1%2Foriginal.jpg?w=800&rect=0%2C86%2C612%2C306&s=a71d0e0bcd68729637acd24b019bf5ec" role="presentation"/>
           </a>
         </section>
 
         <Parallax bgImage="assets/mask_event.jpg" strength="300">
-          <Button text="Dog Events"/>
+          <Button text="Dog Events" venue="event"/>
         </Parallax>
 
         <section>
@@ -66,12 +66,12 @@ class Home extends Component {
           <h2> $10 off any bottle of wine and treats for your pup </h2>
           <h4> as Featured in </h4>
           <a href="https://www.thisdogslife.co/this-san-francisco-bistro-rewards-you-for-bringing-your-dog-with-a-sweet-wine-special/">
-            <img className="partnerLogo" src="https://assets.entrepreneur.com/provider/1491862286_New%20Instagram%20Logo%20with%20Buckle%20Entrepreneur%20.jpg" role="presentation"/>
+            <img className="partnerLogo" src="http://www.tinypawssmalldogrescue.org/images/TinyPawsLogo.png" role="presentation"/>
           </a>
         </section>
 
         <Parallax bgImage="assets/mask_restaurant.jpg" strength="300">
-          <Button text="Bars and Restaurants"/>
+          <Button text="Bars and Restaurants" venue="restaurant"/>
         </Parallax>
 
         <section>
@@ -85,7 +85,7 @@ class Home extends Component {
         </section>
 
         <Parallax bgImage="assets/mask_park.jpg" strength="300">
-          <Button text="Dog Parks"/>
+          <Button text="Dog Parks" venue="park"/>
         </Parallax>
 
       </div>
@@ -94,5 +94,5 @@ class Home extends Component {
 }
 
 
-const Button = (props) => <Link className="btn-map" to='/map'>{props.text}</Link>
+const Button = (props) => <Link className={`btn-map ${props.venue}`} to='/map'>{props.text}</Link>
 export default Home;
