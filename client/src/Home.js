@@ -44,7 +44,7 @@ class Home extends Component {
 
         <section>
           <div ref="logo" className="logo" style={this.state.logoSize}></div>
-          <p className="tagline">{this.state.tagline}</p>
+          <p className="tagline slide-in-bottom">{this.state.tagline}</p>
         </section>
 
         <section>
