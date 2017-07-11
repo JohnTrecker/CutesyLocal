@@ -57,7 +57,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage="assets/mask_event.jpg" strength="300">
+        <Parallax bgImage="assets/mask_event.jpg" strength={300}>
           <Button text="Dog Events" venue="event"/>
         </Parallax>
 
@@ -70,7 +70,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage="assets/mask_restaurant.jpg" strength="300">
+        <Parallax bgImage="assets/mask_restaurant.jpg" strength={300}>
           <Button text="Bars and Restaurants" venue="restaurant"/>
         </Parallax>
 
@@ -84,7 +84,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage="assets/mask_park.jpg" strength="300">
+        <Parallax bgImage="assets/mask_park.jpg" strength={300}>
           <Button text="Dog Parks" venue="park"/>
         </Parallax>
 
