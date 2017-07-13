@@ -38,6 +38,9 @@ class Home extends Component {
     if (scrollTop >= 200 && scrollTop < 650) this.adjust(scrollTop, 'transitioned');
     return
   }
+
+  // "https://images.unsplash.com/photo-1472698938026-79bed881e5b7?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb"
+
   render() {
     return (
       <div className='App'>
@@ -57,7 +60,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage="assets/mask_event.jpg" strength={300}>
+        <Parallax bgImage="https://images.unsplash.com/photo-1488830006793-1fb328d93241?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb" strength={300}>
           <Button text="Dog Events" venue="event"/>
         </Parallax>
 
@@ -70,7 +73,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage="assets/mask_restaurant.jpg" strength={300}>
+        <Parallax bgImage="https://images.unsplash.com/photo-1469788700396-33787e74fac5?dpr=1&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb" strength={300}>
           <Button text="Bars and Restaurants" venue="restaurant"/>
         </Parallax>
 
@@ -84,7 +87,7 @@ class Home extends Component {
           </a>
         </section>
 
-        <Parallax bgImage="assets/mask_park.jpg" strength={300}>
+        <Parallax bgImage="https://images.unsplash.com/photo-1484190929067-65e7edd5a22f?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=" strength={300}>
           <Button text="Dog Parks" venue="park"/>
         </Parallax>
 

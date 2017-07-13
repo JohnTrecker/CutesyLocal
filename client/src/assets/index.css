@@ -202,18 +202,20 @@ a.btn-map {
   border-style: solid;
   padding: 15px 20px;
   color: rgba(0,0,0,.8);
-  background-color: rgba(0,0,0,.1);
   font-family: 'Arvo';
+  box-shadow: 0px 2px 40px -2px rgba(0,0,0,0.75);
+}
+a.btn-map:hover {
+  background-color: rgba(250,250,250,.5);
+  color: rgba(10,10,10,.8);
 }
 
-a.btn-map.event:hover {
-  color: rgba(216, 68, 164,.9);
+a.btn-map.event {
+  color: rgba(250,250,250,.9);
 }
+
 a.btn-map.restaurant:hover {
-  color: rgba(216, 21, 1,.7);
-}
-a.btn-map.park:hover {
-  color: rgba(250,250,250,.7);
+  background-color: rgba(250,250,250,.5);
 }
 
 /* End Landing */
