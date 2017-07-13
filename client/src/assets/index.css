@@ -108,38 +108,6 @@ img.react-parallax-bgImage {
 
 }
 
-/*
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: inherit;
-  margin: inherit;
-  display: inherit;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 100vh 0;
-  margin: inherit;
-  display: inherit;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-}
-.parallax img {
-  height: 100vh;
-  width: 100vw;
-}
-*/
-
 div.App section:nth-of-type(1) {
   background-image: url('https://cdn3.bigcommerce.com/s-shbhk0/product_images/theme_images/wooldogball_smalldog_banner__19650.jpg?t=1444412186');
   background-size: auto;
@@ -184,11 +152,7 @@ p.slide-in-bottom {
   -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-/**
- * ----------------------------------------
- * animation slide-in-bottom
- * ----------------------------------------
- */
+
 @-webkit-keyframes slide-in-bottom {
   0% {
     -webkit-transform: translateY(1000px);
@@ -213,7 +177,6 @@ p.slide-in-bottom {
     opacity: 1;
   }
 }
-
 
 section h1, h2, h4 {
   font-size: 50px;
@@ -252,7 +215,6 @@ a.btn-map.restaurant:hover {
 a.btn-map.park:hover {
   color: rgba(250,250,250,.7);
 }
-
 
 /* End Landing */
 
