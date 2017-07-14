@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'underscore';
 import { Label } from 'semantic-ui-react';
-const index = require('./lib/helpers').ammenities
+const index = require('../lib/helpers').ammenities
 
 class Accommodations extends React.Component {
 

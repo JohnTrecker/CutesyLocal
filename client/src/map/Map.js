@@ -7,7 +7,7 @@ import Popup from './Popup';
 import Bottombar from './Bottombar';
 import ReviewModal from './ReviewModal';
 
-let helpers = require('./lib/helpers');
+let helpers = require('../lib/helpers');
 let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 let map;
 

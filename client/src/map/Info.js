@@ -1,7 +1,7 @@
 import React from 'react';
 import Accommodations from './Accommodations';
 import { Item, Segment } from 'semantic-ui-react';
-const index = require('./lib/helpers').images
+const index = require('../lib/helpers').images
 
 class Info extends React.Component{
   state = {loading: true}

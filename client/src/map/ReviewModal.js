@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion, Button, Checkbox, Form, Icon, Modal, Rating, TextArea } from 'semantic-ui-react'
 
-const index = require('./lib/helpers').ammenities;
+const index = require('../lib/helpers').ammenities;
 
 class ReviewModal extends React.Component {
   render(props) {
