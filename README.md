@@ -1,6 +1,6 @@
 # Cutesy Local
 
-This repo contains the Cutesy Local front-end client and back-end API. Built with Express and MongoDB the API allows users to perform CRUD operations on dog-friendly venues and patrons within San Francisco to power the front-end React app.
+This repo contains the front-end client and back-end API for Cutesy App. The Node API allows client CRUD operations on MongoDB records to hydrate front-end React app.
 
 ## How to start this app
 
@@ -13,9 +13,7 @@ This repo contains the Cutesy Local front-end client and back-end API. Built wit
 
 ### Back-end
 
-> **Pro tip:** Install and use [Postman](https://www.getpostman.com/) to test the API routes for this section
-
-Using the existing code provided in `server/`, follow the steps below to build out a Pokémon API:
+Using the existing code provided in `server/`, follow the steps below to build out API:
 
 |      URL             | HTTP Verb | Request Body |                         Result                                           |
 |:--------------------:|:---------:|:------------:|:------------------------------------------------------------------------:|
@@ -55,7 +53,7 @@ This request is made to `localhost:3000`, the Webpack dev server. Webpack will i
 "proxy": "http://localhost:3001/",
 ```
 
-This handy features is provided for us by `create-react-app`.
+This handy feature is provided for us by `create-react-app`.
 
 Therefore, the user's browser makes a request to Webpack at `localhost:3000` which then proxies the request to our API server at `localhost:3001`:
 
