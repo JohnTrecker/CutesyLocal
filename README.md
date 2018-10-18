@@ -13,8 +13,6 @@ This repo contains the front-end client and back-end API for Cutesy App. The Nod
 
 ### Back-end
 
-Using the existing code provided in `server/`, follow the steps below to build out API:
-
 |      URL             | HTTP Verb | Request Body |                         Result                                           |
 |:--------------------:|:---------:|:------------:|:------------------------------------------------------------------------:|
 | /api/venues          |    GET    |    empty     |                                                Return JSON of all venues |
